@@ -1,0 +1,183 @@
+category,command,windows,context,status,source
+File and project,New project,Ctrl+Alt+N,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+File and project,New sequence,Ctrl+N,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+File and project,Open project,Ctrl+O,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+File and project,Close,Ctrl+W,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+File and project,Close project,Ctrl+Shift+W,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+File and project,Save,Ctrl+S,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+File and project,Save As,Ctrl+Shift+S,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+File and project,Save a copy,Ctrl+Alt+S,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+File and project,Import,Ctrl+I,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+File and project,Import from Media Browser,Ctrl+Alt+I,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+File and project,Export media,Ctrl+M,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+File and project,Send to Media Encoder,Alt+Shift+M,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+File and project,File properties,Ctrl+Shift+H,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+File and project,Exit,Ctrl+Q,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Editing,Undo,Ctrl+Z,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Editing,Redo,Ctrl+Shift+Z,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Editing,Cut,Ctrl+X,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Editing,Copy,Ctrl+C,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Editing,Paste,Ctrl+V,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Editing,Paste Attributes,Ctrl+Alt+V,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Editing,Clear,Delete,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Editing,Ripple Delete (Edit menu),Shift+Delete,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Editing,Select All,Ctrl+A,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Editing,Deselect All,Ctrl+Shift+A,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Editing,Find,Ctrl+F,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Editing,Edit Original,Ctrl+E,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Editing,Keyboard Shortcuts,Ctrl+Alt+K,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Clip actions,Make Subclip,Ctrl+U,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Clip actions,Audio Channels,Shift+G,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Clip actions,Audio Gain,G,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Clip actions,Speed/Duration,Ctrl+R,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Clip actions,Insert,",","Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Clip actions,Overwrite,.,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Clip actions,Enable,Shift+E,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Clip actions,Link,Ctrl+L,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Clip actions,Group,Ctrl+G,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Clip actions,Ungroup,Ctrl+Shift+G,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Sequence,Render Effects In to Out,Enter,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Sequence,Match Frame,F,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Sequence,Reverse Match Frame,Shift+R,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Sequence,Add Edit,Ctrl+K,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Sequence,Add Edit All Tracks,Ctrl+Shift+K,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Sequence,Trim Edit,Shift+T,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Sequence,Extend Edit to Playhead,E,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Sequence,Default Video Transition,Ctrl+D,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Sequence,Default Audio Transition,Ctrl+Shift+D,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Sequence,Default Transitions to Selection,Shift+D,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Sequence,Lift,;,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Markers / source,Mark In,I,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Markers / source,Mark Out,O,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Markers / source,Mark Clip,X,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Markers / source,Mark Selection,/,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Markers / source,Go to In,Shift+I,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Markers / source,Go to Out,Shift+O,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Markers / source,Clear In,Ctrl+Shift+I,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Markers / source,Clear Out,Ctrl+Shift+O,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Markers / source,Clear In and Out,Ctrl+Shift+X,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Markers / source,Add Marker,M,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Markers / source,Go to Next Marker,Shift+M,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Markers / source,Go to Previous Marker,Ctrl+Shift+M,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Markers / source,Clear Selected Marker,Ctrl+Alt+M,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Graphics,New Text Layer,Ctrl+T,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Graphics,New Rectangle Layer,Ctrl+Alt+R,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Graphics,New Ellipse Layer,Ctrl+Alt+E,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Graphics,Bring to Front,Ctrl+Shift+],"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Graphics,Bring Forward,Ctrl+],"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Graphics,Send Backward,Ctrl+[,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Graphics,Send to Back,Ctrl+Shift+[,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Graphics,Select Next Layer,Ctrl+Alt+],"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Graphics,Select Previous Layer,Ctrl+Alt+[,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Panels / workspaces,All Panels workspace,Alt+Shift+1,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Panels / workspaces,Assembly workspace,Alt+Shift+2,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Panels / workspaces,Audio workspace,Alt+Shift+3,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Panels / workspaces,Captions and Graphics workspace,Alt+Shift+4,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Panels / workspaces,Color workspace,Alt+Shift+5,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Panels / workspaces,Editing workspace,Alt+Shift+6,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Panels / workspaces,Effects workspace,Alt+Shift+7,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Panels / workspaces,Essential workspace,Alt+Shift+8,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Panels / workspaces,Learning workspace,Alt+Shift+9,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Panels / workspaces,Reset Saved Layout,Alt+Shift+0,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Panels / workspaces,Audio Clip Mixer,Shift+9,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Panels / workspaces,Audio Track Mixer,Shift+6,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Panels / workspaces,Effect Controls,Shift+5,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Panels / workspaces,Effects,Shift+7,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Panels / workspaces,Media Browser,Shift+8,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Panels / workspaces,Program Monitor,Shift+4,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Panels / workspaces,Projects,Shift+1,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Panels / workspaces,Source Monitor,Shift+2,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Panels / workspaces,Timeline,Shift+3,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Project panel,New Bin,Ctrl+B,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Project panel,List View,Ctrl+Page Up,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Project panel,Icon View,Ctrl+Page Down,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Project panel,Hover Scrub,Shift+H,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Project panel,Delete Selection with Options,Ctrl+Delete,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Project panel,Open in Source Monitor,Shift+O,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Increase Video Track Height,Ctrl+=,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Decrease Video Track Height,Ctrl+-,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Increase Audio Track Height,Alt+=,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Decrease Audio Track Height,Alt+-,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Nudge Clip Left 1 frame,Alt+Left,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Nudge Clip Right 1 frame,Alt+Right,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Nudge Clip Left 5 frames,Alt+Shift+Left,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Nudge Clip Right 5 frames,Alt+Shift+Right,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Ripple Delete (Timeline panel),Alt+Backspace,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Slide Left 1 frame,"Alt+,",Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Slide Right 1 frame,Alt+.,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Slide Left 5 frames,"Alt+Shift+,",Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Slide Right 5 frames,Alt+Shift+.,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Slip Left 1 frame,Ctrl+Alt+Left,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Slip Right 1 frame,Ctrl+Alt+Right,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Slip Left 5 frames,Ctrl+Alt+Shift+Left,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Slip Right 5 frames,Ctrl+Alt+Shift+Right,Panel-specific,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Program Monitor,Show Rulers,Ctrl+R,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Program Monitor,Show Guides,Ctrl+;,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Program Monitor,Snap in Program Monitor,Ctrl+Shift+;,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Program Monitor,Lock Guides,Ctrl+Alt+Shift+R,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Program Monitor,Nudge Selected Graphic Right,Ctrl+Right,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Program Monitor,Nudge Selected Graphic Left,Ctrl+Left,"Application, depending on focus",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Playback / editing tools,Playback toggle,Space,Source/Program/Timeline with focus,Adobe 26.x playback documentation; check key set/panel focus,playback
+Playback / editing tools,Play reverse,J,Source/Program/Timeline with focus,Adobe 26.x playback documentation; check key set/panel focus,playback
+Playback / editing tools,Stop,K,Source/Program/Timeline with focus,Adobe 26.x playback documentation; check key set/panel focus,playback
+Playback / editing tools,Play forward,L,Source/Program/Timeline with focus,Adobe 26.x playback documentation; check key set/panel focus,playback
+Playback / editing tools,Snap,S,Timeline focus,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Editing,Duplicate,Ctrl+Shift+/,Menu command / active appropriate panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Sequence,Extract,',Menu command / active appropriate panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Sequence,Zoom In,=,Menu command / active appropriate panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Sequence,Zoom Out,-,Menu command / active appropriate panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Sequence,Next in Sequence,Shift+;,Menu command / active appropriate panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Sequence,Previous in Sequence,Ctrl+Shift+;,Menu command / active appropriate panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Sequence,Make Subsequence,Shift+U,Menu command / active appropriate panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Sequence,Add new caption track,Ctrl+Alt+A,Menu command / active appropriate panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Sequence,Add caption at playhead,Ctrl+Alt+C,Menu command / active appropriate panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Sequence,Next caption segment,Ctrl+Alt+Down,Menu command / active appropriate panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Sequence,Previous caption segment,Ctrl+Alt+Up,Menu command / active appropriate panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Markers / source,Clear all markers,Ctrl+Alt+Shift+M,Menu command / active appropriate panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Audio Track Mixer panel,Show/hide tracks,Ctrl+Alt+T,Audio Track Mixer focused,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Audio Track Mixer panel,Loop (Audio Track Mixer),Ctrl+L,Audio Track Mixer focused,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Audio Track Mixer panel,Meter input only,Ctrl+Shift+I,Audio Track Mixer focused,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Effect Controls panel,Remove selected effect,Backspace,Effect Controls panel focused,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Effect Controls panel,Loop during audio-only playback,Ctrl+L,Effect Controls panel focused,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Effects panel,New custom bin,Ctrl+/,Effects panel focused,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Effects panel,Delete custom item,Backspace,Effects panel focused,Adobe 2026 Windows default table; verify installed shortcut set,keys
+History panel,Step backward,Left,History panel focused,Adobe 2026 Windows default table; verify installed shortcut set,keys
+History panel,Step forward,Right,History panel focused,Adobe 2026 Windows default table; verify installed shortcut set,keys
+History panel,Delete history step,Backspace,History panel focused,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Media Browser panel,Select directory list,Shift+Left,Media Browser focused,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Media Browser panel,Select media list,Shift+Right,Media Browser focused,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Metadata panel,Loop (Metadata),Ctrl+L,Metadata panel focused,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Metadata panel,Play (Metadata),Space,Metadata panel focused,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Program Monitor,Nudge graphic up 1 unit,Ctrl+Up,"Program Monitor selected graphic layer; Adobe table labels movement as frames, interface positioning is spatial",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Program Monitor,Nudge graphic down 1 unit,Ctrl+Down,"Program Monitor selected graphic layer; Adobe table labels movement as frames, interface positioning is spatial",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Program Monitor,Nudge graphic up 5 units,Ctrl+Shift+Up,"Program Monitor selected graphic layer; Adobe table labels movement as frames, interface positioning is spatial",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Program Monitor,Nudge graphic down 5 units,Ctrl+Shift+Down,"Program Monitor selected graphic layer; Adobe table labels movement as frames, interface positioning is spatial",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Program Monitor,Nudge graphic left 5 units,Ctrl+Shift+Left,"Program Monitor selected graphic layer; Adobe table labels movement as frames, interface positioning is spatial",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Program Monitor,Nudge graphic right 5 units,Ctrl+Shift+Right,"Program Monitor selected graphic layer; Adobe table labels movement as frames, interface positioning is spatial",Adobe 2026 Windows default table; verify installed shortcut set,keys
+Project panel,Project view toggle,Shift+\,Project panel focused,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Project panel,Project thumbnail larger,Shift+],Project panel focused,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Project panel,Project thumbnail smaller,Shift+[,Project panel focused,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Project panel,Project next column,Tab,Project panel focused,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Project panel,Project previous column,Shift+Tab,Project panel focused,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Set work area In,Alt+[,Timeline panel focused,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Set work area Out,Alt+],Timeline panel focused,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Show next screen,Page Down,Timeline panel focused,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Show previous screen,Page Up,Timeline panel focused,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Project panel,Project delete,Backspace,Project panel focused; availability depends on icon/list and selection mode,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Project panel,Project extend selection down,Shift+Down,Project panel focused; availability depends on icon/list and selection mode,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Project panel,Project extend selection left,Shift+Left,Project panel focused; availability depends on icon/list and selection mode,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Project panel,Project extend selection right,Shift+Right,Project panel focused; availability depends on icon/list and selection mode,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Project panel,Project extend selection up,Shift+Up,Project panel focused; availability depends on icon/list and selection mode,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Project panel,Project move selection down,Down,Project panel focused; availability depends on icon/list and selection mode,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Project panel,Project move selection end,End,Project panel focused; availability depends on icon/list and selection mode,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Project panel,Project move selection home,Home,Project panel focused; availability depends on icon/list and selection mode,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Project panel,Project move selection left,Left,Project panel focused; availability depends on icon/list and selection mode,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Project panel,Project move selection page down,Page Down,Project panel focused; availability depends on icon/list and selection mode,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Project panel,Project move selection page up,Page Up,Project panel focused; availability depends on icon/list and selection mode,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Project panel,Project move selection right,Right,Project panel focused; availability depends on icon/list and selection mode,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Project panel,Project move selection up,Up,Project panel focused; availability depends on icon/list and selection mode,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Project panel,Project next row field,Enter,Project panel focused; availability depends on icon/list and selection mode,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Project panel,Project previous row field,Shift+Enter,Project panel focused; availability depends on icon/list and selection mode,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Project panel,Project zoom in,=,Project panel focused; availability depends on icon/list and selection mode,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Project panel,Project zoom out,-,Project panel focused; availability depends on icon/list and selection mode,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Timeline clear selection,Backspace,Timeline panel focused; distinguish from other Backspace commands,Adobe 2026 Windows default table; verify installed shortcut set,keys

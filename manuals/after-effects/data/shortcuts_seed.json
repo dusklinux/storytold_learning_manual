@@ -1,0 +1,3476 @@
+[
+  {
+    "id": "key-001",
+    "category": "File, project, composition and application",
+    "action": "New project",
+    "key": "`Ctrl+Alt+N`",
+    "detail": "New, empty `.aep`",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-002",
+    "category": "File, project, composition and application",
+    "action": "Open project",
+    "key": "`Ctrl+O`",
+    "detail": "Open `.aep` / project",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-003",
+    "category": "File, project, composition and application",
+    "action": "Open most recent project",
+    "key": "`Ctrl+Alt+Shift+P`",
+    "detail": "Recents",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-004",
+    "category": "File, project, composition and application",
+    "action": "Save project",
+    "key": "`Ctrl+S`",
+    "detail": "Save often",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-005",
+    "category": "File, project, composition and application",
+    "action": "Save As",
+    "key": "`Ctrl+Shift+S`",
+    "detail": "Separate copy/name",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-006",
+    "category": "File, project, composition and application",
+    "action": "Increment and Save",
+    "key": "`Ctrl+Alt+Shift+S`",
+    "detail": "Versioned iterative save",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-007",
+    "category": "File, project, composition and application",
+    "action": "New composition",
+    "key": "`Ctrl+N`",
+    "detail": "A new scene and timeline",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-008",
+    "category": "File, project, composition and application",
+    "action": "Composition Settings",
+    "key": "`Ctrl+K`",
+    "detail": "Selected/active comp",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-009",
+    "category": "File, project, composition and application",
+    "action": "New composition from selection",
+    "key": "`Alt+\\`",
+    "detail": "Selected footage/items",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-010",
+    "category": "File, project, composition and application",
+    "action": "Project Settings",
+    "key": "`Ctrl+Alt+Shift+K`",
+    "detail": "Color, renderer-related project controls",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-011",
+    "category": "File, project, composition and application",
+    "action": "New folder in Project panel",
+    "key": "`Ctrl+Alt+Shift+N`",
+    "detail": "Folder in project hierarchy",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-012",
+    "category": "File, project, composition and application",
+    "action": "Import file/sequence",
+    "key": "`Ctrl+I`",
+    "detail": "Choose asset",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-013",
+    "category": "File, project, composition and application",
+    "action": "Import multiple files/sequences",
+    "key": "`Ctrl+Alt+I`",
+    "detail": "Multi-file importer",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-014",
+    "category": "File, project, composition and application",
+    "action": "Edit original source",
+    "key": "`Ctrl+E`",
+    "detail": "Open associated app",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-015",
+    "category": "File, project, composition and application",
+    "action": "New solid",
+    "key": "`Ctrl+Y`",
+    "detail": "Color solid/blank canvas",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-016",
+    "category": "File, project, composition and application",
+    "action": "Edit selected solid/light/camera/null/adjustment settings",
+    "key": "`Ctrl+Shift+Y`",
+    "detail": "Type-specific settings",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-017",
+    "category": "File, project, composition and application",
+    "action": "New adjustment layer",
+    "key": "`Ctrl+Alt+Y`",
+    "detail": "Effects affect composited pixels below",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-018",
+    "category": "File, project, composition and application",
+    "action": "New null object",
+    "key": "`Ctrl+Alt+Shift+Y`",
+    "detail": "Parenting and controllers",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-019",
+    "category": "File, project, composition and application",
+    "action": "New text layer",
+    "key": "`Ctrl+Alt+Shift+T`",
+    "detail": "May be context-dependent while editing text",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-020",
+    "category": "File, project, composition and application",
+    "action": "Precompose selection",
+    "key": "`Ctrl+Shift+C`",
+    "detail": "Nest in child comp",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-021",
+    "category": "File, project, composition and application",
+    "action": "Trim comp to work area",
+    "key": "`Ctrl+Shift+X`",
+    "detail": "Changes composition duration",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-022",
+    "category": "File, project, composition and application",
+    "action": "Work area from selected layer span, or full comp if none",
+    "key": "`Ctrl+Alt+B`",
+    "detail": "Quick range reset",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-023",
+    "category": "File, project, composition and application",
+    "action": "Add comp to Render Queue",
+    "key": "`Ctrl+Shift+/` (main keyboard)",
+    "detail": "`/` is slash, not numpad divide",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-024",
+    "category": "File, project, composition and application",
+    "action": "Add comp to Adobe Media Encoder",
+    "key": "`Ctrl+Alt+M`",
+    "detail": "Encoding queue",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-025",
+    "category": "File, project, composition and application",
+    "action": "Render current frame via Render Queue",
+    "key": "`Ctrl+Alt+S`",
+    "detail": "Still frame",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-026",
+    "category": "File, project, composition and application",
+    "action": "Keyboard Shortcut Editor",
+    "key": "`Ctrl+Alt+'`",
+    "detail": "Remap a command",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-027",
+    "category": "File, project, composition and application",
+    "action": "Preferences",
+    "key": "`Ctrl+Alt+;`",
+    "detail": "Semicolon, not apostrophe",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-028",
+    "category": "File, project, composition and application",
+    "action": "Purge all memory",
+    "key": "`Ctrl+Alt+/` (Num)",
+    "detail": "Discards caches; may require recaching",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-029",
+    "category": "File, project, composition and application",
+    "action": "Quit AE",
+    "key": "`Ctrl+Q`",
+    "detail": "Save work first",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-030",
+    "category": "File, project, composition and application",
+    "action": "Undo / Redo",
+    "key": "`Ctrl+Z` / `Ctrl+Shift+Z`",
+    "detail": "Standard edit history",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-031",
+    "category": "File, project, composition and application",
+    "action": "Select all / Deselect all",
+    "key": "`Ctrl+A` / `F2` or `Ctrl+Shift+A`",
+    "detail": "Current active context",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-032",
+    "category": "File, project, composition and application",
+    "action": "Rename selected item",
+    "key": "`Enter` (main keyboard)",
+    "detail": "Selected layer, effect, comp, project folder, mask",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-033",
+    "category": "File, project, composition and application",
+    "action": "Open selected item",
+    "key": "`Enter` (Num)",
+    "detail": "Unlike main Enter",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-034",
+    "category": "File, project, composition and application",
+    "action": "Duplicate selected item",
+    "key": "`Ctrl+D`",
+    "detail": "Works on layer, mask, effect, property group, project items",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-035",
+    "category": "File, project, composition and application",
+    "action": "Cut / Copy / Paste",
+    "key": "`Ctrl+X` / `Ctrl+C` / `Ctrl+V`",
+    "detail": "Context-sensitive",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-036",
+    "category": "File, project, composition and application",
+    "action": "Paste layers at current time",
+    "key": "`Ctrl+Alt+V`",
+    "detail": "Timeline-specific paste",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-037",
+    "category": "File, project, composition and application",
+    "action": "Open Composition Mini-Flowchart",
+    "key": "`Tab`",
+    "detail": "Active composition and its hierarchy; Project Flowchart uses `Ctrl+F11`.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-038",
+    "category": "File, project, composition and application",
+    "action": "Project panel search",
+    "key": "`Ctrl+F` with Project focus",
+    "detail": "With Timeline focus searches Timeline instead",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-039",
+    "category": "File, project, composition and application",
+    "action": "Display source frame filename in Info panel",
+    "key": "`Ctrl+Alt+E`",
+    "detail": "At current time",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-040",
+    "category": "File, project, composition and application",
+    "action": "Stop running script",
+    "key": "`Esc`",
+    "detail": "Interrupt execution where supported",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-041",
+    "category": "Windows, workspace, panels and viewer",
+    "action": "Project panel",
+    "key": "`Ctrl+0`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-042",
+    "category": "Windows, workspace, panels and viewer",
+    "action": "Render Queue panel",
+    "key": "`Ctrl+Alt+0`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-043",
+    "category": "Windows, workspace, panels and viewer",
+    "action": "Tools panel",
+    "key": "`Ctrl+1`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-044",
+    "category": "Windows, workspace, panels and viewer",
+    "action": "Info panel",
+    "key": "`Ctrl+2`",
+    "detail": "Pixel samples, cursor coords and durations",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-045",
+    "category": "Windows, workspace, panels and viewer",
+    "action": "Preview panel",
+    "key": "`Ctrl+3`",
+    "detail": "Work area, frame skipping, audio",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-046",
+    "category": "Windows, workspace, panels and viewer",
+    "action": "Audio panel",
+    "key": "`Ctrl+4`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-047",
+    "category": "Windows, workspace, panels and viewer",
+    "action": "Effects & Presets",
+    "key": "`Ctrl+5`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-048",
+    "category": "Windows, workspace, panels and viewer",
+    "action": "Character",
+    "key": "`Ctrl+6`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-049",
+    "category": "Windows, workspace, panels and viewer",
+    "action": "Paragraph",
+    "key": "`Ctrl+7`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-050",
+    "category": "Windows, workspace, panels and viewer",
+    "action": "Paint",
+    "key": "`Ctrl+8`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-051",
+    "category": "Windows, workspace, panels and viewer",
+    "action": "Brushes",
+    "key": "`Ctrl+9`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-052",
+    "category": "Windows, workspace, panels and viewer",
+    "action": "Effect Controls for selected layer",
+    "key": "`F3` or `Ctrl+Shift+T`",
+    "detail": "Direct control panel",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-053",
+    "category": "Windows, workspace, panels and viewer",
+    "action": "Project Flowchart",
+    "key": "`Ctrl+F11`",
+    "detail": "Distinct from mini-flowchart",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-054",
+    "category": "Windows, workspace, panels and viewer",
+    "action": "Assigned workspaces",
+    "key": "`Shift+F10/F11/F12`",
+    "detail": "If workspace presets configured",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-055",
+    "category": "Windows, workspace, panels and viewer",
+    "action": "Close all viewers of active type / active panel",
+    "key": "`Ctrl+Shift+W`",
+    "detail": "Can close multiple timelines",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-056",
+    "category": "Windows, workspace, panels and viewer",
+    "action": "Split a viewer (opposite lock state)",
+    "key": "`Ctrl+Alt+Shift+N`",
+    "detail": "Lock one viewer for side-by-side comparisons",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-057",
+    "category": "Windows, workspace, panels and viewer",
+    "action": "Maximize panel under mouse",
+    "key": "`` ` ``",
+    "detail": "Grave/backtick above Tab; tap again to restore",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-058",
+    "category": "Windows, workspace, panels and viewer",
+    "action": "Resize application window to fit screen",
+    "key": "`Ctrl+\\`",
+    "detail": "Not true OS-exclusive fullscreen",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-059",
+    "category": "Windows, workspace, panels and viewer",
+    "action": "Move window to main monitor / fit",
+    "key": "`Ctrl+Alt+\\`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-060",
+    "category": "Windows, workspace, panels and viewer",
+    "action": "Switch focus between Comp and Timeline",
+    "key": "`\\`",
+    "detail": "No Ctrl",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-061",
+    "category": "Windows, workspace, panels and viewer",
+    "action": "Previous/next open item in viewer",
+    "key": "`Shift+,` / `Shift+.`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-062",
+    "category": "Windows, workspace, panels and viewer",
+    "action": "Previous/next panel in same frame",
+    "key": "`Alt+Shift+,` / `Alt+Shift+.`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-063",
+    "category": "Windows, workspace, panels and viewer",
+    "action": "Show Switches/Modes columns",
+    "key": "`F4`",
+    "detail": "Needed for matte and blending controls",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-064",
+    "category": "Windows, workspace, panels and viewer",
+    "action": "Show/hide Parent column",
+    "key": "`Shift+F4`",
+    "detail": "Parent & Link",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-065",
+    "category": "Windows, workspace, panels and viewer",
+    "action": "Timeline search",
+    "key": "`Ctrl+F` with Timeline focus",
+    "detail": "Type part of a property/effect/layer name",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-066",
+    "category": "Windows, workspace, panels and viewer",
+    "action": "Expand/collapse selected layer completely",
+    "key": "Ctrl + backtick (`Ctrl` + `` ` ``)",
+    "detail": "Backtick character",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-067",
+    "category": "Windows, workspace, panels and viewer",
+    "action": "Expand nested property group recursively",
+    "key": "`Ctrl+click` disclosure triangle",
+    "detail": "Contextual",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-068",
+    "category": "Windows, workspace, panels and viewer",
+    "action": "Hide a visible property or group",
+    "key": "`Alt+Shift+click` property/group name",
+    "detail": "Not Ctrl+Alt+Shift+click",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-069",
+    "category": "Windows, workspace, panels and viewer",
+    "action": "Scroll top selected layer to top of timeline",
+    "key": "`X`",
+    "detail": "Does not change stacking order",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-070",
+    "category": "Windows, workspace, panels and viewer",
+    "action": "Toggle color display management in active view",
+    "key": "`Shift+/` (Num)",
+    "detail": "Display only, not file conversion",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-071",
+    "category": "Tools and drawing",
+    "action": "Selection",
+    "key": "`V`",
+    "detail": "Default move/selection",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-072",
+    "category": "Tools and drawing",
+    "action": "Hand",
+    "key": "`H`",
+    "detail": "Pan viewer",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-073",
+    "category": "Tools and drawing",
+    "action": "Hand momentarily",
+    "key": "Hold `Space` / middle mouse",
+    "detail": "During most drawing/editing",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-074",
+    "category": "Tools and drawing",
+    "action": "Zoom In",
+    "key": "`Z`",
+    "detail": "Alt while active temporarily zooms out",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-075",
+    "category": "Tools and drawing",
+    "action": "Rotation",
+    "key": "`W`",
+    "detail": "Rotate in viewer",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-076",
+    "category": "Tools and drawing",
+    "action": "Pan Behind (Anchor Point)",
+    "key": "`Y`",
+    "detail": "Shift pivot while preserving visual placement",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-077",
+    "category": "Tools and drawing",
+    "action": "Rectangle/Rounded Rectangle/Ellipse/Polygon/Star",
+    "key": "`Q` repeated",
+    "detail": "Cycle modes",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-078",
+    "category": "Tools and drawing",
+    "action": "Pen/Mask Feather",
+    "key": "`G` repeated",
+    "detail": "Preferences can change cycling behavior",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-079",
+    "category": "Tools and drawing",
+    "action": "Horizontal/Vertical Type",
+    "key": "`Ctrl+T` repeated",
+    "detail": "Activates text tool; text-area vs point-text depends on dragging/clicking",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-080",
+    "category": "Tools and drawing",
+    "action": "Brush/Clone Stamp/Eraser",
+    "key": "`Ctrl+B` repeated",
+    "detail": "All paint *in Layer viewer*",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-081",
+    "category": "Tools and drawing",
+    "action": "Puppet tools",
+    "key": "`Ctrl+P` repeated",
+    "detail": "Pin, starch, overlap etc. as available",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-082",
+    "category": "Tools and drawing",
+    "action": "Camera tools",
+    "key": "`C` repeated",
+    "detail": "Camera context determines available tools",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-083",
+    "category": "Tools and drawing",
+    "action": "Temporarily use Selection from Pen",
+    "key": "Hold `Ctrl`",
+    "detail": "With Pen selected",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-084",
+    "category": "Tools and drawing",
+    "action": "Temporarily edit path from Selection",
+    "key": "Hold `Ctrl+Alt` over path",
+    "detail": "Can select/add/convert vertices",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-085",
+    "category": "Tools and drawing",
+    "action": "Temporarily duplicate shape",
+    "key": "Hold `Alt` with selection tool",
+    "detail": "Shape context",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-086",
+    "category": "Tools and drawing",
+    "action": "Temporarily direct-select shape",
+    "key": "Hold `Ctrl` with selection tool",
+    "detail": "Shape context",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-087",
+    "category": "Tools and drawing",
+    "action": "Use a single-letter tool temporarily",
+    "key": "Hold its tool key, then release",
+    "detail": "Returns to the previous tool; tap to select it persistently.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-088",
+    "category": "Tools and drawing",
+    "action": "Cycle tool variations",
+    "key": "`Alt+click` tool icon",
+    "detail": "Some groups only",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-089",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Go forward one frame",
+    "key": "`Page Down` or `Ctrl+Right`",
+    "detail": "Not Alt+Right (moves keyframes)",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-090",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Go backward one frame",
+    "key": "`Page Up` or `Ctrl+Left`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-091",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Go ±10 frames",
+    "key": "`Shift+Page Down/Up` or `Ctrl+Shift+Right/Left`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-092",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Beginning/end of composition",
+    "key": "`Home` / `End`",
+    "detail": "Or `Ctrl+Alt+Left/Right`",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-093",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Beginning/end of work area",
+    "key": "`Shift+Home` / `Shift+End`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-094",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Next/previous visible timeline item",
+    "key": "`K` / `J`",
+    "detail": "Visible keys/markers and work-area boundaries; Layer-view roto spans add relevant boundaries/base frames.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-095",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Layer in/out",
+    "key": "`I` / `O`",
+    "detail": "With multiple layers: earliest In / latest Out.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-096",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Next/previous layer in/out (any layer)",
+    "key": "`Ctrl+Alt+Shift+Right/Left`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-097",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Scroll Timeline to current time",
+    "key": "`D`",
+    "detail": "Center current-time region",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-098",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Jump to a particular time",
+    "key": "`Alt+Shift+J`",
+    "detail": "Enter timecode/time",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-099",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Work area start / end at playhead",
+    "key": "`B` / `N`",
+    "detail": "Independent of layer in/out",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-100",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Work area from selected layers / comp",
+    "key": "`Ctrl+Alt+B`",
+    "detail": "Start/end bounds",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-101",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Start/stop playback",
+    "key": "`Space`, `Shift+Space` or `Num 0`",
+    "detail": "Preview panel controls caching/looping",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-102",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Audio-only preview from playhead",
+    "key": "`Num .`",
+    "detail": "Numpad decimal",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-103",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Audio-only preview work area",
+    "key": "`Alt+Num .`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-104",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Preview alternate-frame count",
+    "key": "`Alt+Num 0`",
+    "detail": "Preview prefs govern count",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-105",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Navigate keys/markers of selected layers/properties",
+    "key": "`Shift+J` / `Shift+K`",
+    "detail": "Previous / next within the selection.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-106",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Snap playhead during a drag",
+    "key": "`Shift+drag` CTI",
+    "detail": "Snaps to eligible keys/markers.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-107",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Manual audio scrubbing",
+    "key": "`Ctrl+drag` current-time indicator",
+    "detail": "Audio scrub",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-108",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Snapshot to slot 5–8",
+    "key": "`Shift+F5` … `Shift+F8`",
+    "detail": "Four snapshot slots",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-109",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Display snapshot slot 5–8",
+    "key": "`F5` … `F8`",
+    "detail": "Compare frames",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-110",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Purge snapshot slot 5–8",
+    "key": "`Ctrl+Shift+F5` … `Ctrl+Shift+F8`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-111",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Zoom Timeline IN/OUT",
+    "key": "`=` / `-` (main keyboard)",
+    "detail": "Time magnification",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-112",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Timeline magnification toggle",
+    "key": "`;`",
+    "detail": "One-frame units ↔ composition extent",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-113",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Show entire Timeline duration",
+    "key": "`Shift+;`",
+    "detail": "Toggle previous view",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-114",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Viewer zoom IN/OUT",
+    "key": "`.` / `,` (main keyboard)",
+    "detail": "Not period = audio preview",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-115",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Viewer at 100%",
+    "key": "`/` (main keyboard)",
+    "detail": "Pixel-level review",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-116",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Fit viewer to panel",
+    "key": "`Shift+/` (main keyboard)",
+    "detail": "`?` on US layout",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-117",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Fit viewer, cap at 100%",
+    "key": "`Alt+/` (main keyboard)",
+    "detail": "Useful for quality review",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-118",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Center comp in viewer",
+    "key": "Double-click Hand tool",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-119",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Stop viewer render while changing timeline",
+    "key": "`Caps Lock`",
+    "detail": "Must turn OFF to judge visuals",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-120",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Comp full/half/custom preview resolution",
+    "key": "`Ctrl+J` / `Ctrl+Shift+J` / `Ctrl+Alt+J`",
+    "detail": "Resolution dropdown",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-121",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Fast Previews: Off",
+    "key": "`Ctrl+Alt+1`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-122",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Fast Previews: Adaptive Resolution",
+    "key": "`Ctrl+Alt+2`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-123",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Fast Previews: Draft",
+    "key": "`Ctrl+Alt+3`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-124",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Fast Previews: Fast Draft",
+    "key": "`Ctrl+Alt+4`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-125",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Fast Previews: Wireframe",
+    "key": "`Ctrl+Alt+5`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-126",
+    "category": "Navigation: frames, keyframes, work area and preview",
+    "action": "Mercury Transmit preview",
+    "key": "`Num /`",
+    "detail": "External monitor output",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-127",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Select next / previous layer in stack",
+    "key": "`Ctrl+Down` / `Ctrl+Up`",
+    "detail": "Panel must be Timeline",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-128",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Extend layer selection downward/upward",
+    "key": "`Ctrl+Shift+Down` / `Ctrl+Shift+Up`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-129",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Select layer number 1–999",
+    "key": "Type its number on numpad",
+    "detail": "Fast entry for 2–3 digits",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-130",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Add/remove numbered layer to selection",
+    "key": "`Shift`+numpad number",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-131",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Deselect layers",
+    "key": "`F2` / `Ctrl+Shift+A`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-132",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Move selected layer backward/forward ONE layer in stack",
+    "key": "`Ctrl+Alt+Down/Up`",
+    "detail": "Affects compositing order, not time",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-133",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Move layer(s) to bottom/top of stack",
+    "key": "`Ctrl+Alt+Shift+Down/Up`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-134",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Duplicate layers",
+    "key": "`Ctrl+D`",
+    "detail": "Does not advance time",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-135",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Move entire layer bar so IN starts at playhead",
+    "key": "`[`",
+    "detail": "Preserves layer span",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-136",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Move entire layer bar so OUT ends at playhead",
+    "key": "`]`",
+    "detail": "Preserves layer span",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-137",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Trim start to playhead",
+    "key": "`Alt+[`",
+    "detail": "Does not move rest of layer",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-138",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Trim end to playhead",
+    "key": "`Alt+]`",
+    "detail": "Does not move rest of layer",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-139",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Shift whole layer ±1 frame",
+    "key": "`Alt+Page Up/Down`",
+    "detail": "Distinct from keyframe nudge",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-140",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Shift whole layer ±10 frames",
+    "key": "`Alt+Shift+Page Up/Down`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-141",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Move layer IN to start of comp",
+    "key": "`Alt+Home`",
+    "detail": "Align full layer start",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-142",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Move layer OUT to comp end",
+    "key": "`Alt+End`",
+    "detail": "Align full layer end",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-143",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Split at playhead",
+    "key": "`Ctrl+Shift+D`",
+    "detail": "Splits selected layers; with none selected, splits all eligible layers.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-144",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Reverse layer(s) in time",
+    "key": "`Ctrl+Alt+R`",
+    "detail": "Time → Time-Reverse Layer",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-145",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Enable Time Remapping",
+    "key": "`Ctrl+Alt+T`",
+    "detail": "Source-time keyframes; works with time-based layers, incl. footage/precomp",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-146",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Precompose",
+    "key": "`Ctrl+Shift+C`",
+    "detail": "Choosing *Move all attributes* vs *Leave all attributes* matters",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-147",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Lock selected layers",
+    "key": "`Ctrl+L`",
+    "detail": "Prevent accidental edits",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-148",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Unlock all layers",
+    "key": "`Ctrl+Shift+L`",
+    "detail": "Unlocks all, not a subset",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-149",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Toggle selected layer's video switch",
+    "key": "`Ctrl+Alt+Shift+V`",
+    "detail": "Eye, not effects switch",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-150",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Disable other solo switches",
+    "key": "`Alt+click` Solo",
+    "detail": "Efficient isolation",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-151",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Toggle Switches/Modes",
+    "key": "`F4`",
+    "detail": "Reveals TrkMat and blending mode",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-152",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Cycle blending modes",
+    "key": "`Shift+-` / `Shift+=`",
+    "detail": "Selected layers",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-153",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Find in Timeline",
+    "key": "`Ctrl+F`",
+    "detail": "Property/layer search",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-154",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Show/hide Parent & Link column",
+    "key": "`Shift+F4`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-155",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Quality: Best / Draft / Wireframe",
+    "key": "`Ctrl+U` / `Ctrl+Shift+U` / `Ctrl+Alt+Shift+U`",
+    "detail": "Affects layer sampling/quality",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-156",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Sampling: Bilinear / Bicubic",
+    "key": "`Alt+B` / `Alt+Shift+B`",
+    "detail": "Visual resampling method",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-157",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Quick Offset (25.4+)",
+    "key": "Ctrl+Alt+drag selected layer bars or selected keyframes",
+    "detail": "Distributes them across time in selection order; first selection stays in place",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-158",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Sequence Layers",
+    "key": "`Animation → Keyframe Assistant → Sequence Layers`",
+    "detail": "Arrange sequentially; optionally overlap",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-159",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Time-Reverse Keyframes",
+    "key": "`Animation → Keyframe Assistant → Time-Reverse Keyframes`",
+    "detail": "Reverses selected keyframes, not source layer",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-160",
+    "category": "Timeline: select, stack, move, trim, split and time",
+    "action": "Reverse Paste Keyframes",
+    "key": "`Ctrl+Shift+V`",
+    "detail": "Paste previously copied keyframes in reverse order",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-161",
+    "category": "Properties and layer transforms",
+    "action": "Anchor Point / point of interest",
+    "key": "`A`",
+    "detail": "Pivot",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-162",
+    "category": "Properties and layer transforms",
+    "action": "Position",
+    "key": "`P`",
+    "detail": "Position in comp/parent space",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-163",
+    "category": "Properties and layer transforms",
+    "action": "Scale",
+    "key": "`S`",
+    "detail": "x/y(/z) percentages",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-164",
+    "category": "Properties and layer transforms",
+    "action": "Rotation / Orientation",
+    "key": "`R`",
+    "detail": "Z, plus 3D values if enabled",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-165",
+    "category": "Properties and layer transforms",
+    "action": "Opacity / light Intensity",
+    "key": "`T`",
+    "detail": "Transparency",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-166",
+    "category": "Properties and layer transforms",
+    "action": "Audio Levels",
+    "key": "`L`",
+    "detail": "dB gain",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-167",
+    "category": "Properties and layer transforms",
+    "action": "Audio waveform",
+    "key": "`LL`",
+    "detail": "Drawn waveform",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-168",
+    "category": "Properties and layer transforms",
+    "action": "Time Remap",
+    "key": "`RR`",
+    "detail": "Requires remapping enabled",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-169",
+    "category": "Properties and layer transforms",
+    "action": "Effect group",
+    "key": "`E`",
+    "detail": "All applied effects",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-170",
+    "category": "Properties and layer transforms",
+    "action": "Expression-bearing properties",
+    "key": "`EE`",
+    "detail": "Property with expression, enabled or modified",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-171",
+    "category": "Properties and layer transforms",
+    "action": "Keyframed properties",
+    "key": "`U`",
+    "detail": "Properties with keyframes",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-172",
+    "category": "Properties and layer transforms",
+    "action": "Modified properties",
+    "key": "`UU`",
+    "detail": "Changed-from-default settings, including effects",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-173",
+    "category": "Properties and layer transforms",
+    "action": "Masks",
+    "key": "`MM`",
+    "detail": "All mask groups",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-174",
+    "category": "Properties and layer transforms",
+    "action": "Mask path",
+    "key": "`M`",
+    "detail": "Paths only",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-175",
+    "category": "Properties and layer transforms",
+    "action": "Mask feather",
+    "key": "`F`",
+    "detail": "Feather only",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-176",
+    "category": "Properties and layer transforms",
+    "action": "Mask opacity",
+    "key": "`TT`",
+    "detail": "Opacity for masks",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-177",
+    "category": "Properties and layer transforms",
+    "action": "Material options (3D)",
+    "key": "`AA`",
+    "detail": "Surface/material settings",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-178",
+    "category": "Properties and layer transforms",
+    "action": "Paint/Puppet/Roto strokes",
+    "key": "`PP`",
+    "detail": "Deformation/paint details",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-179",
+    "category": "Properties and layer transforms",
+    "action": "Missing effects",
+    "key": "`FF`",
+    "detail": "Locate unavailable effects",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-180",
+    "category": "Properties and layer transforms",
+    "action": "Selected properties/groups only",
+    "key": "`SS`",
+    "detail": "Isolate selected parameters in timeline",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-181",
+    "category": "Properties and layer transforms",
+    "action": "Multiple sets of reveal shortcuts",
+    "key": "`Shift+P` etc.",
+    "detail": "Add/remove without collapsing the rest",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-182",
+    "category": "Properties and layer transforms",
+    "action": "Add/remove keyframe on a revealable property at current time",
+    "key": "`Alt+Shift+P/S/R/T/A` etc.",
+    "detail": "Does not require opening stopwatch; must have valid layer and property",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-183",
+    "category": "Properties and layer transforms",
+    "action": "Edit Position using numeric dialog",
+    "key": "`Ctrl+Shift+P`",
+    "detail": "With selected layer, not text editing",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-184",
+    "category": "Properties and layer transforms",
+    "action": "Edit Rotation numeric dialog",
+    "key": "`Ctrl+Shift+R`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-185",
+    "category": "Properties and layer transforms",
+    "action": "Edit Opacity numeric dialog",
+    "key": "`Ctrl+Shift+O`",
+    "detail": "O, not T",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-186",
+    "category": "Properties and layer transforms",
+    "action": "Auto-Orient dialog",
+    "key": "`Ctrl+Alt+O`",
+    "detail": "Orient along path / toward camera",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-187",
+    "category": "Properties and layer transforms",
+    "action": "Move layers 1 viewer pixel",
+    "key": "`Arrow keys`",
+    "detail": "Zoom-dependent composition-space increment",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-188",
+    "category": "Properties and layer transforms",
+    "action": "Move layers 10 viewer pixels",
+    "key": "`Shift+Arrow keys`",
+    "detail": "Magnification matters",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-189",
+    "category": "Properties and layer transforms",
+    "action": "Move value at normal increments",
+    "key": "Drag hot-text value",
+    "detail": "Numeric scrub",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-190",
+    "category": "Properties and layer transforms",
+    "action": "Move value 10× faster",
+    "key": "`Shift+drag` hot-text",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-191",
+    "category": "Properties and layer transforms",
+    "action": "Move value 10× slower",
+    "key": "`Ctrl+drag` hot-text",
+    "detail": "Fine adjustment",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-192",
+    "category": "Properties and layer transforms",
+    "action": "Center layer anchor position in comp view",
+    "key": "`Ctrl+Home`",
+    "detail": "Changes Position; doesn't center anchor inside content",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-193",
+    "category": "Properties and layer transforms",
+    "action": "Center anchor point in visible layer content",
+    "key": "`Ctrl+Alt+Home`",
+    "detail": "Changes anchor and compensates position",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-194",
+    "category": "Properties and layer transforms",
+    "action": "Reset Rotation to 0°",
+    "key": "Double-click Rotation tool",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-195",
+    "category": "Properties and layer transforms",
+    "action": "Reset Scale to 100%",
+    "key": "Double-click Selection tool",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-196",
+    "category": "Properties and layer transforms",
+    "action": "Rotate Z 1° / 10°",
+    "key": "`Num +/-` / `Shift+Num +/-`",
+    "detail": "Selected layers",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-197",
+    "category": "Properties and layer transforms",
+    "action": "Scale +/−1%",
+    "key": "`Ctrl+Num +/-` or `Alt+Num +/-`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-198",
+    "category": "Properties and layer transforms",
+    "action": "Scale +/−10%",
+    "key": "`Ctrl+Shift+Num +/-` or `Alt+Shift+Num +/-`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-199",
+    "category": "Properties and layer transforms",
+    "action": "Opacity +/−1%",
+    "key": "`Ctrl+Alt+Num +/-`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-200",
+    "category": "Properties and layer transforms",
+    "action": "Opacity +/−10%",
+    "key": "`Ctrl+Alt+Shift+Num +/-`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-201",
+    "category": "Properties and layer transforms",
+    "action": "Constrain interactive rotation 15°",
+    "key": "Hold `Shift` while using Rotation tool",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-202",
+    "category": "Properties and layer transforms",
+    "action": "Preserve aspect ratio when changing layer bounding-box size",
+    "key": "Hold `Shift` while dragging handle",
+    "detail": "Behavior also depends on current transform modes",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-203",
+    "category": "Properties and layer transforms",
+    "action": "Fit layer by distortion to comp width and height",
+    "key": "`Ctrl+Alt+F`",
+    "detail": "Can stretch image",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-204",
+    "category": "Properties and layer transforms",
+    "action": "Fit layer to comp width preserving ratio",
+    "key": "`Ctrl+Alt+Shift+H`",
+    "detail": "H = horizontal",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-205",
+    "category": "Properties and layer transforms",
+    "action": "Fit layer to comp height preserving ratio",
+    "key": "`Ctrl+Alt+Shift+G`",
+    "detail": "G = vertical mapped shortcut",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-206",
+    "category": "Properties and layer transforms",
+    "action": "Effects: disable selected layer's effects",
+    "key": "Click timeline fx switch",
+    "detail": "Nondestructive disable",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-207",
+    "category": "Properties and layer transforms",
+    "action": "Effects: delete all on selected layer(s)",
+    "key": "`Ctrl+Shift+E`",
+    "detail": "Destructive removal",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-208",
+    "category": "Properties and layer transforms",
+    "action": "Copy with property links",
+    "key": "`Ctrl+Alt+C` (where exposed) / `Edit → Copy with Property Links`",
+    "detail": "Creates expressions referencing source property; test across comps",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-209",
+    "category": "Properties and layer transforms",
+    "action": "Copy Expression Only",
+    "key": "`Edit → Copy Expression Only`",
+    "detail": "Assign custom key if desired; does not copy values",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-210",
+    "category": "Properties and layer transforms",
+    "action": "Add an expression to a selected property",
+    "key": "`Alt+Shift+=` / Animation → Add Expression",
+    "detail": "Adobe-documented binding; verify your installed preset. Use the expression switch for temporary bypass.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-211",
+    "category": "Properties and layer transforms",
+    "action": "Toggle expression editor for one property",
+    "key": "`Alt+click` stopwatch",
+    "detail": "Can remove existing expression; prefer `=` switch to disable temporarily",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-212",
+    "category": "Keyframes and Graph Editor (full set)",
+    "action": "Show Graph Editor",
+    "key": "`Shift+F3`",
+    "detail": "Toggle timeline/graph",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-213",
+    "category": "Keyframes and Graph Editor (full set)",
+    "action": "Add/remove keyframe at CTI",
+    "key": "`Alt+Shift+P/S/R/T/A` etc.",
+    "detail": "Current property value",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-214",
+    "category": "Keyframes and Graph Editor (full set)",
+    "action": "Go previous / next visible key",
+    "key": "`J` / `K`",
+    "detail": "Also jumps timeline markers/bounds",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-215",
+    "category": "Keyframes and Graph Editor (full set)",
+    "action": "Easy Ease",
+    "key": "`F9`",
+    "detail": "Eases into *and* out of keyframe",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-216",
+    "category": "Keyframes and Graph Editor (full set)",
+    "action": "Easy Ease In",
+    "key": "`Shift+F9`",
+    "detail": "Slow into selected keyframe",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-217",
+    "category": "Keyframes and Graph Editor (full set)",
+    "action": "Easy Ease Out",
+    "key": "`Ctrl+Shift+F9`",
+    "detail": "Slow away from selected keyframe",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-218",
+    "category": "Keyframes and Graph Editor (full set)",
+    "action": "Keyframe Velocity dialog",
+    "key": "`Ctrl+Shift+K`",
+    "detail": "Precise speeds/influence",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-219",
+    "category": "Keyframes and Graph Editor (full set)",
+    "action": "Keyframe Interpolation dialog",
+    "key": "`Ctrl+Alt+K`",
+    "detail": "Temporal/spatial controls",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-220",
+    "category": "Keyframes and Graph Editor (full set)",
+    "action": "Hold ↔ Auto Bézier method",
+    "key": "`Ctrl+Alt+H`",
+    "detail": "Context-dependent selection",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-221",
+    "category": "Keyframes and Graph Editor (full set)",
+    "action": "Linear ↔ Auto Bézier",
+    "key": "`Ctrl+click` keyframe (layer bars)",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-222",
+    "category": "Keyframes and Graph Editor (full set)",
+    "action": "Linear ↔ Hold",
+    "key": "`Ctrl+Alt+click` keyframe (layer bars)",
+    "detail": "Different modifier from above",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-223",
+    "category": "Keyframes and Graph Editor (full set)",
+    "action": "Nudge selected keyframes ±1 frame",
+    "key": "`Alt+Left/Right`",
+    "detail": "Keyframes selected, not layer",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-224",
+    "category": "Keyframes and Graph Editor (full set)",
+    "action": "Nudge selected keyframes ±10 frames",
+    "key": "`Alt+Shift+Left/Right`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-225",
+    "category": "Keyframes and Graph Editor (full set)",
+    "action": "Select all keys on one property",
+    "key": "Click property name",
+    "detail": "Timeline",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-226",
+    "category": "Keyframes and Graph Editor (full set)",
+    "action": "Select all visible keyframes/properties",
+    "key": "`Ctrl+Alt+A`",
+    "detail": "Only visible elements",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-227",
+    "category": "Keyframes and Graph Editor (full set)",
+    "action": "Deselect keys/properties/groups",
+    "key": "`Shift+F2` / `Ctrl+Alt+Shift+A`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-228",
+    "category": "Keyframes and Graph Editor (full set)",
+    "action": "Reverse pasted keyframes",
+    "key": "`Ctrl+Shift+V`",
+    "detail": "First copy with `Ctrl+C`",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-229",
+    "category": "Keyframes and Graph Editor (full set)",
+    "action": "Proportionally rescale a group of keyframes",
+    "key": "`Alt+drag` first/last selected keyframe",
+    "detail": "Stretches timing around opposite boundary",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-230",
+    "category": "Keyframes and Graph Editor (full set)",
+    "action": "Reverse keyframe sequence in its current span",
+    "key": "Keyframe Assistant → Time-Reverse Keyframes",
+    "detail": "Preserve original placement range",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-231",
+    "category": "Keyframes and Graph Editor (full set)",
+    "action": "Rove a spatial keyframe across time",
+    "key": "Right-click keyframe → Rove Across Time",
+    "detail": "For middle spatial keys; optimizes speed along motion path",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-232",
+    "category": "Keyframes and Graph Editor (full set)",
+    "action": "Change selected interpolation to Hold",
+    "key": "Right-click keyframe → Toggle Hold Keyframe",
+    "detail": "Useful for stepped animation",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-233",
+    "category": "Keyframes and Graph Editor (full set)",
+    "action": "Allow subframe keys (graph mode)",
+    "key": "Graph Editor options → Allow Keyframes Between Frames",
+    "detail": "Usually leave off for frame-accurate video timing",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-234",
+    "category": "Text keyboard commands (when actively editing text)",
+    "action": "Horizontal/vertical Type tool",
+    "key": "`Ctrl+T` (cycle)",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-235",
+    "category": "Text keyboard commands (when actively editing text)",
+    "action": "New text layer",
+    "key": "`Ctrl+Alt+Shift+T`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-236",
+    "category": "Text keyboard commands (when actively editing text)",
+    "action": "Left / center / right align",
+    "key": "`Ctrl+Shift+L/C/R`",
+    "detail": "Paragraph alignment",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-237",
+    "category": "Text keyboard commands (when actively editing text)",
+    "action": "All Caps / Small Caps",
+    "key": "`Ctrl+Shift+K` / `Ctrl+Alt+Shift+K`",
+    "detail": "Text selected",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-238",
+    "category": "Text keyboard commands (when actively editing text)",
+    "action": "Superscript / Subscript",
+    "key": "`Ctrl+Shift+=` / `Ctrl+Alt+Shift+=`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-239",
+    "category": "Text keyboard commands (when actively editing text)",
+    "action": "Reset horizontal / vertical text scale to 100%",
+    "key": "`Ctrl+Shift+X` / `Ctrl+Alt+Shift+X`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-240",
+    "category": "Text keyboard commands (when actively editing text)",
+    "action": "Automatic leading",
+    "key": "`Ctrl+Alt+Shift+A`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-241",
+    "category": "Text keyboard commands (when actively editing text)",
+    "action": "Reset tracking to zero",
+    "key": "`Ctrl+Shift+Q`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-242",
+    "category": "Text keyboard commands (when actively editing text)",
+    "action": "Justify, last line left / right / force",
+    "key": "`Ctrl+Shift+J` / `Ctrl+Alt+Shift+J` / `Ctrl+Shift+F`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-243",
+    "category": "Text keyboard commands (when actively editing text)",
+    "action": "Decrease/increase font size by 2",
+    "key": "`Ctrl+Shift+,` / `Ctrl+Shift+.`",
+    "detail": "Text selected",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-244",
+    "category": "Text keyboard commands (when actively editing text)",
+    "action": "Decrease/increase font size by 10",
+    "key": "`Ctrl+Alt+Shift+,` / `Ctrl+Alt+Shift+.`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-245",
+    "category": "Text keyboard commands (when actively editing text)",
+    "action": "Increase/decrease leading by 2",
+    "key": "`Alt+Down/Up`",
+    "detail": "Between baselines",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-246",
+    "category": "Text keyboard commands (when actively editing text)",
+    "action": "Leading by 10",
+    "key": "`Ctrl+Alt+Down/Up`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-247",
+    "category": "Text keyboard commands (when actively editing text)",
+    "action": "Baseline shift by 2 / 10",
+    "key": "`Alt+Shift+Down/Up` / `Ctrl+Alt+Shift+Down/Up`",
+    "detail": "Vertical text offset",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-248",
+    "category": "Text keyboard commands (when actively editing text)",
+    "action": "Kerning/tracking by 20 / 100 units",
+    "key": "`Alt+Left/Right` / `Ctrl+Alt+Left/Right`",
+    "detail": "1/1000 em units",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-249",
+    "category": "Text keyboard commands (when actively editing text)",
+    "action": "Toggle paragraph composer",
+    "key": "`Ctrl+Alt+Shift+T`",
+    "detail": "Context matters; same keys may mean new text layer elsewhere",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-250",
+    "category": "Text keyboard commands (when actively editing text)",
+    "action": "Move by character / word",
+    "key": "`Left/Right` / `Ctrl+Left/Right`",
+    "detail": "Text caret in a text box",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-251",
+    "category": "Text keyboard commands (when actively editing text)",
+    "action": "Move by line / paragraph",
+    "key": "`Up/Down` / `Ctrl+Up/Down`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-252",
+    "category": "Text keyboard commands (when actively editing text)",
+    "action": "Extend selection by char / word",
+    "key": "`Shift+Left/Right` / `Ctrl+Shift+Left/Right`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-253",
+    "category": "Text keyboard commands (when actively editing text)",
+    "action": "Extend text selection by line",
+    "key": "`Shift+Up/Down`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-254",
+    "category": "Text keyboard commands (when actively editing text)",
+    "action": "Select to line start/end",
+    "key": "`Shift+Home/End`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-255",
+    "category": "Text keyboard commands (when actively editing text)",
+    "action": "Select to text frame beginning/end",
+    "key": "`Ctrl+Shift+Home/End`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-256",
+    "category": "Text keyboard commands (when actively editing text)",
+    "action": "Extend selection to click point",
+    "key": "`Shift+click`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-257",
+    "category": "Text keyboard commands (when actively editing text)",
+    "action": "Select word/line/paragraph/all",
+    "key": "Double/triple/quadruple/quintuple click Type tool",
+    "detail": "Contextual",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-258",
+    "category": "Text keyboard commands (when actively editing text)",
+    "action": "Finish entering text",
+    "key": "`Num Enter`",
+    "detail": "Main `Enter` generally inserts line break",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-259",
+    "category": "Masks, shapes, painting and markers",
+    "action": "New mask",
+    "key": "`Ctrl+Shift+N`",
+    "detail": "On a valid selected layer",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-260",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Select next/previous mask",
+    "key": "Alt + backtick / Alt+Shift+backtick",
+    "detail": "Grave key above Tab",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-261",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Select all vertices of mask",
+    "key": "`Alt+click` mask",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-262",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Free Transform mask points",
+    "key": "Double-click mask with Selection tool, or select mask then `Ctrl+T`",
+    "detail": "Exit `Esc`",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-263",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Scale from center in Free Transform",
+    "key": "`Ctrl+drag`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-264",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Nudge vertices 1/10 pixel-at-view",
+    "key": "`Arrow` / `Shift+Arrow`",
+    "detail": "Magnification-based",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-265",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Toggle smooth ↔ corner mask point",
+    "key": "`Ctrl+Alt+click` vertex",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-266",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Create/redraw Bézier handle",
+    "key": "`Ctrl+Alt+drag` vertex",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-267",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Invert mask",
+    "key": "`Ctrl+Shift+I`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-268",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Mask Feather dialog",
+    "key": "`Ctrl+Shift+F`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-269",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Mask Shape dialog",
+    "key": "`Ctrl+Shift+M`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-270",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Change closed-mask mode during drawing/editing",
+    "key": "`A` Add; `S` Subtract; `D` Darken; `F` Difference; `I` Intersect; `L` Lighten; `N` None",
+    "detail": "Hold the mouse button during mask drawing/modification; see below.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-271",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Group shapes / Ungroup shapes",
+    "key": "`Ctrl+G` / `Ctrl+Shift+G`",
+    "detail": "Selected shape groups",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-272",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Free-transform shape Path",
+    "key": "Select Path then `Ctrl+T`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-273",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Paint foreground/background swap",
+    "key": "`X`",
+    "detail": "When paint tool active",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-274",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Paint black/white default colors",
+    "key": "`D`",
+    "detail": "In paint context; Timeline `D` scrolls to CTI",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-275",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Paint foreground sample",
+    "key": "`Alt+click`",
+    "detail": "In Layer viewer",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-276",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Average 4×4 color sample",
+    "key": "`Ctrl+Alt+click`",
+    "detail": "Paint tool active",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-277",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Resize brush / change hardness",
+    "key": "`Ctrl+drag` / begin `Ctrl+drag`, release Ctrl as dragging",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-278",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Join stroke to prior paint stroke",
+    "key": "Hold `Shift` at start of stroke",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-279",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Clone Stamp source point",
+    "key": "`Alt+click`",
+    "detail": "Set sample before painting",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-280",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Paint opacity 10–90%",
+    "key": "`Num 1–9`",
+    "detail": "Paint context, not layer select",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-281",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Paint opacity 100%",
+    "key": "`Num .`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-282",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Paint flow 10–90%",
+    "key": "`Shift+Num 1–9`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-283",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Paint flow 100%",
+    "key": "`Shift+Num .`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-284",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Move playhead by paint-stroke duration",
+    "key": "`Ctrl+Page Up/Down` or `1/2` (main keyboard)",
+    "detail": "Paint context",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-285",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Marker at CTI",
+    "key": "`Num *`",
+    "detail": "Layer marker if layer selected; else composition marker",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-286",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Marker with dialog",
+    "key": "`Alt+Num *`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-287",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Set numbered comp marker 0–9",
+    "key": "`Shift+0–9` (main keyboard)",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-288",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Jump to numbered comp marker",
+    "key": "`0–9` (main keyboard)",
+    "detail": "Conflicts with number entry if text focused",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-289",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Duration between two keys/markers in Info panel",
+    "key": "`Alt+click` first and second",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-290",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Remove marker",
+    "key": "`Ctrl+click` marker",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-291",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Change mask/track feature region ±1/10",
+    "key": "`Arrow` / `Shift+Arrow`",
+    "detail": "Tracking context",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-292",
+    "category": "Masks, shapes, painting and markers",
+    "action": "Move feature/search region but not attach point ±1/10",
+    "key": "`Alt+Arrow` / `Alt+Shift+Arrow`",
+    "detail": "Tracking context",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-293",
+    "category": "3D cameras, lights, effects, footage and rendering",
+    "action": "New camera",
+    "key": "`Ctrl+Alt+Shift+C`",
+    "detail": "Camera layer",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-294",
+    "category": "3D cameras, lights, effects, footage and rendering",
+    "action": "New light",
+    "key": "`Ctrl+Alt+Shift+L`",
+    "detail": "Light layer",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-295",
+    "category": "3D cameras, lights, effects, footage and rendering",
+    "action": "Camera orbit/pan/dolly mode",
+    "key": "`1` / `2` / `3` (main keyboard)",
+    "detail": "3D-view camera controls",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-296",
+    "category": "3D cameras, lights, effects, footage and rendering",
+    "action": "Universal / Position / Scale / Rotation gizmo",
+    "key": "`V` / `4` / `5` / `6` (main keyboard)",
+    "detail": "3D viewer context",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-297",
+    "category": "3D cameras, lights, effects, footage and rendering",
+    "action": "Camera tool family",
+    "key": "`C` repeated",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-298",
+    "category": "3D cameras, lights, effects, footage and rendering",
+    "action": "3D view 1 / 2 / 3",
+    "key": "`F10` / `F11` / `F12`",
+    "detail": "Defaults Front / Custom View 1 / Active Camera on Windows",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-299",
+    "category": "3D cameras, lights, effects, footage and rendering",
+    "action": "Return previous 3D view",
+    "key": "`Esc`",
+    "detail": "In view context",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-300",
+    "category": "3D cameras, lights, effects, footage and rendering",
+    "action": "Camera look at selected 3D layers",
+    "key": "`Ctrl+Alt+Shift+\\`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-301",
+    "category": "3D cameras, lights, effects, footage and rendering",
+    "action": "With camera tool selected: look at selected",
+    "key": "`F`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-302",
+    "category": "3D cameras, lights, effects, footage and rendering",
+    "action": "With camera tool selected: look at all",
+    "key": "`Ctrl+Shift+F`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-303",
+    "category": "3D cameras, lights, effects, footage and rendering",
+    "action": "Turn Cast Shadows on/off on selected 3D layers",
+    "key": "`Alt+Shift+C`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-304",
+    "category": "3D cameras, lights, effects, footage and rendering",
+    "action": "Import file",
+    "key": "`Ctrl+I`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-305",
+    "category": "3D cameras, lights, effects, footage and rendering",
+    "action": "Import multiple",
+    "key": "`Ctrl+Alt+I`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-306",
+    "category": "3D cameras, lights, effects, footage and rendering",
+    "action": "Add selected project item(s) to active comp",
+    "key": "`Ctrl+/` (main keyboard)",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-307",
+    "category": "3D cameras, lights, effects, footage and rendering",
+    "action": "Replace footage for selected layer(s) with selected project item",
+    "key": "`Ctrl+Alt+/` (main keyboard)",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-308",
+    "category": "3D cameras, lights, effects, footage and rendering",
+    "action": "Swap one layer's footage but preserve setup",
+    "key": "`Alt+drag` Project item onto layer",
+    "detail": "Extremely useful",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-309",
+    "category": "3D cameras, lights, effects, footage and rendering",
+    "action": "Interpret Footage",
+    "key": "`Ctrl+Alt+G`",
+    "detail": "Source FPS, alpha, color, fields",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-310",
+    "category": "3D cameras, lights, effects, footage and rendering",
+    "action": "Remember footage interpretation",
+    "key": "`Ctrl+Alt+C`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-311",
+    "category": "3D cameras, lights, effects, footage and rendering",
+    "action": "Replace project footage item",
+    "key": "`Ctrl+H`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-312",
+    "category": "3D cameras, lights, effects, footage and rendering",
+    "action": "Reload project footage item",
+    "key": "`Ctrl+Alt+L`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-313",
+    "category": "3D cameras, lights, effects, footage and rendering",
+    "action": "Set footage proxy",
+    "key": "`Ctrl+Alt+P`",
+    "detail": "Manage sources efficiently",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-314",
+    "category": "3D cameras, lights, effects, footage and rendering",
+    "action": "Delete footage with no warning",
+    "key": "`Ctrl+Backspace`",
+    "detail": "Dangerous; Project panel context",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-315",
+    "category": "3D cameras, lights, effects, footage and rendering",
+    "action": "Double-click effect in Effects & Presets",
+    "key": "Double-click",
+    "detail": "Applies to selected layers",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-316",
+    "category": "3D cameras, lights, effects, footage and rendering",
+    "action": "Apply last used effect",
+    "key": "`Ctrl+Alt+Shift+E`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-317",
+    "category": "3D cameras, lights, effects, footage and rendering",
+    "action": "Apply last used animation preset",
+    "key": "`Ctrl+Alt+Shift+F`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-318",
+    "category": "3D cameras, lights, effects, footage and rendering",
+    "action": "Remove all effects from selected layers",
+    "key": "`Ctrl+Shift+E`",
+    "detail": "Deletes them",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-319",
+    "category": "3D cameras, lights, effects, footage and rendering",
+    "action": "Add current comp to Render Queue",
+    "key": "`Ctrl+Shift+/`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-320",
+    "category": "3D cameras, lights, effects, footage and rendering",
+    "action": "Add current comp to AME",
+    "key": "`Ctrl+Alt+M`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-321",
+    "category": "3D cameras, lights, effects, footage and rendering",
+    "action": "Save frame",
+    "key": "`Ctrl+Alt+S`",
+    "detail": "Add frame to Render Queue",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-322",
+    "category": "3D cameras, lights, effects, footage and rendering",
+    "action": "Duplicate Render Queue output item",
+    "key": "`Ctrl+Shift+D` in Render Queue",
+    "detail": "In Timeline it instead splits layer",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-323",
+    "category": "Guides, grids, channels and inspection",
+    "action": "Show safe margins",
+    "key": "`'`",
+    "detail": "Title/action safe zones",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-324",
+    "category": "Guides, grids, channels and inspection",
+    "action": "Show grid",
+    "key": "`Ctrl+'`",
+    "detail": "Full grid",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-325",
+    "category": "Guides, grids, channels and inspection",
+    "action": "Show proportional grid",
+    "key": "`Alt+'`",
+    "detail": "Large proportion reference",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-326",
+    "category": "Guides, grids, channels and inspection",
+    "action": "Show rulers",
+    "key": "`Ctrl+R`",
+    "detail": "Drag rulers to create guides",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-327",
+    "category": "Guides, grids, channels and inspection",
+    "action": "Show guides",
+    "key": "`Ctrl+;`",
+    "detail": "Semicolon",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-328",
+    "category": "Guides, grids, channels and inspection",
+    "action": "Snap to grid",
+    "key": "`Ctrl+Shift+'`",
+    "detail": "Toggle",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-329",
+    "category": "Guides, grids, channels and inspection",
+    "action": "Snap to guides",
+    "key": "`Ctrl+Shift+;`",
+    "detail": "Toggle",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-330",
+    "category": "Guides, grids, channels and inspection",
+    "action": "Lock/unlock guides",
+    "key": "`Ctrl+Alt+Shift+;`",
+    "detail": "Keep guides safe",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-331",
+    "category": "Guides, grids, channels and inspection",
+    "action": "Hide/show mask paths, layer controls, bounding boxes",
+    "key": "`Ctrl+Shift+H`",
+    "detail": "Doesn't alter render",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-332",
+    "category": "Guides, grids, channels and inspection",
+    "action": "Active Comp viewer options",
+    "key": "`Ctrl+Alt+U`",
+    "detail": "Includes overlays",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-333",
+    "category": "Guides, grids, channels and inspection",
+    "action": "Show grayscale Red/Green/Blue/Alpha",
+    "key": "`Alt+1/2/3/4`",
+    "detail": "Check matte contamination",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-334",
+    "category": "Guides, grids, channels and inspection",
+    "action": "Show tinted R/G/B channel",
+    "key": "`Alt+Shift+1/2/3`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-335",
+    "category": "Guides, grids, channels and inspection",
+    "action": "Show Straight RGB",
+    "key": "`Alt+Shift+4`",
+    "detail": "Useful for premultiplication checks",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-336",
+    "category": "Guides, grids, channels and inspection",
+    "action": "Alpha boundary in Layer panel",
+    "key": "`Alt+5`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-337",
+    "category": "Guides, grids, channels and inspection",
+    "action": "Alpha overlay in Layer panel",
+    "key": "`Alt+6`",
+    "detail": "",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-338",
+    "category": "Guides, grids, channels and inspection",
+    "action": "Refine Edge X-ray",
+    "key": "`Alt+X`",
+    "detail": "Edge/matte review",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-339",
+    "category": "Less frequent commands and contextual gestures",
+    "action": "Extend an item selection in Project, Effect Controls or Render Queue",
+    "key": "`Shift+Up/Down`",
+    "detail": "Adds adjacent items to the selection; Timeline layer selection uses `Ctrl+Shift+Up/Down`.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-340",
+    "category": "Less frequent commands and contextual gestures",
+    "action": "Change project calculation precision quickly",
+    "key": "`Alt+click` the Project panel bit-depth indicator",
+    "detail": "Cycles project bpc; clicking without Alt opens Project Settings.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-341",
+    "category": "Less frequent commands and contextual gestures",
+    "action": "Reset preferences during application launch",
+    "key": "Hold `Ctrl+Alt+Shift` while launching",
+    "detail": "Follow the reset prompt; use when diagnosing a preference problem, after preserving custom settings.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-342",
+    "category": "Less frequent commands and contextual gestures",
+    "action": "Activate a different view in a multi-view Comp panel",
+    "key": "Middle-click that view",
+    "detail": "Changes active view without changing selected layers.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-343",
+    "category": "Less frequent commands and contextual gestures",
+    "action": "Return to the previously active related composition",
+    "key": "`Shift+Esc`",
+    "detail": "Travels within the current nested-composition hierarchy.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-344",
+    "category": "Less frequent commands and contextual gestures",
+    "action": "Use the third configurable preview binding",
+    "key": "`Shift+Num 0`",
+    "detail": "Has its own Preview-panel settings, alongside Space and Num 0.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-345",
+    "category": "Less frequent commands and contextual gestures",
+    "action": "Restore older RAM/standard preview configurations",
+    "key": "`Alt+click` Reset in Preview",
+    "detail": "Changes preview bindings/settings; ordinary playback remains configurable.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-346",
+    "category": "Less frequent commands and contextual gestures",
+    "action": "Scrub video interactively",
+    "key": "Drag CTI; `Alt+drag` according to Live Update setting",
+    "detail": "Preview updating depends on Live Update. Audio scrubbing uses `Ctrl+drag`.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-347",
+    "category": "Less frequent commands and contextual gestures",
+    "action": "Open footage itself for inspection",
+    "key": "Double-click its Project-panel item",
+    "detail": "Opens the Footage viewer, separate from its layer instance.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-348",
+    "category": "Less frequent commands and contextual gestures",
+    "action": "Open a Timeline layer's source",
+    "key": "`Alt+double-click` that layer",
+    "detail": "Footage sources open in Footage; a precomp layer opens in Layer rather than its source composition.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-349",
+    "category": "Less frequent commands and contextual gestures",
+    "action": "Stretch a layer to a new In/Out reference",
+    "key": "`Ctrl+Shift+,` / `Ctrl+Alt+,`",
+    "detail": "Time-stretch boundary commands; source playback speed changes. Inspect the Time Stretch result.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-350",
+    "category": "Less frequent commands and contextual gestures",
+    "action": "Expand selected effects in Effect Controls",
+    "key": "`Ctrl` + backtick",
+    "detail": "Same expansion principle as Timeline; click the intended panel first.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-351",
+    "category": "Less frequent commands and contextual gestures",
+    "action": "Erase only the latest paint stroke temporarily",
+    "key": "Hold `Ctrl+Shift` with a paint tool",
+    "detail": "Temporary Eraser / Last Stroke Only behavior.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-352",
+    "category": "Less frequent commands and contextual gestures",
+    "action": "Reposition Clone Stamp overlay/sample relationship",
+    "key": "`Alt+Shift+drag` using Clone Stamp",
+    "detail": "Edits Offset when aligned, Source Position when unaligned.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-353",
+    "category": "Less frequent commands and contextual gestures",
+    "action": "Recall one of five Clone Stamp presets",
+    "key": "Main-keyboard `3`–`7`",
+    "detail": "Paint/Clone context; these digits have different meanings in camera or marker contexts.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-354",
+    "category": "Less frequent commands and contextual gestures",
+    "action": "Make a copy of a Clone Stamp preset",
+    "key": "`Alt+click` its preset button in Paint",
+    "detail": "Duplicates settings for another paint setup.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-355",
+    "category": "Less frequent commands and contextual gestures",
+    "action": "Advance/rewind by the paint stroke duration",
+    "key": "`Ctrl+Page Down/Up`, or main-keyboard `2/1`",
+    "detail": "Moves time by the configured Duration; it does not change Duration itself.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-356",
+    "category": "Less frequent commands and contextual gestures",
+    "action": "Text caret to start/end of current line",
+    "key": "`Home` / `End`",
+    "detail": "Text editing only; Timeline uses these for time navigation.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-357",
+    "category": "Less frequent commands and contextual gestures",
+    "action": "Select all characters in one text layer",
+    "key": "Double-click the text layer",
+    "detail": "Enters text editing with its text selected.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-358",
+    "category": "Less frequent commands and contextual gestures",
+    "action": "Vertical text: select adjacent characters",
+    "key": "`Shift+Up/Down`",
+    "detail": "Vertical typography follows its writing direction.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-359",
+    "category": "Less frequent commands and contextual gestures",
+    "action": "Vertical text: select words",
+    "key": "`Ctrl+Shift+Up/Down`",
+    "detail": "Word-sized text selection.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-360",
+    "category": "Less frequent commands and contextual gestures",
+    "action": "Vertical text: select adjacent lines",
+    "key": "`Shift+Left/Right`",
+    "detail": "Extends selection across vertical text columns.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-361",
+    "category": "Less frequent commands and contextual gestures",
+    "action": "Vertical text: caret by character / line / word / paragraph",
+    "key": "`Up/Down` / `Left/Right` / `Ctrl+Up/Down` / `Ctrl+Left/Right`",
+    "detail": "Direction differs from horizontal text.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-362",
+    "category": "Less frequent commands and contextual gestures",
+    "action": "Vertical text alignment: top / center / bottom",
+    "key": "`Ctrl+Shift+L/C/R`",
+    "detail": "Same alignment chords as horizontal text, interpreted vertically.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-363",
+    "category": "Less frequent commands and contextual gestures",
+    "action": "Round a rectangle while drawing",
+    "key": "`Up/Down`",
+    "detail": "Adjusts roundness; on polygon/star tools these keys adjust sides/points.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-364",
+    "category": "Less frequent commands and contextual gestures",
+    "action": "Set rectangle corners to sharp / maximum roundness while drawing",
+    "key": "`Left/Right`",
+    "detail": "For polygons/stars, adjusts outer roundness instead.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-365",
+    "category": "Less frequent commands and contextual gestures",
+    "action": "Repeat a Render Queue item with the original output filename",
+    "key": "`Ctrl+Shift+D` in Render Queue",
+    "detail": "Check destination before rendering; this duplicate keeps the same filename.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-366",
+    "category": "Precision editing and frame capture",
+    "action": "Select every key on a property's graph",
+    "key": "`Alt+click` a segment",
+    "detail": "Selects the property’s keys.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-367",
+    "category": "Precision editing and frame capture",
+    "action": "Constrain box movement",
+    "key": "`Shift+drag` inside box",
+    "detail": "Time-only or value-only movement.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-368",
+    "category": "Precision editing and frame capture",
+    "action": "Scale around the box anchor",
+    "key": "`Ctrl+drag` a box handle",
+    "detail": "Expands/contracts around its pivot.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-369",
+    "category": "Precision editing and frame capture",
+    "action": "Adjust only one corner",
+    "key": "`Alt+drag` a corner handle",
+    "detail": "Changes that corner.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-370",
+    "category": "Precision editing and frame capture",
+    "action": "Taper values across the selection",
+    "key": "`Ctrl+Alt+drag` a handle",
+    "detail": "Changes an animation's amplitude progressively.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-371",
+    "category": "Precision editing and frame capture",
+    "action": "Raise/lower one side",
+    "key": "`Ctrl+Alt+Shift+drag` a handle",
+    "detail": "Tilts the selected value pattern.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-372",
+    "category": "Precision editing and frame capture",
+    "action": "Compare two looks inside AE",
+    "key": "`Shift+F5…F8`, then `F5…F8`",
+    "detail": "Viewer snapshots for comparison.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "id": "key-373",
+    "category": "Precision editing and frame capture",
+    "action": "Save a still using output settings",
+    "key": "`Ctrl+Alt+S`",
+    "detail": "Queues the current frame for rendering.",
+    "source": "shortcuts",
+    "verification": "Check installed 26.5 shortcut editor; focus, selection and custom presets matter."
+  },
+  {
+    "action": "Quick Apply",
+    "key": "Ctrl+Enter",
+    "detail": "Outside the dialog opens Edit → Quick Apply. Type e:, p: or m: to filter.",
+    "source": "quick-apply",
+    "category": "Modern stable workflows",
+    "verification": "Adobe documentation checked 2026-10-28; confirm custom preset and focus locally.",
+    "id": "key-374"
+  },
+  {
+    "action": "Apply selected Quick Apply result",
+    "key": "Enter",
+    "detail": "Inside Quick Apply applies/runs the highlighted result on the intended selection.",
+    "source": "quick-apply",
+    "category": "Modern stable workflows",
+    "verification": "Adobe documentation checked 2026-10-28; confirm custom preset and focus locally.",
+    "id": "key-375"
+  },
+  {
+    "action": "Quick Apply on a new layer",
+    "key": "Ctrl+Enter",
+    "detail": "Inside Quick Apply creates a new solid/layer for the selected effect or preset; read result modifier hints.",
+    "source": "quick-apply",
+    "category": "Modern stable workflows",
+    "verification": "Adobe documentation checked 2026-10-28; confirm custom preset and focus locally.",
+    "id": "key-376"
+  },
+  {
+    "action": "Quick Apply on a new adjustment layer",
+    "key": "Ctrl+Alt+Enter",
+    "detail": "Inside Quick Apply; adjustment affects underlying composited layers.",
+    "source": "quick-apply",
+    "category": "Modern stable workflows",
+    "verification": "Adobe documentation checked 2026-10-28; confirm custom preset and focus locally.",
+    "id": "key-377"
+  },
+  {
+    "action": "Move staggered selection start to CTI",
+    "key": "Shift+[",
+    "detail": "Earliest selected In meets CTI; relative timing is preserved.",
+    "source": "layers",
+    "category": "Modern stable workflows",
+    "verification": "Adobe documentation checked 2026-10-28; confirm custom preset and focus locally.",
+    "id": "key-378"
+  },
+  {
+    "action": "Move staggered selection end to CTI",
+    "key": "Shift+]",
+    "detail": "Latest selected Out meets CTI; relative timing is preserved.",
+    "source": "layers",
+    "category": "Modern stable workflows",
+    "verification": "Adobe documentation checked 2026-10-28; confirm custom preset and focus locally.",
+    "id": "key-379"
+  },
+  {
+    "action": "Trim relative selection In points",
+    "key": "Alt+Shift+[",
+    "detail": "Uses earliest selected In as reference; inspect source handles.",
+    "source": "layers",
+    "category": "Modern stable workflows",
+    "verification": "Adobe documentation checked 2026-10-28; confirm custom preset and focus locally.",
+    "id": "key-380"
+  },
+  {
+    "action": "Trim relative selection Out points",
+    "key": "Alt+Shift+]",
+    "detail": "Uses latest selected Out as reference; inspect source handles.",
+    "source": "layers",
+    "category": "Modern stable workflows",
+    "verification": "Adobe documentation checked 2026-10-28; confirm custom preset and focus locally.",
+    "id": "key-381"
+  },
+  {
+    "action": "Proportional Scrubbing",
+    "key": "Ctrl+Alt+drag property hot text",
+    "detail": "Distributes numerical change in selection order; not Quick Offset on bars/keys.",
+    "source": "proportional",
+    "category": "Modern stable workflows",
+    "verification": "Adobe documentation checked 2026-10-28; confirm custom preset and focus locally.",
+    "id": "key-382"
+  },
+  {
+    "action": "Toggle guide units while dragging",
+    "key": "Alt during guide drag",
+    "detail": "26.5: switch pixel/percent units.",
+    "source": "guides",
+    "category": "Modern stable workflows",
+    "verification": "Adobe documentation checked 2026-10-28; confirm custom preset and focus locally.",
+    "id": "key-383"
+  },
+  {
+    "action": "Toggle guide reference while dragging",
+    "key": "Ctrl during guide drag",
+    "detail": "26.5: toggle pinning while retaining visual position; Lock Guides is separate.",
+    "source": "guides",
+    "category": "Modern stable workflows",
+    "verification": "Adobe documentation checked 2026-10-28; confirm custom preset and focus locally.",
+    "id": "key-384"
+  },
+  {
+    "action": "Copy rendered frame to clipboard",
+    "key": "Ctrl+Alt+Shift+F5",
+    "detail": "Composition/Layer/Footage viewer. Display transform and Transparency Grid affect the copied result.",
+    "source": "copy-frame",
+    "category": "Modern stable workflows",
+    "verification": "Adobe documentation checked 2026-10-28; confirm custom preset and focus locally.",
+    "id": "key-385"
+  },
+  {
+    "action": "Object Matte tool",
+    "key": "Toolbar; verify binding in installed editor",
+    "detail": "Adobe lists Ctrl+W but general shortcuts assign it to Close; use toolbar or verify/remap rather than guessing context.",
+    "source": "object-matte",
+    "category": "Modern stable workflows",
+    "verification": "Adobe documentation checked 2026-10-28; confirm custom preset and focus locally.",
+    "id": "key-386"
+  }
+]

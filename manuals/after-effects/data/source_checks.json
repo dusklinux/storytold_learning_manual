@@ -1,0 +1,306 @@
+{
+  "checkedAt": "2026-10-28T04:19:18.550548+00:00",
+  "method": "HTTP GET; status and hash establish retrieval only. Facts require editorial comparison; see AUDIT.md.",
+  "sources": [
+    {
+      "source": "whats-new",
+      "url": "https://helpx.adobe.com/after-effects/desktop/what-s-new/whats-new.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "beta",
+      "url": "https://helpx.adobe.com/after-effects/desktop/what-s-new/after-effects-beta.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "known-issues",
+      "url": "https://helpx.adobe.com/after-effects/desktop/troubleshooting/fixed-and-known-issues/known-issues-after-effects.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "quick-apply",
+      "url": "https://helpx.adobe.com/after-effects/desktop/animate-in-after-effects/animation-keyframes/quick-apply.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "object-matte",
+      "url": "https://helpx.adobe.com/after-effects/desktop/roto-brush-and-refine-matte/roto-brush/object-matte.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "guides",
+      "url": "https://helpx.adobe.com/after-effects/desktop/view-and-preview/preview-video-and-audio/guide-creation-and-management.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "effect-controls",
+      "url": "https://helpx.adobe.com/after-effects/desktop/apply-effects-and-animation-presets/effects-and-animation-presets/effects-animation-presets-overview.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "effects-overview",
+      "url": "https://helpx.adobe.com/after-effects/desktop/apply-effects-and-animation-presets/effects-and-animation-presets/effects-animation-presets-overview.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "proportional",
+      "url": "https://helpx.adobe.com/after-effects/desktop/animate-in-after-effects/animation-keyframes/proportional-scrubbing-in-timeline.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "layers",
+      "url": "https://helpx.adobe.com/after-effects/desktop/work-with-layers/select-and-arrange-layers/selecting-arranging-layers.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "svg",
+      "url": "https://helpx.adobe.com/after-effects/desktop/import-files/import-svg-files/import-svg-files.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "variable-fonts",
+      "url": "https://helpx.adobe.com/after-effects/desktop/variable-font-axes/work-with-variable-font-axes/working-with-variable-font-axes.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "meshes",
+      "url": "https://helpx.adobe.com/after-effects/desktop/work-with-3d-composition/create-parametric-meshes/working-with-parametric-meshes.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "substance",
+      "url": "https://helpx.adobe.com/after-effects/desktop/work-with-3d-composition/work-with-materials/apply-substance-3d-materials.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "material-properties",
+      "url": "https://helpx.adobe.com/after-effects/desktop/work-with-3d-composition/work-with-materials/modify-materials-properties-of-3d-layers.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "advanced-dof",
+      "url": "https://helpx.adobe.com/after-effects/desktop/work-with-3d-composition/work-with-3d-scene-depth-data/enable-in_engine-depth-of-field-in-advanced-3d.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "noise",
+      "url": "https://helpx.adobe.com/after-effects/desktop/apply-effects-and-animation-presets/list-of-effects/noise-grain-effects.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "keying-effects",
+      "url": "https://helpx.adobe.com/after-effects/desktop/animate-in-after-effects/work-with-keying-effects/keying-effects.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "audio-effects",
+      "url": "https://helpx.adobe.com/after-effects/desktop/apply-effects-and-animation-presets/list-of-effects/audio-effects.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "copy-frame",
+      "url": "https://helpx.adobe.com/after-effects/desktop/view-and-preview/copy-frames/copy-frame-to-clipboard.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "null-controllers",
+      "url": "https://helpx.adobe.com/after-effects/desktop/drawing-painting-and-paths/null-controllers/create-nulls-for-positional-properties-and-paths.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "profiler",
+      "url": "https://helpx.adobe.com/after-effects/desktop/work-with-compositions/composition-profiler/composition-profiler.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "compressed-cache",
+      "url": "https://helpx.adobe.com/after-effects/desktop/view-and-preview/preview-video-and-audio/lossless-compressed-playback.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "preview",
+      "url": "https://helpx.adobe.com/after-effects/desktop/view-and-preview/preview-video-and-audio/previewing.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "effect-manager",
+      "url": "https://helpx.adobe.com/after-effects/desktop/apply-effects-and-animation-presets/effects-and-animation-presets/effect-manager.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "data",
+      "url": "https://helpx.adobe.com/after-effects/desktop/animate-in-after-effects/data-driven-animation/data-driven-animations.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "h264",
+      "url": "https://helpx.adobe.com/after-effects/desktop/render-and-export/export-h-264-from-the-after-effects/exporting-h264-from-the-after-effects-render-queue.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "mask-tracking",
+      "url": "https://helpx.adobe.com/after-effects/desktop/animate-in-after-effects/track-mask/mask-tracking.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "release",
+      "url": "https://helpx.adobe.com/after-effects/desktop/what-s-new/release-notes-after-effects.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "history",
+      "url": "https://github.com/AdobeDocs/after-effects-feature-history",
+      "resolvedURL": "https://github.com/AdobeDocs/after-effects-feature-history",
+      "status": 200,
+      "bytes": 321627,
+      "sha256": "905c24169856551a1fc034cb7044a2f6768131c931462222551af6ca61fd0ec1"
+    },
+    {
+      "source": "fixes",
+      "url": "https://helpx.adobe.com/after-effects/desktop/troubleshooting/fixed-and-known-issues/fixed-issues.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "requirements",
+      "url": "https://helpx.adobe.com/after-effects/desktop/get-started/technical-requirements/system-requirements.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "shortcuts",
+      "url": "https://helpx.adobe.com/after-effects/desktop/get-started/keyboard-shortcuts/keyboard-shortcuts-reference.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "help",
+      "url": "https://helpx.adobe.com/after-effects/desktop.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "effects",
+      "url": "https://helpx.adobe.com/after-effects/desktop/apply-effects-and-animation-presets/effects-and-animation-presets/effect-list.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "expressions",
+      "url": "https://helpx.adobe.com/after-effects/desktop/work-with-expressions/expression-language-reference/expression-language-reference.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "expressions-basics",
+      "url": "https://helpx.adobe.com/after-effects/desktop/work-with-expressions/expression-basics/expression-language.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "color",
+      "url": "https://helpx.adobe.com/after-effects/desktop/adjust-colors/color-management/color-management.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "ocio",
+      "url": "https://helpx.adobe.com/after-effects/desktop/adjust-colors/opencolorio-and-aces-color-management/opencolorio-aces-color-management.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "mogrt",
+      "url": "https://helpx.adobe.com/after-effects/desktop/motion-graphics/work-with-motion-graphics-templates/creating-motion-graphics-templates.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "memory",
+      "url": "https://helpx.adobe.com/after-effects/desktop/memory-storage-performance/memory-and-storage/memory-storage1.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "multiframe",
+      "url": "https://helpx.adobe.com/after-effects/desktop/render-and-export/multi-frame-rendering/multi-frame-rendering.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "precompose",
+      "url": "https://helpx.adobe.com/after-effects/desktop/work-with-compositions/precomposing-and-nesting/precomposing-nesting-pre-rendering.html",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "editorialReview": {
+    "date": "2026-10-28",
+    "method": "Adobe public documentation retrieved through web research; this is separate from automated HTTP status below. No licensed AE runtime validation.",
+    "sourceKeys": [
+      "release",
+      "whats-new",
+      "beta",
+      "requirements",
+      "shortcuts",
+      "effects",
+      "quick-apply",
+      "object-matte",
+      "guides",
+      "effects-overview",
+      "proportional",
+      "svg",
+      "variable-fonts",
+      "meshes",
+      "substance",
+      "advanced-dof",
+      "noise",
+      "keying-effects",
+      "audio-effects",
+      "copy-frame",
+      "null-controllers",
+      "expressions",
+      "ocio",
+      "known-issues",
+      "fixes",
+      "memory",
+      "multiframe",
+      "effect-manager",
+      "mask-tracking"
+    ],
+    "conflicts": [
+      "Object Matte Ctrl+W versus Close",
+      "26.5 guide import preservation versus retained older notes",
+      "Known compressed-cache crash notice explicitly names 26.0/26.2"
+    ]
+  }
+}

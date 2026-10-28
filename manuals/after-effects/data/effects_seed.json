@@ -1,0 +1,2702 @@
+[
+  {
+    "id": "fx-001",
+    "name": "Camera Lens Blur",
+    "category": "Blur & Sharpen",
+    "summary": "Lens-like bokeh; can use Blur Map for local/depth-varying blur, including highlights and focus control. Heavier than simple blur.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-002",
+    "name": "Gaussian Blur",
+    "category": "Blur & Sharpen",
+    "summary": "Smooth, conventional uniform blur. Fast and reliable; repeat edge pixels if borders appear.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-003",
+    "name": "Fast Box Blur",
+    "category": "Blur & Sharpen",
+    "summary": "Efficient box approximation; useful in matte softening, textures and previews.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-004",
+    "name": "Directional Blur",
+    "category": "Blur & Sharpen",
+    "summary": "Linear blur along an angle; simulated speed smear/trails.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-005",
+    "name": "CC Radial Blur",
+    "category": "Blur & Sharpen",
+    "summary": "Radial directional or zoom-streak blur based on a center; useful for impact effects.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-006",
+    "name": "CC Radial Fast Blur",
+    "category": "Blur & Sharpen",
+    "summary": "Faster radial-style effect; fewer/other controls than standard.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-007",
+    "name": "Radial Blur",
+    "category": "Blur & Sharpen",
+    "summary": "Older rotational/zoom radial blur option; still useful in some looks, not automatically obsolete.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-008",
+    "name": "CC Vector Blur",
+    "category": "Blur & Sharpen",
+    "summary": "Uses vectors/texture for stylized flow-like warping/blurring.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-009",
+    "name": "Compound Blur",
+    "category": "Blur & Sharpen",
+    "summary": "Uses a secondary layer's brightness to change blur amount across the image.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-010",
+    "name": "Channel Blur",
+    "category": "Blur & Sharpen",
+    "summary": "Independently blurs R/G/B/A channels; potential color fringes and alpha softening.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-011",
+    "name": "Bilateral Blur",
+    "category": "Blur & Sharpen",
+    "summary": "Smooths regions while retaining prominent edges.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-012",
+    "name": "Smart Blur",
+    "category": "Blur & Sharpen",
+    "summary": "Smooths relatively uniform regions but attempts to protect edges.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-013",
+    "name": "Sharpen",
+    "category": "Blur & Sharpen",
+    "summary": "Basic edge enhancement; halos appear if overdone.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-014",
+    "name": "Unsharp Mask",
+    "category": "Blur & Sharpen",
+    "summary": "Controlled edge contrast sharpening, Amount/Radius/Threshold.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-015",
+    "name": "Camera-Shake Deblur",
+    "category": "Blur & Sharpen",
+    "summary": "Attempts to mitigate motion-induced camera blur; may create artifacts.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-016",
+    "name": "CC Cross Blur",
+    "category": "Blur & Sharpen",
+    "summary": "Cross-shaped/anamorphic-style blur direction.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-017",
+    "name": "CC Composite",
+    "category": "Channel / Matte",
+    "summary": "Composites the processed result against the layer's underlying original input inside one effect pipeline; try RGB-only/alpha and blend settings when nothing seems to happen.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-018",
+    "name": "Blend",
+    "category": "Channel / Matte",
+    "summary": "Blends the current layer with another input layer.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-019",
+    "name": "Set Matte",
+    "category": "Channel / Matte",
+    "summary": "Pull alpha or luminance from a specified source and inject it into effect pipeline.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-020",
+    "name": "Shift Channels",
+    "category": "Channel / Matte",
+    "summary": "Route/copy individual channels; build simple RGB split/aberration effects.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-021",
+    "name": "Set Channels",
+    "category": "Channel / Matte",
+    "summary": "Assemble output channels from multiple source channels/layers.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-022",
+    "name": "Channel Combiner",
+    "category": "Channel / Matte",
+    "summary": "Converts/composes color channels, including channel-to-lightness conversions.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-023",
+    "name": "Invert",
+    "category": "Channel / Matte",
+    "summary": "Invert color values or selected channels, including alpha where chosen.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-024",
+    "name": "Minimax",
+    "category": "Channel / Matte",
+    "summary": "Grow/shrink bright or dark regions, useful for matte expansion/erosion.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-025",
+    "name": "Remove Color Matting",
+    "category": "Channel / Matte",
+    "summary": "Correct halo caused by premultiplication against an unwanted matte color.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-026",
+    "name": "Calculations",
+    "category": "Channel / Matte",
+    "summary": "Combine input layer channels and mathematical/compositing operations.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-027",
+    "name": "Solid Composite",
+    "category": "Channel / Matte",
+    "summary": "Composites layer over specified solid color within the layer bounds; useful for creating black/white map backgrounds.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-028",
+    "name": "Mocha Shape",
+    "category": "Matte",
+    "summary": "Workflow-specific Mocha-created masks/mattes if available.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-029",
+    "name": "Keylight (1.2)",
+    "category": "Keying",
+    "summary": "General green/blue screen chroma key with detailed Screen Matte controls.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-030",
+    "name": "Key Cleaner",
+    "category": "Keying",
+    "summary": "Recover/clean key edges, especially fine outlines.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-031",
+    "name": "Advanced Spill Suppressor",
+    "category": "Keying",
+    "summary": "Remove undesirable green/blue color contamination on subject edges.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-032",
+    "name": "Linear Color Key",
+    "category": "Keying",
+    "summary": "Remove specified RGB color/range; controlled simple key.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-033",
+    "name": "Color Difference Key",
+    "category": "Keying",
+    "summary": "Difference-based blue/green keying.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-034",
+    "name": "Color Range",
+    "category": "Keying",
+    "summary": "Target color range; sometimes useful for selections but can be noisy.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-035",
+    "name": "Difference Matte",
+    "category": "Keying",
+    "summary": "Remove area resembling clean background reference.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-036",
+    "name": "Extract",
+    "category": "Keying",
+    "summary": "Use luminance thresholds to isolate bright/dark regions.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-037",
+    "name": "Inner/Outer Key",
+    "category": "Keying",
+    "summary": "Separate inner/outer edges for difficult mattes.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-038",
+    "name": "CC Simple Wire Removal",
+    "category": "Keying",
+    "summary": "Remove linear cables/wires across footage.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-039",
+    "name": "Color Key",
+    "category": "Obsolete / compatibility only",
+    "summary": "Obsolete. Retained for compatibility; not mandatory in modern key workflow.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-040",
+    "name": "Lumetri Color",
+    "category": "Color Correction",
+    "summary": "Comprehensive familiar color grading (basic, curves, color wheels, HSL secondary, vignette where available).",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-041",
+    "name": "Curves",
+    "category": "Color Correction",
+    "summary": "Precise tonal/channel mapping, matte contrast, look creation.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-042",
+    "name": "Exposure",
+    "category": "Color Correction",
+    "summary": "Adjust photographic exposure and tonal offset; useful in higher-bit-depth workflows.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-043",
+    "name": "Hue/Saturation",
+    "category": "Color Correction",
+    "summary": "Target hue, saturation and lightness globally or ranges.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-044",
+    "name": "Black & White",
+    "category": "Color Correction",
+    "summary": "Tonal monochrome conversion with channel weights.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-045",
+    "name": "Brightness & Contrast",
+    "category": "Color Correction",
+    "summary": "Basic global correction; limited compared with Curves.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-046",
+    "name": "Vibrance",
+    "category": "Color Correction",
+    "summary": "Prioritize less-saturated color areas over skin tones in many cases.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-047",
+    "name": "Selective Color",
+    "category": "Color Correction",
+    "summary": "Fine color-group adjustment.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-048",
+    "name": "Channel Mixer",
+    "category": "Color Correction",
+    "summary": "Change RGB output from channel mixtures, make custom grayscale.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-049",
+    "name": "Leave Color",
+    "category": "Color Correction",
+    "summary": "Retain one selected hue while desaturating others.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-050",
+    "name": "Colorama",
+    "category": "Color Correction",
+    "summary": "Map luminance/phase to customizable color palette.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-051",
+    "name": "Color Link",
+    "category": "Color Correction",
+    "summary": "Match/link colors in layer-based workflows.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-052",
+    "name": "Color Stabilizer",
+    "category": "Color Correction",
+    "summary": "Correct fluctuating color using sample areas.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-053",
+    "name": "Equalize",
+    "category": "Color Correction",
+    "summary": "Redistribution of intensity histogram; stylized image contrast.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-054",
+    "name": "Photo Filter",
+    "category": "Color Correction",
+    "summary": "Warm/cool photographic filter color.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-055",
+    "name": "Shadow/Highlight",
+    "category": "Color Correction",
+    "summary": "Recover local dark/light detail; can flatten images.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-056",
+    "name": "Gamma/Pedestal/Gain",
+    "category": "Color Correction",
+    "summary": "Channel/tonal control using photographic video parameters.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-057",
+    "name": "PS Arbitrary Map",
+    "category": "Color Correction",
+    "summary": "Photoshop arbitrary-map transfer function.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-058",
+    "name": "Apply Color LUT",
+    "category": "Utility",
+    "summary": "Apply LUT transform; must use appropriate input color space to avoid bad look/double transform.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-059",
+    "name": "Color Profile Converter",
+    "category": "Utility",
+    "summary": "Convert between color-profile spaces; distinct from simply applying a look LUT.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-060",
+    "name": "Bezier Warp",
+    "category": "Distort / Transform",
+    "summary": "Warp whole image using edge/corner Bézier mesh handles; useful for cloth/smoke edges.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-061",
+    "name": "Mesh Warp",
+    "category": "Distort / Transform",
+    "summary": "Fine multi-cell deformation; more localized control.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-062",
+    "name": "Liquify",
+    "category": "Distort / Transform",
+    "summary": "Brush deformation/mesh for facial distortions, fire, organic visuals.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-063",
+    "name": "Displacement Map",
+    "category": "Distort / Transform",
+    "summary": "Another layer's brightness/color shifts pixels horizontally/vertically; depth-map illusion, water, ripples.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-064",
+    "name": "Transform",
+    "category": "Distort / Transform",
+    "summary": "Effect-order-aware extra transform; better than moving an entire layer when you need transform between effects.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-065",
+    "name": "Turbulent Displace",
+    "category": "Distort / Transform",
+    "summary": "Organic bubbling/wavy displacement; great for smoke, fire, animated drawn art.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-066",
+    "name": "Wave Warp",
+    "category": "Distort / Transform",
+    "summary": "Directional sine-wave fabric/hair/flag/river motion; Pinning controls where waves are suppressed.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-067",
+    "name": "Warp",
+    "category": "Distort / Transform",
+    "summary": "Preset-type arcs, bulges, flags, fisheye and other deformable shapes.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-068",
+    "name": "CC Bend It",
+    "category": "Distort / Transform",
+    "summary": "Bend along points, fast for organic/tube bends.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-069",
+    "name": "CC Bender",
+    "category": "Distort / Transform",
+    "summary": "Bend based on bounding region with different behavior/controls.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-070",
+    "name": "CC Blobbylize",
+    "category": "Distort / Transform",
+    "summary": "Glossy melted/liquid-like blobby shapes; useful for fluid motion design.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-071",
+    "name": "CC Flo Motion",
+    "category": "Distort / Transform",
+    "summary": "Localized distortions around two control points.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-072",
+    "name": "CC Griddler",
+    "category": "Distort / Transform",
+    "summary": "Grid-based segmentation/deformation.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-073",
+    "name": "CC Lens",
+    "category": "Distort / Transform",
+    "summary": "Bulging/refracting lens distortion.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-074",
+    "name": "CC Page Turn",
+    "category": "Distort / Transform",
+    "summary": "Flip/curl page.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-075",
+    "name": "CC Power Pin",
+    "category": "Distort / Transform",
+    "summary": "Pin four corners of footage to a changing quadrilateral; screen replacement.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-076",
+    "name": "Corner Pin",
+    "category": "Distort / Transform",
+    "summary": "Four-corner pinning; simpler option, still valid, not universally obsolete.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-077",
+    "name": "CC Ripple Pulse",
+    "category": "Distort / Transform",
+    "summary": "Dynamic ripples that usually need animated Pulse/Amplitude values.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-078",
+    "name": "CC Slant",
+    "category": "Distort / Transform",
+    "summary": "Skew/slant geometry.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-079",
+    "name": "CC Tiler",
+    "category": "Distort / Transform",
+    "summary": "Copies a layer in tiles for infinite-space visual patterns.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-080",
+    "name": "Mirror",
+    "category": "Distort / Transform",
+    "summary": "Reflect content across adjustable line.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-081",
+    "name": "Offset",
+    "category": "Distort / Transform",
+    "summary": "Wrap image as it moves; seamless scrolling backgrounds.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-082",
+    "name": "Optics Compensation",
+    "category": "Distort / Transform",
+    "summary": "Fisheye / undistort lens geometry; Reverse Lens Distortion changes direction.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-083",
+    "name": "Polar Coordinates",
+    "category": "Distort / Transform",
+    "summary": "Rectangle↔polar map (tunnels/planet rings/clock-like effects).",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-084",
+    "name": "Reshape",
+    "category": "Distort / Transform",
+    "summary": "Morph one drawn silhouette toward another using masks.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-085",
+    "name": "Ripple",
+    "category": "Distort / Transform",
+    "summary": "Water-surface-style waves.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-086",
+    "name": "Rolling Shutter Repair",
+    "category": "Distort / Transform",
+    "summary": "Correct skew/wobble artifacts from rolling-shutter cameras.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-087",
+    "name": "Twirl",
+    "category": "Distort / Transform",
+    "summary": "Twist pixels around center.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-088",
+    "name": "Warp Stabilizer",
+    "category": "Distort / Transform",
+    "summary": "Automatic image stabilization; separate from intentionally creative warp.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-089",
+    "name": "Detail-preserving Upscale",
+    "category": "Distort / Transform",
+    "summary": "More edge-aware scaling than simple magnification; evaluate fine details/halos.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-090",
+    "name": "4-Color Gradient",
+    "category": "Generate",
+    "summary": "Four-point color interpolation, useful backgrounds.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-091",
+    "name": "Gradient Ramp",
+    "category": "Generate",
+    "summary": "Linear/radial gradient from start to end control points.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-092",
+    "name": "Grid",
+    "category": "Generate",
+    "summary": "Draw a grid, useful graphical background or to diagnose warp.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-093",
+    "name": "Lens Flare",
+    "category": "Generate",
+    "summary": "Simulated flare based on a point in the frame.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-094",
+    "name": "Radio Waves",
+    "category": "Generate",
+    "summary": "Expanding rings/ripples; great for motion graphics.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-095",
+    "name": "Scribble",
+    "category": "Generate",
+    "summary": "Animated scribble lines in masked regions.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-096",
+    "name": "Stroke",
+    "category": "Generate",
+    "summary": "Render one or more mask paths with animated Start/End; glows/outlined drawings.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-097",
+    "name": "Vegas",
+    "category": "Generate",
+    "summary": "Animated outlines/highlights using mask/contour paths.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-098",
+    "name": "Write-on",
+    "category": "Generate",
+    "summary": "Frame-accumulating paint-like writing.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-099",
+    "name": "Fractal Noise",
+    "category": "Noise & Grain",
+    "summary": "Rich coherent noise. Animate Evolution/Offset Turbulence, transform for scale, use Evolution Options for cycle where supported.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-100",
+    "name": "Turbulent Noise",
+    "category": "Noise & Grain",
+    "summary": "Related procedural pattern with different rendering/performance/features; not “always faster” in every project.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-101",
+    "name": "Noise",
+    "category": "Noise & Grain",
+    "summary": "Pixel-level random texture/dither/grain.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-102",
+    "name": "Dust & Scratches",
+    "category": "Noise & Grain",
+    "summary": "Remove small specks or produce painterly smoothing at high values.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-103",
+    "name": "Noise Alpha",
+    "category": "Noise & Grain",
+    "summary": "Randomize transparency.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-104",
+    "name": "CC Particle World",
+    "category": "Simulation",
+    "summary": "3D-like particle generator with birth rate, producer, physics, particle type.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-105",
+    "name": "CC Particle Systems II",
+    "category": "Simulation",
+    "summary": "Simpler particle bursts/trails.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-106",
+    "name": "Particle Playground",
+    "category": "Simulation",
+    "summary": "Rich older multi-input particle system, more configuration.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-107",
+    "name": "CC Ball Action",
+    "category": "Simulation",
+    "summary": "Turns input into grids of balls—great for scattering/reforming graphics.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-108",
+    "name": "CC Pixel Polly",
+    "category": "Simulation",
+    "summary": "Shatters source pixels/regions as simulated chunks.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-109",
+    "name": "Shatter",
+    "category": "Simulation",
+    "summary": "Break objects apart with forces/debris/camera.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-110",
+    "name": "CC Mr. Mercury",
+    "category": "Simulation",
+    "summary": "Viscous liquid-like emitted blobs/droplets.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-111",
+    "name": "Foam",
+    "category": "Simulation",
+    "summary": "Bubble simulation from flow/birth parameters.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-112",
+    "name": "CC Bubbles",
+    "category": "Simulation",
+    "summary": "Floating/refractive bubbles sampling underlying image appearance.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-113",
+    "name": "CC Drizzle",
+    "category": "Simulation",
+    "summary": "Droplet surface ripples.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-114",
+    "name": "CC Hair",
+    "category": "Simulation",
+    "summary": "Bundled hair/strand simulation effect.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-115",
+    "name": "CC Scatterize",
+    "category": "Simulation",
+    "summary": "Scatter/fragment look.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-116",
+    "name": "CC Star Burst",
+    "category": "Simulation",
+    "summary": "Starfield/travel visual.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-117",
+    "name": "Card Dance",
+    "category": "Simulation",
+    "summary": "Animate source as discrete cards driven by control map.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-118",
+    "name": "Caustics",
+    "category": "Simulation",
+    "summary": "Light refraction patterns through water/glass simulation.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-119",
+    "name": "Wave World",
+    "category": "Simulation",
+    "summary": "Generated simulated rippling water surfaces, usable as effect map.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-120",
+    "name": "Glow",
+    "category": "Stylize",
+    "summary": "Bloom around bright areas; threshold/radius/intensity control.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-121",
+    "name": "Find Edges",
+    "category": "Stylize",
+    "summary": "Outline high-contrast boundaries, optionally invert/colorize.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-122",
+    "name": "CC Vignette",
+    "category": "Stylize",
+    "summary": "Dark/light edge vignette.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-123",
+    "name": "Roughen Edges",
+    "category": "Stylize",
+    "summary": "Organic irregular alpha edge, strong for paper/smoke/mattes.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-124",
+    "name": "Mosaic",
+    "category": "Stylize",
+    "summary": "Pixel-block mosaic.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-125",
+    "name": "Posterize",
+    "category": "Stylize",
+    "summary": "Reduce color levels; not frame rate.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-126",
+    "name": "Strobe Light",
+    "category": "Stylize",
+    "summary": "Timed flashes/strobes.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-127",
+    "name": "CC Force Motion Blur",
+    "category": "Time",
+    "summary": "Extra blur samples for moving operations; cost may be high.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-128",
+    "name": "Pixel Motion Blur",
+    "category": "Time",
+    "summary": "Optical flow-like blur between frames.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-129",
+    "name": "Posterize Time",
+    "category": "Time",
+    "summary": "Lower sampling rate for stop-motion look.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-130",
+    "name": "Time Difference",
+    "category": "Time",
+    "summary": "Highlights changes between frames.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-131",
+    "name": "Time Displacement",
+    "category": "Time",
+    "summary": "Grayscale layer controls relative source time per pixel.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-132",
+    "name": "Timewarp",
+    "category": "Time",
+    "summary": "Retimes source with frame interpolation.",
+    "level": "Reference",
+    "version": "Available by 26.5 (review installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-133",
+    "name": "3D Channel Extract",
+    "category": "3D Channel",
+    "summary": "Extract supported depth or channel data from imported 3D render passes.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-134",
+    "name": "Cryptomatte",
+    "category": "3D Channel",
+    "summary": "Build anti-aliased object or material mattes from cryptomatte data in EXR sources.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-135",
+    "name": "Depth Matte",
+    "category": "3D Channel",
+    "summary": "Use depth-pass information to define transparency based on distance.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-136",
+    "name": "Depth of Field",
+    "category": "3D Channel",
+    "summary": "Use 3D-channel depth data to simulate optical defocus in a composited pass; not the 26.3 Advanced 3D renderer feature.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-137",
+    "name": "Extractor",
+    "category": "3D Channel",
+    "summary": "Extract supported image/channels from floating point render passes.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-138",
+    "name": "Fog 3D",
+    "category": "3D Channel",
+    "summary": "Use depth data to create depth-dependent haze.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-139",
+    "name": "ID Matte",
+    "category": "3D Channel",
+    "summary": "Isolate regions based on ID channels where present.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-140",
+    "name": "IDentifier",
+    "category": "3D Channel",
+    "summary": "Generate masks from supported ID-style 3D channels.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-141",
+    "name": "Backwards",
+    "category": "Audio",
+    "summary": "Reverses the sound playing in a layer.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-142",
+    "name": "Bass & Treble",
+    "category": "Audio",
+    "summary": "Change broad high and low frequency content.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-143",
+    "name": "Delay",
+    "category": "Audio",
+    "summary": "Repeat and offset audio to make echoes.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-144",
+    "name": "Flange & Chorus",
+    "category": "Audio",
+    "summary": "Create short modulated delays for widened/chorused sound.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-145",
+    "name": "High-Low Pass",
+    "category": "Audio",
+    "summary": "Filter out low or high-frequency content.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-146",
+    "name": "Modulator",
+    "category": "Audio",
+    "summary": "Change audio with time-varying modulation.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-147",
+    "name": "Parametric EQ",
+    "category": "Audio",
+    "summary": "Set targeted boost/cut frequencies and bandwidth.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-148",
+    "name": "Reverb",
+    "category": "Audio",
+    "summary": "Simulate acoustic reflections and room tails.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-149",
+    "name": "Stereo Mixer",
+    "category": "Audio",
+    "summary": "Adjust stereo channel balance and routing.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-150",
+    "name": "Tone",
+    "category": "Audio",
+    "summary": "Generate a simple test/audio tone.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-151",
+    "name": "Fill",
+    "category": "Generate",
+    "summary": "Replace output pixels with selected solid color while respecting alpha.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-152",
+    "name": "Circle",
+    "category": "Generate",
+    "summary": "Generate a configurable circular shape/effect.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-153",
+    "name": "Beam",
+    "category": "Generate",
+    "summary": "Draw a beam between two adjustable points.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-154",
+    "name": "Advanced Lightning",
+    "category": "Generate",
+    "summary": "Generate electrical branching patterns between points.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-155",
+    "name": "Audio Spectrum",
+    "category": "Generate",
+    "summary": "Turn audio frequency energy into animated frequency bars/lines.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-156",
+    "name": "Audio Waveform",
+    "category": "Generate",
+    "summary": "Draw the audio waveform as visible pixels.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-157",
+    "name": "CC Light Rays",
+    "category": "Generate",
+    "summary": "Emit stylized rays from a source point.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-158",
+    "name": "CC Light Burst 2.5",
+    "category": "Generate",
+    "summary": "Simulate a radial burst of light.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-159",
+    "name": "CC Light Sweep",
+    "category": "Generate",
+    "summary": "A moving specular highlight over existing pixels.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-160",
+    "name": "CC Threads",
+    "category": "Generate",
+    "summary": "Generate thread-like organic motion.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-161",
+    "name": "CC Glue Gun",
+    "category": "Generate",
+    "summary": "Produce organic liquid-like extrusions.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-162",
+    "name": "Paint Bucket",
+    "category": "Generate",
+    "summary": "Fill pixels by a sampled color range.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-163",
+    "name": "Levels",
+    "category": "Color Correction",
+    "summary": "Set input/output black, white and gamma response per channels.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-164",
+    "name": "Tint",
+    "category": "Color Correction",
+    "summary": "Map black and white regions to two chosen colors.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-165",
+    "name": "Tritone",
+    "category": "Color Correction",
+    "summary": "Map shadows, midtones and highlights to three colors.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-166",
+    "name": "Auto Color",
+    "category": "Color Correction",
+    "summary": "Estimate image-wide automatic channel balancing.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-167",
+    "name": "Auto Contrast",
+    "category": "Color Correction",
+    "summary": "Adjust tonal contrast automatically.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-168",
+    "name": "Auto Levels",
+    "category": "Color Correction",
+    "summary": "Set channel levels automatically.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-169",
+    "name": "Change Color",
+    "category": "Color Correction",
+    "summary": "Alter a sampled color within a controllable tolerance.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-170",
+    "name": "Change to Color",
+    "category": "Color Correction",
+    "summary": "Replace a selected color while retaining selected image variations.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-171",
+    "name": "Color Balance",
+    "category": "Color Correction",
+    "summary": "Adjust channel balance and tonal colors.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-172",
+    "name": "Color Balance (HLS)",
+    "category": "Color Correction",
+    "summary": "Adjust hue, lightness and saturation globally.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-173",
+    "name": "CC Color Neutralizer",
+    "category": "Color Correction",
+    "summary": "Neutralize color casts using its controls.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-174",
+    "name": "CC Color Offset",
+    "category": "Color Correction",
+    "summary": "Offset image color channels.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-175",
+    "name": "CC Toner",
+    "category": "Color Correction",
+    "summary": "Map tone values to a set of colors.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-176",
+    "name": "CC Kernel",
+    "category": "Color Correction",
+    "summary": "Apply a convolution kernel to image channels; inspect changes on an edge/grid test.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-177",
+    "name": "CC Sphere",
+    "category": "Perspective",
+    "summary": "Map a 2D image around a sphere with shading controls; it does not create true 3D geometry.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-178",
+    "name": "CC Cylinder",
+    "category": "Perspective",
+    "summary": "Wrap a 2D image on a faux cylinder.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-179",
+    "name": "Drop Shadow",
+    "category": "Perspective",
+    "summary": "Cast a simple offset/blurred 2D shadow from layer alpha.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-180",
+    "name": "Radial Shadow",
+    "category": "Perspective",
+    "summary": "Project a shadow away from a point source.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-181",
+    "name": "Bevel Alpha",
+    "category": "Perspective",
+    "summary": "Give alpha edges a beveled light look.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-182",
+    "name": "Bevel Edges",
+    "category": "Perspective",
+    "summary": "Relief on image edges.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-183",
+    "name": "CC Glass",
+    "category": "Stylize",
+    "summary": "Use a bump map to create refractive/glass-like surface texture.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-184",
+    "name": "CC Spotlight",
+    "category": "Perspective",
+    "summary": "Simulate a 2D spotlight effect.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-185",
+    "name": "Linear Wipe",
+    "category": "Transition",
+    "summary": "Reveal one image in a straight advancing line.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-186",
+    "name": "Radial Wipe",
+    "category": "Transition",
+    "summary": "Radial clock-like wipe with a center.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-187",
+    "name": "Venetian Blinds",
+    "category": "Transition",
+    "summary": "Alternating bands with angle and completion.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-188",
+    "name": "Gradient Wipe",
+    "category": "Transition",
+    "summary": "Transition through the luminance of a chosen gradient map.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-189",
+    "name": "Block Dissolve",
+    "category": "Transition",
+    "summary": "Reveal or hide an image in random blocks.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-190",
+    "name": "Card Wipe",
+    "category": "Transition",
+    "summary": "Flip or transform a grid of image cards.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-191",
+    "name": "CC Jaws",
+    "category": "Transition",
+    "summary": "Jaw-like geometric wipe.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-192",
+    "name": "CC Grid Wipe",
+    "category": "Transition",
+    "summary": "Reveal over a grid pattern.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-193",
+    "name": "CC Scale Wipe",
+    "category": "Transition",
+    "summary": "Transition by scaling pattern.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-194",
+    "name": "CC Light Wipe",
+    "category": "Transition",
+    "summary": "Wipe with lighting-like boundary glow.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-195",
+    "name": "CC Glass Wipe",
+    "category": "Transition",
+    "summary": "Distort and reveal with glass-like refraction.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-196",
+    "name": "CC Twister",
+    "category": "Transition",
+    "summary": "Spiral/twist transition.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-197",
+    "name": "CC Image Wipe",
+    "category": "Transition",
+    "summary": "Reveal based on an image source.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-198",
+    "name": "Magnify",
+    "category": "Distort / Transform",
+    "summary": "Enlarge a local region, like a moving lens.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-199",
+    "name": "Spherize",
+    "category": "Distort / Transform",
+    "summary": "Warp pixels around a center into spherical distortion.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-200",
+    "name": "CC Smear",
+    "category": "Distort / Transform",
+    "summary": "Smear pixels around source/target points.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-201",
+    "name": "CC Split",
+    "category": "Distort / Transform",
+    "summary": "Split and separate part of an image.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-202",
+    "name": "CC Split 2",
+    "category": "Distort / Transform",
+    "summary": "Second variant of an image splitting distortion.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-203",
+    "name": "CC Kaleida",
+    "category": "Stylize",
+    "summary": "Create kaleidoscopic repeated reflection.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-204",
+    "name": "Add Grain",
+    "category": "Noise & Grain",
+    "summary": "Add controllable film-like grain using sampled or chosen settings.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-205",
+    "name": "Match Grain",
+    "category": "Noise & Grain",
+    "summary": "Match grain texture to a sampled source.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-206",
+    "name": "Remove Grain",
+    "category": "Noise & Grain",
+    "summary": "Reduce film grain and noise while preserving some details.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-207",
+    "name": "Median",
+    "category": "Noise & Grain",
+    "summary": "Median neighborhood filter for noise reduction/stylization.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-208",
+    "name": "Noise HLS",
+    "category": "Noise & Grain",
+    "summary": "Add noise in hue/lightness/saturation terms.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-209",
+    "name": "Noise HLS Auto",
+    "category": "Noise & Grain",
+    "summary": "Automatically vary hue/lightness/saturation noise.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-210",
+    "name": "Median (Legacy)",
+    "category": "Noise & Grain",
+    "summary": "Older median filter kept for older projects.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-211",
+    "name": "Matte Choker",
+    "category": "Matte",
+    "summary": "Reduce/expand an alpha matte with detail-sensitive parameters.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-212",
+    "name": "Simple Choker",
+    "category": "Matte",
+    "summary": "Quick alpha-edge shrink/grow.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-213",
+    "name": "Refine Hard Matte",
+    "category": "Matte",
+    "summary": "Improve hard-edge matte contours.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-214",
+    "name": "Refine Soft Matte",
+    "category": "Matte",
+    "summary": "Improve translucent and soft matte edges.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-215",
+    "name": "CC Burn Film",
+    "category": "Stylize",
+    "summary": "Simulate old film burn marks.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-216",
+    "name": "CC Plastic",
+    "category": "Stylize",
+    "summary": "Relief/plastic appearance using source luminance as surface information.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-217",
+    "name": "Emboss",
+    "category": "Stylize",
+    "summary": "Convert edges into a relief-like rendered surface.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-218",
+    "name": "Color Emboss",
+    "category": "Stylize",
+    "summary": "Emboss detail while retaining source colors.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-219",
+    "name": "Motion Tile",
+    "category": "Stylize",
+    "summary": "Repeat and mirror pixels beyond layer edges.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-220",
+    "name": "CC RepeTile",
+    "category": "Stylize",
+    "summary": "Repeat pixels outside layer dimensions.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-221",
+    "name": "Threshold",
+    "category": "Stylize",
+    "summary": "Reduce an image into black/white based on brightness.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-222",
+    "name": "Scatter",
+    "category": "Stylize",
+    "summary": "Distribute pixels randomly by an amount.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-223",
+    "name": "CC Threshold",
+    "category": "Stylize",
+    "summary": "High-contrast threshold visual effect.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-224",
+    "name": "Cineon Converter",
+    "category": "Utility",
+    "summary": "Convert to/from supported Cineon log film-style encodings.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-225",
+    "name": "HDR Compander",
+    "category": "Utility",
+    "summary": "Compress/expand HDR-like pixel dynamic range for certain pipelines.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-226",
+    "name": "Grow Bounds",
+    "category": "Utility",
+    "summary": "Expand a layer effect buffer before later processing.",
+    "level": "Reference",
+    "version": "Available by 26.5 (verify installed effect list)",
+    "source": "effects"
+  },
+  {
+    "id": "fx-227",
+    "name": "3D Point Control",
+    "category": "Expression Controls",
+    "summary": "User-facing X/Y/Z controller; link an expression to its 3D value for reusable rigs.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-228",
+    "name": "Angle Control",
+    "category": "Expression Controls",
+    "summary": "Single angle property that an expression can read from a controller layer.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-229",
+    "name": "Checkbox Control",
+    "category": "Expression Controls",
+    "summary": "Boolean-like 0/1 property for on/off choices in expressions.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-230",
+    "name": "Color Control",
+    "category": "Expression Controls",
+    "summary": "Choose an RGBA color for other expressions or effect settings.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-231",
+    "name": "Dropdown Menu Control",
+    "category": "Expression Controls",
+    "summary": "Named menu options for expression-driven choices; check item indexes and names.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-232",
+    "name": "Layer Control",
+    "category": "Expression Controls",
+    "summary": "Store a reference to a specific project layer for expression links.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-233",
+    "name": "Point Control",
+    "category": "Expression Controls",
+    "summary": "Two-dimensional XY control, useful for center and position-driven expressions.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-234",
+    "name": "Slider Control",
+    "category": "Expression Controls",
+    "summary": "Single numeric parameter for shared animation control; rename the control for clarity.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-235",
+    "name": "CC Rainfall",
+    "category": "Simulation",
+    "summary": "Procedural animated rainfall with controls for amount, size, speed and variation.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-236",
+    "name": "CC Snowfall",
+    "category": "Simulation",
+    "summary": "Procedural animated snow; adjust particle visibility and movement carefully.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-237",
+    "name": "3D Camera Tracker",
+    "category": "Perspective",
+    "summary": "Analyzes a moving shot and solves a 3D camera/track points for scene integration.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-238",
+    "name": "3D Glasses",
+    "category": "Perspective",
+    "summary": "Combines stereo left/right views for stereoscopic displays and preview workflows.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-239",
+    "name": "CC Environment",
+    "category": "Perspective",
+    "summary": "Maps an image around a scene or object; belongs to the Perspective effects family.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-240",
+    "name": "Cell Pattern",
+    "category": "Generate",
+    "summary": "Generates cellular structures; useful for procedural maps and organic transitions.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-241",
+    "name": "Checkerboard",
+    "category": "Generate",
+    "summary": "Generates a configurable checkerboard with cell and color controls.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-242",
+    "name": "Ellipse",
+    "category": "Generate",
+    "summary": "Creates an adjustable elliptical region without a separate shape layer.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-243",
+    "name": "Eyedropper Fill",
+    "category": "Generate",
+    "summary": "Fills a layer using a sampled source color.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-244",
+    "name": "Fractal",
+    "category": "Generate",
+    "summary": "Generates a fractal design; distinct from Fractal Noise in Noise & Grain.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-245",
+    "name": "Brush Strokes",
+    "category": "Stylize",
+    "summary": "Stylizes the picture as short brush marks, with controllable direction and length.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-246",
+    "name": "Cartoon",
+    "category": "Stylize",
+    "summary": "Simplifies tonal detail and enhances edges to achieve a stylized illustrated result.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-247",
+    "name": "CC Block Load",
+    "category": "Stylize",
+    "summary": "Creates block-based moving pixel patterns and digital transitions.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-248",
+    "name": "CC HexTile",
+    "category": "Stylize",
+    "summary": "Applies a hexagonal tile/kaleidoscopic arrangement.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-249",
+    "name": "CC Mr. Smoothie",
+    "category": "Stylize",
+    "summary": "Smooths/stylizes the source into large shaped color regions.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-250",
+    "name": "CC Threshold RGB",
+    "category": "Stylize",
+    "summary": "Thresholds component channels independently for unusual posterized/color effects.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-251",
+    "name": "Texturize",
+    "category": "Stylize",
+    "summary": "Uses one layer as a texture map to alter another layer’s perceived relief.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-252",
+    "name": "CC Wide Time",
+    "category": "Time",
+    "summary": "Blends a range of temporal samples to create time-based motion trails.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-253",
+    "name": "Echo",
+    "category": "Time",
+    "summary": "Accumulates frames at temporal offsets; useful for trails and layered motion.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-254",
+    "name": "Numbers",
+    "category": "Text",
+    "summary": "Legacy effect for generating formatted numeric values; compare with modern text and expressions.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-255",
+    "name": "Timecode",
+    "category": "Text",
+    "summary": "Generates a visible timecode readout on a layer for review/burn-ins.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-256",
+    "name": "CC Line Sweep",
+    "category": "Transition",
+    "summary": "Line-like animated wipe with adjustable direction and edge behavior.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-257",
+    "name": "CC Radial ScaleWipe",
+    "category": "Transition",
+    "summary": "Radial wipe distortion with scaling behavior.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-258",
+    "name": "CC WarpoMatic",
+    "category": "Transition",
+    "summary": "Animated warped transition between two looks.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-259",
+    "name": "Iris Wipe",
+    "category": "Transition",
+    "summary": "Opens or closes an iris-shaped reveal.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-260",
+    "name": "CC Overbrights",
+    "category": "Utility",
+    "summary": "Helps visualize or handle values outside normal display range in high-dynamic-range work.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-261",
+    "name": "HDR Highlight Compression",
+    "category": "Utility",
+    "summary": "Compresses high-range highlights for certain HDR processing pipelines.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-262",
+    "name": "Arithmetic",
+    "category": "Channel",
+    "summary": "Arithmetic operations on image channels; use with care, especially at high bit depth.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-263",
+    "name": "Compound Arithmetic",
+    "category": "Channel",
+    "summary": "Combines two images through channel arithmetic operations.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-264",
+    "name": "Bulge",
+    "category": "Distort",
+    "summary": "Creates adjustable spherical magnification/distortion within the image.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-265",
+    "name": "Smear",
+    "category": "Distort",
+    "summary": "Smears an image region using interactive path-like distortion.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-266",
+    "name": "VR Blur",
+    "category": "Immersive Video",
+    "summary": "Blur tailored to 360°/VR imagery; mindful of equirectangular seams.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-267",
+    "name": "VR Chromatic Aberrations",
+    "category": "Immersive Video",
+    "summary": "Spherical-aware channel separation for VR footage.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-268",
+    "name": "VR Color Gradients",
+    "category": "Immersive Video",
+    "summary": "Gradients designed for 360° panoramic images.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-269",
+    "name": "VR Converter",
+    "category": "Immersive Video",
+    "summary": "Converts or reorients 360°/VR projection formats.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-270",
+    "name": "VR De-Noise",
+    "category": "Immersive Video",
+    "summary": "Reduces noise in spherical panoramic footage.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-271",
+    "name": "VR Digital Glitch",
+    "category": "Immersive Video",
+    "summary": "Glitch artifacts within VR-friendly image transforms.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-272",
+    "name": "VR Fractal Noise",
+    "category": "Immersive Video",
+    "summary": "Generates fractal noise across VR projections.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-273",
+    "name": "VR Glow",
+    "category": "Immersive Video",
+    "summary": "Glow effect designed to respect 360° projections.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-274",
+    "name": "VR Plane to Sphere",
+    "category": "Immersive Video",
+    "summary": "Projects a planar image onto a 360° sphere representation.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-275",
+    "name": "VR Rotate Sphere",
+    "category": "Immersive Video",
+    "summary": "Reorients a spherical panorama.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-276",
+    "name": "VR Sharpen",
+    "category": "Immersive Video",
+    "summary": "Sharpens VR imagery while addressing panoramic continuity.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-277",
+    "name": "VR Sphere to Plane",
+    "category": "Immersive Video",
+    "summary": "Projects a section of spherical footage to a flat plane.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-278",
+    "name": "Basic 3D",
+    "category": "Obsolete / compatibility only",
+    "summary": "Compatibility effect for old projects; prefer modern 3D layer workflows.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-279",
+    "name": "Basic Text",
+    "category": "Obsolete / compatibility only",
+    "summary": "Legacy text-generation effect; use native Text layers for new designs.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-280",
+    "name": "Gaussian Blur (Legacy)",
+    "category": "Obsolete / compatibility only",
+    "summary": "Legacy blur retained for project compatibility; prefer current Gaussian Blur.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-281",
+    "name": "Lightning",
+    "category": "Obsolete / compatibility only",
+    "summary": "Old lightning generator; Advanced Lightning is the more capable common alternative.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-282",
+    "name": "Luma Key",
+    "category": "Obsolete / compatibility only",
+    "summary": "Legacy luminance keyer; prefer modern keying and track-matte workflows.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-283",
+    "name": "Path Text",
+    "category": "Obsolete / compatibility only",
+    "summary": "Legacy text-on-path effect; prefer native Text Path Options.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-284",
+    "name": "Reduce Interlace Flicker",
+    "category": "Obsolete / compatibility only",
+    "summary": "Legacy filter for older interlaced footage; assess modern source handling first.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "id": "fx-285",
+    "name": "Spill Suppressor",
+    "category": "Obsolete / compatibility only",
+    "summary": "Legacy spill removal; prefer Advanced Spill Suppressor when suitable.",
+    "level": "Reference",
+    "version": "Listed by Adobe; check availability in installed 26.5",
+    "source": "effects"
+  },
+  {
+    "name": "Unmult",
+    "category": "Keying",
+    "summary": "Create alpha from a black or white backing; set Background Color, level and Softness, then inspect translucent edges.",
+    "version": "26.0",
+    "source": "keying-effects",
+    "level": "Reference",
+    "id": "fx-286"
+  },
+  {
+    "name": "Curl Noise",
+    "category": "Noise & Grain",
+    "summary": "Generate flowing 2D texture; separate scale/swirl from drift/evolution, then use it as imagery or a signal map.",
+    "version": "26.3",
+    "source": "noise",
+    "level": "Reference",
+    "id": "fx-287"
+  },
+  {
+    "name": "Compressor",
+    "category": "Audio",
+    "summary": "Reduce peaks above Threshold with Ratio and timing controls; compare bypass at matched loudness.",
+    "version": "26.0",
+    "source": "audio-effects",
+    "level": "Reference",
+    "id": "fx-288"
+  },
+  {
+    "name": "Gate",
+    "category": "Audio",
+    "summary": "Attenuate quiet passages; tune Threshold, Hold and Release to preserve word endings.",
+    "version": "26.0",
+    "source": "audio-effects",
+    "level": "Reference",
+    "id": "fx-289"
+  },
+  {
+    "name": "Distortion",
+    "category": "Audio",
+    "summary": "Drive/saturate sound, blend with Mix and compensate Volume; inspect clipping in rendered audio.",
+    "version": "26.0",
+    "source": "audio-effects",
+    "level": "Reference",
+    "id": "fx-290"
+  },
+  {
+    "name": "Object Matte",
+    "category": "Tool-generated matte processing",
+    "summary": "Generated controls from the Object Matte tool; select/refine/propagate in Layer panel, then Freeze. Not a conventional generator applied to a solid.",
+    "version": "26.2; disk cache 26.5",
+    "source": "object-matte",
+    "level": "Reference",
+    "id": "fx-291"
+  },
+  {
+    "id": "fx-292",
+    "name": "Levels (Individual Controls)",
+    "category": "Color Correction",
+    "summary": "Levels with separately addressable controls.",
+    "source": "effects",
+    "level": "Reference",
+    "version": "Available in 26.5; verify installed integration/configuration"
+  },
+  {
+    "id": "fx-293",
+    "name": "Broadcast Colors",
+    "category": "Color Correction",
+    "summary": "Limit legacy broadcast signal ranges; use the deliverable’s actual specification.",
+    "source": "effects",
+    "level": "Reference",
+    "version": "Available in 26.5; verify installed integration/configuration"
+  },
+  {
+    "id": "fx-294",
+    "name": "Video Limiter",
+    "category": "Color Correction",
+    "summary": "Constrain output levels according to delivery requirements.",
+    "source": "effects",
+    "level": "Reference",
+    "version": "Available in 26.5; verify installed integration/configuration"
+  },
+  {
+    "id": "fx-295",
+    "name": "Mocha AE",
+    "category": "Boris FX Mocha",
+    "summary": "Bundled planar tracking integration; Mocha Pro is separate.",
+    "source": "effects",
+    "level": "Reference",
+    "version": "Available in 26.5; verify installed integration/configuration"
+  },
+  {
+    "id": "fx-296",
+    "name": "CINEWARE",
+    "category": "CINEMA 4D integration",
+    "summary": "Render imported Cinema 4D scenes through its installed integration; separate from choosing the composition renderer.",
+    "source": "effects",
+    "level": "Reference",
+    "version": "Available in 26.5; verify installed integration/configuration"
+  },
+  {
+    "id": "fx-297",
+    "name": "OCIO File Transform",
+    "category": "Color Correction",
+    "summary": "Apply a supported LUT/CDL through OCIO.",
+    "source": "ocio",
+    "level": "Reference",
+    "version": "Available in 26.5; verify installed integration/configuration"
+  },
+  {
+    "id": "fx-298",
+    "name": "OCIO Color Space Transform",
+    "category": "Color Correction",
+    "summary": "Convert configured input/output color spaces.",
+    "source": "ocio",
+    "level": "Reference",
+    "version": "Available in 26.5; verify installed integration/configuration"
+  },
+  {
+    "id": "fx-299",
+    "name": "OCIO Display Transform",
+    "category": "Color Correction",
+    "summary": "Apply a configured display/view transform; avoid duplicating the project output transform.",
+    "source": "ocio",
+    "level": "Reference",
+    "version": "Available in 26.5; verify installed integration/configuration"
+  },
+  {
+    "id": "fx-300",
+    "name": "OCIO Look Transform",
+    "category": "Color Correction",
+    "summary": "Apply a configured look with intentional input/output spaces.",
+    "source": "ocio",
+    "level": "Reference",
+    "version": "Available in 26.5; verify installed integration/configuration"
+  }
+]

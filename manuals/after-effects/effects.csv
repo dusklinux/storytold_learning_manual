@@ -1,0 +1,301 @@
+id,name,category,summary,version,source
+fx-001,Camera Lens Blur,Blur & Sharpen,"Lens-like bokeh; can use Blur Map for local/depth-varying blur, including highlights and focus control. Heavier than simple blur.",Available by 26.5 (review installed effect list),effects
+fx-002,Gaussian Blur,Blur & Sharpen,"Smooth, conventional uniform blur. Fast and reliable; repeat edge pixels if borders appear.",Available by 26.5 (review installed effect list),effects
+fx-003,Fast Box Blur,Blur & Sharpen,"Efficient box approximation; useful in matte softening, textures and previews.",Available by 26.5 (review installed effect list),effects
+fx-004,Directional Blur,Blur & Sharpen,Linear blur along an angle; simulated speed smear/trails.,Available by 26.5 (review installed effect list),effects
+fx-005,CC Radial Blur,Blur & Sharpen,Radial directional or zoom-streak blur based on a center; useful for impact effects.,Available by 26.5 (review installed effect list),effects
+fx-006,CC Radial Fast Blur,Blur & Sharpen,Faster radial-style effect; fewer/other controls than standard.,Available by 26.5 (review installed effect list),effects
+fx-007,Radial Blur,Blur & Sharpen,"Older rotational/zoom radial blur option; still useful in some looks, not automatically obsolete.",Available by 26.5 (review installed effect list),effects
+fx-008,CC Vector Blur,Blur & Sharpen,Uses vectors/texture for stylized flow-like warping/blurring.,Available by 26.5 (review installed effect list),effects
+fx-009,Compound Blur,Blur & Sharpen,Uses a secondary layer's brightness to change blur amount across the image.,Available by 26.5 (review installed effect list),effects
+fx-010,Channel Blur,Blur & Sharpen,Independently blurs R/G/B/A channels; potential color fringes and alpha softening.,Available by 26.5 (review installed effect list),effects
+fx-011,Bilateral Blur,Blur & Sharpen,Smooths regions while retaining prominent edges.,Available by 26.5 (review installed effect list),effects
+fx-012,Smart Blur,Blur & Sharpen,Smooths relatively uniform regions but attempts to protect edges.,Available by 26.5 (review installed effect list),effects
+fx-013,Sharpen,Blur & Sharpen,Basic edge enhancement; halos appear if overdone.,Available by 26.5 (review installed effect list),effects
+fx-014,Unsharp Mask,Blur & Sharpen,"Controlled edge contrast sharpening, Amount/Radius/Threshold.",Available by 26.5 (review installed effect list),effects
+fx-015,Camera-Shake Deblur,Blur & Sharpen,Attempts to mitigate motion-induced camera blur; may create artifacts.,Available by 26.5 (review installed effect list),effects
+fx-016,CC Cross Blur,Blur & Sharpen,Cross-shaped/anamorphic-style blur direction.,Available by 26.5 (review installed effect list),effects
+fx-017,CC Composite,Channel / Matte,Composites the processed result against the layer's underlying original input inside one effect pipeline; try RGB-only/alpha and blend settings when nothing seems to happen.,Available by 26.5 (review installed effect list),effects
+fx-018,Blend,Channel / Matte,Blends the current layer with another input layer.,Available by 26.5 (review installed effect list),effects
+fx-019,Set Matte,Channel / Matte,Pull alpha or luminance from a specified source and inject it into effect pipeline.,Available by 26.5 (review installed effect list),effects
+fx-020,Shift Channels,Channel / Matte,Route/copy individual channels; build simple RGB split/aberration effects.,Available by 26.5 (review installed effect list),effects
+fx-021,Set Channels,Channel / Matte,Assemble output channels from multiple source channels/layers.,Available by 26.5 (review installed effect list),effects
+fx-022,Channel Combiner,Channel / Matte,"Converts/composes color channels, including channel-to-lightness conversions.",Available by 26.5 (review installed effect list),effects
+fx-023,Invert,Channel / Matte,"Invert color values or selected channels, including alpha where chosen.",Available by 26.5 (review installed effect list),effects
+fx-024,Minimax,Channel / Matte,"Grow/shrink bright or dark regions, useful for matte expansion/erosion.",Available by 26.5 (review installed effect list),effects
+fx-025,Remove Color Matting,Channel / Matte,Correct halo caused by premultiplication against an unwanted matte color.,Available by 26.5 (review installed effect list),effects
+fx-026,Calculations,Channel / Matte,Combine input layer channels and mathematical/compositing operations.,Available by 26.5 (review installed effect list),effects
+fx-027,Solid Composite,Channel / Matte,Composites layer over specified solid color within the layer bounds; useful for creating black/white map backgrounds.,Available by 26.5 (review installed effect list),effects
+fx-028,Mocha Shape,Matte,Workflow-specific Mocha-created masks/mattes if available.,Available by 26.5 (review installed effect list),effects
+fx-029,Keylight (1.2),Keying,General green/blue screen chroma key with detailed Screen Matte controls.,Available by 26.5 (review installed effect list),effects
+fx-030,Key Cleaner,Keying,"Recover/clean key edges, especially fine outlines.",Available by 26.5 (review installed effect list),effects
+fx-031,Advanced Spill Suppressor,Keying,Remove undesirable green/blue color contamination on subject edges.,Available by 26.5 (review installed effect list),effects
+fx-032,Linear Color Key,Keying,Remove specified RGB color/range; controlled simple key.,Available by 26.5 (review installed effect list),effects
+fx-033,Color Difference Key,Keying,Difference-based blue/green keying.,Available by 26.5 (review installed effect list),effects
+fx-034,Color Range,Keying,Target color range; sometimes useful for selections but can be noisy.,Available by 26.5 (review installed effect list),effects
+fx-035,Difference Matte,Keying,Remove area resembling clean background reference.,Available by 26.5 (review installed effect list),effects
+fx-036,Extract,Keying,Use luminance thresholds to isolate bright/dark regions.,Available by 26.5 (review installed effect list),effects
+fx-037,Inner/Outer Key,Keying,Separate inner/outer edges for difficult mattes.,Available by 26.5 (review installed effect list),effects
+fx-038,CC Simple Wire Removal,Keying,Remove linear cables/wires across footage.,Available by 26.5 (review installed effect list),effects
+fx-039,Color Key,Obsolete / compatibility only,Obsolete. Retained for compatibility; not mandatory in modern key workflow.,Available by 26.5 (review installed effect list),effects
+fx-040,Lumetri Color,Color Correction,"Comprehensive familiar color grading (basic, curves, color wheels, HSL secondary, vignette where available).",Available by 26.5 (review installed effect list),effects
+fx-041,Curves,Color Correction,"Precise tonal/channel mapping, matte contrast, look creation.",Available by 26.5 (review installed effect list),effects
+fx-042,Exposure,Color Correction,Adjust photographic exposure and tonal offset; useful in higher-bit-depth workflows.,Available by 26.5 (review installed effect list),effects
+fx-043,Hue/Saturation,Color Correction,"Target hue, saturation and lightness globally or ranges.",Available by 26.5 (review installed effect list),effects
+fx-044,Black & White,Color Correction,Tonal monochrome conversion with channel weights.,Available by 26.5 (review installed effect list),effects
+fx-045,Brightness & Contrast,Color Correction,Basic global correction; limited compared with Curves.,Available by 26.5 (review installed effect list),effects
+fx-046,Vibrance,Color Correction,Prioritize less-saturated color areas over skin tones in many cases.,Available by 26.5 (review installed effect list),effects
+fx-047,Selective Color,Color Correction,Fine color-group adjustment.,Available by 26.5 (review installed effect list),effects
+fx-048,Channel Mixer,Color Correction,"Change RGB output from channel mixtures, make custom grayscale.",Available by 26.5 (review installed effect list),effects
+fx-049,Leave Color,Color Correction,Retain one selected hue while desaturating others.,Available by 26.5 (review installed effect list),effects
+fx-050,Colorama,Color Correction,Map luminance/phase to customizable color palette.,Available by 26.5 (review installed effect list),effects
+fx-051,Color Link,Color Correction,Match/link colors in layer-based workflows.,Available by 26.5 (review installed effect list),effects
+fx-052,Color Stabilizer,Color Correction,Correct fluctuating color using sample areas.,Available by 26.5 (review installed effect list),effects
+fx-053,Equalize,Color Correction,Redistribution of intensity histogram; stylized image contrast.,Available by 26.5 (review installed effect list),effects
+fx-054,Photo Filter,Color Correction,Warm/cool photographic filter color.,Available by 26.5 (review installed effect list),effects
+fx-055,Shadow/Highlight,Color Correction,Recover local dark/light detail; can flatten images.,Available by 26.5 (review installed effect list),effects
+fx-056,Gamma/Pedestal/Gain,Color Correction,Channel/tonal control using photographic video parameters.,Available by 26.5 (review installed effect list),effects
+fx-057,PS Arbitrary Map,Color Correction,Photoshop arbitrary-map transfer function.,Available by 26.5 (review installed effect list),effects
+fx-058,Apply Color LUT,Utility,Apply LUT transform; must use appropriate input color space to avoid bad look/double transform.,Available by 26.5 (review installed effect list),effects
+fx-059,Color Profile Converter,Utility,Convert between color-profile spaces; distinct from simply applying a look LUT.,Available by 26.5 (review installed effect list),effects
+fx-060,Bezier Warp,Distort / Transform,Warp whole image using edge/corner Bézier mesh handles; useful for cloth/smoke edges.,Available by 26.5 (review installed effect list),effects
+fx-061,Mesh Warp,Distort / Transform,Fine multi-cell deformation; more localized control.,Available by 26.5 (review installed effect list),effects
+fx-062,Liquify,Distort / Transform,"Brush deformation/mesh for facial distortions, fire, organic visuals.",Available by 26.5 (review installed effect list),effects
+fx-063,Displacement Map,Distort / Transform,"Another layer's brightness/color shifts pixels horizontally/vertically; depth-map illusion, water, ripples.",Available by 26.5 (review installed effect list),effects
+fx-064,Transform,Distort / Transform,Effect-order-aware extra transform; better than moving an entire layer when you need transform between effects.,Available by 26.5 (review installed effect list),effects
+fx-065,Turbulent Displace,Distort / Transform,"Organic bubbling/wavy displacement; great for smoke, fire, animated drawn art.",Available by 26.5 (review installed effect list),effects
+fx-066,Wave Warp,Distort / Transform,Directional sine-wave fabric/hair/flag/river motion; Pinning controls where waves are suppressed.,Available by 26.5 (review installed effect list),effects
+fx-067,Warp,Distort / Transform,"Preset-type arcs, bulges, flags, fisheye and other deformable shapes.",Available by 26.5 (review installed effect list),effects
+fx-068,CC Bend It,Distort / Transform,"Bend along points, fast for organic/tube bends.",Available by 26.5 (review installed effect list),effects
+fx-069,CC Bender,Distort / Transform,Bend based on bounding region with different behavior/controls.,Available by 26.5 (review installed effect list),effects
+fx-070,CC Blobbylize,Distort / Transform,Glossy melted/liquid-like blobby shapes; useful for fluid motion design.,Available by 26.5 (review installed effect list),effects
+fx-071,CC Flo Motion,Distort / Transform,Localized distortions around two control points.,Available by 26.5 (review installed effect list),effects
+fx-072,CC Griddler,Distort / Transform,Grid-based segmentation/deformation.,Available by 26.5 (review installed effect list),effects
+fx-073,CC Lens,Distort / Transform,Bulging/refracting lens distortion.,Available by 26.5 (review installed effect list),effects
+fx-074,CC Page Turn,Distort / Transform,Flip/curl page.,Available by 26.5 (review installed effect list),effects
+fx-075,CC Power Pin,Distort / Transform,Pin four corners of footage to a changing quadrilateral; screen replacement.,Available by 26.5 (review installed effect list),effects
+fx-076,Corner Pin,Distort / Transform,"Four-corner pinning; simpler option, still valid, not universally obsolete.",Available by 26.5 (review installed effect list),effects
+fx-077,CC Ripple Pulse,Distort / Transform,Dynamic ripples that usually need animated Pulse/Amplitude values.,Available by 26.5 (review installed effect list),effects
+fx-078,CC Slant,Distort / Transform,Skew/slant geometry.,Available by 26.5 (review installed effect list),effects
+fx-079,CC Tiler,Distort / Transform,Copies a layer in tiles for infinite-space visual patterns.,Available by 26.5 (review installed effect list),effects
+fx-080,Mirror,Distort / Transform,Reflect content across adjustable line.,Available by 26.5 (review installed effect list),effects
+fx-081,Offset,Distort / Transform,Wrap image as it moves; seamless scrolling backgrounds.,Available by 26.5 (review installed effect list),effects
+fx-082,Optics Compensation,Distort / Transform,Fisheye / undistort lens geometry; Reverse Lens Distortion changes direction.,Available by 26.5 (review installed effect list),effects
+fx-083,Polar Coordinates,Distort / Transform,Rectangle↔polar map (tunnels/planet rings/clock-like effects).,Available by 26.5 (review installed effect list),effects
+fx-084,Reshape,Distort / Transform,Morph one drawn silhouette toward another using masks.,Available by 26.5 (review installed effect list),effects
+fx-085,Ripple,Distort / Transform,Water-surface-style waves.,Available by 26.5 (review installed effect list),effects
+fx-086,Rolling Shutter Repair,Distort / Transform,Correct skew/wobble artifacts from rolling-shutter cameras.,Available by 26.5 (review installed effect list),effects
+fx-087,Twirl,Distort / Transform,Twist pixels around center.,Available by 26.5 (review installed effect list),effects
+fx-088,Warp Stabilizer,Distort / Transform,Automatic image stabilization; separate from intentionally creative warp.,Available by 26.5 (review installed effect list),effects
+fx-089,Detail-preserving Upscale,Distort / Transform,More edge-aware scaling than simple magnification; evaluate fine details/halos.,Available by 26.5 (review installed effect list),effects
+fx-090,4-Color Gradient,Generate,"Four-point color interpolation, useful backgrounds.",Available by 26.5 (review installed effect list),effects
+fx-091,Gradient Ramp,Generate,Linear/radial gradient from start to end control points.,Available by 26.5 (review installed effect list),effects
+fx-092,Grid,Generate,"Draw a grid, useful graphical background or to diagnose warp.",Available by 26.5 (review installed effect list),effects
+fx-093,Lens Flare,Generate,Simulated flare based on a point in the frame.,Available by 26.5 (review installed effect list),effects
+fx-094,Radio Waves,Generate,Expanding rings/ripples; great for motion graphics.,Available by 26.5 (review installed effect list),effects
+fx-095,Scribble,Generate,Animated scribble lines in masked regions.,Available by 26.5 (review installed effect list),effects
+fx-096,Stroke,Generate,Render one or more mask paths with animated Start/End; glows/outlined drawings.,Available by 26.5 (review installed effect list),effects
+fx-097,Vegas,Generate,Animated outlines/highlights using mask/contour paths.,Available by 26.5 (review installed effect list),effects
+fx-098,Write-on,Generate,Frame-accumulating paint-like writing.,Available by 26.5 (review installed effect list),effects
+fx-099,Fractal Noise,Noise & Grain,"Rich coherent noise. Animate Evolution/Offset Turbulence, transform for scale, use Evolution Options for cycle where supported.",Available by 26.5 (review installed effect list),effects
+fx-100,Turbulent Noise,Noise & Grain,Related procedural pattern with different rendering/performance/features; not “always faster” in every project.,Available by 26.5 (review installed effect list),effects
+fx-101,Noise,Noise & Grain,Pixel-level random texture/dither/grain.,Available by 26.5 (review installed effect list),effects
+fx-102,Dust & Scratches,Noise & Grain,Remove small specks or produce painterly smoothing at high values.,Available by 26.5 (review installed effect list),effects
+fx-103,Noise Alpha,Noise & Grain,Randomize transparency.,Available by 26.5 (review installed effect list),effects
+fx-104,CC Particle World,Simulation,"3D-like particle generator with birth rate, producer, physics, particle type.",Available by 26.5 (review installed effect list),effects
+fx-105,CC Particle Systems II,Simulation,Simpler particle bursts/trails.,Available by 26.5 (review installed effect list),effects
+fx-106,Particle Playground,Simulation,"Rich older multi-input particle system, more configuration.",Available by 26.5 (review installed effect list),effects
+fx-107,CC Ball Action,Simulation,Turns input into grids of balls—great for scattering/reforming graphics.,Available by 26.5 (review installed effect list),effects
+fx-108,CC Pixel Polly,Simulation,Shatters source pixels/regions as simulated chunks.,Available by 26.5 (review installed effect list),effects
+fx-109,Shatter,Simulation,Break objects apart with forces/debris/camera.,Available by 26.5 (review installed effect list),effects
+fx-110,CC Mr. Mercury,Simulation,Viscous liquid-like emitted blobs/droplets.,Available by 26.5 (review installed effect list),effects
+fx-111,Foam,Simulation,Bubble simulation from flow/birth parameters.,Available by 26.5 (review installed effect list),effects
+fx-112,CC Bubbles,Simulation,Floating/refractive bubbles sampling underlying image appearance.,Available by 26.5 (review installed effect list),effects
+fx-113,CC Drizzle,Simulation,Droplet surface ripples.,Available by 26.5 (review installed effect list),effects
+fx-114,CC Hair,Simulation,Bundled hair/strand simulation effect.,Available by 26.5 (review installed effect list),effects
+fx-115,CC Scatterize,Simulation,Scatter/fragment look.,Available by 26.5 (review installed effect list),effects
+fx-116,CC Star Burst,Simulation,Starfield/travel visual.,Available by 26.5 (review installed effect list),effects
+fx-117,Card Dance,Simulation,Animate source as discrete cards driven by control map.,Available by 26.5 (review installed effect list),effects
+fx-118,Caustics,Simulation,Light refraction patterns through water/glass simulation.,Available by 26.5 (review installed effect list),effects
+fx-119,Wave World,Simulation,"Generated simulated rippling water surfaces, usable as effect map.",Available by 26.5 (review installed effect list),effects
+fx-120,Glow,Stylize,Bloom around bright areas; threshold/radius/intensity control.,Available by 26.5 (review installed effect list),effects
+fx-121,Find Edges,Stylize,"Outline high-contrast boundaries, optionally invert/colorize.",Available by 26.5 (review installed effect list),effects
+fx-122,CC Vignette,Stylize,Dark/light edge vignette.,Available by 26.5 (review installed effect list),effects
+fx-123,Roughen Edges,Stylize,"Organic irregular alpha edge, strong for paper/smoke/mattes.",Available by 26.5 (review installed effect list),effects
+fx-124,Mosaic,Stylize,Pixel-block mosaic.,Available by 26.5 (review installed effect list),effects
+fx-125,Posterize,Stylize,Reduce color levels; not frame rate.,Available by 26.5 (review installed effect list),effects
+fx-126,Strobe Light,Stylize,Timed flashes/strobes.,Available by 26.5 (review installed effect list),effects
+fx-127,CC Force Motion Blur,Time,Extra blur samples for moving operations; cost may be high.,Available by 26.5 (review installed effect list),effects
+fx-128,Pixel Motion Blur,Time,Optical flow-like blur between frames.,Available by 26.5 (review installed effect list),effects
+fx-129,Posterize Time,Time,Lower sampling rate for stop-motion look.,Available by 26.5 (review installed effect list),effects
+fx-130,Time Difference,Time,Highlights changes between frames.,Available by 26.5 (review installed effect list),effects
+fx-131,Time Displacement,Time,Grayscale layer controls relative source time per pixel.,Available by 26.5 (review installed effect list),effects
+fx-132,Timewarp,Time,Retimes source with frame interpolation.,Available by 26.5 (review installed effect list),effects
+fx-133,3D Channel Extract,3D Channel,Extract supported depth or channel data from imported 3D render passes.,Available by 26.5 (verify installed effect list),effects
+fx-134,Cryptomatte,3D Channel,Build anti-aliased object or material mattes from cryptomatte data in EXR sources.,Available by 26.5 (verify installed effect list),effects
+fx-135,Depth Matte,3D Channel,Use depth-pass information to define transparency based on distance.,Available by 26.5 (verify installed effect list),effects
+fx-136,Depth of Field,3D Channel,Use 3D-channel depth data to simulate optical defocus in a composited pass; not the 26.3 Advanced 3D renderer feature.,Available by 26.5 (verify installed effect list),effects
+fx-137,Extractor,3D Channel,Extract supported image/channels from floating point render passes.,Available by 26.5 (verify installed effect list),effects
+fx-138,Fog 3D,3D Channel,Use depth data to create depth-dependent haze.,Available by 26.5 (verify installed effect list),effects
+fx-139,ID Matte,3D Channel,Isolate regions based on ID channels where present.,Available by 26.5 (verify installed effect list),effects
+fx-140,IDentifier,3D Channel,Generate masks from supported ID-style 3D channels.,Available by 26.5 (verify installed effect list),effects
+fx-141,Backwards,Audio,Reverses the sound playing in a layer.,Available by 26.5 (verify installed effect list),effects
+fx-142,Bass & Treble,Audio,Change broad high and low frequency content.,Available by 26.5 (verify installed effect list),effects
+fx-143,Delay,Audio,Repeat and offset audio to make echoes.,Available by 26.5 (verify installed effect list),effects
+fx-144,Flange & Chorus,Audio,Create short modulated delays for widened/chorused sound.,Available by 26.5 (verify installed effect list),effects
+fx-145,High-Low Pass,Audio,Filter out low or high-frequency content.,Available by 26.5 (verify installed effect list),effects
+fx-146,Modulator,Audio,Change audio with time-varying modulation.,Available by 26.5 (verify installed effect list),effects
+fx-147,Parametric EQ,Audio,Set targeted boost/cut frequencies and bandwidth.,Available by 26.5 (verify installed effect list),effects
+fx-148,Reverb,Audio,Simulate acoustic reflections and room tails.,Available by 26.5 (verify installed effect list),effects
+fx-149,Stereo Mixer,Audio,Adjust stereo channel balance and routing.,Available by 26.5 (verify installed effect list),effects
+fx-150,Tone,Audio,Generate a simple test/audio tone.,Available by 26.5 (verify installed effect list),effects
+fx-151,Fill,Generate,Replace output pixels with selected solid color while respecting alpha.,Available by 26.5 (verify installed effect list),effects
+fx-152,Circle,Generate,Generate a configurable circular shape/effect.,Available by 26.5 (verify installed effect list),effects
+fx-153,Beam,Generate,Draw a beam between two adjustable points.,Available by 26.5 (verify installed effect list),effects
+fx-154,Advanced Lightning,Generate,Generate electrical branching patterns between points.,Available by 26.5 (verify installed effect list),effects
+fx-155,Audio Spectrum,Generate,Turn audio frequency energy into animated frequency bars/lines.,Available by 26.5 (verify installed effect list),effects
+fx-156,Audio Waveform,Generate,Draw the audio waveform as visible pixels.,Available by 26.5 (verify installed effect list),effects
+fx-157,CC Light Rays,Generate,Emit stylized rays from a source point.,Available by 26.5 (verify installed effect list),effects
+fx-158,CC Light Burst 2.5,Generate,Simulate a radial burst of light.,Available by 26.5 (verify installed effect list),effects
+fx-159,CC Light Sweep,Generate,A moving specular highlight over existing pixels.,Available by 26.5 (verify installed effect list),effects
+fx-160,CC Threads,Generate,Generate thread-like organic motion.,Available by 26.5 (verify installed effect list),effects
+fx-161,CC Glue Gun,Generate,Produce organic liquid-like extrusions.,Available by 26.5 (verify installed effect list),effects
+fx-162,Paint Bucket,Generate,Fill pixels by a sampled color range.,Available by 26.5 (verify installed effect list),effects
+fx-163,Levels,Color Correction,"Set input/output black, white and gamma response per channels.",Available by 26.5 (verify installed effect list),effects
+fx-164,Tint,Color Correction,Map black and white regions to two chosen colors.,Available by 26.5 (verify installed effect list),effects
+fx-165,Tritone,Color Correction,"Map shadows, midtones and highlights to three colors.",Available by 26.5 (verify installed effect list),effects
+fx-166,Auto Color,Color Correction,Estimate image-wide automatic channel balancing.,Available by 26.5 (verify installed effect list),effects
+fx-167,Auto Contrast,Color Correction,Adjust tonal contrast automatically.,Available by 26.5 (verify installed effect list),effects
+fx-168,Auto Levels,Color Correction,Set channel levels automatically.,Available by 26.5 (verify installed effect list),effects
+fx-169,Change Color,Color Correction,Alter a sampled color within a controllable tolerance.,Available by 26.5 (verify installed effect list),effects
+fx-170,Change to Color,Color Correction,Replace a selected color while retaining selected image variations.,Available by 26.5 (verify installed effect list),effects
+fx-171,Color Balance,Color Correction,Adjust channel balance and tonal colors.,Available by 26.5 (verify installed effect list),effects
+fx-172,Color Balance (HLS),Color Correction,"Adjust hue, lightness and saturation globally.",Available by 26.5 (verify installed effect list),effects
+fx-173,CC Color Neutralizer,Color Correction,Neutralize color casts using its controls.,Available by 26.5 (verify installed effect list),effects
+fx-174,CC Color Offset,Color Correction,Offset image color channels.,Available by 26.5 (verify installed effect list),effects
+fx-175,CC Toner,Color Correction,Map tone values to a set of colors.,Available by 26.5 (verify installed effect list),effects
+fx-176,CC Kernel,Color Correction,Apply a convolution kernel to image channels; inspect changes on an edge/grid test.,Available by 26.5 (verify installed effect list),effects
+fx-177,CC Sphere,Perspective,Map a 2D image around a sphere with shading controls; it does not create true 3D geometry.,Available by 26.5 (verify installed effect list),effects
+fx-178,CC Cylinder,Perspective,Wrap a 2D image on a faux cylinder.,Available by 26.5 (verify installed effect list),effects
+fx-179,Drop Shadow,Perspective,Cast a simple offset/blurred 2D shadow from layer alpha.,Available by 26.5 (verify installed effect list),effects
+fx-180,Radial Shadow,Perspective,Project a shadow away from a point source.,Available by 26.5 (verify installed effect list),effects
+fx-181,Bevel Alpha,Perspective,Give alpha edges a beveled light look.,Available by 26.5 (verify installed effect list),effects
+fx-182,Bevel Edges,Perspective,Relief on image edges.,Available by 26.5 (verify installed effect list),effects
+fx-183,CC Glass,Stylize,Use a bump map to create refractive/glass-like surface texture.,Available by 26.5 (verify installed effect list),effects
+fx-184,CC Spotlight,Perspective,Simulate a 2D spotlight effect.,Available by 26.5 (verify installed effect list),effects
+fx-185,Linear Wipe,Transition,Reveal one image in a straight advancing line.,Available by 26.5 (verify installed effect list),effects
+fx-186,Radial Wipe,Transition,Radial clock-like wipe with a center.,Available by 26.5 (verify installed effect list),effects
+fx-187,Venetian Blinds,Transition,Alternating bands with angle and completion.,Available by 26.5 (verify installed effect list),effects
+fx-188,Gradient Wipe,Transition,Transition through the luminance of a chosen gradient map.,Available by 26.5 (verify installed effect list),effects
+fx-189,Block Dissolve,Transition,Reveal or hide an image in random blocks.,Available by 26.5 (verify installed effect list),effects
+fx-190,Card Wipe,Transition,Flip or transform a grid of image cards.,Available by 26.5 (verify installed effect list),effects
+fx-191,CC Jaws,Transition,Jaw-like geometric wipe.,Available by 26.5 (verify installed effect list),effects
+fx-192,CC Grid Wipe,Transition,Reveal over a grid pattern.,Available by 26.5 (verify installed effect list),effects
+fx-193,CC Scale Wipe,Transition,Transition by scaling pattern.,Available by 26.5 (verify installed effect list),effects
+fx-194,CC Light Wipe,Transition,Wipe with lighting-like boundary glow.,Available by 26.5 (verify installed effect list),effects
+fx-195,CC Glass Wipe,Transition,Distort and reveal with glass-like refraction.,Available by 26.5 (verify installed effect list),effects
+fx-196,CC Twister,Transition,Spiral/twist transition.,Available by 26.5 (verify installed effect list),effects
+fx-197,CC Image Wipe,Transition,Reveal based on an image source.,Available by 26.5 (verify installed effect list),effects
+fx-198,Magnify,Distort / Transform,"Enlarge a local region, like a moving lens.",Available by 26.5 (verify installed effect list),effects
+fx-199,Spherize,Distort / Transform,Warp pixels around a center into spherical distortion.,Available by 26.5 (verify installed effect list),effects
+fx-200,CC Smear,Distort / Transform,Smear pixels around source/target points.,Available by 26.5 (verify installed effect list),effects
+fx-201,CC Split,Distort / Transform,Split and separate part of an image.,Available by 26.5 (verify installed effect list),effects
+fx-202,CC Split 2,Distort / Transform,Second variant of an image splitting distortion.,Available by 26.5 (verify installed effect list),effects
+fx-203,CC Kaleida,Stylize,Create kaleidoscopic repeated reflection.,Available by 26.5 (verify installed effect list),effects
+fx-204,Add Grain,Noise & Grain,Add controllable film-like grain using sampled or chosen settings.,Available by 26.5 (verify installed effect list),effects
+fx-205,Match Grain,Noise & Grain,Match grain texture to a sampled source.,Available by 26.5 (verify installed effect list),effects
+fx-206,Remove Grain,Noise & Grain,Reduce film grain and noise while preserving some details.,Available by 26.5 (verify installed effect list),effects
+fx-207,Median,Noise & Grain,Median neighborhood filter for noise reduction/stylization.,Available by 26.5 (verify installed effect list),effects
+fx-208,Noise HLS,Noise & Grain,Add noise in hue/lightness/saturation terms.,Available by 26.5 (verify installed effect list),effects
+fx-209,Noise HLS Auto,Noise & Grain,Automatically vary hue/lightness/saturation noise.,Available by 26.5 (verify installed effect list),effects
+fx-210,Median (Legacy),Noise & Grain,Older median filter kept for older projects.,Available by 26.5 (verify installed effect list),effects
+fx-211,Matte Choker,Matte,Reduce/expand an alpha matte with detail-sensitive parameters.,Available by 26.5 (verify installed effect list),effects
+fx-212,Simple Choker,Matte,Quick alpha-edge shrink/grow.,Available by 26.5 (verify installed effect list),effects
+fx-213,Refine Hard Matte,Matte,Improve hard-edge matte contours.,Available by 26.5 (verify installed effect list),effects
+fx-214,Refine Soft Matte,Matte,Improve translucent and soft matte edges.,Available by 26.5 (verify installed effect list),effects
+fx-215,CC Burn Film,Stylize,Simulate old film burn marks.,Available by 26.5 (verify installed effect list),effects
+fx-216,CC Plastic,Stylize,Relief/plastic appearance using source luminance as surface information.,Available by 26.5 (verify installed effect list),effects
+fx-217,Emboss,Stylize,Convert edges into a relief-like rendered surface.,Available by 26.5 (verify installed effect list),effects
+fx-218,Color Emboss,Stylize,Emboss detail while retaining source colors.,Available by 26.5 (verify installed effect list),effects
+fx-219,Motion Tile,Stylize,Repeat and mirror pixels beyond layer edges.,Available by 26.5 (verify installed effect list),effects
+fx-220,CC RepeTile,Stylize,Repeat pixels outside layer dimensions.,Available by 26.5 (verify installed effect list),effects
+fx-221,Threshold,Stylize,Reduce an image into black/white based on brightness.,Available by 26.5 (verify installed effect list),effects
+fx-222,Scatter,Stylize,Distribute pixels randomly by an amount.,Available by 26.5 (verify installed effect list),effects
+fx-223,CC Threshold,Stylize,High-contrast threshold visual effect.,Available by 26.5 (verify installed effect list),effects
+fx-224,Cineon Converter,Utility,Convert to/from supported Cineon log film-style encodings.,Available by 26.5 (verify installed effect list),effects
+fx-225,HDR Compander,Utility,Compress/expand HDR-like pixel dynamic range for certain pipelines.,Available by 26.5 (verify installed effect list),effects
+fx-226,Grow Bounds,Utility,Expand a layer effect buffer before later processing.,Available by 26.5 (verify installed effect list),effects
+fx-227,3D Point Control,Expression Controls,User-facing X/Y/Z controller; link an expression to its 3D value for reusable rigs.,Listed by Adobe; check availability in installed 26.5,effects
+fx-228,Angle Control,Expression Controls,Single angle property that an expression can read from a controller layer.,Listed by Adobe; check availability in installed 26.5,effects
+fx-229,Checkbox Control,Expression Controls,Boolean-like 0/1 property for on/off choices in expressions.,Listed by Adobe; check availability in installed 26.5,effects
+fx-230,Color Control,Expression Controls,Choose an RGBA color for other expressions or effect settings.,Listed by Adobe; check availability in installed 26.5,effects
+fx-231,Dropdown Menu Control,Expression Controls,Named menu options for expression-driven choices; check item indexes and names.,Listed by Adobe; check availability in installed 26.5,effects
+fx-232,Layer Control,Expression Controls,Store a reference to a specific project layer for expression links.,Listed by Adobe; check availability in installed 26.5,effects
+fx-233,Point Control,Expression Controls,"Two-dimensional XY control, useful for center and position-driven expressions.",Listed by Adobe; check availability in installed 26.5,effects
+fx-234,Slider Control,Expression Controls,Single numeric parameter for shared animation control; rename the control for clarity.,Listed by Adobe; check availability in installed 26.5,effects
+fx-235,CC Rainfall,Simulation,"Procedural animated rainfall with controls for amount, size, speed and variation.",Listed by Adobe; check availability in installed 26.5,effects
+fx-236,CC Snowfall,Simulation,Procedural animated snow; adjust particle visibility and movement carefully.,Listed by Adobe; check availability in installed 26.5,effects
+fx-237,3D Camera Tracker,Perspective,Analyzes a moving shot and solves a 3D camera/track points for scene integration.,Listed by Adobe; check availability in installed 26.5,effects
+fx-238,3D Glasses,Perspective,Combines stereo left/right views for stereoscopic displays and preview workflows.,Listed by Adobe; check availability in installed 26.5,effects
+fx-239,CC Environment,Perspective,Maps an image around a scene or object; belongs to the Perspective effects family.,Listed by Adobe; check availability in installed 26.5,effects
+fx-240,Cell Pattern,Generate,Generates cellular structures; useful for procedural maps and organic transitions.,Listed by Adobe; check availability in installed 26.5,effects
+fx-241,Checkerboard,Generate,Generates a configurable checkerboard with cell and color controls.,Listed by Adobe; check availability in installed 26.5,effects
+fx-242,Ellipse,Generate,Creates an adjustable elliptical region without a separate shape layer.,Listed by Adobe; check availability in installed 26.5,effects
+fx-243,Eyedropper Fill,Generate,Fills a layer using a sampled source color.,Listed by Adobe; check availability in installed 26.5,effects
+fx-244,Fractal,Generate,Generates a fractal design; distinct from Fractal Noise in Noise & Grain.,Listed by Adobe; check availability in installed 26.5,effects
+fx-245,Brush Strokes,Stylize,"Stylizes the picture as short brush marks, with controllable direction and length.",Listed by Adobe; check availability in installed 26.5,effects
+fx-246,Cartoon,Stylize,Simplifies tonal detail and enhances edges to achieve a stylized illustrated result.,Listed by Adobe; check availability in installed 26.5,effects
+fx-247,CC Block Load,Stylize,Creates block-based moving pixel patterns and digital transitions.,Listed by Adobe; check availability in installed 26.5,effects
+fx-248,CC HexTile,Stylize,Applies a hexagonal tile/kaleidoscopic arrangement.,Listed by Adobe; check availability in installed 26.5,effects
+fx-249,CC Mr. Smoothie,Stylize,Smooths/stylizes the source into large shaped color regions.,Listed by Adobe; check availability in installed 26.5,effects
+fx-250,CC Threshold RGB,Stylize,Thresholds component channels independently for unusual posterized/color effects.,Listed by Adobe; check availability in installed 26.5,effects
+fx-251,Texturize,Stylize,Uses one layer as a texture map to alter another layer’s perceived relief.,Listed by Adobe; check availability in installed 26.5,effects
+fx-252,CC Wide Time,Time,Blends a range of temporal samples to create time-based motion trails.,Listed by Adobe; check availability in installed 26.5,effects
+fx-253,Echo,Time,Accumulates frames at temporal offsets; useful for trails and layered motion.,Listed by Adobe; check availability in installed 26.5,effects
+fx-254,Numbers,Text,Legacy effect for generating formatted numeric values; compare with modern text and expressions.,Listed by Adobe; check availability in installed 26.5,effects
+fx-255,Timecode,Text,Generates a visible timecode readout on a layer for review/burn-ins.,Listed by Adobe; check availability in installed 26.5,effects
+fx-256,CC Line Sweep,Transition,Line-like animated wipe with adjustable direction and edge behavior.,Listed by Adobe; check availability in installed 26.5,effects
+fx-257,CC Radial ScaleWipe,Transition,Radial wipe distortion with scaling behavior.,Listed by Adobe; check availability in installed 26.5,effects
+fx-258,CC WarpoMatic,Transition,Animated warped transition between two looks.,Listed by Adobe; check availability in installed 26.5,effects
+fx-259,Iris Wipe,Transition,Opens or closes an iris-shaped reveal.,Listed by Adobe; check availability in installed 26.5,effects
+fx-260,CC Overbrights,Utility,Helps visualize or handle values outside normal display range in high-dynamic-range work.,Listed by Adobe; check availability in installed 26.5,effects
+fx-261,HDR Highlight Compression,Utility,Compresses high-range highlights for certain HDR processing pipelines.,Listed by Adobe; check availability in installed 26.5,effects
+fx-262,Arithmetic,Channel,"Arithmetic operations on image channels; use with care, especially at high bit depth.",Listed by Adobe; check availability in installed 26.5,effects
+fx-263,Compound Arithmetic,Channel,Combines two images through channel arithmetic operations.,Listed by Adobe; check availability in installed 26.5,effects
+fx-264,Bulge,Distort,Creates adjustable spherical magnification/distortion within the image.,Listed by Adobe; check availability in installed 26.5,effects
+fx-265,Smear,Distort,Smears an image region using interactive path-like distortion.,Listed by Adobe; check availability in installed 26.5,effects
+fx-266,VR Blur,Immersive Video,Blur tailored to 360°/VR imagery; mindful of equirectangular seams.,Listed by Adobe; check availability in installed 26.5,effects
+fx-267,VR Chromatic Aberrations,Immersive Video,Spherical-aware channel separation for VR footage.,Listed by Adobe; check availability in installed 26.5,effects
+fx-268,VR Color Gradients,Immersive Video,Gradients designed for 360° panoramic images.,Listed by Adobe; check availability in installed 26.5,effects
+fx-269,VR Converter,Immersive Video,Converts or reorients 360°/VR projection formats.,Listed by Adobe; check availability in installed 26.5,effects
+fx-270,VR De-Noise,Immersive Video,Reduces noise in spherical panoramic footage.,Listed by Adobe; check availability in installed 26.5,effects
+fx-271,VR Digital Glitch,Immersive Video,Glitch artifacts within VR-friendly image transforms.,Listed by Adobe; check availability in installed 26.5,effects
+fx-272,VR Fractal Noise,Immersive Video,Generates fractal noise across VR projections.,Listed by Adobe; check availability in installed 26.5,effects
+fx-273,VR Glow,Immersive Video,Glow effect designed to respect 360° projections.,Listed by Adobe; check availability in installed 26.5,effects
+fx-274,VR Plane to Sphere,Immersive Video,Projects a planar image onto a 360° sphere representation.,Listed by Adobe; check availability in installed 26.5,effects
+fx-275,VR Rotate Sphere,Immersive Video,Reorients a spherical panorama.,Listed by Adobe; check availability in installed 26.5,effects
+fx-276,VR Sharpen,Immersive Video,Sharpens VR imagery while addressing panoramic continuity.,Listed by Adobe; check availability in installed 26.5,effects
+fx-277,VR Sphere to Plane,Immersive Video,Projects a section of spherical footage to a flat plane.,Listed by Adobe; check availability in installed 26.5,effects
+fx-278,Basic 3D,Obsolete / compatibility only,Compatibility effect for old projects; prefer modern 3D layer workflows.,Listed by Adobe; check availability in installed 26.5,effects
+fx-279,Basic Text,Obsolete / compatibility only,Legacy text-generation effect; use native Text layers for new designs.,Listed by Adobe; check availability in installed 26.5,effects
+fx-280,Gaussian Blur (Legacy),Obsolete / compatibility only,Legacy blur retained for project compatibility; prefer current Gaussian Blur.,Listed by Adobe; check availability in installed 26.5,effects
+fx-281,Lightning,Obsolete / compatibility only,Old lightning generator; Advanced Lightning is the more capable common alternative.,Listed by Adobe; check availability in installed 26.5,effects
+fx-282,Luma Key,Obsolete / compatibility only,Legacy luminance keyer; prefer modern keying and track-matte workflows.,Listed by Adobe; check availability in installed 26.5,effects
+fx-283,Path Text,Obsolete / compatibility only,Legacy text-on-path effect; prefer native Text Path Options.,Listed by Adobe; check availability in installed 26.5,effects
+fx-284,Reduce Interlace Flicker,Obsolete / compatibility only,Legacy filter for older interlaced footage; assess modern source handling first.,Listed by Adobe; check availability in installed 26.5,effects
+fx-285,Spill Suppressor,Obsolete / compatibility only,Legacy spill removal; prefer Advanced Spill Suppressor when suitable.,Listed by Adobe; check availability in installed 26.5,effects
+fx-286,Unmult,Keying,"Create alpha from a black or white backing; set Background Color, level and Softness, then inspect translucent edges.",26.0,keying-effects
+fx-287,Curl Noise,Noise & Grain,"Generate flowing 2D texture; separate scale/swirl from drift/evolution, then use it as imagery or a signal map.",26.3,noise
+fx-288,Compressor,Audio,Reduce peaks above Threshold with Ratio and timing controls; compare bypass at matched loudness.,26.0,audio-effects
+fx-289,Gate,Audio,"Attenuate quiet passages; tune Threshold, Hold and Release to preserve word endings.",26.0,audio-effects
+fx-290,Distortion,Audio,"Drive/saturate sound, blend with Mix and compensate Volume; inspect clipping in rendered audio.",26.0,audio-effects
+fx-291,Object Matte,Tool-generated matte processing,"Generated controls from the Object Matte tool; select/refine/propagate in Layer panel, then Freeze. Not a conventional generator applied to a solid.",26.2; disk cache 26.5,object-matte
+fx-292,Levels (Individual Controls),Color Correction,Levels with separately addressable controls.,Available in 26.5; verify installed integration/configuration,effects
+fx-293,Broadcast Colors,Color Correction,Limit legacy broadcast signal ranges; use the deliverable’s actual specification.,Available in 26.5; verify installed integration/configuration,effects
+fx-294,Video Limiter,Color Correction,Constrain output levels according to delivery requirements.,Available in 26.5; verify installed integration/configuration,effects
+fx-295,Mocha AE,Boris FX Mocha,Bundled planar tracking integration; Mocha Pro is separate.,Available in 26.5; verify installed integration/configuration,effects
+fx-296,CINEWARE,CINEMA 4D integration,Render imported Cinema 4D scenes through its installed integration; separate from choosing the composition renderer.,Available in 26.5; verify installed integration/configuration,effects
+fx-297,OCIO File Transform,Color Correction,Apply a supported LUT/CDL through OCIO.,Available in 26.5; verify installed integration/configuration,ocio
+fx-298,OCIO Color Space Transform,Color Correction,Convert configured input/output color spaces.,Available in 26.5; verify installed integration/configuration,ocio
+fx-299,OCIO Display Transform,Color Correction,Apply a configured display/view transform; avoid duplicating the project output transform.,Available in 26.5; verify installed integration/configuration,ocio
+fx-300,OCIO Look Transform,Color Correction,Apply a configured look with intentional input/output spaces.,Available in 26.5; verify installed integration/configuration,ocio

@@ -1,0 +1,142 @@
+[
+  {
+    "term": "CTI / playhead",
+    "definition": "Current Time Indicator; the time whose frame is displayed/evaluated."
+  },
+  {
+    "term": "In / Out point",
+    "definition": "Beginning and end of a layer's visible span. Do not confuse with the Work Area limits `B`/`N`."
+  },
+  {
+    "term": "Work Area",
+    "definition": "Selected time range for preview/export, independent of composition duration until trimmed."
+  },
+  {
+    "term": "Precomp / nested comp",
+    "definition": "Composition inside another composition, with its own pixels, properties and timeline."
+  },
+  {
+    "term": "Parent",
+    "definition": "A layer whose transforms another layer inherits; shifts spatial relationship."
+  },
+  {
+    "term": "Anchor Point",
+    "definition": "Local pivot point for scaling/rotation."
+  },
+  {
+    "term": "Alpha channel",
+    "definition": "Transparency; 0 = fully transparent; 1.0 as normalized alpha (or 255 in 8-bit alpha) = fully opaque."
+  },
+  {
+    "term": "Luma",
+    "definition": "Perceived image brightness; used for brightness-dependent mattes/effects."
+  },
+  {
+    "term": "Track Matte",
+    "definition": "Another layer drives the alpha/brightness mask of a target layer."
+  },
+  {
+    "term": "Garbage matte",
+    "definition": "Roughly exclude unwanted region before precise keying/rotoscoping."
+  },
+  {
+    "term": "Hold / linear / Bézier",
+    "definition": "Keyframe interpolation choices: jump, constant interval interpolation, or curved interpolation."
+  },
+  {
+    "term": "Roving keyframe",
+    "definition": "An intermediate spatial-motion key whose time can adjust to maintain a more consistent motion-speed relationship."
+  },
+  {
+    "term": "Temporal interpolation",
+    "definition": "How a value moves between times/keys."
+  },
+  {
+    "term": "Spatial interpolation",
+    "definition": "How a Position path curves between locations."
+  },
+  {
+    "term": "Graph Editor",
+    "definition": "Speed or value graph for keyframes and interpolation."
+  },
+  {
+    "term": "Expression",
+    "definition": "Scripted formula linked to a property, evaluated at render/preview time."
+  },
+  {
+    "term": "Essential Properties",
+    "definition": "Exposed properties of a precomp that can be overridden per instance."
+  },
+  {
+    "term": "Collapse Transformations",
+    "definition": "Change how transformations are propagated through nested comps; can alter appearance and layer ordering behavior."
+  },
+  {
+    "term": "Continuously Rasterize",
+    "definition": "Re-render vector layers at the required effective resolution for sharp results when scaled; cannot restore detail to an arbitrary raster photo."
+  },
+  {
+    "term": "Draft quality",
+    "definition": "Faster approximate viewer/sampling quality when supported; verify final output."
+  },
+  {
+    "term": "Frame sampling / frame blending",
+    "definition": "Methods to choose/interpolate frames for different playback time; Pixel Motion can introduce warped artifacts."
+  },
+  {
+    "term": "Bit depth (bpc)",
+    "definition": "Processing precision per color channel; not equivalent to source codec's bit depth."
+  },
+  {
+    "term": "Scene-linear",
+    "definition": "Working space in which numeric light intensity is approximately linear; useful for physically sensible CGI compositing."
+  },
+  {
+    "term": "Color transform / LUT",
+    "definition": "Map between encodings or looks; creative LUT ≠ necessarily a correct camera input transform."
+  },
+  {
+    "term": "ACES / OCIO",
+    "definition": "Managed color pipeline standards/configuration used in VFX and color-critical work."
+  },
+  {
+    "term": "Alpha premultiplication",
+    "definition": "Whether RGB values already have transparency mathematically baked into the colors."
+  },
+  {
+    "term": "ProRes / DNxHR",
+    "definition": "Common higher-quality intraframe editing/intermediate codecs."
+  },
+  {
+    "term": "H.264 / H.265 (HEVC)",
+    "definition": "Common compressed delivery codecs; strong distribution options, not ideal for every compositing source."
+  },
+  {
+    "term": "Render Queue",
+    "definition": "AE's native output queue, including native H.264 output support in recent versions."
+  },
+  {
+    "term": "MOGRT",
+    "definition": "Motion Graphics template for standardized motion elements in supporting apps."
+  },
+  {
+    "term": "ROI",
+    "definition": "Region of Interest; viewing/rendering only a limited image region during preview when supported."
+  },
+  {
+    "term": "Motion path dots",
+    "definition": "Visual samples of successive frame positions, indicating relative frame-to-frame travel spacing."
+  },
+  {
+    "term": "Guide layer",
+    "definition": "Visible for internal composition work but generally excluded from its rendered parent-comp output (subject to context)."
+  },
+  {
+    "term": "Mocha AE",
+    "definition": "Bundled planar tracking integration, with features distinct from separately licensed Mocha Pro."
+  },
+  {
+    "term": "Quick Offset",
+    "definition": "`Ctrl+Alt+drag` selected layers/keys to distribute across time."
+  }
+]

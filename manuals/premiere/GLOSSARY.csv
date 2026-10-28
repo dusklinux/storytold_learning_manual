@@ -1,0 +1,108 @@
+term,definition,example,lesson
+A-roll,"Primary narrative footage, typically the speaker or principal action; the label describes editorial role, not a file type.",Interview explanation stays audible under the cutaway.,L034
+Action safe,A historical display boundary used to avoid placing essential action too near an edge; modern platforms have their own overlays.,Check delivery-specific phone interface overlays.,L062
+Active monitor,"The panel currently receiving keyboard commands, which changes the meaning of some keys.",J/K/L may operate the Source Monitor or timeline depending on focus.,L019
+Adjustable bitrate,"Encoder data rate controlled by a target and sometimes a maximum, rather than a constant amount per frame.",Test VBR target and maximum on a motion-heavy passage.,L086
+Alpha channel,"An extra channel storing transparency, often 0 transparent to 1 opaque.",A lower third with transparent background needs an alpha-capable format.,L053
+Amplitude,"Signal strength, commonly shown as a waveform; audio meters usually display level on a logarithmic dB scale.",Clip peaks are higher in some spoken syllables than others.,L038
+Artifact,"Unwanted visible or audible distortion introduced by source capture, processing or compression.",Banding in a gradient or blockiness in fast motion.,L085
+Aspect ratio,Displayed width divided by height.,1920/1080 = 16:9; 1080/1920 = 9:16.,L003
+Aspect-ratio mismatch,"When image shape differs from its intended display or sequence, causing stretch, letterbox, pillarbox or crop.",A 4:3 archive shot needs intentional framing in a 16:9 sequence.,L003
+Audio conforming,Preparation of decoded or resampled audio for reliable timeline use; it may generate temporary media-cache data.,A compressed audio clip can need conforming before waveform playback.,L092
+B-frame,A compressed picture that can be predicted from other frames; not every codec uses the same prediction structure.,Long-GOP footage may require extra decode work during random scrubbing.,L084
+B-roll,Supporting picture over the primary story.,Show the product while narration explains its mechanism.,L034
+Bit depth,Number of signal levels per channel before processing/encoding.,8-bit has 256 code values per channel; 10-bit has 1024.,L056
+Bitrate,Data per second of encoded stream.,8 Mb/s for 10 s is about 10 MB before overhead.,L084
+Burn-in caption,Text rendered permanently into the exported video pixels.,Captions remain visible in a player even without external subtitles.,L068
+Camera-original,The captured original file or card structure to retain independently of proxies or transcodes.,Keep camera media untouched before creating editing proxies.,L014
+CBR,Constant bitrate aims for predictable stream size.,A broadcaster may specify CBR.,L086
+Channel mapping,Assignment of source audio channels to timeline channels; incorrect mapping can mute or duplicate a microphone.,Assign a recorded mono lav channel appropriately before a dialogue cut.,L040
+Chroma subsampling,Reduced color resolution relative to brightness.,4:2:0 sacrifices chroma detail versus 4:2:2.,L013
+Chromatic aberration,"Wavelength-dependent color fringing, sometimes a lens defect and sometimes a stylized effect.",Inspect red/cyan fringes around high-contrast edges before sharpening.,L049
+Clip instance,A placement of referenced media in a sequence.,Same camera file used twice at different in/out ranges.,L001
+Closed GOP,Compression group that can be decoded without referencing pictures from a different group; useful for some interchange workflows.,Seek and transcode behavior differs between GOP settings.,L084
+Codec,Compression/decompression method for a stream.,H.264 or ProRes is not a folder or container.,L084
+Color gamut,Range of reproducible colors in a defined color space.,Wide-gamut camera footage must be mapped appropriately for Rec.709 delivery.,L056
+Color metadata,Tags describing how image values should be interpreted by a decoder or display pipeline.,Wrong primaries or transfer tags may make an exported file appear different in a player.,L061
+Consolidation,"Collecting or copying relevant files for project handoff, often with optional trimming depending on tool and media type.",Reopen the archived project from a disconnected drive to test links.,L075
+Constant frame rate (CFR),"A file whose presentation timestamps follow a regular target cadence, unlike VFR footage.",Transcode a drifting phone recording to an editing-friendly CFR intermediate.,L013
+Container,File wrapper that houses encoded streams and metadata.,MP4 may contain H.264 video and AAC audio.,L084
+Crossfade,Overlapping audio levels that smooth transitions.,Two room-tone clips crossfade over 8 frames.,L043
+dBFS,Decibels relative to digital full scale.,0 dBFS is the upper digital sample peak limit.,L038
+Debayer,"Process of reconstructing color channels from a camera sensor mosaic, relevant to some RAW media.",RAW decode quality and controls depend on camera format and support.,L072
+Decode,Read compressed source frames into pictures or sound samples available for editing.,A CPU may struggle to decode 4K 10-bit long-GOP footage during scrubbing.,L093
+Deinterlace,"Convert interlaced fields into progressive pictures, with possible motion or detail tradeoffs.",Inspect old broadcast material for combing before export.,L087
+Dither,Small controlled noise that can reduce visible quantization artifacts when changing precision.,Very smooth gradients can show banding in low-bit-depth delivery.,L056
+Drop-frame timecode,Labeling adjustment at 29.97-related cadence; actual video frames are not discarded.,Some timecode frame numbers are skipped to align clock labels.,L002
+Dynamic Link,Adobe inter-application linking between timelines/compositions.,Linked After Effects composition appears in Premiere.,L095
+Dynamic range,Difference between the darkest useful detail and brightest recoverable values of a signal.,Log camera footage needs a suitable transform before creative grading.,L056
+Encoder preset,"A collection of output settings; it is a starting point, not proof that delivery requirements are met.","Verify actual resolution, profile, color and audio against client specifications.",L085
+Field order,Whether even or odd scan lines are presented first in an interlaced signal.,Wrong field order can cause jerky motion in older formats.,L087
+Frame rate,Frames displayed per second (nominal or exact).,25 fps frames have 40 ms intervals.,L002
+Gamma,Nonlinear relationship between code values and light/display intensity.,Incorrect gamma interpretation changes midtone appearance.,L061
+Gamut mapping,Transforming colors from one gamut to another while managing out-of-range values.,Map wide-gamut footage to the chosen SDR output without arbitrary clipping.,L056
+GOP,Group of Pictures; compression referencing frames over time.,Long-GOP camera codec can be hard to scrub.,L084
+HDR,High dynamic range encoding and display path.,PQ/HLG footage needs managed transforms for SDR exports.,L056
+Headroom,Level margin before clipping or target maximum.,Dialogue peaks below 0 dBFS leave room for transient summation.,L045
+HEVC,High Efficiency Video Coding / H.265.,Usually more efficient compression than H.264 but variable decode support.,L085
+In point,First chosen frame in a marked range.,Source In at frame 50 and Out near 100 selects a portion.,L016
+Interframe,Compression that predicts frames from other frames.,Long-GOP codecs use interframe prediction.,L085
+Intra-frame codec,Compression primarily operating within each frame rather than using temporal prediction across frames.,An edit-friendly intermediate may scrub more smoothly than a long-GOP camera codec.,L085
+Intraframe,Compression of each frame substantially independently.,ProRes is commonly chosen for edit intermediates.,L085
+J-cut,Incoming audio begins before its matching video.,Hear the next speaker before seeing them.,L027
+Keyframe,Time/value control point for animated property.,Scale goes 100% to 110% in 2 seconds.,L048
+Keyframe interpolation,"Method used to calculate values between keyframes, such as linear versus eased motion.",Ease a lower third into position without an abrupt stop.,L048
+L-cut,Outgoing audio continues under the next picture.,Keep interviewer speaking beneath illustrative B-roll.,L027
+Letterbox,Horizontal bars created when a wider image is fitted inside a narrower display or frame.,Choose intentional letterboxing instead of stretching cinema footage.,L003
+Log,Camera encoding that preserves wide scene range with low contrast preview.,Normalize camera Log before creative grading.,L056
+Loudness (LUFS),Perceptual program loudness measurement.,Integrated LUFS describes the complete segment.,L045
+Luminance,"Approximate perceived brightness component, distinct from a simple average of RGB values.",Use waveform scopes to compare scene exposure.,L055
+LUT,Lookup table mapping input to output values.,Technical Log transform and creative LUT serve distinct roles.,L060
+Master,High-quality intended deliverable or source reference.,Retain source camera masters and edit-friendly output master.,L088
+Media offline,"Project has a reference to source media, but it cannot currently resolve the file location.",Relink a moved folder while checking clip identity.,L012
+Metadata,Descriptors about footage and edits.,"Timecode, duration, reel, frame rate and tags.",L011
+Mono,One channel of audio signal.,Lavalier dialogue is often mono.,L040
+Motion estimation,An algorithm predicting movement between images.,Optical Flow may warp a fast-moving hand.,L029
+Multicam,Multiple synchronized cameras in one editorial source.,Cut between two synced interview angles.,L069
+Multichannel audio,Audio carrying more than two discrete channels; routing depends on track and export mapping.,Confirm the intended channel layout before a broadcast master.,L040
+Nesting,Placing a sequence inside another sequence as one editable timeline item.,Nest a built title montage for higher-level placement.,L028
+Nonlinear editing,Editing through references rather than irreversible linear recording.,Move a clip anywhere without cutting the camera file.,L001
+Out point,Boundary defining the end of a chosen source/sequence range.,"Mark after the sentence, then insert only the selection.",L016
+Paper Edit,Transcript-based selection and rough-sequence creation in 26.5.,Select two statements to generate a new sequence.,L066
+Peak,Maximum instantaneous signal amplitude.,A loud clap peaks higher than sustained dialogue.,L038
+Pillarbox,Vertical sidebars when narrower footage is shown in a wider frame without stretching.,A portrait clip may need reframing rather than black sidebars.,L003
+Pixel aspect ratio,Shape of individual sample pixels.,Modern HD often uses square pixels; legacy media may not.,L003
+Playhead,Position of current playback/edit time.,Move playhead to 00:00:10:00 before adding marker.,L019
+Pre-roll,"Material or time before the main recorded action, used for handles or sync.",Retain a few seconds before the slate/clap in original footage.,L069
+Premiere project,"Editable set of media pointers, bins and sequences.",A .prproj alone does not contain camera originals.,L008
+Preview render,Temporary media rendered to improve playback.,Green render bar does not prove final export quality.,L083
+Proxy,Alternate lower-cost file attached to master.,Edit 4K originals with 720p proxies.,L014
+Proxy attachment,Link from the original media object to a lightweight edit copy; original media remains authoritative for normal final export.,"Toggle proxies, then inspect final output at original resolution.",L071
+Quantization,Mapping values onto discrete code levels; insufficient precision can produce banding or audio noise.,Gradient artifacts become more obvious after aggressive compression.,L085
+Rec.709,SDR video color primaries/transfer conventions.,Common SDR broadcast/web delivery target.,L056
+Render preview,Temporary computed media for smoother playback; using previews in exports requires attention to preview quality and settings.,A green timeline render bar does not prove the final H.264 export settings.,L083
+Ripple edit,Boundary trim moving later sequence content.,Shorten A by 10 frames; B begins 10 frames earlier.,L022
+Rolling edit,Boundary trim that transfers duration across adjacent clips.,Grow A 10 frames and shrink B 10 frames; no length change.,L023
+Safe margins,Guides for keeping critical text and imagery away from cropped edges or platform overlays.,Preview captions on the final vertical-phone layout.,L062
+Scene-referred,"Image values describing captured scene light before a display rendering transform, depending on the color system.",Preserve Log/HDR interpretation before applying a creative look.,L056
+Sequence,Timeline and settings defining an edit.,1080p25 sequence stores tracks and timebase.,L015
+Sequence timebase,Frame-rate ruler used by the editing timeline; distinct from source frame rate and export frame rate.,A 25 fps sequence counts output positions in 25 frames per second.,L015
+Shutter angle,Exposure-time representation affecting motion blur; a 180-degree shutter nominally means half-frame exposure.,Different motion blur makes two cameras harder to match.,L029
+Slide edit,Move a clip in sequence by trimming neighbors.,Shift middle insert without changing its own source range.,L025
+Slip edit,Shift source content while keeping clip sequence interval fixed.,Use earlier part of reaction shot without moving the cut.,L024
+Source monitor,Panel for examining source media and marking a usable source range before an edit.,Set source In and Out points before Insert.,L016
+Source patching,Choose destination tracks for inserted source audio/video.,Patch V source to V2 before inserting an overlay.,L018
+Sync Lock,Track rule about participation in ripple edits.,Lock allows protected alignment decisions.,L026
+Timecode,Frame-address display in hours:minutes:seconds:frames.,"00:01:10:12 is a position, not 70.12 seconds.",L002
+Timecode rollover,Frame address advancing from the last frame number of a second to the next second.,"At 25 fps, 00:00:03:24 is followed by 00:00:04:00.",L002
+Timeline instance,A use of source media with its own timing/effects/position; it is not a rewritten camera file.,Two cuts from one video can have different color corrections.,L001
+Track targeting,Sequence-track designation for many timeline operations.,Track-target highlight differs from source V1 patch.,L018
+Transfer function,"Mapping between numeric image values and represented brightness, such as SDR gamma or HDR PQ/HLG.",Matching primaries alone does not ensure correct HDR-to-SDR display.,L056
+True peak,Estimated peaks between reconstructed digital samples.,Output limiter may target true-peak ceiling.,L045
+Variable frame rate,Nonconstant video capture frame intervals.,Phone footage may require CFR transcoding for sync.,L013
+VBR,Variable bitrate reallocates data with picture complexity.,Action may use more bits than a static slate.,L086
+VFR,Variable frame rate: video frames arrive at varying time intervals; some sources need conversion for dependable sync.,Phone footage that drifts against separate recorder audio.,L013
+White balance,Relative channel correction for neutral reference.,Correct warm orange camera cast before look.,L057
+Working color space,Internal processing representation for tone/color.,May differ from source and output color space.,L056
+XML interchange,Structured data for supported editorial exchange.,Not every effect/transcript transfers between editors.,L075
+YUV / YCbCr,Video representations separating luma-like and chroma-like components; YCbCr is the digital family commonly used by encoded video.,4:2:0 sampling stores less chroma spatial detail than 4:4:4.,L084

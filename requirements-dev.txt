@@ -1,0 +1,2 @@
+# Optional real-browser tests only; not used by readers or the normal build.
+playwright==1.64.1

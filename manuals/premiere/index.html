@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Premiere Explained: offline Windows-first Premiere 26.5.2 learning course and professional reference.">
+  <title>Premiere, Explained — Offline course</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main" id="skipContent">Skip to lesson content</a>
+<div class="shell">
+  <aside id="sidebar" class="sidebar" aria-label="Course navigation">
+    <a class="brand" href="#overview" aria-label="Premiere Explained home">
+      <span class="brand-icon" aria-hidden="true"><span>Pr</span></span>
+      <span><strong>Premiere,<br> Explained.</strong><small>OFFLINE LEARNING SYSTEM</small></span>
+    </a>
+    <div class="sidebar-scroll">
+      <div class="tiny-label">LEARN</div>
+      <div id="sidebarStages"></div>
+      <div class="tiny-label section-offset">QUICK REFERENCE</div>
+      <nav class="ref-nav" aria-label="Reference navigation">
+        <a href="#guides">Deep-dive field guides</a>
+        <a href="#ref/shortcuts">Keyboard shortcuts</a>
+        <a href="#ref/effects">Effects encyclopedia</a>
+        <a href="#ref/transitions">Transitions</a>
+        <a href="#ref/panels">Panels & tools</a>
+        <a href="#ref/glossary">Technical glossary</a>
+        <a href="#recipes">Workflow recipes</a>
+        <a href="#troubleshooting">Troubleshooting</a>
+        <a href="#sources">Sources & release audit</a>
+        <a href="#bookmarks">Bookmarks</a>
+        <a href="#settings">Reading & progress settings</a>
+      </nav>
+    </div>
+    <div class="sidebar-bottom"><div class="side-actions"><button id="exportProgressSide" type="button">Export JSON</button><button id="importProgressSide" type="button">Import JSON</button></div><div class="sidebar-caption">WINDOWS EDITION · v26.5.2</div><div class="side-progress"><span id="globalCount">0 / 105 lessons</span><span id="globalPct">0%</span></div><div class="track"><div class="fill" id="globalBar"></div></div></div>
+  </aside>
+  <div class="main-shell">
+    <header class="topbar">
+      <button type="button" class="mobile-menu iconbutton" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <div class="top-center"><span class="status-dot" aria-hidden="true"></span><span>Offline-ready · Windows edition</span></div>
+      <label class="search-wrap"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Search lessons, effects, shortcuts..." aria-label="Search all manual contents" autocomplete="off"><kbd>/</kbd></label>
+      <button type="button" class="iconbutton theme-btn" id="themeToggle" aria-label="Toggle light or dark theme">◐</button>
+      <button type="button" class="textbutton" id="exportProgress" title="Save study data to JSON">Export progress</button>
+      <button type="button" class="textbutton" id="importProgress">Import</button>
+      <input id="importFile" type="file" accept="application/json,.json" hidden aria-label="Import progress JSON">
+    </header>
+    <main id="main" tabindex="-1" aria-live="polite"></main>
+    <footer class="footer"><span>Premiere, Explained · Original educational material · October 28, 2026</span><span>Bundled for local reading; Adobe is not affiliated with this guide.</span></footer>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="data.js"></script>
+<script src="guides.js"></script>
+<script src="app.js"></script>
+<script src="../../assets/bridge.js"></script>
+</body>
+</html>

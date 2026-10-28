@@ -1,0 +1,156 @@
+id,term,definition,lesson
+glossar-pixel,Pixel,Smallest addressable raster sample; a color/alpha value at a grid coordinate.,s01l01
+glossar-raster,Raster,Image stored as an array of samples rather than mathematical objects.,s01l01
+glossar-vector,Vector,"Geometry encoded by points, paths and equations, rendered to pixels for display.",s01l01
+glossar-resolution,Resolution,"Context-dependent amount of detail, commonly pixel dimensions or PPI.",s01l02
+glossar-ppi,PPI,Pixels per inch in intended output; does not by itself create detail.,s01l02
+glossar-dpi,DPI,Dots per inch of printing hardware; not interchangeable with image PPI.,s01l02
+glossar-resampling,Resampling,Computing a new pixel grid at different dimensions.,s01l02
+glossar-interpolation,Interpolation,Estimating sample values between original samples.,s01l02
+glossar-canvas,Canvas,Document's finite coordinate area.,s02l01
+glossar-crop,Crop,Changes visible frame and potentially removes outside pixels.,s02l01
+glossar-canvas-size,Canvas Size,Command expanding or contracting document bounds without image resampling.,s02l01
+glossar-image-size,Image Size,Command to change dimensions/resolution and optionally resample.,s02l01
+glossar-layer,Layer,"Independently composited source of pixels, type, shape or adjustment.",s02l02
+glossar-stacking-order,Stacking order,Front-to-back sequence determining occlusion/composite result.,s02l02
+glossar-group,Group,Container organizing related layers.,s02l02
+glossar-opacity,Opacity,Factor controlling the visibility of a layer or effect.,s04l04
+glossar-fill,Fill,Layer interior visibility setting distinct from overall Opacity when effects are used.,s04l04
+glossar-alpha,Alpha,Opacity or coverage value stored per pixel or as a channel.,s02l04
+glossar-transparency,Transparency,Partial or total absence of opacity in compositing.,s02l04
+glossar-checkerboard,Checkerboard,"UI visualization of transparent areas, not source pixels.",s02l04
+glossar-psd,PSD,Native layered Photoshop document format.,s01l03
+glossar-psb,PSB,Large Document Format for documents exceeding PSD practical limits.,s11l05
+glossar-jpeg,JPEG,"Lossy photographic compression; generally flattened, with no alpha.",s01l03
+glossar-png,PNG,Raster format supporting alpha transparency; not a full PSD replacement.,s02l04
+glossar-tiff,TIFF,"Flexible raster exchange and archival format, often supporting higher bit depths.",s01l03
+glossar-webp,WebP,Modern image format supporting efficient compression and optional transparency.,s10l04
+glossar-raw,RAW,Camera sensor-derived source data needing development rather than fixed rendering.,s08l04
+glossar-dng,DNG,Digital Negative raw container/specification supported by Camera Raw.,s08l04
+glossar-xmp-sidecar,XMP sidecar,Metadata file containing develop settings for some raw workflows.,s08l04
+glossar-selection,Selection,Temporary per-pixel editing coverage field.,s03l01
+glossar-marching-ants,Marching ants,Animated boundary depicting part of a selection threshold.,s03l01
+glossar-feather,Feather,Softens selection or mask edge transition.,s03l04
+glossar-anti-aliasing,Anti-aliasing,Blends edge pixels to reduce jagged contour appearance.,s03l04
+glossar-tolerance,Tolerance,Threshold controlling similarity in some selection/fill tools.,s03l02
+glossar-color-range,Color Range,Selection from color similarity and fuzziness rather than just geometric area.,s03l02
+glossar-quick-mask,Quick Mask,Temporary view/edit mode showing selection coverage as mask.,s03l05
+glossar-layer-mask,Layer mask,Grayscale visibility control attached to a layer.,s03l03
+glossar-vector-mask,Vector mask,Visibility boundary generated from editable path geometry.,s03l06
+glossar-clipping-mask,Clipping mask,Upper layer constrained by transparency of lower base layer.,s03l06
+glossar-alpha-channel,Alpha channel,Grayscale auxiliary channel that can store selection data.,s03l05
+glossar-composite-channel,Composite channel,Combined color display assembled from component channels.,s08l02
+glossar-rgb,RGB,Red/green/blue additive-color channel model.,s08l05
+glossar-cmyk,CMYK,Cyan/magenta/yellow/key print-separation channel model.,s08l05
+glossar-lab,Lab,Color model separating lightness from two opponent chromatic axes.,s08l05
+glossar-grayscale,Grayscale,Single-intensity color mode without normal chromatic channel variation.,s08l05
+glossar-icc-profile,ICC profile,Data interpreting color numbers for a specific color space/device process.,s08l05
+glossar-embedded-profile,Embedded profile,Color profile stored in a file for correct interpretation.,s08l05
+glossar-assign-profile,Assign Profile,"Reinterprets existing color numbers under a new profile, potentially changing appearance.",s08l05
+glossar-convert-to-profile,Convert to Profile,Changes channel values to retain approximate appearance under another profile.,s08l05
+glossar-working-space,Working space,Color space used for editing or interpreting untagged data under settings.,s08l05
+glossar-gamut,Gamut,Range of colors representable by a device or space.,s08l06
+glossar-soft-proof,Soft proof,On-screen simulation of output profile under calibrated conditions.,s08l06
+glossar-rendering-intent,Rendering intent,Rule for mapping out-of-gamut colors during conversion.,s08l06
+glossar-bit-depth,Bit depth,Number of binary bits per color component defining precision/range.,s08l05
+glossar-8-bit-channel,8-bit/channel,Usually 256 encoded values per channel in integer representation.,s08l05
+glossar-16-bit-channel,16-bit/channel,Higher-precision channel representation useful for smooth corrections.,s08l05
+glossar-32-bit-channel,32-bit/channel,Floating-point precision often used for HDR workflows.,s08l07
+glossar-hdr,HDR,High dynamic range content or representation with extended luminance information.,s08l07
+glossar-histogram,Histogram,Count of image pixels by channel or tonal interval.,s08l01
+glossar-exposure,Exposure,Amount of image brightness associated with captured or interpreted light.,s08l01
+glossar-white-balance,White balance,Correction for color cast from illumination or camera setting.,s08l03
+glossar-clipping,Clipping,Loss of differentiable highlight/shadow color values after limits are hit.,s08l01
+glossar-black-point,Black point,Input or output value mapped to deepest intended tone.,s08l01
+glossar-white-point,White point,Input or output value mapped to brightest intended tone.,s08l01
+glossar-levels,Levels,"Tonal mapping through black, mid and white controls.",s08l01
+glossar-curves,Curves,Arbitrary control-point mapping of input to output tones.,s08l02
+glossar-s-curve,S-curve,Curve raising highlights and lowering shadows to increase contrast.,s08l02
+glossar-color-grading,Color grading,Intentional global/local color style beyond basic neutrality.,s08l03
+glossar-hsl,HSL,"Hue, saturation and lightness descriptors for color adjustment.",s08l03
+glossar-hue,Hue,Perceived color family or angle in color models.,s08l03
+glossar-saturation,Saturation,Color intensity relative to gray at comparable lightness.,s08l03
+glossar-luminance,Luminance,Light-related intensity measure; specific meaning depends on space.,s08l03
+glossar-smart-object,Smart Object,Container retaining source content for transforms and supported smart filters.,s04l02
+glossar-embedded-smart-object,Embedded Smart Object,Smart Object source stored inside PSD.,s04l02
+glossar-linked-smart-object,Linked Smart Object,Smart Object whose source is an external file.,s04l02
+glossar-smart-filter,Smart Filter,Editable supported filter attached to a Smart Object.,s04l03
+glossar-filter-mask,Filter mask,Grayscale control of combined Smart Filter influence.,s04l03
+glossar-adjustment-layer,Adjustment layer,Non-destructive computed tone/color adjustment over underlying pixels.,s04l01
+glossar-blend-mode,Blend mode,Rule mathematically combining layer and underlying image color values.,s04l04
+glossar-multiply,Multiply,Blend mode tending to darken through channel multiplication.,s04l04
+glossar-screen,Screen,Blend mode tending to brighten through inverse multiplicative math.,s04l04
+glossar-overlay,Overlay,Contrast blend mode combining Multiply/Screen behavior conditionally.,s04l04
+glossar-blend-if,Blend If,Layer Style threshold-based visibility using tonal ranges.,s04l05
+glossar-layer-style,Layer Style,"Live appearance effects such as Stroke, Shadow and Glow.",s02l05
+glossar-drop-shadow,Drop Shadow,Layer effect producing offset shadow based on layer contours.,s02l05
+glossar-stroke,Stroke,Visible line placed around a vector path or layer boundary.,s02l05
+glossar-transform,Transform,"Geometric change such as scale, rotate, warp or skew.",s02l03
+glossar-free-transform,Free Transform,General handles-based transform workflow.,s02l03
+glossar-perspective,Perspective,Projection geometry causing parallel 3D lines to converge in image.,s09l01
+glossar-vanishing-point,Vanishing point,Projected location where parallel scene lines appear to meet.,s09l01
+glossar-horizon,Horizon,Camera eye-level reference in perspective geometry.,s09l01
+glossar-contact-shadow,Contact shadow,Darkening immediately beneath contact where light is blocked.,s09l02
+glossar-cast-shadow,Cast shadow,Shadow projected onto a separate surface by an object blocking light.,s09l02
+glossar-atmospheric-perspective,Atmospheric perspective,Reduced distant contrast and possible color shift from air scattering.,s09l04
+glossar-depth-of-field,Depth of field,Range of subject distances appearing acceptably sharp.,s09l04
+glossar-gaussian-blur,Gaussian Blur,Spatial smoothing weighted by Gaussian distribution.,s04l03
+glossar-unsharp-mask,Unsharp Mask,"Edge-contrast sharpening with controls Amount, Radius and Threshold.",s08l07
+glossar-halo,Halo,Unnatural light or dark band around an edge from edits or masking.,s09l03
+glossar-noise,Noise,"Unpredictable pixel variations from capture, processing or synthesis.",s08l07
+glossar-denoise,Denoise,"Reduction of noise, often at some fine-detail cost.",s08l07
+glossar-texture,Texture,Small repeating or stochastic image detail.,s05l01
+glossar-healing,Healing,Retouch method matching borrowed texture with target surroundings.,s05l01
+glossar-cloning,Cloning,Direct copying of pixels from source to target.,s05l02
+glossar-content-aware-fill,Content-Aware Fill,Synthesizes replacement pixels using analyzed neighborhood information.,s05l03
+glossar-remove-tool,Remove Tool,"Photoshop retouch brush for inferred removal, with model-dependent processing.",s05l03
+glossar-frequency-separation,Frequency separation,Technique operating on different spatial scales of image detail.,s09l06
+glossar-dodge,Dodge,Local brightening operation.,s05l05
+glossar-burn,Burn,Local darkening operation.,s05l05
+glossar-liquify,Liquify,Specialized image geometry warp interface.,s05l05
+glossar-brush-opacity,Brush opacity,Maximum contribution of brush stroke across area.,s06l01
+glossar-brush-flow,Brush flow,Rate of paint deposition during a stroke.,s06l01
+glossar-hardness,Hardness,Softness of a brush tip edge.,s06l01
+glossar-smoothing,Smoothing,Pointer path stabilization for brush strokes.,s06l02
+glossar-pen-pressure,Pen pressure,Stylus force data used for brush dynamics on supported tablets.,s06l02
+glossar-gradient,Gradient,Continuous transition between colors or opacity levels.,s06l04
+glossar-pattern,Pattern,Tiled repeated image or fill design.,s06l04
+glossar-foreground-color,Foreground color,Current primary painting/fill color.,s06l03
+glossar-swatch,Swatch,Saved color for repeated access.,s06l03
+glossar-path,Path,Editable geometric contour defined by anchors and segments.,s07l04
+glossar-anchor-point,Anchor point,Path control point that defines contour position.,s07l04
+glossar-b-zier-handle,Bézier handle,Direction vector influencing tangent and curvature of path segment.,s07l04
+glossar-point-type,Point type,"Text entered at single click origin, extending with text.",s07l01
+glossar-paragraph-type,Paragraph type,Text flowing inside a sized bounding box.,s07l01
+glossar-kerning,Kerning,Spacing adjustment for a particular glyph pair.,s07l02
+glossar-tracking,Tracking,Overall spacing across selected glyphs.,s07l02
+glossar-leading,Leading,Distance from one line baseline to the next.,s07l02
+glossar-glyph,Glyph,Specific drawn appearance of a character in font.,s07l02
+glossar-anti-aliased-type,Anti-aliased type,Rasterized glyph edges smoothed by partial pixel coverage.,s07l01
+glossar-dynamic-text,Dynamic Text,Recent feature extending text layout along shapes/paths; availability version-specific.,s07l05
+glossar-actions,Actions,Recorded command sequences replayable in Photoshop.,s10l02
+glossar-batch,Batch,Automatic operation across a set of source files.,s10l02
+glossar-uxp,UXP,Modern Photoshop plugin extensibility platform.,s10l04
+glossar-export-as,Export As,Asset-oriented export dialog distinct from editable Save As.,s10l05
+glossar-preflight,Preflight,Structured verification of outputs against recipient technical requirements.,s10l06
+glossar-scratch-disk,Scratch disk,Drive space used by Photoshop for temporary working data.,s11l01
+glossar-gpu,GPU,Graphics processor accelerating compatible display and image operations.,s11l01
+glossar-directx,DirectX,Windows graphics API used to describe supported GPU feature levels.,s11l02
+glossar-vram,VRAM,Graphics memory available to GPU features.,s11l02
+glossar-virtual-gpu,Virtual GPU,Graphics adapter presented by virtualization host to guest system.,s11l02
+glossar-pcie-passthrough,PCIe passthrough,Advanced technique assigning physical hardware directly to a guest where supported.,s11l02
+glossar-preferences,Preferences,"Application configuration settings, distinct from document data.",s01l04
+glossar-workspace,Workspace,Stored UI panel arrangement.,s01l04
+glossar-history-state,History state,"Session snapshot of editing actions, not permanent backup.",s01l06
+glossar-generative-credits,Generative credits,Plan-based metering of certain Adobe and partner AI operations.,s11l06
+glossar-generative-fill,Generative Fill,Prompt-based image insertion/removal/replacement using supported generative service.,s11l06
+glossar-on-device-model,On-device model,ML model running locally after installation and hardware checks.,s11l06
+glossar-beta,Beta,Pre-release feature/channel not to be assumed stable or permanent.,s11l06
+glossar-lts,LTS,Long-term-support release branch with extended security/maintenance policy.,s11l06
+glossar-brush-spacing,Brush spacing,Distance between individual brush-tip imprints; smaller spacing generally produces smoother continuous strokes.,s06l01
+glossar-brush-jitter,Brush jitter,"Controlled randomness in size, angle, position or color of repeated brush marks.",s06l02
+glossar-icc-rendering-intent,ICC rendering intent,"Rule for mapping colors between gamuts during a conversion, especially perceptual versus relative colorimetric.",s08l06
+glossar-smart-filter-stacking,Smart Filter stacking,Order of filters attached to Smart Objects; changing order can change the final image.,s04l03
+glossar-clipped-adjustment,Clipped adjustment,"An adjustment constrained by the underlying layer or clip base, distinct from masking by painted gray values.",s04l01
+glossar-alpha-lock,Alpha lock,Prevents painting into fully transparent areas on supported raster layers.,s02l04
+glossar-export-preflight,Export preflight,"Final inspection of dimensions, color profile, transparency, filenames and deliverable requirements.",s10l05

@@ -1,0 +1,152 @@
+[
+  {
+    "id": "trouble-001",
+    "symptom": "Nothing appears in the viewer",
+    "checks": "Layer eye, Solo, enabled comp, work area, layer in/out, opacity, blend modes, track matte, guide layer, 3D view, collapsed transformations, alpha, effects",
+    "fix": "Start by switching to Active Camera/Front as appropriate and temporarily bypass suspect mattes/effects."
+  },
+  {
+    "id": "trouble-002",
+    "symptom": "Layer is black where it should be transparent",
+    "checks": "Transparency Grid is a *preview aid*; comp background color isn't alpha, solid-color source may be opaque",
+    "fix": "Toggle Transparency Grid and inspect Alpha channel, not simply black RGB. Choose output format with alpha if needed."
+  },
+  {
+    "id": "trouble-003",
+    "symptom": "Background is black after export",
+    "checks": "Codec/container doesn't preserve alpha; transparency interpreted as black in player",
+    "fix": "Use ProRes 4444 or appropriate PNG/EXR sequence with RGB+Alpha and correct alpha interpretation. Standard H.264 MP4 doesn't export an alpha channel."
+  },
+  {
+    "id": "trouble-004",
+    "symptom": "Matte isn't working",
+    "checks": "Track Matte source assignment, Alpha vs Luma, invert, source visibility, matte layer alpha/brightness",
+    "fix": "Select the matted layer, choose its matte source with pick whip/dropdown. Matte source may be elsewhere in layer stack."
+  },
+  {
+    "id": "trouble-005",
+    "symptom": "Some effects appear missing",
+    "checks": "Effects & Presets search, installed plugin, effect hidden in Obsolete group, renderer or bit-depth limitations",
+    "fix": "Confirm exact effect name/category; inspect supported 8/16/32-bpc and GPU icons, then verify plugins."
+  },
+  {
+    "id": "trouble-006",
+    "symptom": "Can't see keyframes",
+    "checks": "Property is collapsed, layer not selected, Timeline search filter, expression-only animation",
+    "fix": "`U` shows keyed properties; `UU` modified properties; `EE` expressions. Clear Timeline search."
+  },
+  {
+    "id": "trouble-007",
+    "symptom": "`J/K` seems to skip keyframes",
+    "checks": "Relevant properties are not exposed",
+    "fix": "Reveal keyframes with `U` and clear search/filter."
+  },
+  {
+    "id": "trouble-008",
+    "symptom": "Shortcut doesn't work",
+    "checks": "Wrong panel focus; text cursor active; laptop Fn mapping; OS intercept; custom shortcut",
+    "fix": "Click correct panel; press `Esc` to leave text edit; check Edit → Keyboard Shortcuts."
+  },
+  {
+    "id": "trouble-009",
+    "symptom": "`G/Q` draws a mask instead of a shape",
+    "checks": "Existing footage/solid layer selected vs no layer selected; Tool Creates Shape/Mask setting",
+    "fix": "Deselect layers for a new shape layer; deliberately choose Shape or Mask mode."
+  },
+  {
+    "id": "trouble-010",
+    "symptom": "Cannot edit parametric rectangle vertices",
+    "checks": "Procedural Rectangle Path rather than Bézier path",
+    "fix": "Convert shape path to Bézier Path, then select Path and vertex. Preserve parametric form if you still need width/corner sliders."
+  },
+  {
+    "id": "trouble-011",
+    "symptom": "Path pasted into Position doesn't follow correctly",
+    "checks": "Wrong path/property selection; position separation; space transforms; dimensions",
+    "fix": "Copy actual Path property, paste on Position with playhead at desired time, inspect spatial path."
+  },
+  {
+    "id": "trouble-012",
+    "symptom": "Auto-Orient flips or points the wrong way",
+    "checks": "Original artwork direction, tangent, parent transform, spatial path",
+    "fix": "Use Auto-Orient Along Path and rotate source art/precomp for desired leading direction."
+  },
+  {
+    "id": "trouble-013",
+    "symptom": "3D object is flat / no depth",
+    "checks": "3D switch vs geometry extrusion, render engine, mesh type, camera/light",
+    "fix": "A 3D switch creates a plane; actual geometric depth requires supported geometry/renderer and property controls."
+  },
+  {
+    "id": "trouble-014",
+    "symptom": "Light has no effect",
+    "checks": "Layer material settings, 3D renderer, light type, lighting switch or blend style",
+    "fix": "Verify compatible renderer and Accepts Lights/material properties."
+  },
+  {
+    "id": "trouble-015",
+    "symptom": "Motion blur doesn't show",
+    "checks": "Layer motion-blur switch, comp master motion-blur switch, shutter angle, type of animation",
+    "fix": "Enable both switches and verify shutter angle/samples; FX blur may behave differently."
+  },
+  {
+    "id": "trouble-016",
+    "symptom": "Roto Brush crawls or drifts",
+    "checks": "Propagation, segmentation boundary, view resolution, clip cuts, occlusion, strokes too broad",
+    "fix": "Work close to source/full resolution, make small corrections, propagate in short spans, refine and freeze."
+  },
+  {
+    "id": "trouble-017",
+    "symptom": "Green-screen subject looks transparent",
+    "checks": "Too aggressive Clip Black/White, Shrink/Grow, despill, suppression",
+    "fix": "Inspect Keylight Screen Matte; aim for clean black background, white subject and sensible grey edges."
+  },
+  {
+    "id": "trouble-018",
+    "symptom": "Roto/keyer edges have a halo",
+    "checks": "Premultiplied RGB contamination, poor despill, matte chatter, uncorrected edge colors",
+    "fix": "Check straight/premultiplied interpretation, use edge color decontamination/despill, slight blur/choke only if needed."
+  },
+  {
+    "id": "trouble-019",
+    "symptom": "Animation seems to speed up unpredictably",
+    "checks": "Unequal keyframe timing, nonlinear Graph Editor easing, path distances, frame rate",
+    "fix": "Examine motion-path dots, timing, speed graph and roving keys. Equal time between keys ≠ constant spatial speed."
+  },
+  {
+    "id": "trouble-020",
+    "symptom": "Keyframes won't move off frames",
+    "checks": "Timeline snapping / graph options",
+    "fix": "Graph Editor → Choose Graph Type and Options → Allow Keyframes Between Frames (when supported). Rendering still samples actual frame times."
+  },
+  {
+    "id": "trouble-021",
+    "symptom": "Badly lagging preview",
+    "checks": "Large footage, many layers, effects, GPU memory, disk cache, insufficient RAM, compressed media",
+    "fix": "Start with 1/4 preview and shorter work area; disable heaviest effects; test transcoded sources; inspect cache/disk."
+  },
+  {
+    "id": "trouble-022",
+    "symptom": "Audio drifts out of sync",
+    "checks": "Variable frame rate footage, interpretation mismatch, mixed sample rates, time stretching",
+    "fix": "Convert VFR footage to constant frame rate; confirm comp rate, audio 48 kHz where appropriate; inspect source timing."
+  },
+  {
+    "id": "trouble-023",
+    "symptom": "Type animation breaks across machines",
+    "checks": "Missing font or font-axis support, font version mismatch, plugin effects",
+    "fix": "Package font/license details, verify exact font and open a test copy on target machine."
+  },
+  {
+    "id": "trouble-024",
+    "symptom": "Render different from preview",
+    "checks": "Work area vs entire comp; proxy; guide layers; 3D/camera, output color/bit depth; motion blur/sample settings",
+    "fix": "Render a short test with the intended output module and compare RGB/alpha/color."
+  },
+  {
+    "id": "trouble-025",
+    "symptom": "Render fails / hangs",
+    "checks": "Corrupt frame, GPU driver, unsupported plugin, insufficient disk space, bad source segment",
+    "fix": "Narrow to failing frame/time, disable suspected effect, render a short image sequence, review log, update plugin/driver responsibly."
+  }
+]

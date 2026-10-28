@@ -1,0 +1,113 @@
+family,action,keys,context,note
+File,New document,Ctrl+N,Global,Default application shortcut; verify after customization
+File,Open file,Ctrl+O,Global,Opens standard file picker
+File,Save,Ctrl+S,Global,Dialog differs for new documents
+File,Save As,Ctrl+Shift+S,Global,Save route can depend on format and modern save settings
+File,Print,Ctrl+P,Global,Printer availability varies
+File,Close document,Ctrl+W,Document,Prompts if unsaved
+File,Close all documents,Ctrl+Alt+W,Document,Verify in customized menu
+File,Undo,Ctrl+Z,Document,Undo action in editing context; text inputs can consume it
+File,Step backward,Ctrl+Alt+Z,History,History behavior depends on state
+File,Step forward,Ctrl+Shift+Z,History,Redo behavior depends on state
+Interface,Preferences,Ctrl+K,Global,General preferences in Windows
+Interface,Keyboard Shortcuts dialog,Ctrl+Alt+Shift+K,Global,Adobe documented
+Interface,Show/hide panels,Tab,Workspace,While not typing in a field
+Interface,Show/hide side panels,Shift+Tab,Workspace,While not typing in a field
+Interface,Rulers,Ctrl+R,Document,View overlay only
+Interface,Hide/show extras,Ctrl+H,Document,May affect guides/selection edges
+Interface,Grid,Ctrl+',Document,Depends on keyboard layout and shortcut settings
+View,Fit on Screen,Ctrl+0,Document,View-only
+View,Actual Pixels 100%,Ctrl+1,Document,View-only
+View,Zoom in,Ctrl++ (plus),Document,May require key-layout adaptation
+View,Zoom out,Ctrl+-,Document,View-only
+View,Zoom tool,Z,Tool,Only when no text field captures keystroke
+View,Hand tool,H,Tool,Only when no text field captures keystroke
+View,Temporary Hand,Space,Tool gesture,Hold while using many tools; conflicts with text entry
+View,Rotate View,R,Tool,"R selects Rotate View, not Blur. Document view only; GPU support may affect operation."
+Layers,New layer,Ctrl+Shift+N,Document,Opens naming dialog
+Layers,Duplicate layer,Ctrl+J,Layer,Also copies an active selection onto a new layer
+Layers,Group selected layers,Ctrl+G,Layers panel,Selection-dependent
+Layers,Ungroup layers,Ctrl+Shift+G,Layers panel,Group-selection-dependent
+Layers,Free Transform,Ctrl+T,Document,Active editable content required
+Layers,Transform again,Ctrl+Shift+T,Document,Availability depends on recent transform
+Layers,New layer via copy,Ctrl+J,Selection/layer,Same key changes scope with active selection
+Selection,Select All,Ctrl+A,Document,Selects entire active canvas
+Selection,Deselect,Ctrl+D,Document,Requires active selection for visible effect
+Selection,Reselect,Ctrl+Shift+D,Document,Last selection state needed
+Selection,Inverse selection,Ctrl+Shift+I,Document,Active selection needed
+Selection,Quick Mask toggle,Q,Tool/selection,Keyboard focus must be outside text
+Selection,Marquee family,M,Tool,Shift+M may cycle group if configured
+Selection,Lasso family,L,Tool,Shift+L may cycle group if configured
+Selection,Selection family,W,Tool,"Object Selection, Quick Selection and Magic Wand are W-group; Selection Brush is in the L group."
+Tools,Move,V,Tool,Auto-select may change target layer
+Tools,Crop,C,Tool,Tool family includes other grouped tools
+Tools,Eyedropper,I,Tool,May cycle measurement tools
+Tools,Spot Healing family,J,Tool,Group member varies
+Tools,Brush,B,Tool,B includes Brush and may cycle to Adjustment Brush; default keyboard focus and tool set matter.
+Tools,Clone Stamp,S,Tool,Group member varies
+Tools,History Brush,Y,Tool,Depends on available history state
+Tools,Eraser,E,Tool,Destructive on raster layer
+Tools,Gradient,G,Tool,May share Paint Bucket
+Tools,Dodge/Burn/Sponge,O,Tool,Grouped tools may cycle
+Tools,Pen,P,Tool,Mode (Path/Shape) must be checked
+Tools,Type,T,Tool,Text caret captures other shortcuts when editing
+Tools,Path/Direct Selection,A,Tool,Selected subtool may vary
+Tools,Shape,U,Tool,Shape mode/Path/Pixels determines results
+Paint,Default black/white colors,D,Tool,Foreground/background swatches
+Paint,Swap foreground/background,X,Tool,Useful when painting masks
+Paint,Increase brush size,],Brush tool,Keyboard focus and layout dependent
+Paint,Decrease brush size,[,Brush tool,Keyboard focus and layout dependent
+Paint,Increase brush hardness,Shift+],Brush tool,Brush-dependent
+Paint,Decrease brush hardness,Shift+[,Brush tool,Brush-dependent
+Paint,Fill foreground,Alt+Backspace,Pixel/edit context,May fill selection or active pixels
+Paint,Fill background,Ctrl+Backspace,Pixel/edit context,May fill selection or active pixels
+Paint,Brush temporary eyedropper,Alt (hold),Brush gesture,Context-dependent sampling
+View,Cycle screen modes,F,Document,May conflict with text entry
+Text,Commit type / exit field,Ctrl+Enter,Type editing,Behavior depends on active text context
+Text,Cancel text changes,Esc,Type editing,May exit or cancel depending on state
+Reference,Open Photoshop Help/Discover,Ctrl+F,Global,Discover in supported versions; app-search not website search
+Tools,Frame Tool,K,Tool,Current Frame Tool default; historical Blur K listings are obsolete.
+Tools,Artboard tool,V,Tool,Grouped with Move; use the tool-group cycle or toolbar.
+Tools,Selection Brush tool,L,Tool,Grouped with Lasso in modern Photoshop; use group cycle.
+Tools,Adjustment Brush tool,B,Tool,Modern adjustment family grouped with Brush; toolbar configuration may vary.
+Tools,Blur/Sharpen/Smudge tools,No default key,Tool,Do NOT use R (Rotate View) or K (Frame); access the toolbar or assign custom shortcut.
+Editing,Copy,Ctrl+C,Document/selection,Standard copy; may copy selected pixel content or object.
+Editing,Cut,Ctrl+X,Document/selection,Changes pixels or content depending on selection.
+Editing,Paste,Ctrl+V,Document/selection,Creates/imports pasted content as appropriate.
+Editing,Copy Merged,Ctrl+Shift+C,Active pixel selection,Copies composite visible pixels rather than one layer.
+Editing,Paste in Place,Ctrl+Shift+V,Document,Positioned paste; document/clipboard context matters.
+Editing,Fill dialog,Shift+F5,Document/selection,Application command; menu can also open fill.
+Editing,Color Settings,Ctrl+Shift+K,Global,Adobe Windows desktop command; changes color management preferences.
+Editing,Export As,Ctrl+Alt+Shift+W,Document,Legacy Adobe shortcut reference; verify 27.11 shortcut menu.
+Editing,Save for Web (Legacy),Ctrl+Alt+Shift+S,Document,Legacy path; may be hidden in recent versions.
+Editing,Revert to last saved,F12,Document,Discards subsequent edits; use only after saving copies.
+Editing,Quit Photoshop,Ctrl+Q,Global,Offers save prompts for changed documents.
+Layer,Create layer via cut,Ctrl+Shift+J,Active selection,Creates a new layer from selected pixels where applicable.
+Layer,Merge selected layers,Ctrl+E,Selected layers,Destructive; preserve layered master.
+Layer,Merge visible,Ctrl+Shift+E,Document,Destructive; save layered working file first.
+Layer,Stamp visible on new layer,Ctrl+Alt+Shift+E,Document,Merges a snapshot of visible layers onto a new layer; verify active target.
+Layer,Clip to layer below,Ctrl+Alt+G,Layers panel,Create/release clipping mask; needs suitable base layer.
+Selection,Select pixels from layer thumbnail,Ctrl+click layer thumbnail,Layers panel mouse gesture,Loads layer transparency as a selection.
+Selection,Temporarily add to selection,Shift+drag,Selection tool gesture,Add selection area while the tool is active.
+Selection,Temporarily subtract from selection,Alt+drag,Selection tool gesture,Subtract selected area while the tool is active.
+Selection,Intersect with selection,Shift+Alt+drag,Selection tool gesture,Intersection of new and existing selections.
+Masks,View layer mask alone,Alt+click mask thumbnail,Layers panel mouse gesture,Toggle grayscale mask-only view.
+Masks,Disable/enable layer mask,Shift+click mask thumbnail,Layers panel mouse gesture,Temporarily bypass mask; red X marker shows disabled state.
+Masks,Duplicate mask to another layer,Alt+drag mask thumbnail,Layers panel mouse gesture,"Copies mask, leaving original attached."
+Masks,Solo layer visibility,Alt+click eye icon,Layers panel mouse gesture,Restoration can be affected if you change other layer visibilities while isolated.
+View,Zoom temporarily in,Ctrl+Space (hold),Canvas gesture,May interact with Windows keyboard/layout and other tools.
+View,Zoom temporarily out,Alt+Space (hold),Canvas gesture,May conflict with Windows system menu in some environments.
+View,Fit view to screen via Hand tool,Double-click Hand Tool,Toolbar mouse gesture,Shows entire document in available viewport.
+View,100% view via Zoom tool,Double-click Zoom Tool,Toolbar mouse gesture,Useful for assessing real pixel sharpness.
+Painting,Previous brush preset,",",Brush tool,Preset order and active brush tool determine behavior.
+Painting,Next brush preset,.,Brush tool,Preset order and active brush tool determine behavior.
+Painting,Temporarily erase with same brush tip,~ (hold),Brush tool,Switches brush to eraser mode on supported modern Photoshop setups.
+Painting,Lock/unlock transparent pixels,/,Layers panel,Applies to appropriate pixel layer and context; can vary with keyboard layout.
+Panels,Brush Settings panel,F5,Global/panel,Function keys may be intercepted by keyboard firmware or OS.
+Panels,Color panel,F6,Global/panel,Function keys may be intercepted by keyboard firmware or OS.
+Panels,Layers panel,F7,Global/panel,Function keys may be intercepted by keyboard firmware or OS.
+Panels,Info panel,F8,Global/panel,Function keys may be intercepted by keyboard firmware or OS.
+Panels,Actions panel,F9,Global/panel,Function keys may be intercepted by keyboard firmware or OS.
+Filters,Liquify workspace,Ctrl+Shift+X,Document,"GPU requirements, layer types and active document can prevent command."
+Layer,Nudge selected content 1 pixel,Arrow key,Move Tool/transform,Depends on selected layer/selection and active text input.
+Layer,Nudge selected content 10 pixels,Shift+Arrow key,Move Tool/transform,Depends on selected layer/selection and active text input.

@@ -1,0 +1,26 @@
+name,purpose,controls,shortcut,relationship,source
+Project,"Import, bins, media references and metadata","New bin, view options, search",Shift+1,Works alongside Timeline and Program Monitor; confirm selection before applying changes.,home
+Source Monitor,Preview original and mark source In/Out,"Source playback, In/Out, Insert/Overwrite",Shift+2,Works alongside Timeline and Program Monitor; confirm selection before applying changes.,home
+Timeline,"Clip instances, sequence tracks and edits","Patching, targeting, sync/track locks, snapping",Shift+3,Works alongside Project and Source Monitor; confirm selection before applying changes.,home
+Program Monitor,Composite sequence playback,"Safe margins, guides, multicam view",Shift+4,Works alongside Project and Source Monitor; confirm selection before applying changes.,home
+Effect Controls,Per-clip effects and property animation,"Parameter values, masks, keyframe timeline",Shift+5,Works alongside Timeline and Program Monitor; confirm selection before applying changes.,home
+Audio Track Mixer,Track faders and insert effects,"Level meters, routing and automation",Shift+6,Works alongside Timeline and Program Monitor; confirm selection before applying changes.,home
+Effects,"Find effects, transitions and presets","Search, categories, drag onto clip",Shift+7,Works alongside Timeline and Program Monitor; confirm selection before applying changes.,home
+Media Browser,Navigate camera card structure,"Directory tree, media preview",Shift+8,Works alongside Timeline and Program Monitor; confirm selection before applying changes.,home
+Audio Clip Mixer,Selected-clip audio controls,Clip gain/volume controls,Shift+9,Works alongside Timeline and Program Monitor; confirm selection before applying changes.,home
+Properties,"Contextual item editing, modern graphics","Text and shape properties, selected clip tools",No fixed default verified,Works alongside Timeline and Program Monitor; confirm selection before applying changes.,home
+Text,"Transcripts, text editing, captions, Paper Edit",Transcription and captions,No fixed default verified,Works alongside Timeline and Program Monitor; confirm selection before applying changes.,home
+Lumetri Color,Color grading controls,"Basic, curves, wheels, HSL",No fixed default verified,Works alongside Timeline and Program Monitor; confirm selection before applying changes.,home
+Lumetri Scopes,Quantitative color monitoring,"Waveform, RGB Parade, Vectorscope",No fixed default verified,Works alongside Timeline and Program Monitor; confirm selection before applying changes.,home
+Audio Meters,Signal level monitoring,Peaks and channel layout,No fixed default verified,Works alongside Timeline and Program Monitor; confirm selection before applying changes.,home
+Essential Sound,Dialogue/music/SFX tagging and repair,"Presets, ducking, enhancement",No fixed default verified,Works alongside Timeline and Program Monitor; confirm selection before applying changes.,home
+Sequence Index,Searchable sequence contents / clip index,Filters and sequence navigation,No fixed default verified,Works alongside Timeline and Program Monitor; confirm selection before applying changes.,home
+Search,Media intelligence search and visual queries,Search assets and similarities,No fixed default verified,Works alongside Timeline and Program Monitor; confirm selection before applying changes.,home
+Production,Multi-project workflows and locking,Project lock and organization,No fixed default verified,Works alongside Timeline and Program Monitor; confirm selection before applying changes.,home
+Project Manager,Media collection and project consolidation,"Collect/copy, transcode options",No fixed default verified,Works alongside Timeline and Program Monitor; confirm selection before applying changes.,home
+Export,"Export formats, codecs, presets and queue","Video, audio, captions, output file name",Ctrl+M,Works alongside Timeline and Program Monitor; confirm selection before applying changes.,home
+Tools,"Select, trims, Razor, slip, slide and more",Edit tools and access to context,No fixed default verified,Works alongside Timeline and Program Monitor; confirm selection before applying changes.,home
+Metadata,Inspect/modify supported metadata,Fields and file descriptors,No fixed default verified,Works alongside Timeline and Program Monitor; confirm selection before applying changes.,home
+History,Undo state inspection,Navigation through operations,No fixed default verified,Works alongside Timeline and Program Monitor; confirm selection before applying changes.,home
+Markers,Review annotations attached to clips or sequence,"Time, names and comments",M adds marker,Works alongside Timeline and Program Monitor; confirm selection before applying changes.,home
+Media Encoder,Companion batch export application,Queued encoding presets,Alt+Shift+M sends to app,Works alongside Timeline and Program Monitor; confirm selection before applying changes.,home
