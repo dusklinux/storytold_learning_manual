@@ -46,7 +46,7 @@
     const m = event.data;
     try {
       if (m.type === 'initialize') {
-        navigation=m.navigation;window.ManualVim?.set(m.vim);
+        navigation=m.navigation;window.ManualPalette?.set(m.palette);window.ManualVim?.set(m.vim);
         if (m.state && !(updatedAt>(m.updatedAt||0))) {
           try {adapter.set(adapter.validate(m.state));updatedAt=m.updatedAt||0;lastState=JSON.stringify(adapter.get());if(updatedAt)saveModified();}
           catch (error) {send({type:'warning',error:'Saved library progress was invalid; the reader’s own record was retained. '+error.message});}
@@ -55,7 +55,8 @@
         initialized = true;
         if (m.route) navigate(m.route);
         publish();
-      } else if(m.type==='vim'){window.ManualVim?.set(m.value);}
+      } else if(m.type==='palette'){window.ManualPalette?.set(m.value);}
+      else if(m.type==='vim'){window.ManualVim?.set(m.value);}
       else if (m.type === 'navigate') {if(m.navigation<navigation)return;navigation=m.navigation;navigate(m.route);}
       else if (m.type === 'preferences') {adapter.preferences(m.value); publish();}
       else if (m.type === 'validate') {
@@ -91,5 +92,6 @@
   document.addEventListener('click', window.manualChanged);
   document.addEventListener('vim-change',event=>send({type:'vim',value:event.detail}));
   document.addEventListener('vim-search',()=>{if(framed)send({type:'search'});else{const input=document.getElementById('globalSearch')||document.getElementById('searchInput');if(input)input.focus();else location.hash='#/search';}});
+  document.addEventListener('palette-change',event=>send({type:'palette',value:event.detail}));
   send({type:'ready'});
 })();

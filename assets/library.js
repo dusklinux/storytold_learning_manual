@@ -58,7 +58,7 @@
     const frame=frames.get(m.app);
     if(!frame||event.source!==frame.element.contentWindow)return;
     if(m.type==='ready'){
-      const r=route();send(m.app,{type:'initialize',vim:window.ManualVim.enabled(),navigation:frame.navigation,updatedAt:saved.manuals[m.app]?.updatedAt||0,state:saved.manuals[m.app]?.state,preferences:saved.manuals[m.app]?.state?null:saved.preferences,route:r.name==='read'&&r.id===m.app?(r.path||byId[m.app].home):lastRoute(m.app)});
+      const r=route();send(m.app,{type:'initialize',palette:window.ManualPalette.current(),vim:window.ManualVim.enabled(),navigation:frame.navigation,updatedAt:saved.manuals[m.app]?.updatedAt||0,state:saved.manuals[m.app]?.state,preferences:saved.manuals[m.app]?.state?null:saved.preferences,route:r.name==='read'&&r.id===m.app?(r.path||byId[m.app].home):lastRoute(m.app)});
     }else if(m.type==='snapshot'){
       saved.manuals[m.app]={updatedAt:m.updatedAt,state:m.state,route:m.route,progress:m.progress,storage:m.storage};
       persist();
@@ -73,6 +73,7 @@
       updateProgress();
     }else if(m.type==='navigate'){
       if(route().name==='read'&&route().id===m.app&&m.navigation===frame.navigation){const next=readLink(m.app,m.route);if(location.hash===next)send(m.app,{type:'navigate',navigation:frame.navigation,route:m.route});else location.hash=next;}
+    }else if(m.type==='palette'){window.ManualPalette.set(m.value);
     }else if(m.type==='vim'){window.ManualVim.set(m.value);
     }else if(m.type==='search'){focusSearch=true;if(route().name==='search')$('library-search')?.focus();else location.hash='#search';
     }else if(m.type==='warning'){notify(byId[m.app].name+': '+m.error);
@@ -235,6 +236,11 @@
   document.addEventListener('vim-change',vimStatus);
   $('vim-toggle').addEventListener('click',()=>window.ManualVim.set(!window.ManualVim.enabled()));
   document.addEventListener('vim-search',()=>{focusSearch=true;if(route().name==='search'){$('library-search').focus();focusSearch=false;}else location.hash='#search';});
+  const paletteSelect=$('palette-select');
+  paletteSelect.innerHTML=window.ManualPalette.palettes.map(p=>`<option value="${p.id}">${p.label}</option>`).join('');
+  function paletteStatus(){paletteSelect.value=window.ManualPalette.current();for(const [id] of frames)send(id,{type:'palette',value:paletteSelect.value});}
+  paletteSelect.addEventListener('change',()=>window.ManualPalette.set(paletteSelect.value));
+  document.addEventListener('palette-change',paletteStatus);paletteStatus();
   vimStatus();
   render();
 })();

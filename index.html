@@ -7,6 +7,7 @@
 <title>Dusky Adobe Manual</title>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/library.css">
+<link rel="stylesheet" href="assets/palette-library.css"><link rel="stylesheet" href="assets/palette.css"><script src="assets/palette.js"></script>
 <script defer src="assets/catalog.js"></script><script defer src="assets/vim.js"></script><script defer src="assets/library.js"></script>
 </head>
 <body>
@@ -16,7 +17,7 @@
 <nav aria-label="Library navigation"><a href="#home" data-nav="home">Library</a><a href="#search" data-nav="search" title="Search all manuals (Ctrl+K)">Search all</a><a href="#compare" data-nav="compare">Compare keys</a><a href="#settings" data-nav="settings">Progress</a></nav>
 <label class="switcher"><span class="sr-only">Switch manual</span><select id="switcher"><option value="">Choose a manual</option><option value="photoshop">Photoshop</option><option value="premiere">Premiere Pro</option><option value="after-effects">After Effects</option></select></label>
 </header>
-<div class="keyboard-bar"><button id="vim-toggle" type="button" aria-pressed="false">Vim keys: off</button><span id="vim-help">Optional · Alt+M toggles Vim navigation</span></div>
+<div class="keyboard-bar"><button id="vim-toggle" type="button" aria-pressed="false">Vim keys: off</button><span id="vim-help">Optional · Alt+M toggles Vim navigation</span><label class="palette-control">Palette <select id="palette-select" aria-label="Color palette"></select></label></div>
 <main id="workspace" tabindex="-1"></main>
 <div id="readers" hidden></div>
 <div id="notice" role="status" aria-live="polite"></div>

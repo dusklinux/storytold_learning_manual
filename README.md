@@ -80,3 +80,7 @@ The GitHub repository contains the complete manual, generated offline readers, m
 ## Optional Vim navigation
 
 Use **Vim keys** or **Alt+M** to enable it. Outside editing fields, **j/k** move through search results or scroll lessons, **g/G** go to the first/last result or page top/bottom, and **/** focuses search. Escape in shared search leaves typing without clearing the query; Enter opens the selected result. Ordinary typing and dropdown controls retain their keys. The mode starts off and is saved separately from learning progress when browser storage permits. See [Vim navigation](docs/VIM_NAVIGATION.md) for scope and verification.
+
+## Color palettes
+
+The **Palette** selector beside the Vim controls applies throughout the library and all three readers. Choose **Ember**, **Woodland**, or **Ocean**, each in dark or light mode. Warm **Ember dark** is the default. Choices persist in this browser when storage is available; reader light/dark buttons switch the current family project-wide. Palette selection is separate from learning-progress backups. Instructional images, SVG diagram colors and app identity marks retain their original colors; printing uses a light palette.

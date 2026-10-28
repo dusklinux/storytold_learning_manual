@@ -95,6 +95,8 @@ def catalogs(photoshop, premiere, after, guides):
 
 
 def main():
+    import palettes
+    palettes.build()
     ps = ROOT / 'manuals/photoshop'
     pr = ROOT / 'manuals/premiere'
     ae = ROOT / 'manuals/after-effects'
@@ -110,6 +112,7 @@ def main():
     for name in ('content', 'app'):
         template = template.replace(f'  <script defer src="assets/{name}.js"></script>', '')
     template = template.replace('</body>', '<script>' + source + '</script><script>' + (ps / 'assets/app.js').read_text(encoding='utf-8') + '</script><script>' + (ROOT / 'assets/vim.js').read_text(encoding='utf-8') + '</script><script>' + (ROOT / 'assets/bridge.js').read_text(encoding='utf-8') + '</script>\n</body>')
+    template=template.replace('</head>', palettes.reader_head('photoshop')+'</head>')
     (ps / 'index.html').write_text(template, encoding='utf-8')
     # After Effects' original builder remains responsible for its authored outputs.
     subprocess.run([sys.executable, str(ae / 'build.py')], check=True)

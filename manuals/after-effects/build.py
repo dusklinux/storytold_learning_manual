@@ -120,6 +120,10 @@ def build(outdir):
  css=(ROOT/'web/styles.css').read_text(encoding='utf-8');js=(ROOT/'web/app.js').read_text(encoding='utf-8')
  html=template.replace('__CSS__',css).replace('__DATA__',payload).replace('__JS__',js)
  html=html.replace('</body>','<script>'+ (ROOT/'../../assets/vim.js').read_text(encoding='utf-8')+'</script><script>'+ (ROOT/'../../assets/bridge.js').read_text(encoding='utf-8')+'</script></body>')
+ import sys
+ sys.path.insert(0,str(ROOT/'../../scripts'))
+ from palettes import reader_head
+ html=html.replace('</head>',reader_head('after-effects')+'</head>')
  (outdir/'index.html').write_text(html,encoding='utf-8')
  (outdir/'manual_data.json').write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  (outdir/'ALL_CONTENT.md').write_text(markdown(d),encoding='utf-8')
