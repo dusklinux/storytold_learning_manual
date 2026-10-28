@@ -109,7 +109,7 @@ def main():
     template = template.replace('  <link rel="stylesheet" href="assets/style.css">', '<style>' + (ps / 'assets/style.css').read_text(encoding='utf-8') + '</style>')
     for name in ('content', 'app'):
         template = template.replace(f'  <script defer src="assets/{name}.js"></script>', '')
-    template = template.replace('</body>', '<script>' + source + '</script><script>' + (ps / 'assets/app.js').read_text(encoding='utf-8') + '</script><script>' + (ROOT / 'assets/bridge.js').read_text(encoding='utf-8') + '</script>\n</body>')
+    template = template.replace('</body>', '<script>' + source + '</script><script>' + (ps / 'assets/app.js').read_text(encoding='utf-8') + '</script><script>' + (ROOT / 'assets/vim.js').read_text(encoding='utf-8') + '</script><script>' + (ROOT / 'assets/bridge.js').read_text(encoding='utf-8') + '</script>\n</body>')
     (ps / 'index.html').write_text(template, encoding='utf-8')
     # After Effects' original builder remains responsible for its authored outputs.
     subprocess.run([sys.executable, str(ae / 'build.py')], check=True)

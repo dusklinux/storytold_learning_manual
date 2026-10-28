@@ -58,7 +58,7 @@
     const frame=frames.get(m.app);
     if(!frame||event.source!==frame.element.contentWindow)return;
     if(m.type==='ready'){
-      const r=route();send(m.app,{type:'initialize',navigation:frame.navigation,updatedAt:saved.manuals[m.app]?.updatedAt||0,state:saved.manuals[m.app]?.state,preferences:saved.manuals[m.app]?.state?null:saved.preferences,route:r.name==='read'&&r.id===m.app?(r.path||byId[m.app].home):lastRoute(m.app)});
+      const r=route();send(m.app,{type:'initialize',vim:window.ManualVim.enabled(),navigation:frame.navigation,updatedAt:saved.manuals[m.app]?.updatedAt||0,state:saved.manuals[m.app]?.state,preferences:saved.manuals[m.app]?.state?null:saved.preferences,route:r.name==='read'&&r.id===m.app?(r.path||byId[m.app].home):lastRoute(m.app)});
     }else if(m.type==='snapshot'){
       saved.manuals[m.app]={updatedAt:m.updatedAt,state:m.state,route:m.route,progress:m.progress,storage:m.storage};
       persist();
@@ -73,6 +73,7 @@
       updateProgress();
     }else if(m.type==='navigate'){
       if(route().name==='read'&&route().id===m.app&&m.navigation===frame.navigation){const next=readLink(m.app,m.route);if(location.hash===next)send(m.app,{type:'navigate',navigation:frame.navigation,route:m.route});else location.hash=next;}
+    }else if(m.type==='vim'){window.ManualVim.set(m.value);
     }else if(m.type==='search'){focusSearch=true;if(route().name==='search')$('library-search')?.focus();else location.hash='#search';
     }else if(m.type==='warning'){notify(byId[m.app].name+': '+m.error);
     }else if(m.type==='response'){
@@ -100,7 +101,8 @@
     return html;
   }
   function excerpt(text,q){const tokens=q.trim().toLowerCase().split(/\s+/);const i=Math.max(0,window.LibrarySearchEngine.fold(text).indexOf(window.LibrarySearchEngine.fold(tokens[0]||'')));const start=Math.max(0,i-45);return (start?'…':'')+text.slice(start,start+230)+(text.length>start+230?'…':'');}
-  function searchPage(){return '<div class="page"><div class="eyebrow">One local index · three manuals</div><h1>Find the idea. Open the exact entry.</h1><p class="lede">Search full text or abbreviate a title: “gsblur” finds Gaussian Blur. App names and context stay attached to each result.</p><div class="search-form"><input id="library-search" type="search" placeholder="Try: alpha, mask, ripple, Ctrl+S…" aria-label="Search all manuals" value="'+escape(query)+'"><select id="app-filter" aria-label="Filter by application"><option value="">All applications</option>'+manuals.map(m=>`<option value="${m.id}" ${m.id===appFilter?'selected':''}>${m.name}</option>`).join('')+'</select><select id="kind-filter" aria-label="Filter by entry type"><option value="">All entry types</option>'+[...new Set(searchData.map(x=>x.record.kind))].sort().map(k=>`<option ${k===kindFilter?'selected':''}>${k}</option>`).join('')+'</select></div><p class="search-help" id="search-help">↓ / ↑ select results · Enter opens · Escape returns to search or clears it · Ctrl+K searches from any manual. App/type filters narrow the results.</p><div id="search-results" aria-describedby="search-help"></div>'+footer()+'</div>';}
+  function searchHelp(){return window.ManualVim.enabled()?'j/k or ↓/↑ select results · g/G first/last · Enter opens · / searches · Escape leaves search typing without clearing the query. App/type filters narrow the results.':'↓ / ↑ select results · Enter opens · Escape returns to search or clears it · Ctrl+K searches from any manual. App/type filters narrow the results.';}
+  function searchPage(){return '<div class="page"><div class="eyebrow">One local index · three manuals</div><h1>Find the idea. Open the exact entry.</h1><p class="lede">Search full text or abbreviate a title: “gsblur” finds Gaussian Blur. App names and context stay attached to each result.</p><div class="search-form"><input id="library-search" type="search" placeholder="Try: alpha, mask, ripple, Ctrl+S…" aria-label="Search all manuals" value="'+escape(query)+'"><select id="app-filter" aria-label="Filter by application"><option value="">All applications</option>'+manuals.map(m=>`<option value="${m.id}" ${m.id===appFilter?'selected':''}>${m.name}</option>`).join('')+'</select><select id="kind-filter" aria-label="Filter by entry type"><option value="">All entry types</option>'+[...new Set(searchData.map(x=>x.record.kind))].sort().map(k=>`<option ${k===kindFilter?'selected':''}>${k}</option>`).join('')+'</select></div><p class="search-help" id="search-help">'+searchHelp()+'</p><div id="search-results" aria-describedby="search-help"></div>'+footer()+'</div>';}
   function searchResults(){
     const tokens=query.toLocaleLowerCase('en').trim().split(/\s+/).filter(Boolean);
     const target=$('search-results');if(!target)return;
@@ -229,5 +231,10 @@
   document.addEventListener('keydown',event=>{if((event.ctrlKey||event.metaKey)&&event.key.toLowerCase()==='p'&&route().name==='read'){event.preventDefault();send(route().id,{type:'print'});return;}if(event.key==='/'&&!event.ctrlKey&&!event.metaKey&&!event.altKey&&!event.target.matches('input,textarea,select,[contenteditable="true"]')){event.preventDefault();if(route().name==='search')$('library-search')?.focus();else{focusSearch=true;location.hash='#search';}}});
   window.addEventListener('hashchange',()=>{clearTimeout(searchUrlTimer);searchLimit=40;compareLimit=30;render();});
   window.addEventListener('pagehide',()=>{clearTimeout(timer);writeSaved();});
+  function vimStatus(){if($('search-help'))$('search-help').textContent=searchHelp();const active=window.ManualVim.enabled();$('vim-toggle').textContent='Vim keys: '+(active?'on':'off');$('vim-toggle').setAttribute('aria-pressed',String(active));$('vim-help').textContent=active?'j/k move · g/G top/bottom · / search · Esc leaves search typing · Alt+M toggles':'Optional · Alt+M toggles Vim navigation';for(const [id] of frames)send(id,{type:'vim',value:active});}
+  document.addEventListener('vim-change',vimStatus);
+  $('vim-toggle').addEventListener('click',()=>window.ManualVim.set(!window.ManualVim.enabled()));
+  document.addEventListener('vim-search',()=>{focusSearch=true;if(route().name==='search'){$('library-search').focus();focusSearch=false;}else location.hash='#search';});
+  vimStatus();
   render();
 })();

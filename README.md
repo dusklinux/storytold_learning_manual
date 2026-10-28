@@ -76,3 +76,7 @@ This is an independent educational project, not an Adobe product. The original s
 ## Before wiping or changing computers
 
 The GitHub repository contains the complete manual, generated offline readers, media and source. Browser-local learning progress is separate: use **Progress → Export all progress**, and keep the downloaded JSON somewhere that survives the wipe. Restore it through **Import library backup** afterward. The project does not automatically upload your progress or notes to GitHub.
+
+## Optional Vim navigation
+
+Use **Vim keys** or **Alt+M** to enable it. Outside editing fields, **j/k** move through search results or scroll lessons, **g/G** go to the first/last result or page top/bottom, and **/** focuses search. Escape in shared search leaves typing without clearing the query; Enter opens the selected result. Ordinary typing and dropdown controls retain their keys. The mode starts off and is saved separately from learning progress when browser storage permits. See [Vim navigation](docs/VIM_NAVIGATION.md) for scope and verification.
