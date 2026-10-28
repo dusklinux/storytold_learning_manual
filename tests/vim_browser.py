@@ -20,11 +20,12 @@ with sync_playwright() as pw:
   p.keyboard.press('/');assert p.locator('#library-search').evaluate('(x)=>x===document.activeElement')
   p.locator('#app-filter').focus();p.keyboard.press('j');assert p.locator('#app-filter').evaluate('(x)=>x===document.activeElement')
   for app,route in [('photoshop','lesson/s01l01'),('premiere','lesson/L001'),('after-effects','lesson/logic')]:
-   p.evaluate('(v)=>location.hash=v','#read/'+app+'/'+route);p.wait_for_selector('iframe[data-app="'+app+'"]');f=p.frame(url=lambda u:'/manuals/'+app+'/' in u);f.wait_for_function('window.ManualVim?.enabled()',polling=50)
+   p.evaluate('(v)=>location.hash=v','#read/'+app+'/'+route);p.wait_for_selector('iframe[data-app="'+app+'"]');f=p.frame(url=lambda u:'/manuals/'+app+'/' in u);f.wait_for_function('(hash)=>window.ManualVim?.enabled()&&location.hash===hash',arg=('#/' if app=='photoshop' else '#')+route,polling=50)
+   f.evaluate('()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)))')
    f.locator('#main').focus();f.locator('#main').press('Alt+m');p.wait_for_function("document.getElementById('vim-toggle').getAttribute('aria-pressed')==='false'")
    f.locator('#main').press('Alt+m');p.wait_for_function("document.getElementById('vim-toggle').getAttribute('aria-pressed')==='true'")
    f.locator('#main').press('G');assert f.evaluate('scrollY')>0
-   f.locator('#main').press('g');assert f.evaluate('scrollY')==0
+   f.locator('#main').press('g');assert f.evaluate('scrollY')==0,(name,app,f.evaluate('scrollY'))
    f.locator('#main').press('j');assert f.evaluate('scrollY')>0
    if app=='premiere':
     f.locator('[data-note="L001"]').press_sequentially('jk g G /');assert f.locator('[data-note="L001"]').input_value()=='jk g G /'

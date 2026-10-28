@@ -67,6 +67,11 @@ python3 -m venv .venv
 .venv/bin/python tests/browser_test.py --browser both --exhaustive
 .venv/bin/python tests/second_pass.py --browser both
 .venv/bin/python tests/search_browser.py
+.venv/bin/python tests/vim_browser.py
+.venv/bin/python tests/palette_browser.py
+.venv/bin/python tests/reading_browser.py
+.venv/bin/python tests/key_test_browser.py
+.venv/bin/python tests/native_shortcuts_browser.py
 ```
 
 The browser test selects system Chromium when available; for Firefox it uses Playwright’s installed build. No browser download or test dependency is needed to read or rebuild. Run browser tests before publishing reader changes. `scripts/build.py` refreshes checksums after deliberate edits; `scripts/validate.py` checks them without modifying files. No archive, nested Git repository or generated cache belongs in the project.
@@ -84,3 +89,9 @@ Use **Vim keys** or **Alt+M** to enable it. Outside editing fields, **j/k** move
 ## Color palettes
 
 The **Palette** selector beside the Vim controls applies throughout the library and all three readers. Choose **Ember**, **Woodland**, or **Ocean**, each in dark or light mode. Warm **Ember dark** is the default. Choices persist in this browser when storage is available; reader light/dark buttons switch the current family project-wide. Palette selection is separate from learning-progress backups. Instructional images, SVG diagram colors and app identity marks retain their original colors; printing uses a light palette.
+
+## More room to read and shortcut practice
+
+The small reading-controls icon at the lower right opens the bar/map toggles. **Alt+Shift+F** hides/restores all top bars; **Alt+Shift+B** hides/restores the study map. These shortcuts work even with Vim keys off. With Vim enabled, **h/l** navigate walkthrough steps, remaining lesson sections, and previous/next lessons without marking work complete.
+
+In **Compare keys** or a manual’s **Windows shortcuts**, select **Self-test** to recall each key’s action before revealing it. **j/k** move between cards, **l** reveals, **h** hides; arrow keys and Enter also work. Reveal/hide all buttons are included. Reference mode keeps everything visible, with categories grouped under one heading each. See [Vim and reading controls](docs/VIM_NAVIGATION.md) for the complete behavior.

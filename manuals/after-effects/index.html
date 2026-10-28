@@ -339,7 +339,8 @@ window.ManualAdapter={
  let enabled=false;
  try{enabled=localStorage.getItem('dusky-adobe-vim')==='true';}catch{}
  function set(value){value=value===true;if(value===enabled)return;enabled=value;try{localStorage.setItem('dusky-adobe-vim',String(value));}catch{}document.dispatchEvent(new CustomEvent('vim-change',{detail:value}));}
- window.ManualVim={enabled:()=>enabled,set};
+ function scroll(key){const page=document.scrollingElement;if(!page)return;if(key==='g'||key==='G')window.scrollTo({top:key==='g'?0:page.scrollHeight,behavior:'instant'});else window.scrollBy({top:key==='j'?70:-70,behavior:'instant'});}
+ window.ManualVim={enabled:()=>enabled,set,scroll};
  document.addEventListener('keydown',event=>{
   if(event.isComposing||event.defaultPrevented)return;
   if(event.altKey&&!event.ctrlKey&&!event.metaKey&&event.key.toLowerCase()==='m'){event.preventDefault();event.stopImmediatePropagation();set(!enabled);return;}
@@ -352,19 +353,134 @@ window.ManualAdapter={
    }
    return;
   }
-  if(!['j','k','g','G','/'].includes(event.key)||event.shiftKey&&event.key!=='G')return;
+  if(!['j','k','g','G','/','h','l'].includes(event.key)||event.shiftKey&&event.key!=='G')return;
   event.preventDefault();event.stopImmediatePropagation();
+  if(event.key!=='/'&&!document.dispatchEvent(new CustomEvent('vim-card',{detail:event.key,cancelable:true})))return;
   if(event.key==='/'){document.dispatchEvent(new Event('vim-search'));return;}
+  if(event.key==='h'||event.key==='l'){if(event.repeat)return;document.dispatchEvent(new CustomEvent('vim-step',{detail:event.key==='l'?1:-1}));return;}
   if(results.length){
    const at=results.indexOf(document.activeElement);
    const next=event.key==='g'?0:event.key==='G'?results.length-1:event.key==='j'?Math.min(results.length-1,at+1):Math.max(0,at<0?results.length-1:at-1);
    results[next].focus();return;
   }
-  const scroll=document.scrollingElement;
-  if(!scroll)return;
-  if(event.key==='g'||event.key==='G')window.scrollTo({top:event.key==='g'?0:scroll.scrollHeight,behavior:'instant'});
-  else window.scrollBy({top:event.key==='j'?70:-70,behavior:'instant'});
+  if(document.dispatchEvent(new CustomEvent('vim-scroll',{detail:event.key,cancelable:true})))scroll(event.key);
  },true);
+})();
+</script><script>/* Space-efficient reading and non-destructive practice navigation. */
+(() => {
+ 'use strict';
+ const root=document.documentElement;
+ const framed=parent!==window, reader=!!document.getElementById('main');
+ let state={focus:false,map:'auto'};
+ if(!framed)try{const saved=JSON.parse(localStorage.getItem('dusky-adobe-layout'));if(saved&&typeof saved.focus==='boolean'&&['auto','show','hide'].includes(saved.map))state=saved;}catch{}
+ function apply(){
+  root.classList.toggle('reader-focus',state.focus);
+  root.classList.toggle('reader-map-hide',state.map==='hide');
+  root.classList.toggle('reader-map-show',state.map==='show');
+  if(state.focus&&document.activeElement?.closest('.topbar,.library-bar,.keyboard-bar'))(document.getElementById('main')||document.querySelector('#readers iframe:not([hidden])'))?.focus({preventScroll:true});
+  if(state.map!=='auto')document.querySelectorAll('#toggleMenu,#menuToggle,[data-action="menu"]').forEach(b=>b.setAttribute('aria-expanded',String(state.map==='show')));
+  const toolbar=document.getElementById('reading-tools');
+  if(toolbar){const focus=toolbar.querySelector('[data-layout="focus"]'),map=toolbar.querySelector('[data-layout="map"]');focus.textContent=state.focus?'Show bars':'Hide bars';focus.setAttribute('aria-pressed',String(state.focus));map.textContent=state.map==='hide'?'Show map':state.map==='show'?'Hide map':'Study map';map.setAttribute('aria-pressed',String(state.map==='hide'));}
+ }
+ function set(value){if(!value||typeof value.focus!=='boolean'||!['auto','show','hide'].includes(value.map))return;state={focus:value.focus,map:value.map};apply();if(!framed)try{localStorage.setItem('dusky-adobe-layout',JSON.stringify(state));}catch{}}
+ function toggle(what){if(what==='map'&&reader){const sidebar=document.querySelector('.sidebar'),box=sidebar?.getBoundingClientRect();what=box&&box.width>0&&box.right>0&&getComputedStyle(sidebar).display!=='none'?'map-hide':'map-show';}document.dispatchEvent(new CustomEvent('reading-layout',{detail:what}));}
+ window.ManualReading={set,state:()=>({...state}),toggle,move};
+ const css=document.createElement('style');css.textContent=`
+ body.reading #reading-tools,html.reader-standalone #reading-tools{display:block}#reading-tools{display:none;position:fixed;bottom:10px;right:12px;z-index:40;color:var(--ink)}#reading-tools summary{display:grid;place-items:center;width:36px;height:36px;list-style:none;cursor:pointer;border-radius:50%;background:var(--paper);border:1px solid var(--line);box-shadow:0 2px 8px #0002}#reading-tools summary::-webkit-details-marker{display:none}#reading-tools>div{position:absolute;bottom:44px;right:0;min-width:140px;padding:6px;display:grid;gap:5px;background:var(--paper);border:1px solid var(--line);border-radius:8px}#reading-tools button{font:12px system-ui;padding:8px;text-align:left}
+ html.reader-focus body.reading>.library-bar,html.reader-focus body.reading>.keyboard-bar,html.reader-focus body.reading>#reader-controls{display:none!important}
+ html.reader-focus .topbar{display:none!important}
+ html.reader-map-hide .sidebar,html.reader-map-hide .right-rail,html.reader-map-hide aside.sticky,html.reader-map-hide .menu-backdrop{display:none!important}
+ html.reader-map-hide .app-shell,html.reader-map-hide .shell{grid-template-columns:minmax(0,1fr)!important}
+ html.reader-map-hide #main{max-width:none;width:100%}html.reader-map-hide .two-col{grid-template-columns:minmax(0,1fr)!important}
+ html.reader-map-show .sidebar{display:flex!important;transform:none!important;visibility:visible!important}
+ html.reader-map-show .app-shell>.sidebar{display:block!important}
+ html.reader-map-show .menu-backdrop{display:none!important}
+ html.reader-focus #main{padding:24px clamp(16px,3vw,40px) 64px}
+ html.reader-focus .sticky{top:12px}
+ .reader-step-current{outline:2px solid var(--t-accent,var(--accent));outline-offset:4px;scroll-margin-block:20px}
+ body.one-step .practice-step.reader-step-hidden{display:none!important}body.one-step .practice-step.reader-step-current{display:list-item!important}
+ @media print{html.reader-focus #main{padding:5mm 8mm}html.reader-map-show .sidebar{display:none!important}#reading-tools{display:none!important}.reader-step-current{outline:none}html body.one-step .practice-step.reader-step-hidden{display:list-item!important}}
+ `;document.head.append(css);
+ if(reader&&!framed)root.classList.add('reader-standalone');
+ if(!reader||!framed){const bar=document.createElement('details');bar.id='reading-tools';bar.innerHTML='<summary aria-label="Reading controls" title="Reading controls · Alt+Shift+F bars · Alt+Shift+B map"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5M8 8h8v8H8z"/></svg></summary><div><button type="button" data-layout="focus" title="Hide/show all top bars (Alt+Shift+F)">Hide bars</button><button type="button" data-layout="map" title="Hide/show study map (Alt+Shift+B)">Hide map</button></div>';document.body.append(bar);bar.addEventListener('click',e=>{const button=e.target.closest('[data-layout]');if(button){toggle(button.dataset.layout);bar.open=false;bar.querySelector('summary').focus({preventScroll:true});}});}
+ document.addEventListener('click',e=>{if(reader&&state.map!=='auto'&&e.target.closest('#toggleMenu,#menuToggle,[data-action="menu"]')){e.preventDefault();e.stopImmediatePropagation();toggle('map');}},true);
+ document.addEventListener('keydown',e=>{if(reader&&e.key==='Escape'&&state.map==='show'&&getComputedStyle(document.querySelector('.sidebar')).position==='fixed')toggle('map');if(e.key==='Escape'&&e.target.closest('#reading-tools')){const bar=document.getElementById('reading-tools');bar.open=false;bar.querySelector('summary').focus();return;}if(e.isComposing||e.repeat)return;if(e.altKey&&e.shiftKey&&!e.ctrlKey&&!e.metaKey&&['f','b'].includes(e.key.toLowerCase())){e.preventDefault();e.stopImmediatePropagation();toggle(e.key.toLowerCase()==='f'?'focus':'map');}},true);
+ let lastRoute='',position=-1;
+ function mark(step){document.querySelectorAll('.reader-step-current').forEach(x=>x.classList.remove('reader-step-current'));step.classList.add('reader-step-current');step.tabIndex=-1;step.focus({preventScroll:true});step.scrollIntoView({block:'center',behavior:'instant'});}
+ function move(direction){
+  const route=location.hash;if(route!==lastRoute){lastRoute=route;position=-1;}
+  const steps=[...document.querySelectorAll('#main .step-list>li,#main .steps>.step,#main .practice-step')];
+  const bottom=scrollY+innerHeight>=document.documentElement.scrollHeight-3,top=scrollY<3;
+  const native=document.querySelector(direction>0?'[data-action="stepnext"],[data-pointer="next"]':'[data-action="stepback"],[data-pointer="prev"]');
+  if(steps.length&&!(direction>0&&bottom)&&!(direction<0&&top)){
+   const later=[...document.querySelectorAll('#main h2,#main h3')].filter(x=>steps.at(-1).compareDocumentPosition(x)&Node.DOCUMENT_POSITION_FOLLOWING);
+   if(position>=steps.length){const next=position+direction;if(next>=steps.length&&next<steps.length+later.length){position=next;mark(later[next-steps.length]);return;}if(next===steps.length-1){position=next;mark(steps[next]);return;}if(direction>0){window.scrollTo({top:document.documentElement.scrollHeight,behavior:'instant'});return;}}
+   if(native){if(!native.disabled){native.click();requestAnimationFrame(()=>{const step=[...document.querySelectorAll('#main .step-list>li,#main .steps>.step')].find(x=>!x.hidden&&!x.classList.contains('focus-hidden'));if(step)mark(step);});return;}}
+   else{
+    const focused=steps.findIndex(x=>x===document.activeElement||x.contains(document.activeElement));if(focused>=0)position=focused;
+    const next=position<0?(direction>0?0:steps.length-1):position+direction;
+    if(next>=0&&next<steps.length){position=next;if(document.body.classList.contains('one-step'))steps.forEach((x,i)=>x.classList.toggle('reader-step-hidden',i!==next));mark(steps[next]);return;}
+   }
+   if(direction>0&&later.length){position=steps.length;mark(later[0]);return;}
+  }
+  const links=[...document.querySelectorAll('#main .prevnext a,#main .bottom-nav a,#main .two-col>div>.actions:last-child a')];
+  const link=links.find(x=>direction>0?/Next|Finished|Knowledge check|Stage review/i.test(x.textContent):/Previous/i.test(x.textContent));
+  if(link)link.click();
+ }
+ document.addEventListener('vim-step',e=>{if(reader)move(e.detail);});
+ apply();
+})();
+</script><script>/* Shared recall controls; native shortcut references retain their exact source text. */
+(() => {
+ 'use strict';
+ function reveal(card,show){if(!card)return;card.querySelector('[data-test-answer]').hidden=!show;const button=card.querySelector('[data-action="reveal-key"]');button.textContent=show?'Hide answer':'Reveal answer';button.setAttribute('aria-expanded',String(show));if(show&&card.contains(document.activeElement))card.scrollIntoView({block:'nearest',behavior:'instant'});}
+ function key(value){const cards=[...document.querySelectorAll('.key-test')].filter(c=>c.getClientRects().length);if(!cards.length)return false;let at=cards.findIndex(c=>c===document.activeElement||c.contains(document.activeElement));if(['l','Enter','h'].includes(value)){const card=cards[Math.max(0,at)];if(at<0)card.focus();reveal(card,value!=='h');}else{at=value==='g'?0:value==='G'?cards.length-1:value==='j'||value==='ArrowDown'?Math.min(cards.length-1,at+1):Math.max(0,at<0?cards.length-1:at-1);cards[at].focus({preventScroll:true});cards[at].scrollIntoView({block:'center',behavior:'instant'});}return true;}
+ window.ShortcutStudy={reveal};
+ document.addEventListener('vim-card',e=>{if(key(e.detail))e.preventDefault();});
+ document.addEventListener('keydown',e=>{if(e.altKey||e.ctrlKey||e.metaKey||e.isComposing||e.target.closest('input,textarea,select,[contenteditable]'))return;if(!['ArrowDown','ArrowUp','Enter'].includes(e.key)||!e.target.closest('.key-test'))return;if(e.key==='Enter'&&e.target.matches('button,a'))return;if(key(e.key))e.preventDefault();});
+ let main=document.getElementById('main');if(!main)return;const host=document.body;
+ const style=document.createElement('style');style.textContent=`.shortcut-category{font-size:1.1rem;margin:24px 0 8px;color:var(--t-accent)}.shortcut-study-tools{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin:16px 0}.shortcut-study-tools button,.shortcut-study-tools select,.key-test button{font:inherit;color:var(--t-ink);background:var(--t-paper);padding:8px 12px;border:1px solid var(--t-line);border-radius:7px}.key-test{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;border:1px solid var(--t-line);background:var(--t-paper);border-radius:10px;padding:18px;margin:12px 0;scroll-margin:24px}.key-test h2{align-self:center;font-size:1.1rem;margin:0}.key-test:focus,.key-test:focus-within{outline:2px solid var(--t-accent);outline-offset:3px}.key-test [data-test-answer]{grid-column:1/-1;border-top:1px solid var(--t-line);margin-top:14px;padding-top:12px}.key-test [hidden],[data-native-shortcut-reference][hidden],#native-recall[hidden]{display:none!important}.catalog-item .splitrow{flex-wrap:wrap}.catalog-item .shortcut-key{white-space:normal;overflow-wrap:anywhere}@media print{.shortcut-study-tools,.key-test button{display:none!important}.key-test [data-test-answer]{display:block!important}}`;
+ document.head.append(style);
+ let mode='reference',lastRoute='';
+ function button(text,action){const b=document.createElement('button');b.type='button';b.textContent=text;b.dataset.studyAction=action;return b;}
+ function enhance(){
+  main=document.getElementById('main');if(!main)return;
+  const route=location.hash.replace(/^#\/?/,'');
+  if(route!==lastRoute){mode='reference';lastRoute=route;}
+  const ae=route.split('/')[0]==='shortcuts',ps=route==='library/shortcuts',pr=route.startsWith('ref/shortcuts');
+  if(!ae&&!ps&&!pr)return;
+  const reference=ae?main.querySelector('.catalog'):ps?main.querySelector('#ref-results'):main.querySelector('#refRows');
+  if(!reference)return;const table=reference.querySelector('table');if(ae?reference.dataset.studyReady:!table||table.dataset.studyReady)return;if(table)table.dataset.studyReady='true';
+  reference.dataset.studyReady='true';reference.dataset.nativeShortcutReference='';
+  const records=[];
+  if(ae){
+   const groups=new Map();
+   for(const card of reference.querySelectorAll('.catalog-item')){const label=card.querySelector('.label'),category=label?.textContent||'Shortcuts';const record={category,key:card.querySelector('.shortcut-key')?.textContent||'',action:card.querySelector('h3')?.textContent||'',context:[...card.querySelectorAll('p')].map(x=>x.textContent).join('\n')};records.push(record);label?.remove();if(!groups.has(category))groups.set(category,[]);groups.get(category).push(card);}
+   reference.replaceChildren();for(const [category,cards] of groups){const heading=document.createElement('h2');heading.className='shortcut-category';heading.textContent=category;reference.append(heading,...cards);}
+  }else{
+   const table=reference.querySelector('table');if(!table)return;const groupIndex=ps?0:2,groups=new Map();
+   for(const row of table.querySelectorAll('tbody tr')){const cells=[...row.cells];if(cells.length<5)continue;const text=cells.map(c=>c.textContent);const category=text[groupIndex];records.push({category,key:text[2-(pr?1:0)],action:text[ps?1:0],context:text.slice(3).join('\n')});cells[groupIndex].remove();if(!groups.has(category))groups.set(category,[]);groups.get(category).push(row);}
+   table.querySelectorAll('thead tr').forEach(row=>row.cells[groupIndex]?.remove());table.querySelectorAll('tbody').forEach(body=>body.remove());
+   for(const [category,rows] of groups){const body=document.createElement('tbody'),tr=document.createElement('tr'),heading=document.createElement('th');heading.colSpan=4;heading.scope='rowgroup';heading.className='shortcut-category';heading.textContent=category;tr.append(heading);body.append(tr,...rows);table.append(body);}
+  }
+  // A native rerender may replace only the filtered table, so replace its controls too.
+  main.querySelectorAll('.shortcut-study-tools,#native-recall').forEach(x=>x.remove());
+  const tools=document.createElement('div');tools.className='shortcut-study-tools';
+  const label=document.createElement('label');label.textContent='Shortcut view ';
+  const select=document.createElement('select');select.setAttribute('aria-label','Shortcut view');for(const [value,text] of [['reference','Reference'],['test','Self-test']]){const option=document.createElement('option');option.value=value;option.textContent=text;select.append(option);}select.value=mode;label.append(select);tools.append(label,button('Reveal all answers','reveal'),button('Hide all answers','hide'));
+  const hint=document.createElement('small');hint.textContent='Recall the action, then reveal it. With Vim on: j/k move · l reveal · h hide. Arrows/Enter also work.';hint.style.cssText='flex-basis:100%;color:var(--t-muted)';tools.append(hint);
+  const tests=document.createElement('div');tests.id='native-recall';
+  const ordered=[...new Set(records.map(r=>r.category))].flatMap(category=>records.filter(r=>r.category===category));
+  let category='',answerIndex=0;for(const record of ordered){if(record.category!==category){category=record.category;const heading=document.createElement('h2');heading.className='shortcut-category';heading.textContent=category;tests.append(heading);}const card=document.createElement('section');card.className='key-test';card.tabIndex=0;const heading=document.createElement('h2');heading.textContent=record.key;const show=button('Reveal answer','one');show.dataset.action='reveal-key';show.setAttribute('aria-expanded','false');const answer=document.createElement('div');answer.id='native-answer-'+answerIndex++;show.setAttribute('aria-controls',answer.id);answer.dataset.testAnswer='';answer.hidden=true;const action=document.createElement('strong');action.textContent=record.action;const detail=document.createElement('p');detail.textContent=record.context;answer.append(action,detail);card.append(heading,show,answer);tests.append(card);}
+  reference.before(tools);reference.after(tests);
+  function display(){hint.hidden=mode!=='test';reference.hidden=mode==='test';tests.hidden=mode!=='test';tools.querySelectorAll('button').forEach(b=>b.hidden=mode!=='test');}
+  select.addEventListener('change',()=>{mode=select.value;tests.querySelectorAll('.key-test').forEach(c=>reveal(c,false));display();if(mode==='test')tests.querySelector('.key-test')?.focus();});
+  tools.addEventListener('click',e=>{const action=e.target.dataset.studyAction;if(action==='reveal'||action==='hide')tests.querySelectorAll('.key-test').forEach(c=>reveal(c,action==='reveal'));});
+  tests.addEventListener('click',e=>{if(e.target.dataset.studyAction==='one'){const card=e.target.closest('.key-test');reveal(card,card.querySelector('[data-test-answer]').hidden);}});
+  display();
+ }
+ const observer=new MutationObserver(()=>{observer.disconnect();try{enhance();}finally{observer.observe(host,{childList:true,subtree:true});}});
+ enhance();observer.observe(host,{childList:true,subtree:true});
 })();
 </script><script>/* A small message protocol keeps file:// readers independent of shared-origin rules. */
 (() => {
@@ -377,10 +493,11 @@ window.ManualAdapter={
     link.href = '../../index.html';
     link.textContent = '← Dusky Adobe Manual · choose another app';
     link.className='library-return';
-    link.style.cssText = 'display:block;padding:12px 18px;background:#212e29;color:#fff;font:14px system-ui;text-decoration:none;position:fixed;bottom:16px;right:16px;border-radius:8px;box-shadow:0 2px 12px #0003;z-index:100';
+    link.style.cssText = 'display:block;padding:8px;font:12px system-ui;text-decoration:none;border-radius:6px';
     const style=document.createElement('style');style.textContent='@media print{.library-return{display:none!important}}';document.head.append(style);
-    document.body.prepend(link);
+    (document.querySelector('#reading-tools>div')||document.body).append(link);
   }
+  let receiving=false;
   let initialized = !framed, last = '', scheduled = false, navigation = 0;
   const modifiedKey='dusky-adobe-modified-'+adapter.id;
   let updatedAt=0,lastState=JSON.stringify(adapter.get());
@@ -412,9 +529,10 @@ window.ManualAdapter={
   window.addEventListener('message', event => {
     if (!framed || event.source !== parent || event.data?.channel !== 'dusky-library-v1') return;
     const m = event.data;
+    receiving=true;
     try {
       if (m.type === 'initialize') {
-        navigation=m.navigation;window.ManualPalette?.set(m.palette);window.ManualVim?.set(m.vim);
+        navigation=m.navigation;window.ManualReading?.set(m.layout);window.ManualPalette?.set(m.palette);window.ManualVim?.set(m.vim);
         if (m.state && !(updatedAt>(m.updatedAt||0))) {
           try {adapter.set(adapter.validate(m.state));updatedAt=m.updatedAt||0;lastState=JSON.stringify(adapter.get());if(updatedAt)saveModified();}
           catch (error) {send({type:'warning',error:'Saved library progress was invalid; the reader’s own record was retained. '+error.message});}
@@ -423,7 +541,11 @@ window.ManualAdapter={
         initialized = true;
         if (m.route) navigate(m.route);
         publish();
-      } else if(m.type==='palette'){window.ManualPalette?.set(m.value);}
+      } else if(m.type==='layout'){window.ManualReading?.set(m.value);}
+      else if(m.type==='layout-toggle-map'){window.ManualReading?.toggle('map');}
+      else if(m.type==='step'){window.ManualReading?.move(m.direction);}
+      else if(m.type==='scroll'){window.ManualVim?.scroll(m.key);}
+      else if(m.type==='palette'){window.ManualPalette?.set(m.value);}
       else if(m.type==='vim'){window.ManualVim?.set(m.value);}
       else if (m.type === 'navigate') {if(m.navigation<navigation)return;navigation=m.navigation;navigate(m.route);}
       else if (m.type === 'preferences') {adapter.preferences(m.value); publish();}
@@ -436,7 +558,7 @@ window.ManualAdapter={
       } else if (m.type === 'read') {publish();send({type:'response',request:m.request,ok:true,value:{updatedAt,state:adapter.get(),route:route(),progress:adapter.progress(),storage:adapter.storage()}});}
       else if (m.type === 'focus') {document.getElementById('main')?.focus();}
       else if (m.type === 'print') window.print();
-    } catch (error) {send({type:'response', request:m.request, ok:false, error:error.message});}
+    } catch (error) {send({type:'response', request:m.request, ok:false, error:error.message});}finally{receiving=false;}
   });
   document.addEventListener('click', event => {
     const link=event.target.closest('a[href]');
@@ -458,9 +580,10 @@ window.ManualAdapter={
   document.addEventListener('change', window.manualChanged);
   document.addEventListener('input', window.manualChanged);
   document.addEventListener('click', window.manualChanged);
-  document.addEventListener('vim-change',event=>send({type:'vim',value:event.detail}));
+  document.addEventListener('vim-change',event=>{if(!receiving)send({type:'vim',value:event.detail});});
   document.addEventListener('vim-search',()=>{if(framed)send({type:'search'});else{const input=document.getElementById('globalSearch')||document.getElementById('searchInput');if(input)input.focus();else location.hash='#/search';}});
-  document.addEventListener('palette-change',event=>send({type:'palette',value:event.detail}));
+  document.addEventListener('palette-change',event=>{if(!receiving)send({type:'palette',value:event.detail});});
+  document.addEventListener('reading-layout',event=>{if(framed)send({type:'layout',value:event.detail});else{const state=window.ManualReading.state();if(event.detail==='focus')state.focus=!state.focus;else state.map=event.detail==='map-show'?'show':'hide';window.ManualReading.set(state);}});
   send({type:'ready'});
 })();
 </script></body>

@@ -9,10 +9,11 @@
     link.href = '../../index.html';
     link.textContent = '← Dusky Adobe Manual · choose another app';
     link.className='library-return';
-    link.style.cssText = 'display:block;padding:12px 18px;background:#212e29;color:#fff;font:14px system-ui;text-decoration:none;position:fixed;bottom:16px;right:16px;border-radius:8px;box-shadow:0 2px 12px #0003;z-index:100';
+    link.style.cssText = 'display:block;padding:8px;font:12px system-ui;text-decoration:none;border-radius:6px';
     const style=document.createElement('style');style.textContent='@media print{.library-return{display:none!important}}';document.head.append(style);
-    document.body.prepend(link);
+    (document.querySelector('#reading-tools>div')||document.body).append(link);
   }
+  let receiving=false;
   let initialized = !framed, last = '', scheduled = false, navigation = 0;
   const modifiedKey='dusky-adobe-modified-'+adapter.id;
   let updatedAt=0,lastState=JSON.stringify(adapter.get());
@@ -44,9 +45,10 @@
   window.addEventListener('message', event => {
     if (!framed || event.source !== parent || event.data?.channel !== 'dusky-library-v1') return;
     const m = event.data;
+    receiving=true;
     try {
       if (m.type === 'initialize') {
-        navigation=m.navigation;window.ManualPalette?.set(m.palette);window.ManualVim?.set(m.vim);
+        navigation=m.navigation;window.ManualReading?.set(m.layout);window.ManualPalette?.set(m.palette);window.ManualVim?.set(m.vim);
         if (m.state && !(updatedAt>(m.updatedAt||0))) {
           try {adapter.set(adapter.validate(m.state));updatedAt=m.updatedAt||0;lastState=JSON.stringify(adapter.get());if(updatedAt)saveModified();}
           catch (error) {send({type:'warning',error:'Saved library progress was invalid; the reader’s own record was retained. '+error.message});}
@@ -55,7 +57,11 @@
         initialized = true;
         if (m.route) navigate(m.route);
         publish();
-      } else if(m.type==='palette'){window.ManualPalette?.set(m.value);}
+      } else if(m.type==='layout'){window.ManualReading?.set(m.value);}
+      else if(m.type==='layout-toggle-map'){window.ManualReading?.toggle('map');}
+      else if(m.type==='step'){window.ManualReading?.move(m.direction);}
+      else if(m.type==='scroll'){window.ManualVim?.scroll(m.key);}
+      else if(m.type==='palette'){window.ManualPalette?.set(m.value);}
       else if(m.type==='vim'){window.ManualVim?.set(m.value);}
       else if (m.type === 'navigate') {if(m.navigation<navigation)return;navigation=m.navigation;navigate(m.route);}
       else if (m.type === 'preferences') {adapter.preferences(m.value); publish();}
@@ -68,7 +74,7 @@
       } else if (m.type === 'read') {publish();send({type:'response',request:m.request,ok:true,value:{updatedAt,state:adapter.get(),route:route(),progress:adapter.progress(),storage:adapter.storage()}});}
       else if (m.type === 'focus') {document.getElementById('main')?.focus();}
       else if (m.type === 'print') window.print();
-    } catch (error) {send({type:'response', request:m.request, ok:false, error:error.message});}
+    } catch (error) {send({type:'response', request:m.request, ok:false, error:error.message});}finally{receiving=false;}
   });
   document.addEventListener('click', event => {
     const link=event.target.closest('a[href]');
@@ -90,8 +96,9 @@
   document.addEventListener('change', window.manualChanged);
   document.addEventListener('input', window.manualChanged);
   document.addEventListener('click', window.manualChanged);
-  document.addEventListener('vim-change',event=>send({type:'vim',value:event.detail}));
+  document.addEventListener('vim-change',event=>{if(!receiving)send({type:'vim',value:event.detail});});
   document.addEventListener('vim-search',()=>{if(framed)send({type:'search'});else{const input=document.getElementById('globalSearch')||document.getElementById('searchInput');if(input)input.focus();else location.hash='#/search';}});
-  document.addEventListener('palette-change',event=>send({type:'palette',value:event.detail}));
+  document.addEventListener('palette-change',event=>{if(!receiving)send({type:'palette',value:event.detail});});
+  document.addEventListener('reading-layout',event=>{if(framed)send({type:'layout',value:event.detail});else{const state=window.ManualReading.state();if(event.detail==='focus')state.focus=!state.focus;else state.map=event.detail==='map-show'?'show':'hide';window.ManualReading.set(state);}});
   send({type:'ready'});
 })();

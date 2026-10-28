@@ -97,7 +97,7 @@ def main():
         assert not re.search(r'\bfetch\s*\(|XMLHttpRequest|WebSocket|sendBeacon|serviceWorker|\bimport\s*\(',source)
     print('PASS all shipped HTML resources are local and resolve; no runtime network APIs')
     if shutil.which('node'):
-        for name in ['library','bridge','catalog','search','matcher','vim','palette']:
+        for name in ['library','bridge','catalog','search','matcher','vim','palette','reading','shortcut-study']:
             run(['node','--check',str(ROOT/'assets'/f'{name}.js')])
         run(['node','tests/search_logic.cjs'])
     else:
