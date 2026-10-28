@@ -62,7 +62,7 @@
     }else if(m.type==='snapshot'){
       saved.manuals[m.app]={updatedAt:m.updatedAt,state:m.state,route:m.route,progress:m.progress,storage:m.storage};
       persist();
-      if(!frame.loaded){frame.loaded=true;clearTimeout(frame.timeout);frame.resolve();}
+      if(!frame.loaded){frame.loaded=true;clearTimeout(frame.timeout);frame.resolve();if(frame.pendingPreferences){send(m.app,{type:'preferences',value:frame.pendingPreferences});delete frame.pendingPreferences;}}
       const r=route();
       if(r.name==='read'&&r.id===m.app){
         // Only the latest requested navigation may update the library URL.
@@ -73,6 +73,7 @@
       updateProgress();
     }else if(m.type==='navigate'){
       if(route().name==='read'&&route().id===m.app&&m.navigation===frame.navigation){const next=readLink(m.app,m.route);if(location.hash===next)send(m.app,{type:'navigate',navigation:frame.navigation,route:m.route});else location.hash=next;}
+    }else if(m.type==='search'){focusSearch=true;if(route().name==='search')$('library-search')?.focus();else location.hash='#search';
     }else if(m.type==='warning'){notify(byId[m.app].name+': '+m.error);
     }else if(m.type==='response'){
       const req=requests.get(m.request);if(!req||req.id!==m.app)return;requests.delete(m.request);clearTimeout(req.timeout);m.ok?req.resolve(m.value):req.reject(Error(m.error));
@@ -83,21 +84,30 @@
   const footer=()=>'<footer class="footer">Independent learning manuals · Windows Adobe workflows · Linux / Windows reader<br>Research snapshots: 28 October 2026. Source links are optional online reading; lessons, references and included practice assets stay local. <a href="docs/SECOND_PASS.md" target="_blank">Integration audit</a> · <a href="README.md" target="_blank">Project guide</a></footer>';
   function home(){return '<div class="page"><section class="hero"><div class="eyebrow">The offline creative library</div><h1>Three crafts.<br>One place to learn.</h1><p>Choose your workspace. Follow a complete learning path, look up a tool, or connect the ideas across image making, editing and motion.</p><div class="meta"><span class="dot">Everything needed to read is included</span><span>'+manuals.reduce((n,m)=>n+m.lessons,0)+' guided lessons</span><span>No server or installation</span></div></section><div class="manual-grid">'+manuals.map(m=>`<article class="manual-card" style="--app-color:${m.color};--app-bg:${m.bg}"><div class="app-icon" aria-hidden="true">${m.mark}</div><h2>${m.name}</h2><p class="version">Windows · research target ${m.version}</p><p class="description">${m.description}</p><ul><li>${m.lessons} lessons through ${m.stages} stages</li>${m.highlights.map(x=>'<li>'+escape(x)+'</li>').join('')}</ul><div class="reading-progress"><span data-progress="${m.id}">${status(m.id)}</span><div class="track"><span data-bar="${m.id}" style="width:0%"></span></div></div><a class="button primary" href="${readLink(m.id,lastRoute(m.id))}">${saved.manuals[m.id]?'Continue':'Open'} ${m.name} →</a><div class="card-actions"><a href="${readLink(m.id,m.start)}">First lesson</a><a href="manuals/${m.id}/ALL_CONTENT.md" target="_blank">Text edition</a><a href="${readLink(m.id,m.settings)}">App progress</a></div></article>`).join('')+'</div><div class="twocol"><section class="panel"><h2>A reference desk for all three apps</h2><p>Search full lesson text, references and Premiere’s technical field guides together. Every result names its app and opens the matching entry.</p><div class="inline-links"><a href="#search">Search the library →</a><a href="#compare">Compare Windows keys →</a></div></section><section class="panel"><h2>Read on Linux. Practice in Windows.</h2><p>Keep this folder on your host while working in your Windows VM. Export one progress backup to carry all three learning records between browsers or machines.</p><a href="#settings">Reading settings & progress →</a></section></div>'+footer()+'</div>';}
   async function loadSearch(){
-    if(!searchPromise)searchPromise=new Promise((resolve,reject)=>{
-      const script=document.createElement('script');script.src='assets/search.js';
-      script.onload=()=>{searchData=window.LIBRARY_SEARCH.map(x=>({...x,normalized:(x.title+' '+x.body).toLocaleLowerCase('en')}));resolve();};
-      script.onerror=()=>{script.remove();searchPromise=null;reject(Error('Search data could not load. Keep assets/search.js with this folder.'));};document.head.append(script);
-    });
+    if(!searchPromise){
+      const scripts=[];
+      searchPromise=Promise.all(['assets/matcher.js','assets/search.js'].map(src=>new Promise((resolve,reject)=>{
+        const script=document.createElement('script');scripts.push(script);script.src=src;
+        script.onload=resolve;script.onerror=()=>reject(Error('Search files could not load. Keep the complete assets folder and retry.'));document.head.append(script);
+      }))).then(()=>{searchData=window.LibrarySearchEngine.prepare(window.LIBRARY_SEARCH,Object.fromEntries(manuals.map(m=>[m.id,m.name])));})
+        .catch(error=>{scripts.forEach(script=>script.remove());searchPromise=null;throw error;});
+    }
     return searchPromise;
   }
-  function excerpt(text,q){const tokens=q.trim().toLowerCase().split(/\s+/);const i=Math.max(0,text.toLowerCase().indexOf(tokens[0]||''));const start=Math.max(0,i-45);return (start?'…':'')+text.slice(start,start+230)+(text.length>start+230?'…':'');}
-  function searchPage(){return '<div class="page"><div class="eyebrow">One local index · three manuals</div><h1>Find the idea. Open the exact entry.</h1><p class="lede">Search every word in lessons, recipes, references and field guides. App names and context stay attached to each result.</p><div class="search-form"><input id="library-search" type="search" placeholder="Try: alpha, mask, ripple, Ctrl+S…" aria-label="Search all manuals" value="'+escape(query)+'"><select id="app-filter" aria-label="Filter by application"><option value="">All applications</option>'+manuals.map(m=>`<option value="${m.id}" ${m.id===appFilter?'selected':''}>${m.name}</option>`).join('')+'</select><select id="kind-filter" aria-label="Filter by entry type"><option value="">All entry types</option>'+[...new Set(searchData.map(x=>x.kind))].sort().map(k=>`<option ${k===kindFilter?'selected':''}>${k}</option>`).join('')+'</select></div><div id="search-results"></div>'+footer()+'</div>';}
+  function highlighted(text,positions){
+    let offset=0,html='';
+    for(const character of text){const safe=escape(character);html+=positions.has(offset)?'<mark>'+safe+'</mark>':safe;offset+=character.length;}
+    return html;
+  }
+  function excerpt(text,q){const tokens=q.trim().toLowerCase().split(/\s+/);const i=Math.max(0,window.LibrarySearchEngine.fold(text).indexOf(window.LibrarySearchEngine.fold(tokens[0]||'')));const start=Math.max(0,i-45);return (start?'…':'')+text.slice(start,start+230)+(text.length>start+230?'…':'');}
+  function searchPage(){return '<div class="page"><div class="eyebrow">One local index · three manuals</div><h1>Find the idea. Open the exact entry.</h1><p class="lede">Search full text or abbreviate a title: “gsblur” finds Gaussian Blur. App names and context stay attached to each result.</p><div class="search-form"><input id="library-search" type="search" placeholder="Try: alpha, mask, ripple, Ctrl+S…" aria-label="Search all manuals" value="'+escape(query)+'"><select id="app-filter" aria-label="Filter by application"><option value="">All applications</option>'+manuals.map(m=>`<option value="${m.id}" ${m.id===appFilter?'selected':''}>${m.name}</option>`).join('')+'</select><select id="kind-filter" aria-label="Filter by entry type"><option value="">All entry types</option>'+[...new Set(searchData.map(x=>x.record.kind))].sort().map(k=>`<option ${k===kindFilter?'selected':''}>${k}</option>`).join('')+'</select></div><p class="search-help" id="search-help">↓ / ↑ select results · Enter opens · Escape returns to search or clears it · Ctrl+K searches from any manual. App/type filters narrow the results.</p><div id="search-results" aria-describedby="search-help"></div>'+footer()+'</div>';}
   function searchResults(){
     const tokens=query.toLocaleLowerCase('en').trim().split(/\s+/).filter(Boolean);
     const target=$('search-results');if(!target)return;
     if(!tokens.length){target.innerHTML='<div class="empty">Search '+searchData.length.toLocaleString()+' records. Try a shared concept to see how each app teaches it: <a href="#search/alpha">alpha</a>, <a href="#search/mask">mask</a>, <a href="#search/color">color</a> or <a href="#search/keyframe">keyframe</a>.</div>';return;}
-    const matches=searchData.filter(x=>(!appFilter||x.app===appFilter)&&(!kindFilter||x.kind===kindFilter)&&tokens.every(t=>x.normalized.includes(t))).map(x=>({...x,score:tokens.reduce((n,t)=>n+(x.title.toLowerCase().includes(t)?10:0),0)})).sort((a,b)=>b.score-a.score);
-    target.innerHTML='<p class="result-count" role="status">'+matches.length+' matches'+(matches.length>searchLimit?' · showing '+searchLimit:'')+'</p><div class="results">'+matches.slice(0,searchLimit).map(x=>`<a class="result" href="${escape(readLink(x.app,x.route))}"><small>${byId[x.app].name} · ${escape(x.kind)}</small><strong>${escape(x.title)}</strong><p>${escape(excerpt(x.body,query))}</p></a>`).join('')+'</div>'+(matches.length>searchLimit?'<button class="more" data-action="more-search">Show 40 more results</button>':'')+(!matches.length?'<div class="empty">No matches. Try fewer words or clear a filter.</div>':'');
+    const matches=window.LibrarySearchEngine.search(searchData,query,appFilter,kindFilter);
+    target.innerHTML='<p class="result-count" role="status">'+matches.length+' matches'+(matches.length>searchLimit?' · showing '+searchLimit:'')+'</p><div class="results">'+matches.slice(0,searchLimit).map(({record:x,positions})=>{const snippet=excerpt(x.body,query);return `<a class="result" href="${escape(readLink(x.app,x.route))}"><small>${byId[x.app].name} · ${escape(x.kind)}</small><strong>${highlighted(x.title,positions)}</strong><p>${highlighted(snippet,window.LibrarySearchEngine.literalPositions(snippet,query))}</p></a>`;}).join('')+'</div>'+(matches.length>searchLimit?'<button class="more" data-action="more-search">Show 40 more results</button>':'')+(!matches.length?'<div class="empty">No matches. Try fewer words, a longer title abbreviation, or clear a filter.</div>':'');
+
   }
   function comparePage(){return '<div class="page"><div class="eyebrow">Muscle memory, with context</div><h1>Same keys. Check the task.</h1><p class="lede">Compare the documented Windows bindings side by side. A shared binding can perform different tasks. Focus, selection, custom presets and the installed app determine what happens.</p><div class="panel"><p>This groups exact key labels from the supplied manuals, ignoring case, spaces and code formatting. It does not infer equivalent commands or merge different gestures. Each link opens the original context.</p></div><input class="compare-search" id="compare-search" type="search" aria-label="Filter shortcut comparisons" placeholder="Filter keys, commands or contexts…" value="'+escape(compareQuery)+'"><p><label><input type="checkbox" id="all-keys" '+(allKeys?'checked':'')+'> Include bindings listed in only one app</label></p><div id="key-results"></div>'+footer()+'</div>';}
   function compareResults(){
@@ -132,7 +142,7 @@
     else if(r.name==='search'||r.name==='compare'){
       workspace.innerHTML='<div class="page" role="status">Opening the local reference index…</div>';
       try{await loadSearch();if(generation!==renderGeneration)return;
-        if(r.name==='search'){query='';if(r.id){try{query=decodeURIComponent([r.id,r.path].filter(Boolean).join('/'));}catch{query='';}}workspace.innerHTML=searchPage();searchResults();if(focusSearch){$('library-search').focus();focusSearch=false;}}
+        if(r.name==='search'){query='';if(r.id){try{query=decodeURIComponent([r.id,r.path].filter(Boolean).join('/'));}catch{query='';}}workspace.innerHTML=searchPage();searchResults();if(focusSearch){workspace.focus();$('library-search').focus();focusSearch=false;}}
         else{workspace.innerHTML=comparePage();compareResults();}
       }catch(error){if(generation!==renderGeneration)return;workspace.innerHTML='<div class="page"><h1>Reference index unavailable</h1><p>'+escape(error.message)+'</p><a href="#home">Return to library</a></div>';}
     }else workspace.innerHTML='<div class="page"><h1>That page was not found</h1><a href="#home">Choose a manual</a></div>';
@@ -177,7 +187,7 @@
   }
   document.addEventListener('click',event=>{
     const action=event.target.closest('[data-action]')?.dataset.action;
-    if(action==='more-search'){searchLimit+=40;searchResults();}
+    if(action==='more-search'){const next=searchLimit;searchLimit+=40;searchResults();document.querySelectorAll('#search-results .result')[next]?.focus();}
     if(action==='more-keys'){compareLimit+=30;compareResults();}
     if(action==='export-library')exportLibrary();
     if(action==='import-library')$('import-library').click();
@@ -185,7 +195,7 @@
     if(action==='apply-preferences'){
       if(busy)return;
       saved.preferences=Object.fromEntries([...document.querySelectorAll('[data-library-preference]')].map(x=>[x.dataset.libraryPreference,x.checked]));persist();applyLibraryPreferences();
-      for(const [id,f] of frames)if(f.loaded)send(id,{type:'preferences',value:saved.preferences});notify('Reading preferences applied to all three manuals.');
+      for(const [id,f] of frames){if(f.loaded)send(id,{type:'preferences',value:saved.preferences});else f.pendingPreferences={...saved.preferences};}notify('Reading preferences applied to all three manuals.');
     }
     if(action==='print-manual')send(route().id,{type:'print'});
     if(event.target.closest('.skip')){event.preventDefault();if(route().name==='read'){frames.get(route().id)?.element.focus();send(route().id,{type:'focus'});}else workspace.focus();}
@@ -200,6 +210,21 @@
     if(event.target.id==='kind-filter'){kindFilter=event.target.value;searchLimit=40;searchResults();}
     if(event.target.id==='all-keys'){allKeys=event.target.checked;compareLimit=30;compareResults();}
     if(event.target.id==='import-library')importLibrary(event.target.files[0]);
+  });
+  document.addEventListener('keydown',event=>{
+    if(event.isComposing)return;
+    if((event.ctrlKey||event.metaKey)&&event.key.toLowerCase()==='k'){
+      event.preventDefault();focusSearch=true;if(route().name==='search'){$('library-search')?.focus();focusSearch=false;}else location.hash='#search';return;
+    }
+    if(route().name!=='search'||event.altKey||event.ctrlKey||event.metaKey||event.shiftKey||event.target.tagName==='SELECT')return;
+    const input=$('library-search'),links=[...document.querySelectorAll('#search-results .result')],at=links.indexOf(document.activeElement);
+    if(event.key==='Escape'){
+      if(document.activeElement===input){input.value='';input.dispatchEvent(new Event('input',{bubbles:true}));}else input?.focus();event.preventDefault();
+    }else if(document.activeElement===input&&links.length&&['ArrowDown','ArrowUp','Enter'].includes(event.key)){
+      event.preventDefault();if(event.key==='Enter')links[0].click();else links[event.key==='ArrowUp'?links.length-1:0].focus();
+    }else if(at>=0&&['ArrowDown','ArrowUp','Home','End'].includes(event.key)){
+      event.preventDefault();if(event.key==='ArrowUp'&&at===0)input.focus();else links[event.key==='Home'?0:event.key==='End'?links.length-1:Math.min(links.length-1,at+(event.key==='ArrowDown'?1:-1))].focus();
+    }
   });
   document.addEventListener('keydown',event=>{if((event.ctrlKey||event.metaKey)&&event.key.toLowerCase()==='p'&&route().name==='read'){event.preventDefault();send(route().id,{type:'print'});return;}if(event.key==='/'&&!event.ctrlKey&&!event.metaKey&&!event.altKey&&!event.target.matches('input,textarea,select,[contenteditable="true"]')){event.preventDefault();if(route().name==='search')$('library-search')?.focus();else{focusSearch=true;location.hash='#search';}}});
   window.addEventListener('hashchange',()=>{clearTimeout(searchUrlTimer);searchLimit=40;compareLimit=30;render();});

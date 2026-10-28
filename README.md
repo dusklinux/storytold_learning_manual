@@ -14,7 +14,7 @@ No server, internet connection, package installation, Python, Node.js, Adobe log
 
 These are the supplied research snapshots dated **28 October 2026**, not automatic claims about the latest installed release. The integration preserves the teaching text and research boundaries. See each manual’s sources and historical audits for Adobe-specific evidence and limitations.
 
-**Search all** searches 2,423 records across full lesson text, reference entries, quiz text, stage challenges and complete field-guide text. Filter by app or entry type; results open the exact entry. Search is loaded only when needed. **Compare keys** groups the 680 documented Windows shortcut records by matching key label, with each command and context kept separate. Matching keys do not establish equivalent behavior.
+**Search all** searches 2,423 records across full lesson text, reference entries, quiz text, stage challenges and complete field-guide text. Exact title matches rank first; title abbreviations such as `gsblur` and `curvs` work alongside full-text queries. Matching title characters and literal excerpt matches are highlighted. Filter by app or entry type; results open the exact entry. Search is loaded only when needed. In the library, press **Ctrl+K** from any reader to search all manuals. Use **↓/↑** to select results, **Enter** to open, and **Escape** to return to the input (or clear it when already there). Native Tab navigation and each reader’s own search remain available. **Compare keys** groups the 680 documented Windows shortcut records by matching key label, with each command and context kept separate. Matching keys do not establish equivalent behavior.
 
 **Progress** exports/imports all three records together, including checkmarks, quiz answers, bookmarks, Premiere notes and preferences. Each reader also accepts its existing single-manual backups. Import an old backup through **App progress**, then export a new library backup. All three records must validate before a library import replaces anything. Reading preferences can be applied to all readers from the shared settings page. A later individual adjustment remains saved; reloading does not reapply the global defaults.
 
@@ -36,10 +36,13 @@ scripts/build.py           Dependency-free library build; generates no archives
 scripts/validate.py        Checksums, content preservation, local assets and native checks
 tests/browser_test.py      Every generated route and primary offline workflows
 tests/second_pass.py       Delayed messages, failed storage/imports and recovery
+tests/search_logic.cjs     Ranking, abbreviation, Unicode and full-text retention checks
+tests/search_browser.py    Offline fuzzy-search keyboard and visual regressions
 tests/test_build.py        One-pass source freshness, deterministic outputs and traversal
 docs/STRUCTURE.md          Structural analysis, integration decisions and maintenance contract
 docs/AUDIT.md              Initial integration review
-docs/SECOND_PASS.md        Current findings, fixes and verification limits
+docs/SECOND_PASS.md        Integration findings, fixes and verification limits
+docs/SEARCH_AUDIT.md       Fuzzy-search design, macro/micro review and test evidence
 docs/original-files.json   SHA-256 baseline of all 137 supplied files
 MANIFEST.sha256            Checksums of the shipped project, including nested manifests
 ```
@@ -63,8 +66,13 @@ python3 -m venv .venv
 .venv/bin/playwright install firefox
 .venv/bin/python tests/browser_test.py --browser both --exhaustive
 .venv/bin/python tests/second_pass.py --browser both
+.venv/bin/python tests/search_browser.py
 ```
 
 The browser test selects system Chromium when available; for Firefox it uses Playwright’s installed build. No browser download or test dependency is needed to read or rebuild. Run browser tests before publishing reader changes. `scripts/build.py` refreshes checksums after deliberate edits; `scripts/validate.py` checks them without modifying files. No archive, nested Git repository or generated cache belongs in the project.
 
 This is an independent educational project, not an Adobe product. The original sources contain no project-wide license grant; this integration does not invent one. Original synthetic assets retain their supplied usage notes.
+
+## Before wiping or changing computers
+
+The GitHub repository contains the complete manual, generated offline readers, media and source. Browser-local learning progress is separate: use **Progress → Export all progress**, and keep the downloaded JSON somewhere that survives the wipe. Restore it through **Import library backup** afterward. The project does not automatically upload your progress or notes to GitHub.

@@ -287,7 +287,7 @@ render();
     event.preventDefault();
     send({type:'navigate', route:value || adapter.home});
   }, true);
-  document.addEventListener('keydown', event => {if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'p') {event.preventDefault();window.print();}});
+  document.addEventListener('keydown', event => {if (framed&&(event.ctrlKey||event.metaKey)&&event.key.toLowerCase()==='k'){event.preventDefault();send({type:'search'});return;}if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'p') {event.preventDefault();window.print();}});
   window.addEventListener('hashchange', publish);
   document.addEventListener('change', window.manualChanged);
   document.addEventListener('input', window.manualChanged);

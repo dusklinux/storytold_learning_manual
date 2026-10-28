@@ -1,5 +1,7 @@
 # Comprehensive second-pass review
 
+> The later fuzzy-search implementation and current search verification are documented in [SEARCH_AUDIT.md](SEARCH_AUDIT.md).
+
 Reviewed 28 October 2026, starting from clean commit `ebbea2e`. This is the current integration review; [AUDIT.md](AUDIT.md) retains the earlier pass. The second pass found real defects despite the first pass’s successful route sweep. Those earlier results established route reachability, not complete correctness of every state transition.
 
 ## Findings and changes

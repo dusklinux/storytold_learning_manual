@@ -39,7 +39,7 @@ def run(name):
         page.get_by_role('link',name='Progress',exact=True).click()
         page.locator('[data-library-preference="large"]').check()
         page.get_by_role('button',name='Apply to all three',exact=True).click()
-        ps.wait_for_function('window.ManualAdapter.get().largeText')
+        ps.wait_for_function('window.ManualAdapter.get().largeText',polling=50)
         page.locator('#switcher').select_option('photoshop')
         ps.wait_for_selector('[data-action="large"]');ps.locator('[data-action="large"]').click()
         ps.wait_for_function('!window.ManualAdapter.get().largeText')

@@ -116,9 +116,9 @@ def run(browser_name, exhaustive):
         for key in ['large', 'contrast', 'oneStep']:
             page.locator(f'[data-library-preference="{key}"]').check()
         page.get_by_role('button', name='Apply to all three', exact=True).click()
-        ps.wait_for_function("document.documentElement.dataset.large==='true'")
-        pr.wait_for_function("document.body.classList.contains('one-step')")
-        ae.wait_for_function("document.body.classList.contains('high-contrast')")
+        ps.wait_for_function("document.documentElement.dataset.large==='true'",polling=50)
+        pr.wait_for_function("document.body.classList.contains('one-step')",polling=50)
+        ae.wait_for_function("document.body.classList.contains('high-contrast')",polling=50)
         with page.expect_download() as download:
             page.get_by_role('button', name='Export all progress', exact=True).click()
         backup = json.loads(Path(download.value.path()).read_text())
@@ -151,12 +151,12 @@ def run(browser_name, exhaustive):
         assert ae.evaluate('Object.keys(window.ManualAdapter.get().steps).length') == 0
         imported(backup)
         page.wait_for_function("document.getElementById('notice').textContent==='All three validated learning records imported.'")
-        ps.wait_for_function('window.ManualAdapter.get().completed.length===1')
+        ps.wait_for_function('window.ManualAdapter.get().completed.length===1',polling=50)
 
         page.reload()
         page.wait_for_selector('h1')
         ps = visit('photoshop', 'lesson/s01l01')
-        ps.wait_for_function('window.ManualAdapter.get().completed.length===1')
+        ps.wait_for_function('window.ManualAdapter.get().completed.length===1',polling=50)
         ps.evaluate('()=>{window.printCalls=0;window.print=()=>{window.printCalls++};}')
         page.get_by_role('button',name='Print manual',exact=True).click()
         ps.wait_for_function('window.printCalls===1')
