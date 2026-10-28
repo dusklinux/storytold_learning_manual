@@ -1,5 +1,7 @@
 # Integration audit — Dusky Adobe Manual
 
+> Historical first-pass report. See [SECOND_PASS.md](SECOND_PASS.md) for the current review, later defects found, fixes and validation.
+
 Review date: 28 October 2026. This report covers the combined reader, structure, preservation and offline behavior. The supplied manuals’ Adobe research and earlier audits are retained in their own directories; they are historical evidence, not a claim that this integration reran every Adobe exercise.
 
 ## Macro review

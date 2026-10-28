@@ -14,11 +14,11 @@ No server, internet connection, package installation, Python, Node.js, Adobe log
 
 These are the supplied research snapshots dated **28 October 2026**, not automatic claims about the latest installed release. The integration preserves the teaching text and research boundaries. See each manual’s sources and historical audits for Adobe-specific evidence and limitations.
 
-**Search all** searches 2,422 records across full lesson text, reference entries and complete field-guide text. Filter by app or entry type; results open the exact entry. Search is loaded only when needed. **Compare keys** groups the 680 documented Windows shortcut records by matching key label, with each command and context kept separate. Matching keys do not establish equivalent behavior.
+**Search all** searches 2,423 records across full lesson text, reference entries, quiz text, stage challenges and complete field-guide text. Filter by app or entry type; results open the exact entry. Search is loaded only when needed. **Compare keys** groups the 680 documented Windows shortcut records by matching key label, with each command and context kept separate. Matching keys do not establish equivalent behavior.
 
-**Progress** exports/imports all three records together, including checkmarks, quiz answers, bookmarks, Premiere notes and preferences. Each reader also accepts its existing single-manual backups. Import an old backup through **App progress**, then export a new library backup. All three records must validate before a library import replaces anything. Reading preferences can be applied to all readers from the shared settings page.
+**Progress** exports/imports all three records together, including checkmarks, quiz answers, bookmarks, Premiere notes and preferences. Each reader also accepts its existing single-manual backups. Import an old backup through **App progress**, then export a new library backup. All three records must validate before a library import replaces anything. Reading preferences can be applied to all readers from the shared settings page. A later individual adjustment remains saved; reloading does not reapply the global defaults.
 
-Progress is local to your browser profile and this copy of the library; it does not sync between host and VM. Local-file storage rules vary. If storage is blocked, the open session retains all three readers when switching apps; export before closing. Moving the folder, switching browsers or opening the standalone reader can use different local storage. Export/import is the reliable transfer method. Library-session records take priority over separately edited standalone-reader records; import an exported standalone backup in the embedded reader to merge that work into your library record.
+Progress is local to your browser profile and this copy of the library; it does not sync between host and VM. Local-file storage rules vary. If storage is blocked, the open session retains all three readers when switching apps; export before closing. Moving the folder, switching browsers or opening the standalone reader can use different local storage. Export/import is the reliable transfer method. On reload, the newer dated record is used when both the library and reader have saved progress. This also protects newer reader progress if a library-store write failed. There is no live cross-tab synchronization; export/import remains the transfer method between browsers or machines.
 
 Use **Print manual** while reading, or Ctrl+P while the manual has focus. It prints the active reader, whose print styles expand focused practice steps. Browser-menu printing of the outer library page prints the library page; use the dedicated button for a lesson. **Open standalone** opens the current entry in its original reader. Complete Markdown editions and CSV references remain in each manual directory.
 
@@ -34,9 +34,12 @@ manuals/premiere/          Premiere teaching material, reader, guides, media and
 manuals/after-effects/     After Effects teaching material, reader, samples and sources
 scripts/build.py           Dependency-free library build; generates no archives
 scripts/validate.py        Checksums, content preservation, local assets and native checks
-tests/browser_test.py      Real file:// integration tests, networking disabled
+tests/browser_test.py      Every generated route and primary offline workflows
+tests/second_pass.py       Delayed messages, failed storage/imports and recovery
+tests/test_build.py        One-pass source freshness, deterministic outputs and traversal
 docs/STRUCTURE.md          Structural analysis, integration decisions and maintenance contract
-docs/AUDIT.md              Macro/micro review, measured results and verification limits
+docs/AUDIT.md              Initial integration review
+docs/SECOND_PASS.md        Current findings, fixes and verification limits
 docs/original-files.json   SHA-256 baseline of all 137 supplied files
 MANIFEST.sha256            Checksums of the shipped project, including nested manifests
 ```
@@ -59,6 +62,7 @@ python3 -m venv .venv
 .venv/bin/pip install -r requirements-dev.txt
 .venv/bin/playwright install firefox
 .venv/bin/python tests/browser_test.py --browser both --exhaustive
+.venv/bin/python tests/second_pass.py --browser both
 ```
 
 The browser test selects system Chromium when available; for Firefox it uses Playwright’s installed build. No browser download or test dependency is needed to read or rebuild. Run browser tests before publishing reader changes. `scripts/build.py` refreshes checksums after deliberate edits; `scripts/validate.py` checks them without modifying files. No archive, nested Git repository or generated cache belongs in the project.

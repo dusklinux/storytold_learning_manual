@@ -4,6 +4,8 @@ Development dependency: playwright. Reading never requires this dependency.
 """
 import argparse
 import json
+import re
+import unicodedata
 import shutil
 from pathlib import Path
 import time
@@ -126,6 +128,7 @@ def run(browser_name, exhaustive):
         assert all(backup['preferences'].values())
 
         def imported(value):
+            page.wait_for_function("!document.querySelector('[data-action=\"import-library\"]').disabled")
             page.locator('#import-library').set_input_files({'name':'progress.json','mimeType':'application/json','buffer':json.dumps(value).encode()})
 
         bad = json.loads(json.dumps(backup))
@@ -176,6 +179,11 @@ def run(browser_name, exhaustive):
             if not exhaustive and record['kind'] not in ['Lesson', 'Field guide', 'Topic']:
                 continue
             frame = visit(record['app'], record['route'])
+            if record['kind']!='Curriculum':
+                normalize=lambda value:re.sub(r'\s+',' ',unicodedata.normalize('NFKC',value).casefold()).replace('`','').strip()
+                assert normalize(record['title']) in normalize(frame.locator('#main').inner_text()), record
+            if record['app']=='photoshop' and record['kind']=='Version':
+                assert frame.locator('.search-target').count()==1,record
             if record['app'] == 'premiere' and record['route'].startswith('ref/'):
                 assert frame.locator('.search-target').count() == 1, record
             if record['app'] == 'after-effects' and record['kind'] in ['Effect', 'Shortcut', 'Term', 'Troubleshooting']:
@@ -185,7 +193,7 @@ def run(browser_name, exhaustive):
                 print(f'{browser_name}: {tested} catalog routes', flush=True)
 
         # Root pages and specialist layouts at narrow widths, including large text.
-        for width in [375, 768]:
+        for width in [320, 375, 768]:
             page.set_viewport_size({'width':width,'height':900})
             for name in ['home', 'search', 'compare', 'settings']:
                 page.evaluate('(name)=>{location.hash=name}', '#'+name)

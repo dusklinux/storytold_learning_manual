@@ -24,6 +24,8 @@ html[data-theme="dark"][data-contrast="true"]{--bg:#050505;--surface:#0b0b0b;--s
 .step-toolbar .button[disabled]{opacity:.5;cursor:not-allowed}
 .step-list li[hidden]{display:none!important}
 @media print{.step-list li[hidden]{display:list-item!important}.step-toolbar,.reading-controls{display:none!important}}
+
+.search-target{outline:3px solid var(--focus);outline-offset:-3px;background:var(--surface2)}
 </style>
 
 
@@ -128,7 +130,7 @@ const searchIndex=[];
 function plain(v){if(Array.isArray(v))return v.map(plain).join(' ');if(v&&typeof v==='object')return Object.values(v).map(plain).join(' ');return String(v??'')}
 D.lessons.forEach(l=>searchIndex.push({title:l.title,section:'Lesson '+l.id,url:lf(l.id),body:plain(l)}));
 families.forEach(f=>D[f].forEach((x,i)=>{let id=x.id||'idx-'+i;searchIndex.push({title:x[refTitles[f]],section:refLabels[f],url:f==='shortcuts'?'#/shortcut/'+i:rf(f,id),body:plain(x)})}));
-D.changes.forEach(x=>searchIndex.push({title:x.feature,section:'Version status',url:'#/changes',body:plain(x)}));
+D.changes.forEach((x,i)=>searchIndex.push({title:x.feature,section:'Version status',url:'#/changes/'+i,body:plain(x)}));
 D.stages.forEach(x=>searchIndex.push({title:x.project.title,section:'Stage '+x.id+' project',url:sf(x.id),body:plain(x.project)}));
 function searchMatches(q){let tokens=strip(q.trim()).split(/\s+/).filter(Boolean);if(!tokens.length)return[];return searchIndex.map((x,i)=>{let title=strip(x.title),body=strip(x.body);if(!tokens.every(t=>body.includes(t)))return null;return {...x,i,score:tokens.reduce((score,t)=>score+(title.includes(t)?12:1)+(title.startsWith(t)?5:0),0)}}).filter(Boolean).sort((a,b)=>b.score-a.score||a.i-b.i).slice(0,150)}
 function searchResults(q){const matches=searchMatches(q);return `<p class="muted" role="status">${q.trim()?`${matches.length}${matches.length===150?'+':''} matches for “${safe(q)}”`:'Type a tool, concept, filter, symptom or lesson topic.'}</p>${matches.map(x=>`<a href="${x.url}" class="result"><small>${safe(x.section)}</small><strong>${safe(x.title)}</strong><span class="excerpt">${safe(excerpt(x.body,q))}</span></a>`).join('')}${q.trim()&&!matches.length?'<p>Try a shorter term, e.g. “mask”, “noise” or “keyboard”.</p>':''}`}
@@ -148,7 +150,7 @@ let teach=x.lesson?[x.lesson]:x.requires||[];
 let book=state.bookmarks.includes(rf(f,id));
 return `${crumbs([['Overview','#/home'],[refLabels[f],'#/library/'+f],[label]])}<div class="lesson-head"><div><div class="eyebrow">${safe(refLabels[f])}</div><h1>${safe(label)}</h1></div><button class="button small" data-action="bookmark" data-href="${rf(f,id)}" aria-pressed="${book}">${book?'★ Saved':'☆ Bookmark'}</button></div><dl class="spec">${fields.map(([k,v])=>`<dt>${safe(k)}</dt><dd>${safe(v)}</dd>`).join('')}</dl>${teach.length?`<h2>Learn the foundation</h2><ul>${teach.map(id=>`<li>${link(lessonById[id]?.title||id,lf(id))}</li>`).join('')}</ul>`:''}<p>${link('← Back to '+refLabels[f],'#/library/'+f,'class="button"')}</p>${end()}`}
 function progressPage(){let saved=state.bookmarks.map(href=>{let l=href.match(/^#\/lesson\/(.+)$/);if(l&&lessonById[l[1]])return{href,label:lessonById[l[1]].title};for(const f of families){let r=D[f].find(x=>href===rf(f,x.id));if(r)return{href,label:r[refTitles[f]]}}return{href,label:href}});return `${crumbs([['Overview','#/home'],['Progress & transfer']])}<div class="eyebrow">Private learning record</div><h1>Progress & portable backup</h1><p class="intro">${state.completed.length} of ${D.lessons.length} lessons marked complete (${pct(state.completed.length,D.lessons.length)}%). Your record stays in this browser profile unless you explicitly export it.</p><div class="hero-actions"><button class="button primary" data-action="export">↓ Export progress JSON</button><button class="button" data-action="import">↑ Import progress JSON</button><input type="file" id="import-file" accept="application/json,.json" hidden><button class="button" data-action="expand">Open all stage navigation</button></div><div class="note ${!storeOK?'warning':''}"><strong>Persistence:</strong> ${storeOK?'Local browser storage is available right now.':'Local browser storage could not be written; progress exists only in the open page.'} Browsers may clear or isolate storage for <code>file://</code> documents, and different Linux/Windows machines do not synchronize. Export regularly; importing replaces this browser's record.</div><h2>Reading preferences</h2><div class="reading-controls"><button class="button small" data-action="large" aria-pressed="${state.largeText}">${state.largeText?'✓ ':' '}Larger text</button><button class="button small" data-action="contrast" aria-pressed="${state.highContrast}">${state.highContrast?'✓ ':' '}High contrast</button><button class="button small" data-action="focusstep" aria-pressed="${state.focusStep}">${state.focusStep?'✓ ':' '}One-step lesson view</button></div><p class="muted">Preferences are saved with your progress and included in JSON backups. Printing a focused lesson always shows every walkthrough step.</p><h2>Stage completion</h2><div class="cards">${D.stages.map(s=>`<a class="card" href="${sf(s.id)}"><div class="eyebrow">Stage ${s.id}</div><h3>${safe(s.title)}</h3><p>${stageProgress(s)} of ${s.lessons.length} lessons complete</p><div class="progress-track" style="margin:0"><span class="progress-fill" style="width:${pct(stageProgress(s),s.lessons.length)}%"></span></div></a>`).join('')}</div><h2>Bookmarks (${saved.length})</h2>${saved.length?`<ul>${saved.map(x=>`<li>${link(x.label,x.href)}</li>`).join('')}</ul>`:'<p>Use ☆ Bookmark on lessons and technical entries to collect favorites here.</p>'}<h2>Revision schedule</h2><p>After Stage 5, repeat a difficult mask; after Stage 8, revisit Curves and Smart Filters; before Stage 12, perform one full source-to-export preflight.</p>${end()}`}
-function changesPage(){return `${crumbs([['Overview','#/home'],['Versions & status']])}<div class="eyebrow">Version-control appendix</div><h1>What changed—and what is conditional</h1><p class="intro">The selected stable release is Photoshop 2026 <strong>27.11</strong> (September 2026). Adobe's October 13 security bulletin identifies it as the updated current version. An exact initial release day or 27.11.x point build was not established.</p><div class="ref-table-wrap"><table class="ref-table"><thead><tr><th>Feature</th><th>Class</th><th>When</th><th>Interpretation</th></tr></thead><tbody>${D.changes.map(x=>`<tr><td>${safe(x.feature)}</td><td>${safe(x.status)}</td><td>${safe(x.introduced)}</td><td>${safe(x.meaning)}</td></tr>`).join('')}</tbody></table></div><div class="note warning">Online and partner AI options are not guaranteed by installing the desktop binary alone. Account status, credits, country, model availability, hardware and internet access may apply. The Beta interface and AI Assisted Editor are not taught as stable.</div>${end()}`}
+function changesPage(index){return `${crumbs([['Overview','#/home'],['Versions & status']])}<div class="eyebrow">Version-control appendix</div><h1>What changed—and what is conditional</h1><p class="intro">The selected stable release is Photoshop 2026 <strong>27.11</strong> (September 2026). Adobe's October 13 security bulletin identifies it as the updated current version. An exact initial release day or 27.11.x point build was not established.</p><div class="ref-table-wrap"><table class="ref-table"><thead><tr><th>Feature</th><th>Class</th><th>When</th><th>Interpretation</th></tr></thead><tbody>${D.changes.map((x,i)=>`<tr id="version-${i}" ${index===String(i)?'class="search-target" tabindex="-1"':''}><td>${safe(x.feature)}</td><td>${safe(x.status)}</td><td>${safe(x.introduced)}</td><td>${safe(x.meaning)}</td></tr>`).join('')}</tbody></table></div><div class="note warning">Online and partner AI options are not guaranteed by installing the desktop binary alone. Account status, credits, country, model availability, hardware and internet access may apply. The Beta interface and AI Assisted Editor are not taught as stable.</div>${end()}`}
 function sourcesPage(){return `${crumbs([['Overview','#/home'],['Sources']])}<div class="eyebrow">Research & provenance</div><h1>What was checked</h1><p class="intro">Source URLs and review date are retained for future revalidation. Links below are optional online resources; this learning site itself never loads them.</p><p class="note"><strong>Verification date:</strong> October 28, 2026. <strong>Requested cutoff:</strong> October 29, 2026, still in the future at creation. <strong>Release:</strong> 27.11 in Adobe's September 2026 notes; fixed version confirmed by the October 13 security bulletin. Direct live Photoshop testing was not performed. See AUDIT.md in the project folder.</p><ol class="sources-list">${D.sources.map(x=>`<li><strong>${safe(x.title)}</strong><br><a href="${safe(x.url)}" target="_blank" rel="noopener noreferrer">${safe(x.url)}</a><br><small>Checked ${safe(x.checked)} · ${safe(x.evidence)}</small></li>`).join('')}</ol>${end()}`}
 function aboutPage(){return `${crumbs([['Overview','#/home'],['Using the manual']])}<div class="eyebrow">Reader documentation</div><h1>Use anywhere, including offline</h1><p>Extract the project to a folder on Linux or Windows, then open <code>index.html</code> in a modern browser. Keep <code>assets/</code> and <code>practice/</code> next to the index file; no HTTP server is necessary.</p><h2>Interface</h2><p>The sidebar contains all lessons. Search matches lesson text and every technical reference. Bookmark items, mark completion and check quizzes independently. The theme toggle switches light/dark; Progress & transfer also provides larger text, stronger contrast and one-step reading. The site supports keyboard Tab and Enter. Press <kbd>/</kbd> to open Search unless focus is inside an editing field, and Esc to close the mobile menu.</p><h2>Transfer progress</h2><p>Go to Progress & transfer → Export progress JSON. On the second browser, choose Import progress JSON and select your saved file. Import validates the file first and asks permission before replacing progress in that browser. The site does not collect or transmit files; everything happens locally.</p><h2>Photoshop and virtual machines</h2><p>Photoshop itself runs on Windows; the manual can be read on Linux. For a Windows guest VM, inspect guest DirectX 12 feature level, driver, GPU/vRAM, RAM and scratch disk. Adobe's normal Photoshop system requirements apply to the environment presented to the guest, but successful GPU pass-through is not implied by a capable host.</p><h2>Practice assets</h2><p>All synthetic exercise files below were generated for this manual and can be used freely while learning.</p>${assetGallery()}<h2>Limitations</h2><p>This edition documents the latest verified stable release, not upcoming October 29 changes. The encyclopedias are curated, substantial references—not a guarantee of exhaustive testing of every option. The complete Markdown edition is in <code>ALL_CONTENT.md</code>; CSV references are in <code>reference/</code>.</p>${end()}`}
 function notFound(){return `${crumbs([['Overview','#/home'],['Not found']])}<h1>That item was not found</h1><p>Use the searchable index or the stage navigation.</p>${link('Open Search','#/search','class="button primary"')}${end()}`}
@@ -157,8 +159,8 @@ function shortcutPage(index){
  if(!/^\d+$/.test(index)||!x)return notFound();
  return crumbs([['Overview','#/home'],['Windows shortcuts','#/library/shortcuts'],[x.action]])+'<div class="eyebrow">Windows shortcut · '+safe(x.family)+'</div><h1>'+safe(x.action)+'</h1><div class="note"><strong>'+safe(x.keys)+'</strong><p>'+safe(x.context)+'</p><p>'+safe(x.note)+'</p></div>'+end();
 }
-function contentFor(r){if(r.kind==='shortcut')return shortcutPage(r.a);if(r.kind==='home')return homepage();if(r.kind==='lesson')return lessonPage(lessonById[r.a]);if(r.kind==='stage')return stagePage(stageById[+r.a]);if(r.kind==='search')return searchPage();if(r.kind==='library')return libraryPage(r.a);if(r.kind==='ref')return detailPage(r.a,r.b);if(r.kind==='progress')return progressPage();if(r.kind==='changes')return changesPage();if(r.kind==='sources')return sourcesPage();if(r.kind==='about')return aboutPage();return notFound()}
-function render(preserve=false){window.manualChanged?.();const y=window.scrollY,r=route();APP.innerHTML=`<div class="app-shell"><div class="menu-backdrop" data-action="closemenu"></div>${sidebarHTML(r)}<div class="main-area">${topbarHTML()}<main id="main" tabindex="-1" class="read-content ${r.kind==='lesson'?'reading':''}">${contentFor(r)}</main></div></div><div id="live-status" role="status" aria-live="polite"></div>`;document.title= (r.kind==='lesson'?lessonById[r.a]?.title+' · ':r.kind==='home'?'':'Photoshop Field Manual · ')+ 'Photoshop Field Manual';setTheme();if(preserve)requestAnimationFrame(()=>window.scrollTo(0,y));else window.scrollTo(0,0)}
+function contentFor(r){if(r.kind==='shortcut')return shortcutPage(r.a);if(r.kind==='home')return homepage();if(r.kind==='lesson')return lessonPage(lessonById[r.a]);if(r.kind==='stage')return stagePage(stageById[+r.a]);if(r.kind==='search')return searchPage();if(r.kind==='library')return libraryPage(r.a);if(r.kind==='ref')return detailPage(r.a,r.b);if(r.kind==='progress')return progressPage();if(r.kind==='changes')return changesPage(r.a);if(r.kind==='sources')return sourcesPage();if(r.kind==='about')return aboutPage();return notFound()}
+function render(preserve=false){window.manualChanged?.();const y=window.scrollY,r=route();APP.innerHTML=`<div class="app-shell"><div class="menu-backdrop" data-action="closemenu"></div>${sidebarHTML(r)}<div class="main-area">${topbarHTML()}<main id="main" tabindex="-1" class="read-content ${r.kind==='lesson'?'reading':''}">${contentFor(r)}</main></div></div><div id="live-status" role="status" aria-live="polite"></div>`;document.title= (r.kind==='lesson'?lessonById[r.a]?.title+' · ':r.kind==='home'?'':'Photoshop Field Manual · ')+ 'Photoshop Field Manual';setTheme();if(r.kind==='changes'&&r.a){requestAnimationFrame(()=>{const target=document.getElementById('version-'+r.a);target?.scrollIntoView({block:'center'});target?.focus({preventScroll:true})})}if(preserve)requestAnimationFrame(()=>window.scrollTo(0,y));else window.scrollTo(0,0)}
 function importProgress(file){
  if(!file){toast('Select a JSON file.');return}
  if(file.size>1024*1024){toast('Import failed: progress file is larger than 1 MB.');return}
@@ -205,7 +207,8 @@ render();
   'use strict';
   const adapter = window.ManualAdapter;
   if (!adapter) return;
-  if (window.parent === window) {
+  const framed=window.parent!==window;
+  if (!framed) {
     const link = document.createElement('a');
     link.href = '../../index.html';
     link.textContent = '← Dusky Adobe Manual · choose another app';
@@ -213,15 +216,20 @@ render();
     link.style.cssText = 'display:block;padding:12px 18px;background:#212e29;color:#fff;font:14px system-ui;text-decoration:none;position:fixed;bottom:16px;right:16px;border-radius:8px;box-shadow:0 2px 12px #0003;z-index:100';
     const style=document.createElement('style');style.textContent='@media print{.library-return{display:none!important}}';document.head.append(style);
     document.body.prepend(link);
-    return;
   }
-  let initialized = false, last = '', scheduled = false;
-  const send = value => parent.postMessage({channel:'dusky-manual-v1', app:adapter.id, ...value}, '*');
+  let initialized = !framed, last = '', scheduled = false, navigation = 0;
+  const modifiedKey='dusky-adobe-modified-'+adapter.id;
+  let updatedAt=0,lastState=JSON.stringify(adapter.get());
+  try{const value=Number(localStorage.getItem(modifiedKey));if(Number.isSafeInteger(value)&&value>0)updatedAt=value;}catch{}
+  const saveModified=()=>{try{localStorage.setItem(modifiedKey,String(updatedAt));}catch{}};
+  const send = value => {if(framed)parent.postMessage({channel:'dusky-manual-v1', app:adapter.id, navigation, ...value}, '*');};
   const route = () => location.hash.replace(/^#\/?/, '') || adapter.home;
   function publish() {
     if (!initialized) return;
-    const status = {state:adapter.get(), route:route(), progress:adapter.progress(), storage:adapter.storage()};
-    const key = JSON.stringify(status);
+    const currentState=JSON.stringify(adapter.get());
+    if(currentState!==lastState){lastState=currentState;updatedAt=Math.max(Date.now(),updatedAt+1);saveModified();}
+    const status = {updatedAt,state:adapter.get(), route:route(), progress:adapter.progress(), storage:adapter.storage()};
+    const key = JSON.stringify([navigation,updatedAt,status.route,status.progress,status.storage])+'\n'+currentState;
     if (key !== last) { last = key; send({type:'snapshot', ...status}); }
   }
   window.manualChanged = () => {
@@ -238,27 +246,30 @@ render();
     publish();
   }
   window.addEventListener('message', event => {
-    if (event.source !== parent || event.data?.channel !== 'dusky-library-v1') return;
+    if (!framed || event.source !== parent || event.data?.channel !== 'dusky-library-v1') return;
     const m = event.data;
     try {
       if (m.type === 'initialize') {
-        if (m.state) {
-          try {adapter.set(adapter.validate(m.state));}
+        navigation=m.navigation;
+        if (m.state && !(updatedAt>(m.updatedAt||0))) {
+          try {adapter.set(adapter.validate(m.state));updatedAt=m.updatedAt||0;lastState=JSON.stringify(adapter.get());if(updatedAt)saveModified();}
           catch (error) {send({type:'warning',error:'Saved library progress was invalid; the reader’s own record was retained. '+error.message});}
         }
         if (m.preferences) adapter.preferences(m.preferences);
         initialized = true;
         if (m.route) navigate(m.route);
         publish();
-      } else if (m.type === 'navigate') navigate(m.route);
+      } else if (m.type === 'navigate') {if(m.navigation<navigation)return;navigation=m.navigation;navigate(m.route);}
       else if (m.type === 'preferences') {adapter.preferences(m.value); publish();}
       else if (m.type === 'validate') {
         adapter.validate(m.value);
         send({type:'response', request:m.request, ok:true});
       } else if (m.type === 'restore') {
-        adapter.set(adapter.validate(m.value)); publish();
+        adapter.set(adapter.validate(m.value));if(m.route)navigate(m.route);publish();
         send({type:'response', request:m.request, ok:true});
-      } else if (m.type === 'print') window.print();
+      } else if (m.type === 'read') {publish();send({type:'response',request:m.request,ok:true,value:{updatedAt,state:adapter.get(),route:route(),progress:adapter.progress(),storage:adapter.storage()}});}
+      else if (m.type === 'focus') {document.getElementById('main')?.focus();}
+      else if (m.type === 'print') window.print();
     } catch (error) {send({type:'response', request:m.request, ok:false, error:error.message});}
   });
   document.addEventListener('click', event => {
@@ -267,6 +278,7 @@ render();
   }, true);
   // Keep one parent history entry per link; native readers retain their hash routers.
   document.addEventListener('click', event => {
+    if(!framed)return;
     const link = event.target.closest('a[href^="#"]');
     if (!link || event.ctrlKey || event.metaKey || event.altKey || event.shiftKey || event.button !== 0 || link.target === '_blank' || link.classList.contains('skip') || link.id === 'skipContent' || link.id === 'skip-link') return;
     const value = link.getAttribute('href').replace(/^#\/?/, '');
