@@ -21,7 +21,7 @@ def data():
    if t.lower() not in {x['term'].lower() for x in glossary}:glossary.append({'term':t,'definition':defn})
  glossary.sort(key=lambda x:x['term'].lower())
  quiz=[{'id':f'q-{i+1:03}','question':q,'options':opts,'correct':a,'explanation':why} for i,(q,opts,a,why) in enumerate(content.QUIZ)]
- return {'meta':{'name':'After Effects 26.5 — Windows Complete Learning Manual', 'application':'Adobe After Effects','applicationVersion':'26.5','platform':'Windows','readerPlatforms':['Linux','Windows'],'keyboard':'Default English layout','manualEdition':EDITION,'released':'2026-09','guideResearchCutoff':'2026-10-28','offline':True,'provenance':'Adobe 26.5 release notes, current requirements, feature-specific Adobe documentation and user-supplied topic inventory'},
+ return {'meta':{'name':'After Effects 26.5 & EffectCraft for After Effects — Complete Learning Manual', 'application':'Adobe After Effects & EffectCraft','applicationVersion':'26.5','platform':'Windows','readerPlatforms':['Linux','Windows'],'keyboard':'Default English layout','manualEdition':EDITION,'released':'2026-09','guideResearchCutoff':'2026-10-28','offline':True,'provenance':'Adobe 26.5 release notes, current requirements, feature-specific Adobe documentation, EffectCraft engine source verification, and user-supplied topic inventory'},
   'stagePlan':content.STAGE_PLAN,'chapters':content.CHAPTERS,'topics':content.TOPICS,'recipes':content.RECIPES,'effects':effects,'shortcuts':shortcuts,'troubleshooting':problems,'glossary':glossary,'quiz':quiz,'sources':content.SOURCES}
 
 
@@ -64,7 +64,7 @@ def source_markdown(d, ids):
 def md(s):return str(s).replace('\r',' ').strip()
 def markdown(d):
  out=[f"# {d['meta']['name']}",
-  '', '**Application lessons:** After Effects **26.5 on Windows only**, default English keyboard. **Reading:** open the offline HTML or Markdown on Linux or Windows; export/import browser progress to move between systems.',
+  '', '**Application lessons:** After Effects **26.5 on Windows** and **EffectCraft on Linux**, default English keyboard. **Reading:** open the offline HTML or Markdown on Linux or Windows; export/import browser progress to move between systems.',
   '', '> Version accuracy: This edition teaches stable 26.5, including the modern 26.0–26.5 tools. Features labeled Beta remain separate. Current Adobe Help pages can mix both. No claim is made that this package reproduces every parameter of every native, bundled or third-party effect.',
   '', '## Table of contents','',
   '- [Step-by-step curriculum](#step-by-step-curriculum)','- [Deep topic reference](#deep-topic-reference)','- [Practical recipes](#practical-recipes)','- [Effects encyclopedia](#effects-encyclopedia)','- [Windows shortcuts](#windows-shortcuts)','- [Troubleshooting](#troubleshooting)','- [Glossary](#glossary)','- [Sources and version restrictions](#sources-and-version-restrictions)','',

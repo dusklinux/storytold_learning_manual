@@ -1,8 +1,8 @@
 > **Combined project:** open [the Dusky library](../../index.html) to choose or switch apps. This directory retains the supplied manual and its historical standalone documentation below. Use the [root build and maintenance instructions](../../docs/STRUCTURE.md); the library build generates no archives.
 
-# After Effects 26.5 — Windows offline learning manual
+# After Effects 26.5 & EffectCraft for After Effects — Offline Learning Manual
 
-Open **[index.html](index.html)** in Firefox, Chromium or Edge. The reader works on Linux and Windows, including directly from `file://`, with no server, installation or internet connection. The After Effects instructions target **26.5 stable on Windows**, default English keyboard. Research cutoff: **28 October 2026**.
+Open **[index.html](index.html)** in Firefox, Chromium or Edge. The reader works on Linux and Windows, including directly from `file://`, with no server, installation or internet connection. The instructions target **After Effects 26.5 stable on Windows** and **EffectCraft on Linux**, default English keyboard. Research cutoff: **28 October 2026**.
 
 This edition replaces the repository’s former 25.6 target. It includes modern stable tools rather than excluding the 26.x series. Adobe’s release notes identify 26.5 as the September 2026 release; Beta-only functionality has a separate watchlist.
 
@@ -19,7 +19,7 @@ This edition replaces the repository’s former 25.6 target. It includes modern 
 ## Coverage
 
 - 40 ordered lessons, 100 explanatory topics and 34 practical recipes, with experiments, verification and recovery instructions.
-- 300 effect/control records, 386 Windows shortcut/gesture records, 67 troubleshooting cases, 155 glossary terms and 35 quiz questions. Counts describe the authored directory, including legacy and tool-generated records, rather than every installed plug-in parameter.
+- 300 effect/control records, 458 After Effects & EffectCraft shortcut/gesture records, 67 troubleshooting cases, 155 glossary terms and 35 quiz questions. Counts describe the authored directory, including legacy and tool-generated records, rather than every installed plug-in parameter.
 - Quick Apply, Object Matte and disk caching, responsive guides, effect labels, Proportional Scrubbing, SVG import/paste, variable-font animation, native meshes, SBSAR materials/displacement, Advanced 3D camera DOF, Curl Noise, Unmult, modern audio effects and ACES 2.0.
 - Rendering, alpha, color, sound, tracking, keying, brush-guided roto, MOGRTs, expressions/data, reusable rigs, performance diagnosis and portable project delivery.
 - Original [practice assets](samples/README.md): SVG, JSON, CSV and a short PCM pulse track. Footage-based exercises still require appropriate footage; font/material exercises require those dependencies prepared before going offline.

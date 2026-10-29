@@ -1,13 +1,13 @@
 {
   "manifest": {
-    "project": "Photoshop Field Manual: Windows Edition",
+    "project": "Photoshop & PhotoCraft Field Manual: Windows & Linux Edition",
     "edition": "1.2.0",
     "photoshop_version": "27.11",
     "release": "September 2026; exact day not established from consulted release notes",
     "security_patch_evidence": "Adobe October 13, 2026 APSB26-158: 27.11",
     "verified_on": "2026-10-28",
     "research_cutoff_requested": "2026-10-29",
-    "scope": "Photoshop 2026 stable desktop, Windows; offline reader Windows/Linux",
+    "scope": "Photoshop 27.11 (Windows) & PhotoCraft (Linux); offline reader Windows/Linux",
     "lessons": 75
   },
   "stages": [
@@ -6090,6 +6090,832 @@
       "keys": "Shift+Arrow key",
       "context": "Move Tool/transform",
       "note": "Depends on selected layer/selection and active text input."
+    },
+    {
+      "family": "Layer",
+      "action": "Bring layer forward",
+      "keys": "Ctrl+]",
+      "context": "Layers panel/document",
+      "note": "Moves active layer one position up in stack; verified in Photoshop & PhotoCraft."
+    },
+    {
+      "family": "Layer",
+      "action": "Send layer backward",
+      "keys": "Ctrl+[",
+      "context": "Layers panel/document",
+      "note": "Moves active layer one position down in stack; verified in Photoshop & PhotoCraft."
+    },
+    {
+      "family": "Layer",
+      "action": "Bring layer to front",
+      "keys": "Ctrl+Shift+]",
+      "context": "Layers panel/document",
+      "note": "Moves active layer to very top of layer hierarchy; verified in Photoshop & PhotoCraft."
+    },
+    {
+      "family": "Layer",
+      "action": "Send layer to back",
+      "keys": "Ctrl+Shift+[",
+      "context": "Layers panel/document",
+      "note": "Moves active layer to bottom of stack (above Background); verified in Photoshop & PhotoCraft."
+    },
+    {
+      "family": "Layer",
+      "action": "Select layer above",
+      "keys": "Alt+]",
+      "context": "Layers panel",
+      "note": "Moves active selection focus to layer above current target."
+    },
+    {
+      "family": "Layer",
+      "action": "Select layer below",
+      "keys": "Alt+[",
+      "context": "Layers panel",
+      "note": "Moves active selection focus to layer below current target."
+    },
+    {
+      "family": "Layer",
+      "action": "Add layer above to selection",
+      "keys": "Alt+Shift+]",
+      "context": "Layers panel",
+      "note": "Extends multi-layer selection upwards."
+    },
+    {
+      "family": "Layer",
+      "action": "Add layer below to selection",
+      "keys": "Alt+Shift+[",
+      "context": "Layers panel",
+      "note": "Extends multi-layer selection downwards."
+    },
+    {
+      "family": "Layer",
+      "action": "Select bottom layer",
+      "keys": "Alt+,",
+      "context": "Layers panel",
+      "note": "Selects bottom-most layer in active layer stack."
+    },
+    {
+      "family": "Layer",
+      "action": "Select top layer",
+      "keys": "Alt+.",
+      "context": "Layers panel",
+      "note": "Selects topmost layer in active layer stack."
+    },
+    {
+      "family": "Layer",
+      "action": "Lock or unlock layer",
+      "keys": "Ctrl+/",
+      "context": "Layers panel",
+      "note": "Toggles layer lock properties; verified in Photoshop & PhotoCraft."
+    },
+    {
+      "family": "Layer",
+      "action": "Stamp down",
+      "keys": "Ctrl+Alt+E",
+      "context": "Layers panel",
+      "note": "Merges copy of active layer with layer below into single layer."
+    },
+    {
+      "family": "Layer",
+      "action": "Duplicate layer or selection drag",
+      "keys": "Alt+drag",
+      "context": "Move tool gesture",
+      "note": "Duplicates active layer or selected pixel content while dragging with Move tool."
+    },
+    {
+      "family": "Editing",
+      "action": "Free Transform a copy",
+      "keys": "Ctrl+Alt+T",
+      "context": "Document/selection",
+      "note": "Duplicates selection/layer and immediately enters Free Transform."
+    },
+    {
+      "family": "Editing",
+      "action": "Transform again a copy",
+      "keys": "Ctrl+Alt+Shift+T",
+      "context": "Document/selection",
+      "note": "Repeats prior transform operation while creating a duplicated copy."
+    },
+    {
+      "family": "Editing",
+      "action": "Paste into selection",
+      "keys": "Ctrl+Alt+Shift+V",
+      "context": "Active selection",
+      "note": "Pastes clipboard content into an active selection as a masked layer."
+    },
+    {
+      "family": "Editing",
+      "action": "Content-Aware Scale",
+      "keys": "Ctrl+Alt+Shift+C",
+      "context": "Document/layer",
+      "note": "Scales image while preserving proportions of prominent subjects."
+    },
+    {
+      "family": "Editing",
+      "action": "Fade last filter or adjustment",
+      "keys": "Ctrl+Shift+F",
+      "context": "Document",
+      "note": "Modifies opacity and blend mode of immediately preceding raster filter or adjustment."
+    },
+    {
+      "family": "Editing",
+      "action": "Cut (alternate)",
+      "keys": "F2",
+      "context": "Document/selection",
+      "note": "Standard secondary function key shortcut for Cut; supported in Photoshop & PhotoCraft."
+    },
+    {
+      "family": "Editing",
+      "action": "Copy (alternate)",
+      "keys": "F3",
+      "context": "Document/selection",
+      "note": "Standard secondary function key shortcut for Copy; supported in Photoshop & PhotoCraft."
+    },
+    {
+      "family": "Editing",
+      "action": "Paste (alternate)",
+      "keys": "F4",
+      "context": "Document/selection",
+      "note": "Standard secondary function key shortcut for Paste; supported in Photoshop & PhotoCraft."
+    },
+    {
+      "family": "Editing",
+      "action": "Fill dialog (alternate)",
+      "keys": "Shift+Backspace",
+      "context": "Document/selection",
+      "note": "Alternate fill dialog trigger; supported in Photoshop & PhotoCraft."
+    },
+    {
+      "family": "Editing",
+      "action": "Fill foreground with preserve transparency",
+      "keys": "Alt+Shift+Backspace",
+      "context": "Pixel layer",
+      "note": "Fills non-transparent pixels with current foreground color."
+    },
+    {
+      "family": "Editing",
+      "action": "Fill background with preserve transparency",
+      "keys": "Ctrl+Shift+Backspace",
+      "context": "Pixel layer",
+      "note": "Fills non-transparent pixels with current background color."
+    },
+    {
+      "family": "Editing",
+      "action": "Fill from history",
+      "keys": "Ctrl+Alt+Backspace",
+      "context": "Pixel layer/selection",
+      "note": "Fills selected area with pixels from designated history state."
+    },
+    {
+      "family": "Editing",
+      "action": "Menus customization",
+      "keys": "Ctrl+Alt+Shift+M",
+      "context": "Global",
+      "note": "Opens Menus customization dialog in Photoshop and PhotoCraft."
+    },
+    {
+      "family": "Editing",
+      "action": "Levels dialog",
+      "keys": "Ctrl+L",
+      "context": "Pixel layer",
+      "note": "Opens tonal levels adjustment dialog on active pixel layer."
+    },
+    {
+      "family": "Editing",
+      "action": "Curves dialog",
+      "keys": "Ctrl+M",
+      "context": "Pixel layer",
+      "note": "Opens curves tonal curve mapping dialog on active pixel layer."
+    },
+    {
+      "family": "Editing",
+      "action": "Hue and Saturation dialog",
+      "keys": "Ctrl+U",
+      "context": "Pixel layer",
+      "note": "Opens Hue/Saturation/Lightness dialog on active pixel layer."
+    },
+    {
+      "family": "Editing",
+      "action": "Color Balance dialog",
+      "keys": "Ctrl+B",
+      "context": "Pixel layer",
+      "note": "Opens Cyan/Magenta/Yellow color balance dialog."
+    },
+    {
+      "family": "Editing",
+      "action": "Invert colors",
+      "keys": "Ctrl+I",
+      "context": "Pixel layer/mask",
+      "note": "Inverts pixel colors or mask grayscale density values."
+    },
+    {
+      "family": "Editing",
+      "action": "Desaturate",
+      "keys": "Ctrl+Shift+U",
+      "context": "Pixel layer",
+      "note": "Removes color saturation directly from active pixel layer."
+    },
+    {
+      "family": "Editing",
+      "action": "Auto Tone",
+      "keys": "Ctrl+Shift+L",
+      "context": "Document/layer",
+      "note": "Applies automated black/white point and contrast adjustment."
+    },
+    {
+      "family": "Editing",
+      "action": "Auto Contrast",
+      "keys": "Ctrl+Alt+Shift+L",
+      "context": "Document/layer",
+      "note": "Automatically adjusts tonal highlights and shadows."
+    },
+    {
+      "family": "Editing",
+      "action": "Auto Color",
+      "keys": "Ctrl+Shift+B",
+      "context": "Document/layer",
+      "note": "Automatically adjusts color cast and midtone balance."
+    },
+    {
+      "family": "Editing",
+      "action": "Black and White adjustment",
+      "keys": "Ctrl+Alt+Shift+B",
+      "context": "Pixel layer",
+      "note": "Opens monochrome conversion dialog with individual color channel sliders."
+    },
+    {
+      "family": "Editing",
+      "action": "Image Size dialog",
+      "keys": "Ctrl+Alt+I",
+      "context": "Document",
+      "note": "Opens image dimensions and resample resolution dialog."
+    },
+    {
+      "family": "Editing",
+      "action": "Canvas Size dialog",
+      "keys": "Ctrl+Alt+C",
+      "context": "Document",
+      "note": "Opens canvas boundary expansion/trimming dialog."
+    },
+    {
+      "family": "Selection",
+      "action": "Select and Mask workspace",
+      "keys": "Ctrl+Alt+R",
+      "context": "Document/selection",
+      "note": "Opens dedicated workspace for edge refinement and matting."
+    },
+    {
+      "family": "Selection",
+      "action": "Feather selection dialog",
+      "keys": "Shift+F6",
+      "context": "Active selection",
+      "note": "Opens Feather dialog to soften selection edges by specified radius."
+    },
+    {
+      "family": "Selection",
+      "action": "Inverse selection (alternate)",
+      "keys": "Shift+F7",
+      "context": "Active selection",
+      "note": "Function key alternate for Invert Selection."
+    },
+    {
+      "family": "Selection",
+      "action": "Select all layers",
+      "keys": "Ctrl+Alt+A",
+      "context": "Layers panel",
+      "note": "Selects all selectable layers in the document."
+    },
+    {
+      "family": "Masks",
+      "action": "Toggle layer mask overlay",
+      "keys": "\\",
+      "context": "Document/layer mask",
+      "note": "Displays layer mask as a rubylith overlay on canvas; supported in Photoshop & PhotoCraft."
+    },
+    {
+      "family": "Filters",
+      "action": "Re-apply last filter with dialog",
+      "keys": "Ctrl+Alt+F",
+      "context": "Document/layer",
+      "note": "Re-opens dialog of most recently applied filter with prior parameters."
+    },
+    {
+      "family": "Filters",
+      "action": "Camera Raw filter",
+      "keys": "Ctrl+Shift+A",
+      "context": "Layer/Smart Object",
+      "note": "Opens Camera Raw processing workspace on active layer."
+    },
+    {
+      "family": "Filters",
+      "action": "Vanishing Point workspace",
+      "keys": "Ctrl+Alt+V",
+      "context": "Document/layer",
+      "note": "Opens perspective plane editing and clone/painting workspace."
+    },
+    {
+      "family": "Filters",
+      "action": "Lens Correction workspace",
+      "keys": "Ctrl+Shift+R",
+      "context": "Document/layer",
+      "note": "Opens optical distortion, vignetting and chromatic aberration correction."
+    },
+    {
+      "family": "Filters",
+      "action": "Adaptive Wide Angle workspace",
+      "keys": "Ctrl+Alt+Shift+A",
+      "context": "Document/layer",
+      "note": "Corrects lens curvature distortions using constraint lines."
+    },
+    {
+      "family": "View",
+      "action": "Toggle guides",
+      "keys": "Ctrl+;",
+      "context": "Document/view",
+      "note": "Shows or hides ruler guides on canvas."
+    },
+    {
+      "family": "View",
+      "action": "Toggle snap",
+      "keys": "Ctrl+Shift+;",
+      "context": "Document/view",
+      "note": "Enables or disables snapping to guides, grid, and document bounds."
+    },
+    {
+      "family": "View",
+      "action": "Lock or unlock guides",
+      "keys": "Ctrl+Alt+;",
+      "context": "Document/view",
+      "note": "Prevents accidental dragging or moving of canvas guides."
+    },
+    {
+      "family": "View",
+      "action": "Toggle target path",
+      "keys": "Ctrl+Shift+H",
+      "context": "Document/view",
+      "note": "Shows or hides active vector path outline without deselecting."
+    },
+    {
+      "family": "View",
+      "action": "Proof Colors toggle",
+      "keys": "Ctrl+Y",
+      "context": "Document/view",
+      "note": "Toggles soft-proofing simulation of configured output color profile."
+    },
+    {
+      "family": "View",
+      "action": "Gamut Warning toggle",
+      "keys": "Ctrl+Shift+Y",
+      "context": "Document/view",
+      "note": "Highlights colors outside printable color space with warning overlay."
+    },
+    {
+      "family": "View",
+      "action": "Fit all artboards on screen",
+      "keys": "Ctrl+Alt+0",
+      "context": "Document/view",
+      "note": "Scales zoom to fit all artboards within current window viewport."
+    },
+    {
+      "family": "View",
+      "action": "Scroll canvas up one screen",
+      "keys": "PageUp",
+      "context": "Canvas navigation",
+      "note": "Scrolls viewport upward by one window height."
+    },
+    {
+      "family": "View",
+      "action": "Scroll canvas down one screen",
+      "keys": "PageDown",
+      "context": "Canvas navigation",
+      "note": "Scrolls viewport downward by one window height."
+    },
+    {
+      "family": "View",
+      "action": "Scroll canvas left one screen",
+      "keys": "Ctrl+PageUp",
+      "context": "Canvas navigation",
+      "note": "Scrolls viewport leftward by one window width."
+    },
+    {
+      "family": "View",
+      "action": "Scroll canvas right one screen",
+      "keys": "Ctrl+PageDown",
+      "context": "Canvas navigation",
+      "note": "Scrolls viewport rightward by one window width."
+    },
+    {
+      "family": "View",
+      "action": "Scroll canvas 10 points up",
+      "keys": "Shift+PageUp",
+      "context": "Canvas navigation",
+      "note": "Scrolls canvas viewport upward in small 10-point increments."
+    },
+    {
+      "family": "View",
+      "action": "Scroll canvas 10 points down",
+      "keys": "Shift+PageDown",
+      "context": "Canvas navigation",
+      "note": "Scrolls canvas viewport downward in small 10-point increments."
+    },
+    {
+      "family": "View",
+      "action": "Scroll canvas to top-left corner",
+      "keys": "Home",
+      "context": "Canvas navigation",
+      "note": "Repositions canvas view to document top-left origin."
+    },
+    {
+      "family": "View",
+      "action": "Scroll canvas to bottom-right corner",
+      "keys": "End",
+      "context": "Canvas navigation",
+      "note": "Repositions canvas view to document bottom-right boundary."
+    },
+    {
+      "family": "Interface",
+      "action": "Next document window",
+      "keys": "Ctrl+Tab",
+      "context": "Global/window",
+      "note": "Cycles forward through open document tabs or windows."
+    },
+    {
+      "family": "Interface",
+      "action": "Previous document window",
+      "keys": "Ctrl+Shift+Tab",
+      "context": "Global/window",
+      "note": "Cycles backward through open document tabs or windows."
+    },
+    {
+      "family": "Interface",
+      "action": "Darken UI brightness",
+      "keys": "Ctrl+Shift+F1",
+      "context": "Global/interface",
+      "note": "Steps interface brightness down toward darkest theme."
+    },
+    {
+      "family": "Interface",
+      "action": "Lighten UI brightness",
+      "keys": "Ctrl+Shift+F2",
+      "context": "Global/interface",
+      "note": "Steps interface brightness up toward lightest theme."
+    },
+    {
+      "family": "Interface",
+      "action": "Toggle precise crosshair cursor",
+      "keys": "Caps Lock",
+      "context": "Global/painting tools",
+      "note": "Switches brush circular outline to precise targeting crosshair cursor."
+    },
+    {
+      "family": "File",
+      "action": "Close document (alternate)",
+      "keys": "Ctrl+F4",
+      "context": "Document",
+      "note": "Standard Windows/Linux secondary shortcut to close active document window."
+    },
+    {
+      "family": "File",
+      "action": "Save a Copy",
+      "keys": "Ctrl+Alt+S",
+      "context": "Document",
+      "note": "Saves a copy of document without switching current active working file."
+    },
+    {
+      "family": "File",
+      "action": "Open As dialog",
+      "keys": "Ctrl+Alt+Shift+O",
+      "context": "Global",
+      "note": "Opens file selection dialog with explicit format specification."
+    },
+    {
+      "family": "File",
+      "action": "Close other documents",
+      "keys": "Ctrl+Alt+P",
+      "context": "Window",
+      "note": "Closes all open document tabs except currently active one."
+    },
+    {
+      "family": "File",
+      "action": "Print one copy",
+      "keys": "Ctrl+Alt+Shift+P",
+      "context": "Document",
+      "note": "Sends one copy of document directly to default printer without showing dialog."
+    },
+    {
+      "family": "File",
+      "action": "Quick Export as PNG",
+      "keys": "Ctrl+Shift+'",
+      "context": "Document/layer",
+      "note": "Exports document or active layer directly as PNG per export settings."
+    },
+    {
+      "family": "File",
+      "action": "File Info dialog",
+      "keys": "Ctrl+Alt+Shift+I",
+      "context": "Document",
+      "note": "Opens metadata, copyright and EXIF inspection dialog."
+    },
+    {
+      "family": "Blend Modes",
+      "action": "Next blend mode",
+      "keys": "Shift++",
+      "context": "Brush or active layer",
+      "note": "Cycles to next blend mode in active tool or selected layer."
+    },
+    {
+      "family": "Blend Modes",
+      "action": "Previous blend mode",
+      "keys": "Shift+-",
+      "context": "Brush or active layer",
+      "note": "Cycles to previous blend mode in active tool or selected layer."
+    },
+    {
+      "family": "Blend Modes",
+      "action": "Normal blend mode",
+      "keys": "Alt+Shift+N",
+      "context": "Brush or active layer",
+      "note": "Sets active tool or selected layer blend mode to Normal."
+    },
+    {
+      "family": "Blend Modes",
+      "action": "Dissolve blend mode",
+      "keys": "Alt+Shift+I",
+      "context": "Brush or active layer",
+      "note": "Sets active tool or selected layer blend mode to Dissolve."
+    },
+    {
+      "family": "Blend Modes",
+      "action": "Darken blend mode",
+      "keys": "Alt+Shift+K",
+      "context": "Brush or active layer",
+      "note": "Sets active tool or selected layer blend mode to Darken."
+    },
+    {
+      "family": "Blend Modes",
+      "action": "Multiply blend mode",
+      "keys": "Alt+Shift+M",
+      "context": "Brush or active layer",
+      "note": "Sets active tool or selected layer blend mode to Multiply."
+    },
+    {
+      "family": "Blend Modes",
+      "action": "Color Burn blend mode",
+      "keys": "Alt+Shift+B",
+      "context": "Brush or active layer",
+      "note": "Sets active tool or selected layer blend mode to Color Burn."
+    },
+    {
+      "family": "Blend Modes",
+      "action": "Linear Burn blend mode",
+      "keys": "Alt+Shift+A",
+      "context": "Brush or active layer",
+      "note": "Sets active tool or selected layer blend mode to Linear Burn."
+    },
+    {
+      "family": "Blend Modes",
+      "action": "Lighten blend mode",
+      "keys": "Alt+Shift+G",
+      "context": "Brush or active layer",
+      "note": "Sets active tool or selected layer blend mode to Lighten."
+    },
+    {
+      "family": "Blend Modes",
+      "action": "Screen blend mode",
+      "keys": "Alt+Shift+S",
+      "context": "Brush or active layer",
+      "note": "Sets active tool or selected layer blend mode to Screen."
+    },
+    {
+      "family": "Blend Modes",
+      "action": "Color Dodge blend mode",
+      "keys": "Alt+Shift+D",
+      "context": "Brush or active layer",
+      "note": "Sets active tool or selected layer blend mode to Color Dodge."
+    },
+    {
+      "family": "Blend Modes",
+      "action": "Linear Dodge (Add) blend mode",
+      "keys": "Alt+Shift+W",
+      "context": "Brush or active layer",
+      "note": "Sets active tool or selected layer blend mode to Linear Dodge."
+    },
+    {
+      "family": "Blend Modes",
+      "action": "Overlay blend mode",
+      "keys": "Alt+Shift+O",
+      "context": "Brush or active layer",
+      "note": "Sets active tool or selected layer blend mode to Overlay."
+    },
+    {
+      "family": "Blend Modes",
+      "action": "Soft Light blend mode",
+      "keys": "Alt+Shift+F",
+      "context": "Brush or active layer",
+      "note": "Sets active tool or selected layer blend mode to Soft Light."
+    },
+    {
+      "family": "Blend Modes",
+      "action": "Hard Light blend mode",
+      "keys": "Alt+Shift+H",
+      "context": "Brush or active layer",
+      "note": "Sets active tool or selected layer blend mode to Hard Light."
+    },
+    {
+      "family": "Blend Modes",
+      "action": "Vivid Light blend mode",
+      "keys": "Alt+Shift+V",
+      "context": "Brush or active layer",
+      "note": "Sets active tool or selected layer blend mode to Vivid Light."
+    },
+    {
+      "family": "Blend Modes",
+      "action": "Linear Light blend mode",
+      "keys": "Alt+Shift+J",
+      "context": "Brush or active layer",
+      "note": "Sets active tool or selected layer blend mode to Linear Light."
+    },
+    {
+      "family": "Blend Modes",
+      "action": "Pin Light blend mode",
+      "keys": "Alt+Shift+Z",
+      "context": "Brush or active layer",
+      "note": "Sets active tool or selected layer blend mode to Pin Light."
+    },
+    {
+      "family": "Blend Modes",
+      "action": "Hard Mix blend mode",
+      "keys": "Alt+Shift+L",
+      "context": "Brush or active layer",
+      "note": "Sets active tool or selected layer blend mode to Hard Mix."
+    },
+    {
+      "family": "Blend Modes",
+      "action": "Difference blend mode",
+      "keys": "Alt+Shift+E",
+      "context": "Brush or active layer",
+      "note": "Sets active tool or selected layer blend mode to Difference."
+    },
+    {
+      "family": "Blend Modes",
+      "action": "Exclusion blend mode",
+      "keys": "Alt+Shift+X",
+      "context": "Brush or active layer",
+      "note": "Sets active tool or selected layer blend mode to Exclusion."
+    },
+    {
+      "family": "Blend Modes",
+      "action": "Hue blend mode",
+      "keys": "Alt+Shift+U",
+      "context": "Brush or active layer",
+      "note": "Sets active tool or selected layer blend mode to Hue."
+    },
+    {
+      "family": "Blend Modes",
+      "action": "Saturation blend mode",
+      "keys": "Alt+Shift+T",
+      "context": "Brush or active layer",
+      "note": "Sets active tool or selected layer blend mode to Saturation."
+    },
+    {
+      "family": "Blend Modes",
+      "action": "Color blend mode",
+      "keys": "Alt+Shift+C",
+      "context": "Brush or active layer",
+      "note": "Sets active tool or selected layer blend mode to Color."
+    },
+    {
+      "family": "Blend Modes",
+      "action": "Luminosity blend mode",
+      "keys": "Alt+Shift+Y",
+      "context": "Brush or active layer",
+      "note": "Sets active tool or selected layer blend mode to Luminosity."
+    },
+    {
+      "family": "Paint",
+      "action": "Set opacity 10% through 100%",
+      "keys": "1–9, 0",
+      "context": "Brush tool or active layer",
+      "note": "Number keys 1–9 set 10%–90%, 0 sets 100% opacity (or two digits for exact percent)."
+    },
+    {
+      "family": "Paint",
+      "action": "Set brush flow or layer fill",
+      "keys": "Shift+1–9, 0",
+      "context": "Brush tool or active layer",
+      "note": "Sets brush flow (painting tools) or layer fill opacity (layer selection) in 10% increments."
+    },
+    {
+      "family": "Text",
+      "action": "Toggle All Caps",
+      "keys": "Ctrl+Shift+K",
+      "context": "Type tool selection",
+      "note": "Toggles uppercase character styling on selected live type."
+    },
+    {
+      "family": "Text",
+      "action": "Toggle Underline",
+      "keys": "Ctrl+Shift+U",
+      "context": "Type tool selection",
+      "note": "Toggles underline styling on selected live type."
+    },
+    {
+      "family": "Text",
+      "action": "Toggle Faux Bold",
+      "keys": "Ctrl+Shift+B",
+      "context": "Type tool selection",
+      "note": "Toggles faux bold weight synthesis on selected live type."
+    },
+    {
+      "family": "Text",
+      "action": "Toggle Faux Italic",
+      "keys": "Ctrl+Shift+I",
+      "context": "Type tool selection",
+      "note": "Toggles faux italic slant synthesis on selected live type."
+    },
+    {
+      "family": "Text",
+      "action": "Toggle Strikethrough",
+      "keys": "Ctrl+Shift+/",
+      "context": "Type tool selection",
+      "note": "Toggles strikethrough horizontal line styling on selected live type."
+    },
+    {
+      "family": "Text",
+      "action": "Toggle Hyphenation",
+      "keys": "Ctrl+Alt+Shift+H",
+      "context": "Type tool selection",
+      "note": "Toggles automated hyphenation for active paragraph."
+    },
+    {
+      "family": "Text",
+      "action": "Adjust leading by 2pt",
+      "keys": "Alt+Up / Alt+Down",
+      "context": "Type tool selection",
+      "note": "Decreases or increases line spacing (leading) by 2 points."
+    },
+    {
+      "family": "Text",
+      "action": "Adjust leading by 10pt",
+      "keys": "Ctrl+Alt+Up / Ctrl+Alt+Down",
+      "context": "Type tool selection",
+      "note": "Decreases or increases line spacing (leading) by 10 points."
+    },
+    {
+      "family": "Text",
+      "action": "Adjust baseline shift by 2pt",
+      "keys": "Alt+Shift+Up / Alt+Shift+Down",
+      "context": "Type tool selection",
+      "note": "Shifts character baseline upward or downward by 2 points."
+    },
+    {
+      "family": "Text",
+      "action": "Adjust baseline shift by 10pt",
+      "keys": "Ctrl+Alt+Shift+Up / Ctrl+Alt+Shift+Down",
+      "context": "Type tool selection",
+      "note": "Shifts character baseline upward or downward by 10 points."
+    },
+    {
+      "family": "Text",
+      "action": "Adjust tracking or kerning by 20 units",
+      "keys": "Alt+Left / Alt+Right",
+      "context": "Type tool caret/selection",
+      "note": "Adjusts tracking across selection or kerning between caret pair by 20/1000 em."
+    },
+    {
+      "family": "Text",
+      "action": "Adjust tracking or kerning by 100 units",
+      "keys": "Ctrl+Alt+Left / Ctrl+Alt+Right",
+      "context": "Type tool caret/selection",
+      "note": "Adjusts tracking across selection or kerning between caret pair by 100/1000 em."
+    },
+    {
+      "family": "Text",
+      "action": "Toggle Character and Paragraph panels",
+      "keys": "Ctrl+T (in Type tool)",
+      "context": "Type tool editing",
+      "note": "Opens or closes Character and Paragraph typography formatting panels."
+    },
+    {
+      "family": "Painting",
+      "action": "First brush preset",
+      "keys": "<",
+      "context": "Brush tool",
+      "note": "Selects first brush preset in active brush library list."
+    },
+    {
+      "family": "Painting",
+      "action": "Last brush preset",
+      "keys": ">",
+      "context": "Brush tool",
+      "note": "Selects last brush preset in active brush library list."
+    },
+    {
+      "family": "Tools",
+      "action": "Temporary Move tool",
+      "keys": "Ctrl (hold)",
+      "context": "Canvas gesture",
+      "note": "Temporarily activates Move tool while holding Ctrl from any paint or select tool."
     }
   ],
   "glossary": [

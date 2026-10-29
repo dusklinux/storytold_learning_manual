@@ -1,7 +1,7 @@
 {
   "meta": {
-    "name": "After Effects 26.5 — Windows Complete Learning Manual",
-    "application": "Adobe After Effects",
+    "name": "After Effects 26.5 & EffectCraft for After Effects — Complete Learning Manual",
+    "application": "Adobe After Effects & EffectCraft",
     "applicationVersion": "26.5",
     "platform": "Windows",
     "readerPlatforms": [
@@ -13,7 +13,7 @@
     "released": "2026-09",
     "guideResearchCutoff": "2026-10-28",
     "offline": true,
-    "provenance": "Adobe 26.5 release notes, current requirements, feature-specific Adobe documentation and user-supplied topic inventory"
+    "provenance": "Adobe 26.5 release notes, current requirements, feature-specific Adobe documentation, EffectCraft engine source verification, and user-supplied topic inventory"
   },
   "stagePlan": [
     {
@@ -11512,6 +11512,654 @@
       "category": "Modern stable workflows",
       "verification": "Adobe documentation checked 2026-10-28; confirm custom preset and focus locally.",
       "id": "key-386"
+    },
+    {
+      "action": "Add selected footage item to composition",
+      "key": "Ctrl+/",
+      "detail": "Places selected footage/asset from Project panel as a new layer in active comp at current time",
+      "source": "shortcuts",
+      "category": "File, project, composition and application",
+      "verification": "Verified in AE and EffectCraft (layer.addItem; Cmd+/ on macOS, Ctrl+/ on Windows/Linux).",
+      "id": "key-387"
+    },
+    {
+      "action": "Replace layer source with selected project item",
+      "key": "Ctrl+Alt+/",
+      "detail": "Swaps underlying source of selected timeline layer with selected footage in Project panel while preserving transforms, keyframes and effects",
+      "source": "shortcuts",
+      "category": "File, project, composition and application",
+      "verification": "Verified in AE and EffectCraft (layer.replaceSource; main keyboard slash).",
+      "id": "key-388"
+    },
+    {
+      "action": "New composition from selection (EffectCraft / AE)",
+      "key": "Ctrl+Alt+\\ / Alt+\\",
+      "detail": "Creates a new composition matching selected footage item dimensions and duration",
+      "source": "shortcuts",
+      "category": "File, project, composition and application",
+      "verification": "Verified in AE (Alt+\\) and EffectCraft (Ctrl+Alt+\\ via file.newCompFromSelection).",
+      "id": "key-389"
+    },
+    {
+      "action": "Run most recent script file",
+      "key": "Ctrl+Alt+Shift+D",
+      "detail": "Executes the most recently run JSX/ECScript without opening the file dialog",
+      "source": "shortcuts",
+      "category": "File, project, composition and application",
+      "verification": "Verified in AE and EffectCraft (file.runScript {\"recent\":0}).",
+      "id": "key-390"
+    },
+    {
+      "action": "Remember footage interpretation",
+      "key": "Ctrl+Alt+C",
+      "detail": "Copies frame rate, alpha, and pixel aspect interpretation settings from selected footage",
+      "source": "shortcuts",
+      "category": "File, project, composition and application",
+      "verification": "Verified in AE and EffectCraft (file.rememberInterpretation).",
+      "id": "key-391"
+    },
+    {
+      "action": "Apply footage interpretation",
+      "key": "Ctrl+Alt+V",
+      "detail": "Pastes copied interpretation settings onto selected footage items in Project panel",
+      "source": "shortcuts",
+      "category": "File, project, composition and application",
+      "verification": "Verified in AE and EffectCraft (file.applyInterpretation).",
+      "id": "key-392"
+    },
+    {
+      "action": "Maximize or restore application window",
+      "key": "Ctrl+\\",
+      "detail": "Expands application window to fill display or restores former window bounds",
+      "source": "shortcuts",
+      "category": "Windows, workspace, panels and viewer",
+      "verification": "Verified in AE and EffectCraft (window.maximizeApp).",
+      "id": "key-393"
+    },
+    {
+      "action": "Switch focus between Composition viewer and Timeline panel",
+      "key": "\\",
+      "detail": "Toggles active keyboard focus between composition viewer and timeline without mouse click",
+      "source": "shortcuts",
+      "category": "Windows, workspace, panels and viewer",
+      "verification": "Verified in AE and EffectCraft (window.toggleCompTimeline).",
+      "id": "key-394"
+    },
+    {
+      "action": "Next panel in active frame",
+      "key": "Alt+Shift+.",
+      "detail": "Cycles focus to the next docked tab/panel within the current frame",
+      "source": "shortcuts",
+      "category": "Windows, workspace, panels and viewer",
+      "verification": "Verified in AE and EffectCraft (window.nextPanel).",
+      "id": "key-395"
+    },
+    {
+      "action": "Previous panel in active frame",
+      "key": "Alt+Shift+,",
+      "detail": "Cycles focus to the previous docked tab/panel within the current frame",
+      "source": "shortcuts",
+      "category": "Windows, workspace, panels and viewer",
+      "verification": "Verified in AE and EffectCraft (window.previousPanel).",
+      "id": "key-396"
+    },
+    {
+      "action": "Close active panel or all viewers",
+      "key": "Ctrl+Shift+W",
+      "detail": "Closes current docked panel tab or closes all open composition viewers",
+      "source": "shortcuts",
+      "category": "Windows, workspace, panels and viewer",
+      "verification": "Verified in AE and EffectCraft (window.closeAll).",
+      "id": "key-397"
+    },
+    {
+      "action": "Maximize panel under pointer",
+      "key": "`",
+      "detail": "Toggles fullscreen/maximized state of docked panel under mouse cursor",
+      "source": "shortcuts",
+      "category": "Windows, workspace, panels and viewer",
+      "verification": "Verified in AE and EffectCraft (window.maximizePanel).",
+      "id": "key-398"
+    },
+    {
+      "action": "Twirl selected layers open or closed",
+      "key": "Ctrl+`",
+      "detail": "Expands or collapses all properties of selected layers in timeline hierarchy",
+      "source": "shortcuts",
+      "category": "Windows, workspace, panels and viewer",
+      "verification": "Verified in AE and EffectCraft (timeline.twirlSelected).",
+      "id": "key-399"
+    },
+    {
+      "action": "3D Orbit Tool",
+      "key": "1",
+      "detail": "Switches active tool to 3D Orbit Camera / cursor mode",
+      "source": "shortcuts",
+      "category": "Tools and drawing",
+      "verification": "Verified in AE 24+ and EffectCraft (tool.orbit).",
+      "id": "key-400"
+    },
+    {
+      "action": "3D Pan Camera Tool",
+      "key": "2",
+      "detail": "Switches active tool to 3D Pan / Track XY mode",
+      "source": "shortcuts",
+      "category": "Tools and drawing",
+      "verification": "Verified in AE 24+ and EffectCraft (tool.panCamera).",
+      "id": "key-401"
+    },
+    {
+      "action": "3D Dolly Tool",
+      "key": "3",
+      "detail": "Switches active tool to 3D Dolly / Zoom Z mode",
+      "source": "shortcuts",
+      "category": "Tools and drawing",
+      "verification": "Verified in AE 24+ and EffectCraft (tool.dolly).",
+      "id": "key-402"
+    },
+    {
+      "action": "Roto Brush & Refine Edge Tools",
+      "key": "Alt+W",
+      "detail": "Selects Roto Brush; repeated press toggles Refine Edge",
+      "source": "shortcuts",
+      "category": "Tools and drawing",
+      "verification": "Verified in AE and EffectCraft (tool.rotoBrush).",
+      "id": "key-403"
+    },
+    {
+      "action": "Preview with alternate preset (Shift+Spacebar)",
+      "key": "Shift+Space",
+      "detail": "Plays preview using secondary preview configuration (e.g. wireframe or skipping frames)",
+      "source": "shortcuts",
+      "category": "Navigation: frames, keyframes, work area and preview",
+      "verification": "Verified in AE and EffectCraft (playback.preview.shiftSpacebar).",
+      "id": "key-404"
+    },
+    {
+      "action": "Preview with alternate range (Shift+Numpad 0)",
+      "key": "Shift+Num0",
+      "detail": "Plays preview using alternate range settings from Preview panel",
+      "source": "shortcuts",
+      "category": "Navigation: frames, keyframes, work area and preview",
+      "verification": "Verified in AE and EffectCraft (playback.preview.shiftNumpad0).",
+      "id": "key-405"
+    },
+    {
+      "action": "Preview with audio only or cached range (Alt+Numpad 0)",
+      "key": "Alt+Num0",
+      "detail": "Previews active comp without audio scrubbing or with isolated cache",
+      "source": "shortcuts",
+      "category": "Navigation: frames, keyframes, work area and preview",
+      "verification": "Verified in AE and EffectCraft (playback.preview.altNumpad0).",
+      "id": "key-406"
+    },
+    {
+      "action": "Viewer Zoom: Fit up to 100%",
+      "key": "Alt+/",
+      "detail": "Fits composition viewer to available window space, but never scales past 100% resolution",
+      "source": "shortcuts",
+      "category": "Navigation: frames, keyframes, work area and preview",
+      "verification": "Verified in AE and EffectCraft (view.fitUpTo100).",
+      "id": "key-407"
+    },
+    {
+      "action": "Next composition in viewer",
+      "key": "Shift+.",
+      "detail": "Switches viewer tab to next open composition or footage viewer",
+      "source": "shortcuts",
+      "category": "Navigation: frames, keyframes, work area and preview",
+      "verification": "Verified in AE and EffectCraft (view.nextItem).",
+      "id": "key-408"
+    },
+    {
+      "action": "Previous composition in viewer",
+      "key": "Shift+,",
+      "detail": "Switches viewer tab to previous open composition or footage viewer",
+      "source": "shortcuts",
+      "category": "Navigation: frames, keyframes, work area and preview",
+      "verification": "Verified in AE and EffectCraft (view.previousItem).",
+      "id": "key-409"
+    },
+    {
+      "action": "Take composition snapshot",
+      "key": "Shift+F5",
+      "detail": "Stores current frame into temporary snapshot buffer",
+      "source": "shortcuts",
+      "category": "Navigation: frames, keyframes, work area and preview",
+      "verification": "Verified in AE and EffectCraft (view.takeSnapshot).",
+      "id": "key-410"
+    },
+    {
+      "action": "Display composition snapshot",
+      "key": "F5",
+      "detail": "Displays held snapshot buffer in viewer while pressed",
+      "source": "shortcuts",
+      "category": "Navigation: frames, keyframes, work area and preview",
+      "verification": "Verified in AE and EffectCraft (view.showSnapshot).",
+      "id": "key-411"
+    },
+    {
+      "action": "Bring layer forward one step in stack",
+      "key": "Ctrl+]",
+      "detail": "Moves selected layer(s) up one position in timeline layer hierarchy",
+      "source": "shortcuts",
+      "category": "Timeline: select, stack, move, trim, split and time",
+      "verification": "Verified in AE and EffectCraft (layer.arrange {\"to\":\"forward\"}).",
+      "id": "key-412"
+    },
+    {
+      "action": "Send layer backward one step in stack",
+      "key": "Ctrl+[",
+      "detail": "Moves selected layer(s) down one position in timeline layer hierarchy",
+      "source": "shortcuts",
+      "category": "Timeline: select, stack, move, trim, split and time",
+      "verification": "Verified in AE and EffectCraft (layer.arrange {\"to\":\"backward\"}).",
+      "id": "key-413"
+    },
+    {
+      "action": "Bring layer to top of stack (front)",
+      "key": "Ctrl+Shift+]",
+      "detail": "Moves selected layer(s) to topmost layer index in comp",
+      "source": "shortcuts",
+      "category": "Timeline: select, stack, move, trim, split and time",
+      "verification": "Verified in AE and EffectCraft (layer.arrange {\"to\":\"front\"}).",
+      "id": "key-414"
+    },
+    {
+      "action": "Send layer to bottom of stack (back)",
+      "key": "Ctrl+Shift+[",
+      "detail": "Moves selected layer(s) to bottom layer index in comp",
+      "source": "shortcuts",
+      "category": "Timeline: select, stack, move, trim, split and time",
+      "verification": "Verified in AE and EffectCraft (layer.arrange {\"to\":\"back\"}).",
+      "id": "key-415"
+    },
+    {
+      "action": "Move layer 1 frame earlier in time",
+      "key": "Alt+PageUp",
+      "detail": "Shifts whole layer bar 1 frame earlier without altering duration",
+      "source": "shortcuts",
+      "category": "Timeline: select, stack, move, trim, split and time",
+      "verification": "Verified in AE and EffectCraft (layer.moveEarlier).",
+      "id": "key-416"
+    },
+    {
+      "action": "Move layer 1 frame later in time",
+      "key": "Alt+PageDown",
+      "detail": "Shifts whole layer bar 1 frame later without altering duration",
+      "source": "shortcuts",
+      "category": "Timeline: select, stack, move, trim, split and time",
+      "verification": "Verified in AE and EffectCraft (layer.moveLater).",
+      "id": "key-417"
+    },
+    {
+      "action": "Move layer 10 frames earlier in time",
+      "key": "Alt+Shift+PageUp",
+      "detail": "Shifts whole layer bar 10 frames earlier without altering duration",
+      "source": "shortcuts",
+      "category": "Timeline: select, stack, move, trim, split and time",
+      "verification": "Verified in AE and EffectCraft (layer.moveEarlier10).",
+      "id": "key-418"
+    },
+    {
+      "action": "Move layer 10 frames later in time",
+      "key": "Alt+Shift+PageDown",
+      "detail": "Shifts whole layer bar 10 frames later without altering duration",
+      "source": "shortcuts",
+      "category": "Timeline: select, stack, move, trim, split and time",
+      "verification": "Verified in AE and EffectCraft (layer.moveLater10).",
+      "id": "key-419"
+    },
+    {
+      "action": "Select previous (higher) layer in stack",
+      "key": "Ctrl+ArrowUp",
+      "detail": "Moves timeline layer selection to layer immediately above",
+      "source": "shortcuts",
+      "category": "Timeline: select, stack, move, trim, split and time",
+      "verification": "Verified in AE and EffectCraft (layer.selectPrevious).",
+      "id": "key-420"
+    },
+    {
+      "action": "Select next (lower) layer in stack",
+      "key": "Ctrl+ArrowDown",
+      "detail": "Moves timeline layer selection to layer immediately below",
+      "source": "shortcuts",
+      "category": "Timeline: select, stack, move, trim, split and time",
+      "verification": "Verified in AE and EffectCraft (layer.selectNext).",
+      "id": "key-421"
+    },
+    {
+      "action": "Extend layer selection upward",
+      "key": "Ctrl+Shift+ArrowUp",
+      "detail": "Adds layer immediately above to selected layer set",
+      "source": "shortcuts",
+      "category": "Timeline: select, stack, move, trim, split and time",
+      "verification": "Verified in AE and EffectCraft (layer.extendSelectionPrevious).",
+      "id": "key-422"
+    },
+    {
+      "action": "Extend layer selection downward",
+      "key": "Ctrl+Shift+ArrowDown",
+      "detail": "Adds layer immediately below to selected layer set",
+      "source": "shortcuts",
+      "category": "Timeline: select, stack, move, trim, split and time",
+      "verification": "Verified in AE and EffectCraft (layer.extendSelectionNext).",
+      "id": "key-423"
+    },
+    {
+      "action": "Time stretch layer In point to current time",
+      "key": "Ctrl+Alt+,",
+      "detail": "Stretches layer duration by anchoring Out point and snapping In point to playhead",
+      "source": "shortcuts",
+      "category": "Timeline: select, stack, move, trim, split and time",
+      "verification": "Verified in AE and EffectCraft (layer.stretchInToTime).",
+      "id": "key-424"
+    },
+    {
+      "action": "Time stretch layer Out point to current time",
+      "key": "Ctrl+Alt+.",
+      "detail": "Stretches layer duration by anchoring In point and snapping Out point to playhead",
+      "source": "shortcuts",
+      "category": "Timeline: select, stack, move, trim, split and time",
+      "verification": "Verified in AE and EffectCraft (layer.stretchOutToTime).",
+      "id": "key-425"
+    },
+    {
+      "action": "Lock selected layer(s)",
+      "key": "Ctrl+L",
+      "detail": "Enables lock switch on selected layers preventing accidental edits",
+      "source": "shortcuts",
+      "category": "Timeline: select, stack, move, trim, split and time",
+      "verification": "Verified in AE and EffectCraft (layer.setSwitch {\"switch\":\"lock\"}).",
+      "id": "key-426"
+    },
+    {
+      "action": "Unlock all layers in active composition",
+      "key": "Ctrl+Shift+L",
+      "detail": "Disables lock switch across all locked layers in the timeline",
+      "source": "shortcuts",
+      "category": "Timeline: select, stack, move, trim, split and time",
+      "verification": "Verified in AE and EffectCraft (layer.unlockAll).",
+      "id": "key-427"
+    },
+    {
+      "action": "Cycle to next Blending Mode",
+      "key": "Shift+=",
+      "detail": "Steps forward through layer blending modes in the timeline switches panel",
+      "source": "shortcuts",
+      "category": "Timeline: select, stack, move, trim, split and time",
+      "verification": "Verified in AE and EffectCraft (layer.setBlendMode {\"step\":1}).",
+      "id": "key-428"
+    },
+    {
+      "action": "Cycle to previous Blending Mode",
+      "key": "Shift+-",
+      "detail": "Steps backward through layer blending modes in the timeline switches panel",
+      "source": "shortcuts",
+      "category": "Timeline: select, stack, move, trim, split and time",
+      "verification": "Verified in AE and EffectCraft (layer.setBlendMode {\"step\":-1}).",
+      "id": "key-429"
+    },
+    {
+      "action": "Zoom timeline to fit comp duration",
+      "key": "Shift+;",
+      "detail": "Adjusts timeline zoom slider so entire comp fits in panel width",
+      "source": "shortcuts",
+      "category": "Timeline: select, stack, move, trim, split and time",
+      "verification": "Verified in AE and EffectCraft (timeline.zoomFit).",
+      "id": "key-430"
+    },
+    {
+      "action": "Zoom frame level / whole comp toggle",
+      "key": ";",
+      "detail": "Toggles between 1-frame zoom and showing the whole comp in timeline",
+      "source": "shortcuts",
+      "category": "Timeline: select, stack, move, trim, split and time",
+      "verification": "Verified in AE and EffectCraft (timeline.zoomFrameToggle).",
+      "id": "key-431"
+    },
+    {
+      "action": "Scroll timeline to current time",
+      "key": "D",
+      "detail": "Centers timeline view around current time indicator (playhead)",
+      "source": "shortcuts",
+      "category": "Timeline: select, stack, move, trim, split and time",
+      "verification": "Verified in AE and EffectCraft (timeline.scrollToTime).",
+      "id": "key-432"
+    },
+    {
+      "action": "Scroll topmost selected layer to top of timeline",
+      "key": "X",
+      "detail": "Scrolls timeline track vertical view to bring selected layer to top",
+      "source": "shortcuts",
+      "category": "Timeline: select, stack, move, trim, split and time",
+      "verification": "Verified in AE and EffectCraft (timeline.scrollToLayer).",
+      "id": "key-433"
+    },
+    {
+      "action": "Add or remove Anchor Point keyframe",
+      "key": "Alt+Shift+A",
+      "detail": "Toggles/sets Anchor Point keyframe at playhead for selected layers",
+      "source": "shortcuts",
+      "category": "Properties and layer transforms",
+      "verification": "Verified in AE and EffectCraft (timeline.keyAt.anchor).",
+      "id": "key-434"
+    },
+    {
+      "action": "Add or remove Opacity keyframe",
+      "key": "Alt+Shift+T",
+      "detail": "Toggles/sets Opacity keyframe at playhead for selected layers",
+      "source": "shortcuts",
+      "category": "Properties and layer transforms",
+      "verification": "Verified in AE and EffectCraft (timeline.keyAt.opacity).",
+      "id": "key-435"
+    },
+    {
+      "action": "Set Position transform dialog",
+      "key": "Ctrl+Shift+P",
+      "detail": "Opens precise numerical entry dialog for layer Position coordinates",
+      "source": "shortcuts",
+      "category": "Properties and layer transforms",
+      "verification": "Verified in AE and EffectCraft (layer.setTransform {\"prop\":\"position\"}).",
+      "id": "key-436"
+    },
+    {
+      "action": "Set Rotation transform dialog",
+      "key": "Ctrl+Shift+R",
+      "detail": "Opens precise numerical entry dialog for layer Rotation angle",
+      "source": "shortcuts",
+      "category": "Properties and layer transforms",
+      "verification": "Verified in AE and EffectCraft (layer.setTransform {\"prop\":\"rotation\"}).",
+      "id": "key-437"
+    },
+    {
+      "action": "Set Opacity transform dialog",
+      "key": "Ctrl+Shift+O",
+      "detail": "Opens precise numerical entry dialog for layer Opacity percentage",
+      "source": "shortcuts",
+      "category": "Properties and layer transforms",
+      "verification": "Verified in AE and EffectCraft (layer.setTransform {\"prop\":\"opacity\"}).",
+      "id": "key-438"
+    },
+    {
+      "action": "Set Orientation transform dialog",
+      "key": "Ctrl+Alt+Shift+R",
+      "detail": "Opens precise 3D Orientation angles entry dialog",
+      "source": "shortcuts",
+      "category": "Properties and layer transforms",
+      "verification": "Verified in AE and EffectCraft (layer.setTransform {\"prop\":\"orientation\"}).",
+      "id": "key-439"
+    },
+    {
+      "action": "Toggle Bilinear image sampling",
+      "key": "Alt+B",
+      "detail": "Toggles fast bilinear pixel interpolation mode on selected layers",
+      "source": "shortcuts",
+      "category": "Properties and layer transforms",
+      "verification": "Verified in AE and EffectCraft (layer.sampling {\"sampling\":\"bilinear\",\"toggle\":true}).",
+      "id": "key-440"
+    },
+    {
+      "action": "Toggle Bicubic image sampling",
+      "key": "Alt+Shift+B",
+      "detail": "Toggles high quality bicubic pixel interpolation mode on selected layers",
+      "source": "shortcuts",
+      "category": "Properties and layer transforms",
+      "verification": "Verified in AE and EffectCraft (layer.sampling {\"sampling\":\"bicubic\",\"toggle\":true}).",
+      "id": "key-441"
+    },
+    {
+      "action": "Add expression to selected property",
+      "key": "Alt+Shift+=",
+      "detail": "Enables expression on property and focuses expression code editor",
+      "source": "shortcuts",
+      "category": "Properties and layer transforms",
+      "verification": "Verified in AE and EffectCraft (prop.setExpression).",
+      "id": "key-442"
+    },
+    {
+      "action": "Nudge selected layer 1 pixel at current magnification",
+      "key": "ArrowUp / ArrowDown / ArrowLeft / ArrowRight",
+      "detail": "Moves selected layer(s) 1 screen pixel in viewer in the specified arrow direction",
+      "source": "shortcuts",
+      "category": "Properties and layer transforms",
+      "verification": "Verified in AE and EffectCraft (viewer.nudge.up / down / left / right).",
+      "id": "key-443"
+    },
+    {
+      "action": "Nudge selected layer 10 pixels at current magnification",
+      "key": "Shift+ArrowUp / Down / Left / Right",
+      "detail": "Moves selected layer(s) 10 screen pixels in viewer in the specified arrow direction",
+      "source": "shortcuts",
+      "category": "Properties and layer transforms",
+      "verification": "Verified in AE and EffectCraft (viewer.nudge.up10 / down10 / left10 / right10).",
+      "id": "key-444"
+    },
+    {
+      "action": "Move selected keyframes 1 frame earlier",
+      "key": "Alt+ArrowLeft",
+      "detail": "Translates all selected keyframes 1 frame to the left in time",
+      "source": "shortcuts",
+      "category": "Keyframes and Graph Editor (full set)",
+      "verification": "Verified in AE and EffectCraft (keys.nudgeBackward).",
+      "id": "key-445"
+    },
+    {
+      "action": "Move selected keyframes 1 frame later",
+      "key": "Alt+ArrowRight",
+      "detail": "Translates all selected keyframes 1 frame to the right in time",
+      "source": "shortcuts",
+      "category": "Keyframes and Graph Editor (full set)",
+      "verification": "Verified in AE and EffectCraft (keys.nudgeForward).",
+      "id": "key-446"
+    },
+    {
+      "action": "Move selected keyframes 10 frames earlier",
+      "key": "Alt+Shift+ArrowLeft",
+      "detail": "Translates all selected keyframes 10 frames to the left in time",
+      "source": "shortcuts",
+      "category": "Keyframes and Graph Editor (full set)",
+      "verification": "Verified in AE and EffectCraft (keys.nudgeBackward10).",
+      "id": "key-447"
+    },
+    {
+      "action": "Move selected keyframes 10 frames later",
+      "key": "Alt+Shift+ArrowRight",
+      "detail": "Translates all selected keyframes 10 frames to the right in time",
+      "source": "shortcuts",
+      "category": "Keyframes and Graph Editor (full set)",
+      "verification": "Verified in AE and EffectCraft (keys.nudgeForward10).",
+      "id": "key-448"
+    },
+    {
+      "action": "Deselect all keyframes and properties",
+      "key": "Shift+F2 / Ctrl+Alt+Shift+A",
+      "detail": "Clears keyframe and property selection while preserving layer selection",
+      "source": "shortcuts",
+      "category": "Keyframes and Graph Editor (full set)",
+      "verification": "Verified in AE and EffectCraft (keys.deselectAll).",
+      "id": "key-449"
+    },
+    {
+      "action": "Select next mask on layer",
+      "key": "Alt+`",
+      "detail": "Cycles selection forward through masks on the active layer",
+      "source": "shortcuts",
+      "category": "Masks, shapes, painting and markers",
+      "verification": "Verified in AE and EffectCraft (layer.mask.selectNext).",
+      "id": "key-450"
+    },
+    {
+      "action": "Select previous mask on layer",
+      "key": "Alt+Shift+`",
+      "detail": "Cycles selection backward through masks on the active layer",
+      "source": "shortcuts",
+      "category": "Masks, shapes, painting and markers",
+      "verification": "Verified in AE and EffectCraft (layer.mask.selectPrevious).",
+      "id": "key-451"
+    },
+    {
+      "action": "Toggle inverted mode on selected mask",
+      "key": "Ctrl+Shift+I",
+      "detail": "Toggles mask inversion state for cut-out vs hold-out",
+      "source": "shortcuts",
+      "category": "Masks, shapes, painting and markers",
+      "verification": "Verified in AE and EffectCraft (layer.mask.invert).",
+      "id": "key-452"
+    },
+    {
+      "action": "Mask Shape settings dialog",
+      "key": "Ctrl+Shift+M",
+      "detail": "Opens precise bounding box and vertex coordinate dialog for selected mask",
+      "source": "shortcuts",
+      "category": "Masks, shapes, painting and markers",
+      "verification": "Verified in AE and EffectCraft (layer.mask.shape).",
+      "id": "key-453"
+    },
+    {
+      "action": "Switch 3D View: Front",
+      "key": "F10",
+      "detail": "Switches composition viewer camera projection to orthogonal Front view",
+      "source": "shortcuts",
+      "category": "3D cameras, lights, effects, footage and rendering",
+      "verification": "Verified in AE and EffectCraft (view.3d.front).",
+      "id": "key-454"
+    },
+    {
+      "action": "Switch 3D View: Custom View 1",
+      "key": "F11",
+      "detail": "Switches composition viewer camera projection to angled perspective Custom View 1",
+      "source": "shortcuts",
+      "category": "3D cameras, lights, effects, footage and rendering",
+      "verification": "Verified in AE and EffectCraft (view.3d.custom1).",
+      "id": "key-455"
+    },
+    {
+      "action": "Switch 3D View: Active Camera",
+      "key": "F12",
+      "detail": "Returns composition viewer camera projection to the scene Active Camera",
+      "source": "shortcuts",
+      "category": "3D cameras, lights, effects, footage and rendering",
+      "verification": "Verified in AE and EffectCraft (view.3d.activeCamera).",
+      "id": "key-456"
+    },
+    {
+      "action": "Look at Selected Layers (3D view)",
+      "key": "Ctrl+Alt+Shift+\\",
+      "detail": "Re-centers camera point of interest to encompass selected 3D layers",
+      "source": "shortcuts",
+      "category": "3D cameras, lights, effects, footage and rendering",
+      "verification": "Verified in AE and EffectCraft (view.lookAtSelected).",
+      "id": "key-457"
+    },
+    {
+      "action": "Add composition to Render Queue (primary alias)",
+      "key": "Ctrl+M",
+      "detail": "Enqueues the active composition to the Render Queue panel (AE standard alias for Ctrl+Shift+/)",
+      "source": "shortcuts",
+      "category": "3D cameras, lights, effects, footage and rendering",
+      "verification": "Verified in AE and EffectCraft (renderQueue.add; Cmd+M / Ctrl+M).",
+      "id": "key-458"
     }
   ],
   "troubleshooting": [

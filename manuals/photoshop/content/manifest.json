@@ -1,11 +1,11 @@
 {
-  "project": "Photoshop Field Manual: Windows Edition",
+  "project": "Photoshop & PhotoCraft Field Manual: Windows & Linux Edition",
   "edition": "1.2.0",
   "photoshop_version": "27.11",
   "release": "September 2026; exact day not established from consulted release notes",
   "security_patch_evidence": "Adobe October 13, 2026 APSB26-158: 27.11",
   "verified_on": "2026-10-28",
   "research_cutoff_requested": "2026-10-29",
-  "scope": "Photoshop 2026 stable desktop, Windows; offline reader Windows/Linux",
+  "scope": "Photoshop 27.11 (Windows) & PhotoCraft (Linux); offline reader Windows/Linux",
   "lessons": 75
 }

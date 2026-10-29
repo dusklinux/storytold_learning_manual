@@ -1,5 +1,3 @@
-> **Combined project:** open [the Dusky library](../../index.html) to choose or switch apps. This directory retains the supplied manual and its historical standalone documentation below. Use the [root build and maintenance instructions](../../docs/STRUCTURE.md); the library build generates no archives.
-
 # Photoshop Field Manual — Windows Edition
 
 **Verified Photoshop version:** 27.11 (September 2026 release, confirmed by Adobe Oct 13 security bulletin). Research checked 2026-10-28; the Oct 29 requested cutoff had not yet occurred.
@@ -33,7 +31,7 @@ Using Photoshop in a Windows VM while reading on Linux requires the **Windows gu
 
 The SHA-256 manifest (`MANIFEST.sha256`) can be checked with `python scripts/check_manifest.py --check` after extraction. The bundled reader can be used without Python.
 
-This project includes 75 lesson modules, 71 tool entries, 81 filter entries, 112 shortcut entries, 155 glossary terms, 30 troubleshooting cases, 40 recipes, 12 stage projects and 75 graded quiz prompts.
+This project includes 75 lesson modules, 71 tool entries, 81 filter entries, 230 shortcut entries, 155 glossary terms, 30 troubleshooting cases, 40 recipes, 12 stage projects and 75 graded quiz prompts.
 
 ## Teaching and accuracy notes
 

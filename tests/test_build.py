@@ -15,7 +15,7 @@ from build import catalogs, load, payload_files
 class BuildTests(unittest.TestCase):
     def test_search_contains_previously_missing_teaching(self):
         _,records,keys=catalogs(load(ROOT/'manuals/photoshop/content/content.json'),load(ROOT/'manuals/premiere/data/course.json'),load(ROOT/'manuals/after-effects/manual_data.json'),load(ROOT/'manuals/premiere/data/guides.json'))
-        self.assertEqual(len(keys),680)
+        self.assertEqual(len(keys),870)
         for quiz in load(ROOT/'manuals/premiere/data/course.json')['quizzes']:
             self.assertTrue(any(r['app']=='premiere' and quiz['question'] in r['body'] for r in records),quiz['id'])
         for stage in load(ROOT/'manuals/after-effects/manual_data.json')['stagePlan']:

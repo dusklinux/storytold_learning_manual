@@ -90,6 +90,6 @@ if __name__ == '__main__':
     except Exception as exc:
         print('FAILED:', repr(exc), file=sys.stderr)
         sys.exit(1)
-    print('VALIDATED: After Effects 26.5 Windows offline manual')
+    print('VALIDATED: After Effects 26.5 & EffectCraft offline manual')
     print('Content:', ', '.join(f'{k}={len(found[k])}' for k in ('chapters','topics','recipes','effects','shortcuts','troubleshooting','glossary','quiz')))
     print('Offline HTML, JSON, CSVs, Markdown contents are consistent.')

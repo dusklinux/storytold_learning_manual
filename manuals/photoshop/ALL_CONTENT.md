@@ -1,10 +1,10 @@
-# Photoshop Field Manual — Windows Edition
-Photoshop 27.11; researched 2026-10-28. Offline Linux/Windows reading; Photoshop directions are Windows only.
+# Photoshop & PhotoCraft Field Manual — Windows & Linux Edition
+Photoshop 27.11 (Windows) & PhotoCraft (Linux); researched 2026-10-28. Dual Windows and Linux desktop workflows; offline reader Windows/Linux.
 
 The research cutoff requested was October 29, 2026, one day after verified execution date. No October 29 release is presumed.
 
 ## How to use
-Study stages in order, perform each exercise in Photoshop, then check its success criteria. The website contains navigation, searchable references and portable progress, all without networking. This Markdown edition is also fully readable offline.
+Study stages in order, perform each exercise in Photoshop or PhotoCraft, then check its success criteria. The website contains navigation, searchable references and portable progress, all without networking. This Markdown edition is also fully readable offline.
 
 # Stage 1 — Orientation & image fundamentals
 See files, pixels, resolution and the interface before editing.
@@ -4239,7 +4239,7 @@ Produce three-format advertisement, an optional advanced photo restoration, edit
 **Status:** Service / check entitlement  
 **Lesson:** s08l07  
 
-## Windows shortcuts
+## Keyboard shortcuts (Windows & Linux)
 
 ### New document
 **Family:** File  
@@ -4912,6 +4912,714 @@ Produce three-format advertisement, an optional advanced photo restoration, edit
 **Keys:** Shift+Arrow key  
 **Context:** Move Tool/transform  
 **Note:** Depends on selected layer/selection and active text input.  
+
+### Bring layer forward
+**Family:** Layer  
+**Keys:** Ctrl+]  
+**Context:** Layers panel/document  
+**Note:** Moves active layer one position up in stack; verified in Photoshop & PhotoCraft.  
+
+### Send layer backward
+**Family:** Layer  
+**Keys:** Ctrl+[  
+**Context:** Layers panel/document  
+**Note:** Moves active layer one position down in stack; verified in Photoshop & PhotoCraft.  
+
+### Bring layer to front
+**Family:** Layer  
+**Keys:** Ctrl+Shift+]  
+**Context:** Layers panel/document  
+**Note:** Moves active layer to very top of layer hierarchy; verified in Photoshop & PhotoCraft.  
+
+### Send layer to back
+**Family:** Layer  
+**Keys:** Ctrl+Shift+[  
+**Context:** Layers panel/document  
+**Note:** Moves active layer to bottom of stack (above Background); verified in Photoshop & PhotoCraft.  
+
+### Select layer above
+**Family:** Layer  
+**Keys:** Alt+]  
+**Context:** Layers panel  
+**Note:** Moves active selection focus to layer above current target.  
+
+### Select layer below
+**Family:** Layer  
+**Keys:** Alt+[  
+**Context:** Layers panel  
+**Note:** Moves active selection focus to layer below current target.  
+
+### Add layer above to selection
+**Family:** Layer  
+**Keys:** Alt+Shift+]  
+**Context:** Layers panel  
+**Note:** Extends multi-layer selection upwards.  
+
+### Add layer below to selection
+**Family:** Layer  
+**Keys:** Alt+Shift+[  
+**Context:** Layers panel  
+**Note:** Extends multi-layer selection downwards.  
+
+### Select bottom layer
+**Family:** Layer  
+**Keys:** Alt+,  
+**Context:** Layers panel  
+**Note:** Selects bottom-most layer in active layer stack.  
+
+### Select top layer
+**Family:** Layer  
+**Keys:** Alt+.  
+**Context:** Layers panel  
+**Note:** Selects topmost layer in active layer stack.  
+
+### Lock or unlock layer
+**Family:** Layer  
+**Keys:** Ctrl+/  
+**Context:** Layers panel  
+**Note:** Toggles layer lock properties; verified in Photoshop & PhotoCraft.  
+
+### Stamp down
+**Family:** Layer  
+**Keys:** Ctrl+Alt+E  
+**Context:** Layers panel  
+**Note:** Merges copy of active layer with layer below into single layer.  
+
+### Duplicate layer or selection drag
+**Family:** Layer  
+**Keys:** Alt+drag  
+**Context:** Move tool gesture  
+**Note:** Duplicates active layer or selected pixel content while dragging with Move tool.  
+
+### Free Transform a copy
+**Family:** Editing  
+**Keys:** Ctrl+Alt+T  
+**Context:** Document/selection  
+**Note:** Duplicates selection/layer and immediately enters Free Transform.  
+
+### Transform again a copy
+**Family:** Editing  
+**Keys:** Ctrl+Alt+Shift+T  
+**Context:** Document/selection  
+**Note:** Repeats prior transform operation while creating a duplicated copy.  
+
+### Paste into selection
+**Family:** Editing  
+**Keys:** Ctrl+Alt+Shift+V  
+**Context:** Active selection  
+**Note:** Pastes clipboard content into an active selection as a masked layer.  
+
+### Content-Aware Scale
+**Family:** Editing  
+**Keys:** Ctrl+Alt+Shift+C  
+**Context:** Document/layer  
+**Note:** Scales image while preserving proportions of prominent subjects.  
+
+### Fade last filter or adjustment
+**Family:** Editing  
+**Keys:** Ctrl+Shift+F  
+**Context:** Document  
+**Note:** Modifies opacity and blend mode of immediately preceding raster filter or adjustment.  
+
+### Cut (alternate)
+**Family:** Editing  
+**Keys:** F2  
+**Context:** Document/selection  
+**Note:** Standard secondary function key shortcut for Cut; supported in Photoshop & PhotoCraft.  
+
+### Copy (alternate)
+**Family:** Editing  
+**Keys:** F3  
+**Context:** Document/selection  
+**Note:** Standard secondary function key shortcut for Copy; supported in Photoshop & PhotoCraft.  
+
+### Paste (alternate)
+**Family:** Editing  
+**Keys:** F4  
+**Context:** Document/selection  
+**Note:** Standard secondary function key shortcut for Paste; supported in Photoshop & PhotoCraft.  
+
+### Fill dialog (alternate)
+**Family:** Editing  
+**Keys:** Shift+Backspace  
+**Context:** Document/selection  
+**Note:** Alternate fill dialog trigger; supported in Photoshop & PhotoCraft.  
+
+### Fill foreground with preserve transparency
+**Family:** Editing  
+**Keys:** Alt+Shift+Backspace  
+**Context:** Pixel layer  
+**Note:** Fills non-transparent pixels with current foreground color.  
+
+### Fill background with preserve transparency
+**Family:** Editing  
+**Keys:** Ctrl+Shift+Backspace  
+**Context:** Pixel layer  
+**Note:** Fills non-transparent pixels with current background color.  
+
+### Fill from history
+**Family:** Editing  
+**Keys:** Ctrl+Alt+Backspace  
+**Context:** Pixel layer/selection  
+**Note:** Fills selected area with pixels from designated history state.  
+
+### Menus customization
+**Family:** Editing  
+**Keys:** Ctrl+Alt+Shift+M  
+**Context:** Global  
+**Note:** Opens Menus customization dialog in Photoshop and PhotoCraft.  
+
+### Levels dialog
+**Family:** Editing  
+**Keys:** Ctrl+L  
+**Context:** Pixel layer  
+**Note:** Opens tonal levels adjustment dialog on active pixel layer.  
+
+### Curves dialog
+**Family:** Editing  
+**Keys:** Ctrl+M  
+**Context:** Pixel layer  
+**Note:** Opens curves tonal curve mapping dialog on active pixel layer.  
+
+### Hue and Saturation dialog
+**Family:** Editing  
+**Keys:** Ctrl+U  
+**Context:** Pixel layer  
+**Note:** Opens Hue/Saturation/Lightness dialog on active pixel layer.  
+
+### Color Balance dialog
+**Family:** Editing  
+**Keys:** Ctrl+B  
+**Context:** Pixel layer  
+**Note:** Opens Cyan/Magenta/Yellow color balance dialog.  
+
+### Invert colors
+**Family:** Editing  
+**Keys:** Ctrl+I  
+**Context:** Pixel layer/mask  
+**Note:** Inverts pixel colors or mask grayscale density values.  
+
+### Desaturate
+**Family:** Editing  
+**Keys:** Ctrl+Shift+U  
+**Context:** Pixel layer  
+**Note:** Removes color saturation directly from active pixel layer.  
+
+### Auto Tone
+**Family:** Editing  
+**Keys:** Ctrl+Shift+L  
+**Context:** Document/layer  
+**Note:** Applies automated black/white point and contrast adjustment.  
+
+### Auto Contrast
+**Family:** Editing  
+**Keys:** Ctrl+Alt+Shift+L  
+**Context:** Document/layer  
+**Note:** Automatically adjusts tonal highlights and shadows.  
+
+### Auto Color
+**Family:** Editing  
+**Keys:** Ctrl+Shift+B  
+**Context:** Document/layer  
+**Note:** Automatically adjusts color cast and midtone balance.  
+
+### Black and White adjustment
+**Family:** Editing  
+**Keys:** Ctrl+Alt+Shift+B  
+**Context:** Pixel layer  
+**Note:** Opens monochrome conversion dialog with individual color channel sliders.  
+
+### Image Size dialog
+**Family:** Editing  
+**Keys:** Ctrl+Alt+I  
+**Context:** Document  
+**Note:** Opens image dimensions and resample resolution dialog.  
+
+### Canvas Size dialog
+**Family:** Editing  
+**Keys:** Ctrl+Alt+C  
+**Context:** Document  
+**Note:** Opens canvas boundary expansion/trimming dialog.  
+
+### Select and Mask workspace
+**Family:** Selection  
+**Keys:** Ctrl+Alt+R  
+**Context:** Document/selection  
+**Note:** Opens dedicated workspace for edge refinement and matting.  
+
+### Feather selection dialog
+**Family:** Selection  
+**Keys:** Shift+F6  
+**Context:** Active selection  
+**Note:** Opens Feather dialog to soften selection edges by specified radius.  
+
+### Inverse selection (alternate)
+**Family:** Selection  
+**Keys:** Shift+F7  
+**Context:** Active selection  
+**Note:** Function key alternate for Invert Selection.  
+
+### Select all layers
+**Family:** Selection  
+**Keys:** Ctrl+Alt+A  
+**Context:** Layers panel  
+**Note:** Selects all selectable layers in the document.  
+
+### Toggle layer mask overlay
+**Family:** Masks  
+**Keys:** \  
+**Context:** Document/layer mask  
+**Note:** Displays layer mask as a rubylith overlay on canvas; supported in Photoshop & PhotoCraft.  
+
+### Re-apply last filter with dialog
+**Family:** Filters  
+**Keys:** Ctrl+Alt+F  
+**Context:** Document/layer  
+**Note:** Re-opens dialog of most recently applied filter with prior parameters.  
+
+### Camera Raw filter
+**Family:** Filters  
+**Keys:** Ctrl+Shift+A  
+**Context:** Layer/Smart Object  
+**Note:** Opens Camera Raw processing workspace on active layer.  
+
+### Vanishing Point workspace
+**Family:** Filters  
+**Keys:** Ctrl+Alt+V  
+**Context:** Document/layer  
+**Note:** Opens perspective plane editing and clone/painting workspace.  
+
+### Lens Correction workspace
+**Family:** Filters  
+**Keys:** Ctrl+Shift+R  
+**Context:** Document/layer  
+**Note:** Opens optical distortion, vignetting and chromatic aberration correction.  
+
+### Adaptive Wide Angle workspace
+**Family:** Filters  
+**Keys:** Ctrl+Alt+Shift+A  
+**Context:** Document/layer  
+**Note:** Corrects lens curvature distortions using constraint lines.  
+
+### Toggle guides
+**Family:** View  
+**Keys:** Ctrl+;  
+**Context:** Document/view  
+**Note:** Shows or hides ruler guides on canvas.  
+
+### Toggle snap
+**Family:** View  
+**Keys:** Ctrl+Shift+;  
+**Context:** Document/view  
+**Note:** Enables or disables snapping to guides, grid, and document bounds.  
+
+### Lock or unlock guides
+**Family:** View  
+**Keys:** Ctrl+Alt+;  
+**Context:** Document/view  
+**Note:** Prevents accidental dragging or moving of canvas guides.  
+
+### Toggle target path
+**Family:** View  
+**Keys:** Ctrl+Shift+H  
+**Context:** Document/view  
+**Note:** Shows or hides active vector path outline without deselecting.  
+
+### Proof Colors toggle
+**Family:** View  
+**Keys:** Ctrl+Y  
+**Context:** Document/view  
+**Note:** Toggles soft-proofing simulation of configured output color profile.  
+
+### Gamut Warning toggle
+**Family:** View  
+**Keys:** Ctrl+Shift+Y  
+**Context:** Document/view  
+**Note:** Highlights colors outside printable color space with warning overlay.  
+
+### Fit all artboards on screen
+**Family:** View  
+**Keys:** Ctrl+Alt+0  
+**Context:** Document/view  
+**Note:** Scales zoom to fit all artboards within current window viewport.  
+
+### Scroll canvas up one screen
+**Family:** View  
+**Keys:** PageUp  
+**Context:** Canvas navigation  
+**Note:** Scrolls viewport upward by one window height.  
+
+### Scroll canvas down one screen
+**Family:** View  
+**Keys:** PageDown  
+**Context:** Canvas navigation  
+**Note:** Scrolls viewport downward by one window height.  
+
+### Scroll canvas left one screen
+**Family:** View  
+**Keys:** Ctrl+PageUp  
+**Context:** Canvas navigation  
+**Note:** Scrolls viewport leftward by one window width.  
+
+### Scroll canvas right one screen
+**Family:** View  
+**Keys:** Ctrl+PageDown  
+**Context:** Canvas navigation  
+**Note:** Scrolls viewport rightward by one window width.  
+
+### Scroll canvas 10 points up
+**Family:** View  
+**Keys:** Shift+PageUp  
+**Context:** Canvas navigation  
+**Note:** Scrolls canvas viewport upward in small 10-point increments.  
+
+### Scroll canvas 10 points down
+**Family:** View  
+**Keys:** Shift+PageDown  
+**Context:** Canvas navigation  
+**Note:** Scrolls canvas viewport downward in small 10-point increments.  
+
+### Scroll canvas to top-left corner
+**Family:** View  
+**Keys:** Home  
+**Context:** Canvas navigation  
+**Note:** Repositions canvas view to document top-left origin.  
+
+### Scroll canvas to bottom-right corner
+**Family:** View  
+**Keys:** End  
+**Context:** Canvas navigation  
+**Note:** Repositions canvas view to document bottom-right boundary.  
+
+### Next document window
+**Family:** Interface  
+**Keys:** Ctrl+Tab  
+**Context:** Global/window  
+**Note:** Cycles forward through open document tabs or windows.  
+
+### Previous document window
+**Family:** Interface  
+**Keys:** Ctrl+Shift+Tab  
+**Context:** Global/window  
+**Note:** Cycles backward through open document tabs or windows.  
+
+### Darken UI brightness
+**Family:** Interface  
+**Keys:** Ctrl+Shift+F1  
+**Context:** Global/interface  
+**Note:** Steps interface brightness down toward darkest theme.  
+
+### Lighten UI brightness
+**Family:** Interface  
+**Keys:** Ctrl+Shift+F2  
+**Context:** Global/interface  
+**Note:** Steps interface brightness up toward lightest theme.  
+
+### Toggle precise crosshair cursor
+**Family:** Interface  
+**Keys:** Caps Lock  
+**Context:** Global/painting tools  
+**Note:** Switches brush circular outline to precise targeting crosshair cursor.  
+
+### Close document (alternate)
+**Family:** File  
+**Keys:** Ctrl+F4  
+**Context:** Document  
+**Note:** Standard Windows/Linux secondary shortcut to close active document window.  
+
+### Save a Copy
+**Family:** File  
+**Keys:** Ctrl+Alt+S  
+**Context:** Document  
+**Note:** Saves a copy of document without switching current active working file.  
+
+### Open As dialog
+**Family:** File  
+**Keys:** Ctrl+Alt+Shift+O  
+**Context:** Global  
+**Note:** Opens file selection dialog with explicit format specification.  
+
+### Close other documents
+**Family:** File  
+**Keys:** Ctrl+Alt+P  
+**Context:** Window  
+**Note:** Closes all open document tabs except currently active one.  
+
+### Print one copy
+**Family:** File  
+**Keys:** Ctrl+Alt+Shift+P  
+**Context:** Document  
+**Note:** Sends one copy of document directly to default printer without showing dialog.  
+
+### Quick Export as PNG
+**Family:** File  
+**Keys:** Ctrl+Shift+'  
+**Context:** Document/layer  
+**Note:** Exports document or active layer directly as PNG per export settings.  
+
+### File Info dialog
+**Family:** File  
+**Keys:** Ctrl+Alt+Shift+I  
+**Context:** Document  
+**Note:** Opens metadata, copyright and EXIF inspection dialog.  
+
+### Next blend mode
+**Family:** Blend Modes  
+**Keys:** Shift++  
+**Context:** Brush or active layer  
+**Note:** Cycles to next blend mode in active tool or selected layer.  
+
+### Previous blend mode
+**Family:** Blend Modes  
+**Keys:** Shift+-  
+**Context:** Brush or active layer  
+**Note:** Cycles to previous blend mode in active tool or selected layer.  
+
+### Normal blend mode
+**Family:** Blend Modes  
+**Keys:** Alt+Shift+N  
+**Context:** Brush or active layer  
+**Note:** Sets active tool or selected layer blend mode to Normal.  
+
+### Dissolve blend mode
+**Family:** Blend Modes  
+**Keys:** Alt+Shift+I  
+**Context:** Brush or active layer  
+**Note:** Sets active tool or selected layer blend mode to Dissolve.  
+
+### Darken blend mode
+**Family:** Blend Modes  
+**Keys:** Alt+Shift+K  
+**Context:** Brush or active layer  
+**Note:** Sets active tool or selected layer blend mode to Darken.  
+
+### Multiply blend mode
+**Family:** Blend Modes  
+**Keys:** Alt+Shift+M  
+**Context:** Brush or active layer  
+**Note:** Sets active tool or selected layer blend mode to Multiply.  
+
+### Color Burn blend mode
+**Family:** Blend Modes  
+**Keys:** Alt+Shift+B  
+**Context:** Brush or active layer  
+**Note:** Sets active tool or selected layer blend mode to Color Burn.  
+
+### Linear Burn blend mode
+**Family:** Blend Modes  
+**Keys:** Alt+Shift+A  
+**Context:** Brush or active layer  
+**Note:** Sets active tool or selected layer blend mode to Linear Burn.  
+
+### Lighten blend mode
+**Family:** Blend Modes  
+**Keys:** Alt+Shift+G  
+**Context:** Brush or active layer  
+**Note:** Sets active tool or selected layer blend mode to Lighten.  
+
+### Screen blend mode
+**Family:** Blend Modes  
+**Keys:** Alt+Shift+S  
+**Context:** Brush or active layer  
+**Note:** Sets active tool or selected layer blend mode to Screen.  
+
+### Color Dodge blend mode
+**Family:** Blend Modes  
+**Keys:** Alt+Shift+D  
+**Context:** Brush or active layer  
+**Note:** Sets active tool or selected layer blend mode to Color Dodge.  
+
+### Linear Dodge (Add) blend mode
+**Family:** Blend Modes  
+**Keys:** Alt+Shift+W  
+**Context:** Brush or active layer  
+**Note:** Sets active tool or selected layer blend mode to Linear Dodge.  
+
+### Overlay blend mode
+**Family:** Blend Modes  
+**Keys:** Alt+Shift+O  
+**Context:** Brush or active layer  
+**Note:** Sets active tool or selected layer blend mode to Overlay.  
+
+### Soft Light blend mode
+**Family:** Blend Modes  
+**Keys:** Alt+Shift+F  
+**Context:** Brush or active layer  
+**Note:** Sets active tool or selected layer blend mode to Soft Light.  
+
+### Hard Light blend mode
+**Family:** Blend Modes  
+**Keys:** Alt+Shift+H  
+**Context:** Brush or active layer  
+**Note:** Sets active tool or selected layer blend mode to Hard Light.  
+
+### Vivid Light blend mode
+**Family:** Blend Modes  
+**Keys:** Alt+Shift+V  
+**Context:** Brush or active layer  
+**Note:** Sets active tool or selected layer blend mode to Vivid Light.  
+
+### Linear Light blend mode
+**Family:** Blend Modes  
+**Keys:** Alt+Shift+J  
+**Context:** Brush or active layer  
+**Note:** Sets active tool or selected layer blend mode to Linear Light.  
+
+### Pin Light blend mode
+**Family:** Blend Modes  
+**Keys:** Alt+Shift+Z  
+**Context:** Brush or active layer  
+**Note:** Sets active tool or selected layer blend mode to Pin Light.  
+
+### Hard Mix blend mode
+**Family:** Blend Modes  
+**Keys:** Alt+Shift+L  
+**Context:** Brush or active layer  
+**Note:** Sets active tool or selected layer blend mode to Hard Mix.  
+
+### Difference blend mode
+**Family:** Blend Modes  
+**Keys:** Alt+Shift+E  
+**Context:** Brush or active layer  
+**Note:** Sets active tool or selected layer blend mode to Difference.  
+
+### Exclusion blend mode
+**Family:** Blend Modes  
+**Keys:** Alt+Shift+X  
+**Context:** Brush or active layer  
+**Note:** Sets active tool or selected layer blend mode to Exclusion.  
+
+### Hue blend mode
+**Family:** Blend Modes  
+**Keys:** Alt+Shift+U  
+**Context:** Brush or active layer  
+**Note:** Sets active tool or selected layer blend mode to Hue.  
+
+### Saturation blend mode
+**Family:** Blend Modes  
+**Keys:** Alt+Shift+T  
+**Context:** Brush or active layer  
+**Note:** Sets active tool or selected layer blend mode to Saturation.  
+
+### Color blend mode
+**Family:** Blend Modes  
+**Keys:** Alt+Shift+C  
+**Context:** Brush or active layer  
+**Note:** Sets active tool or selected layer blend mode to Color.  
+
+### Luminosity blend mode
+**Family:** Blend Modes  
+**Keys:** Alt+Shift+Y  
+**Context:** Brush or active layer  
+**Note:** Sets active tool or selected layer blend mode to Luminosity.  
+
+### Set opacity 10% through 100%
+**Family:** Paint  
+**Keys:** 1–9, 0  
+**Context:** Brush tool or active layer  
+**Note:** Number keys 1–9 set 10%–90%, 0 sets 100% opacity (or two digits for exact percent).  
+
+### Set brush flow or layer fill
+**Family:** Paint  
+**Keys:** Shift+1–9, 0  
+**Context:** Brush tool or active layer  
+**Note:** Sets brush flow (painting tools) or layer fill opacity (layer selection) in 10% increments.  
+
+### Toggle All Caps
+**Family:** Text  
+**Keys:** Ctrl+Shift+K  
+**Context:** Type tool selection  
+**Note:** Toggles uppercase character styling on selected live type.  
+
+### Toggle Underline
+**Family:** Text  
+**Keys:** Ctrl+Shift+U  
+**Context:** Type tool selection  
+**Note:** Toggles underline styling on selected live type.  
+
+### Toggle Faux Bold
+**Family:** Text  
+**Keys:** Ctrl+Shift+B  
+**Context:** Type tool selection  
+**Note:** Toggles faux bold weight synthesis on selected live type.  
+
+### Toggle Faux Italic
+**Family:** Text  
+**Keys:** Ctrl+Shift+I  
+**Context:** Type tool selection  
+**Note:** Toggles faux italic slant synthesis on selected live type.  
+
+### Toggle Strikethrough
+**Family:** Text  
+**Keys:** Ctrl+Shift+/  
+**Context:** Type tool selection  
+**Note:** Toggles strikethrough horizontal line styling on selected live type.  
+
+### Toggle Hyphenation
+**Family:** Text  
+**Keys:** Ctrl+Alt+Shift+H  
+**Context:** Type tool selection  
+**Note:** Toggles automated hyphenation for active paragraph.  
+
+### Adjust leading by 2pt
+**Family:** Text  
+**Keys:** Alt+Up / Alt+Down  
+**Context:** Type tool selection  
+**Note:** Decreases or increases line spacing (leading) by 2 points.  
+
+### Adjust leading by 10pt
+**Family:** Text  
+**Keys:** Ctrl+Alt+Up / Ctrl+Alt+Down  
+**Context:** Type tool selection  
+**Note:** Decreases or increases line spacing (leading) by 10 points.  
+
+### Adjust baseline shift by 2pt
+**Family:** Text  
+**Keys:** Alt+Shift+Up / Alt+Shift+Down  
+**Context:** Type tool selection  
+**Note:** Shifts character baseline upward or downward by 2 points.  
+
+### Adjust baseline shift by 10pt
+**Family:** Text  
+**Keys:** Ctrl+Alt+Shift+Up / Ctrl+Alt+Shift+Down  
+**Context:** Type tool selection  
+**Note:** Shifts character baseline upward or downward by 10 points.  
+
+### Adjust tracking or kerning by 20 units
+**Family:** Text  
+**Keys:** Alt+Left / Alt+Right  
+**Context:** Type tool caret/selection  
+**Note:** Adjusts tracking across selection or kerning between caret pair by 20/1000 em.  
+
+### Adjust tracking or kerning by 100 units
+**Family:** Text  
+**Keys:** Ctrl+Alt+Left / Ctrl+Alt+Right  
+**Context:** Type tool caret/selection  
+**Note:** Adjusts tracking across selection or kerning between caret pair by 100/1000 em.  
+
+### Toggle Character and Paragraph panels
+**Family:** Text  
+**Keys:** Ctrl+T (in Type tool)  
+**Context:** Type tool editing  
+**Note:** Opens or closes Character and Paragraph typography formatting panels.  
+
+### First brush preset
+**Family:** Painting  
+**Keys:** <  
+**Context:** Brush tool  
+**Note:** Selects first brush preset in active brush library list.  
+
+### Last brush preset
+**Family:** Painting  
+**Keys:** >  
+**Context:** Brush tool  
+**Note:** Selects last brush preset in active brush library list.  
+
+### Temporary Move tool
+**Family:** Tools  
+**Keys:** Ctrl (hold)  
+**Context:** Canvas gesture  
+**Note:** Temporarily activates Move tool while holding Ctrl from any paint or select tool.  
 
 ## Concept glossary
 

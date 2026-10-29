@@ -1,6 +1,6 @@
-# After Effects 26.5 — Windows Complete Learning Manual
+# After Effects 26.5 & EffectCraft for After Effects — Complete Learning Manual
 
-**Application lessons:** After Effects **26.5 on Windows only**, default English keyboard. **Reading:** open the offline HTML or Markdown on Linux or Windows; export/import browser progress to move between systems.
+**Application lessons:** After Effects **26.5 on Windows** and **EffectCraft on Linux**, default English keyboard. **Reading:** open the offline HTML or Markdown on Linux or Windows; export/import browser progress to move between systems.
 
 > Version accuracy: This edition teaches stable 26.5, including the modern 26.0–26.5 tools. Features labeled Beta remain separate. Current Adobe Help pages can mix both. No claim is made that this package reproduces every parameter of every native, bundled or third-party effect.
 
@@ -5079,6 +5079,78 @@ These are task-oriented Windows shortcuts, gestures and contextual actions. They
 | Toggle guide reference while dragging | Ctrl during guide drag | 26.5: toggle pinning while retaining visual position; Lock Guides is separate. |
 | Copy rendered frame to clipboard | Ctrl+Alt+Shift+F5 | Composition/Layer/Footage viewer. Display transform and Transparency Grid affect the copied result. |
 | Object Matte tool | Toolbar; verify binding in installed editor | Adobe lists Ctrl+W but general shortcuts assign it to Close; use toolbar or verify/remap rather than guessing context. |
+| Add selected footage item to composition | Ctrl+/ | Places selected footage/asset from Project panel as a new layer in active comp at current time |
+| Replace layer source with selected project item | Ctrl+Alt+/ | Swaps underlying source of selected timeline layer with selected footage in Project panel while preserving transforms, keyframes and effects |
+| New composition from selection (EffectCraft / AE) | Ctrl+Alt+\ / Alt+\ | Creates a new composition matching selected footage item dimensions and duration |
+| Run most recent script file | Ctrl+Alt+Shift+D | Executes the most recently run JSX/ECScript without opening the file dialog |
+| Remember footage interpretation | Ctrl+Alt+C | Copies frame rate, alpha, and pixel aspect interpretation settings from selected footage |
+| Apply footage interpretation | Ctrl+Alt+V | Pastes copied interpretation settings onto selected footage items in Project panel |
+| Maximize or restore application window | Ctrl+\ | Expands application window to fill display or restores former window bounds |
+| Switch focus between Composition viewer and Timeline panel | \ | Toggles active keyboard focus between composition viewer and timeline without mouse click |
+| Next panel in active frame | Alt+Shift+. | Cycles focus to the next docked tab/panel within the current frame |
+| Previous panel in active frame | Alt+Shift+, | Cycles focus to the previous docked tab/panel within the current frame |
+| Close active panel or all viewers | Ctrl+Shift+W | Closes current docked panel tab or closes all open composition viewers |
+| Maximize panel under pointer | ` | Toggles fullscreen/maximized state of docked panel under mouse cursor |
+| Twirl selected layers open or closed | Ctrl+` | Expands or collapses all properties of selected layers in timeline hierarchy |
+| 3D Orbit Tool | 1 | Switches active tool to 3D Orbit Camera / cursor mode |
+| 3D Pan Camera Tool | 2 | Switches active tool to 3D Pan / Track XY mode |
+| 3D Dolly Tool | 3 | Switches active tool to 3D Dolly / Zoom Z mode |
+| Roto Brush & Refine Edge Tools | Alt+W | Selects Roto Brush; repeated press toggles Refine Edge |
+| Preview with alternate preset (Shift+Spacebar) | Shift+Space | Plays preview using secondary preview configuration (e.g. wireframe or skipping frames) |
+| Preview with alternate range (Shift+Numpad 0) | Shift+Num0 | Plays preview using alternate range settings from Preview panel |
+| Preview with audio only or cached range (Alt+Numpad 0) | Alt+Num0 | Previews active comp without audio scrubbing or with isolated cache |
+| Viewer Zoom: Fit up to 100% | Alt+/ | Fits composition viewer to available window space, but never scales past 100% resolution |
+| Next composition in viewer | Shift+. | Switches viewer tab to next open composition or footage viewer |
+| Previous composition in viewer | Shift+, | Switches viewer tab to previous open composition or footage viewer |
+| Take composition snapshot | Shift+F5 | Stores current frame into temporary snapshot buffer |
+| Display composition snapshot | F5 | Displays held snapshot buffer in viewer while pressed |
+| Bring layer forward one step in stack | Ctrl+] | Moves selected layer(s) up one position in timeline layer hierarchy |
+| Send layer backward one step in stack | Ctrl+[ | Moves selected layer(s) down one position in timeline layer hierarchy |
+| Bring layer to top of stack (front) | Ctrl+Shift+] | Moves selected layer(s) to topmost layer index in comp |
+| Send layer to bottom of stack (back) | Ctrl+Shift+[ | Moves selected layer(s) to bottom layer index in comp |
+| Move layer 1 frame earlier in time | Alt+PageUp | Shifts whole layer bar 1 frame earlier without altering duration |
+| Move layer 1 frame later in time | Alt+PageDown | Shifts whole layer bar 1 frame later without altering duration |
+| Move layer 10 frames earlier in time | Alt+Shift+PageUp | Shifts whole layer bar 10 frames earlier without altering duration |
+| Move layer 10 frames later in time | Alt+Shift+PageDown | Shifts whole layer bar 10 frames later without altering duration |
+| Select previous (higher) layer in stack | Ctrl+ArrowUp | Moves timeline layer selection to layer immediately above |
+| Select next (lower) layer in stack | Ctrl+ArrowDown | Moves timeline layer selection to layer immediately below |
+| Extend layer selection upward | Ctrl+Shift+ArrowUp | Adds layer immediately above to selected layer set |
+| Extend layer selection downward | Ctrl+Shift+ArrowDown | Adds layer immediately below to selected layer set |
+| Time stretch layer In point to current time | Ctrl+Alt+, | Stretches layer duration by anchoring Out point and snapping In point to playhead |
+| Time stretch layer Out point to current time | Ctrl+Alt+. | Stretches layer duration by anchoring In point and snapping Out point to playhead |
+| Lock selected layer(s) | Ctrl+L | Enables lock switch on selected layers preventing accidental edits |
+| Unlock all layers in active composition | Ctrl+Shift+L | Disables lock switch across all locked layers in the timeline |
+| Cycle to next Blending Mode | Shift+= | Steps forward through layer blending modes in the timeline switches panel |
+| Cycle to previous Blending Mode | Shift+- | Steps backward through layer blending modes in the timeline switches panel |
+| Zoom timeline to fit comp duration | Shift+; | Adjusts timeline zoom slider so entire comp fits in panel width |
+| Zoom frame level / whole comp toggle | ; | Toggles between 1-frame zoom and showing the whole comp in timeline |
+| Scroll timeline to current time | D | Centers timeline view around current time indicator (playhead) |
+| Scroll topmost selected layer to top of timeline | X | Scrolls timeline track vertical view to bring selected layer to top |
+| Add or remove Anchor Point keyframe | Alt+Shift+A | Toggles/sets Anchor Point keyframe at playhead for selected layers |
+| Add or remove Opacity keyframe | Alt+Shift+T | Toggles/sets Opacity keyframe at playhead for selected layers |
+| Set Position transform dialog | Ctrl+Shift+P | Opens precise numerical entry dialog for layer Position coordinates |
+| Set Rotation transform dialog | Ctrl+Shift+R | Opens precise numerical entry dialog for layer Rotation angle |
+| Set Opacity transform dialog | Ctrl+Shift+O | Opens precise numerical entry dialog for layer Opacity percentage |
+| Set Orientation transform dialog | Ctrl+Alt+Shift+R | Opens precise 3D Orientation angles entry dialog |
+| Toggle Bilinear image sampling | Alt+B | Toggles fast bilinear pixel interpolation mode on selected layers |
+| Toggle Bicubic image sampling | Alt+Shift+B | Toggles high quality bicubic pixel interpolation mode on selected layers |
+| Add expression to selected property | Alt+Shift+= | Enables expression on property and focuses expression code editor |
+| Nudge selected layer 1 pixel at current magnification | ArrowUp / ArrowDown / ArrowLeft / ArrowRight | Moves selected layer(s) 1 screen pixel in viewer in the specified arrow direction |
+| Nudge selected layer 10 pixels at current magnification | Shift+ArrowUp / Down / Left / Right | Moves selected layer(s) 10 screen pixels in viewer in the specified arrow direction |
+| Move selected keyframes 1 frame earlier | Alt+ArrowLeft | Translates all selected keyframes 1 frame to the left in time |
+| Move selected keyframes 1 frame later | Alt+ArrowRight | Translates all selected keyframes 1 frame to the right in time |
+| Move selected keyframes 10 frames earlier | Alt+Shift+ArrowLeft | Translates all selected keyframes 10 frames to the left in time |
+| Move selected keyframes 10 frames later | Alt+Shift+ArrowRight | Translates all selected keyframes 10 frames to the right in time |
+| Deselect all keyframes and properties | Shift+F2 / Ctrl+Alt+Shift+A | Clears keyframe and property selection while preserving layer selection |
+| Select next mask on layer | Alt+` | Cycles selection forward through masks on the active layer |
+| Select previous mask on layer | Alt+Shift+` | Cycles selection backward through masks on the active layer |
+| Toggle inverted mode on selected mask | Ctrl+Shift+I | Toggles mask inversion state for cut-out vs hold-out |
+| Mask Shape settings dialog | Ctrl+Shift+M | Opens precise bounding box and vertex coordinate dialog for selected mask |
+| Switch 3D View: Front | F10 | Switches composition viewer camera projection to orthogonal Front view |
+| Switch 3D View: Custom View 1 | F11 | Switches composition viewer camera projection to angled perspective Custom View 1 |
+| Switch 3D View: Active Camera | F12 | Returns composition viewer camera projection to the scene Active Camera |
+| Look at Selected Layers (3D view) | Ctrl+Alt+Shift+\ | Re-centers camera point of interest to encompass selected 3D layers |
+| Add composition to Render Queue (primary alias) | Ctrl+M | Enqueues the active composition to the Render Queue panel (AE standard alias for Ctrl+Shift+/) |
 
 ---
 
