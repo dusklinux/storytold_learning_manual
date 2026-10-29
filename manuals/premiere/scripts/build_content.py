@@ -392,7 +392,7 @@ third_pass_stats = extend_references(glossary,troubles,recipes)
 glossary.sort(key=lambda item:item['term'].casefold())
 print('Second-pass improvements:', second_pass_stats, 'third-pass reference:', third_pass_stats)
 # output data
-content={'meta':{'title':'Premiere, Explained','subtitle':'An offline Windows-first course and reference','version':VERSION,'verified_on':DATE,'research_cutoff':'2026-10-28 (Oct 29 requested date not yet reached)','edition':'3.0 (cross-manual comparative audit)','notes':'Adobe Premiere desktop (formerly commonly called Premiere Pro), Windows 11; course website opens from file:// on Linux/Windows'},'stages':stages,'lessons':lessons,'quizzes':quizzes,'shortcuts':shortcuts,'effects':fx,'transitions':trans,'panels':panels,'glossary':glossary,'troubleshooting':troubles,'recipes':recipes,'sources':[{'id':k,'title':v[0],'url':v[1],'version':v[2],'verified':DATE,'notes':v[3]} for k,v in SOURCE.items()],'version_audit':[{'topic':a,'version':b,'stable':c,'notes':d} for a,b,c,d in version_audit]}
+content={'meta':{'title':'Premiere, Explained & FilmCraft','subtitle':'An offline Windows & Linux course and reference','version':VERSION,'verified_on':DATE,'research_cutoff':'2026-10-28 (Oct 29 requested date not yet reached)','edition':'3.0 (cross-manual comparative audit)','notes':'Adobe Premiere desktop (Windows) and FilmCraft (Linux); course website opens from file:// on Linux/Windows'},'stages':stages,'lessons':lessons,'quizzes':quizzes,'shortcuts':shortcuts,'effects':fx,'transitions':trans,'panels':panels,'glossary':glossary,'troubleshooting':troubles,'recipes':recipes,'sources':[{'id':k,'title':v[0],'url':v[1],'version':v[2],'verified':DATE,'notes':v[3]} for k,v in SOURCE.items()],'version_audit':[{'topic':a,'version':b,'stable':c,'notes':d} for a,b,c,d in version_audit]}
 (P/'data'/'course.json').write_text(json.dumps(content,indent=2,ensure_ascii=False),encoding='utf8')
 (P/'data.js').write_text('window.PREMIERE_MANUAL = '+json.dumps(content,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf8')
 for key,fn,cols in [('shortcuts','SHORTCUTS.csv',['category','command','windows','context','status','source']),('effects','EFFECTS.csv',['name','kind','category','purpose','parameters','example','performance','limitations','status','related','source']),('transitions','TRANSITIONS.csv',['name','category','description','parameters','example','limitations','status','source']),('panels','PANELS_AND_TOOLS.csv',['name','purpose','controls','shortcut','relationship','source']),('glossary','GLOSSARY.csv',['term','definition','example','lesson']),('troubleshooting','TROUBLESHOOTING.csv',['title','causes','tests','confirm','prevention','side_effects','lesson'])]:
@@ -429,5 +429,10 @@ lines += ['## Version feature audit','']
 for r in content['version_audit']: lines.append(f'- **{r["topic"]}** — {r["version"]}; stable: {r["stable"]}. {r["notes"]}')
 lines+=['','## Official research sources','']
 for r in content['sources']:lines.append(f'- **[{r["id"]}] {r["title"]}**: {r["url"]} ({r["version"]}; verified {r["verified"]}). {r["notes"]}')
+guides_path = P/'data'/'guides.json'
+if guides_path.exists():
+ lines += ['', '# FIELD GUIDES (COMPLETE TEXT)']
+ for g in json.loads(guides_path.read_text(encoding='utf-8')):
+  lines += ['', '---', '', g['markdown'].strip()]
 (P/'ALL_CONTENT.md').write_text('\n'.join(lines)+'\n',encoding='utf8')
 print('Content:',len(lessons),'lessons',len(quizzes),'quiz questions',len(shortcuts),'shortcuts',len(fx),'effects',len(trans),'transitions',len(panels),'panels',len(glossary),'glossary',len(recipes),'recipes',len(troubles),'troubleshoot cases')

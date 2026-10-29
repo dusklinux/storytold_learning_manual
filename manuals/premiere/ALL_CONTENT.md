@@ -1,4 +1,4 @@
-# Premiere, Explained — Complete Learning Manual
+# Premiere, Explained & FilmCraft — Complete Learning Manual
 
 Windows edition • Release 26.5.2 • Verified October 28, 2026
 
@@ -6595,6 +6595,104 @@ Inspect the actual saved/exported result and independently confirm each stated t
 - **Project zoom in** — `=` (Project panel focused; availability depends on icon/list and selection mode; Adobe 2026 Windows default table; verify installed shortcut set).
 - **Project zoom out** — `-` (Project panel focused; availability depends on icon/list and selection mode; Adobe 2026 Windows default table; verify installed shortcut set).
 - **Timeline clear selection** — `Backspace` (Timeline panel focused; distinguish from other Backspace commands; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Selection Tool** — `V` (Tools panel / Timeline; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Track Select Forward Tool** — `A` (Tools panel / Timeline; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Track Select Backward Tool** — `Shift+A` (Tools panel / Timeline; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Ripple Edit Tool** — `B` (Tools panel / Timeline; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Rolling Edit Tool** — `N` (Tools panel / Timeline; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Rate Stretch Tool** — `R` (Tools panel / Timeline; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Razor Tool** — `C` (Tools panel / Timeline; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Slip Tool** — `Y` (Tools panel / Timeline; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Slide Tool** — `U` (Tools panel / Timeline; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Pen Tool** — `P` (Tools panel / Timeline; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Hand Tool** — `H` (Tools panel / Timeline; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Zoom Tool** — `Z` (Tools panel / Timeline; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Type Tool** — `T` (Tools panel / Canvas; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Select Camera 1** — `1` (Multi-Camera view / Program Monitor; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Select Camera 2** — `2` (Multi-Camera view / Program Monitor; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Select Camera 3** — `3` (Multi-Camera view / Program Monitor; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Select Camera 4** — `4` (Multi-Camera view / Program Monitor; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Select Camera 5** — `5` (Multi-Camera view / Program Monitor; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Select Camera 6** — `6` (Multi-Camera view / Program Monitor; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Select Camera 7** — `7` (Multi-Camera view / Program Monitor; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Select Camera 8** — `8` (Multi-Camera view / Program Monitor; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Select Camera 9** — `9` (Multi-Camera view / Program Monitor; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Cut to Camera 1** — `Ctrl+1` (Timeline / Multi-Camera view; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Cut to Camera 2** — `Ctrl+2` (Timeline / Multi-Camera view; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Cut to Camera 3** — `Ctrl+3` (Timeline / Multi-Camera view; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Cut to Camera 4** — `Ctrl+4` (Timeline / Multi-Camera view; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Cut to Camera 5** — `Ctrl+5` (Timeline / Multi-Camera view; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Cut to Camera 6** — `Ctrl+6` (Timeline / Multi-Camera view; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Cut to Camera 7** — `Ctrl+7` (Timeline / Multi-Camera view; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Cut to Camera 8** — `Ctrl+8` (Timeline / Multi-Camera view; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Cut to Camera 9** — `Ctrl+9` (Timeline / Multi-Camera view; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Multi-Camera Record On/Off Toggle** — `0` (Multi-Camera view / Program Monitor; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Multi-Camera View Toggle** — `Shift+0` (Program Monitor; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Ripple Trim Previous Edit to Playhead** — `Q` (Timeline panel; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Ripple Trim Next Edit to Playhead** — `W` (Timeline panel; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Extend Previous Edit to Playhead** — `Shift+Q` (Timeline panel; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Extend Next Edit to Playhead** — `Shift+W` (Timeline panel; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Trim Previous Edit Point** — `Alt+Q` (Timeline panel; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Trim Next Edit Point** — `Alt+W` (Timeline panel; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Go to Next Edit Point on Any Track** — `Shift+Down` (Timeline panel; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Go to Previous Edit Point on Any Track** — `Shift+Up` (Timeline panel; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Go to Sequence Start** — `Home` (Timeline panel; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Go to Sequence End** — `End` (Timeline panel; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Go to Selected Clip Start** — `Shift+Home` (Timeline panel; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Go to Selected Clip End** — `Shift+End` (Timeline panel; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Select Clip at Playhead** — `D` (Timeline panel; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Select Next Clip** — `Ctrl+Down` (Timeline panel; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Select Previous Clip** — `Ctrl+Up` (Timeline panel; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Step Forward 1 Frame** — `Right` (Timeline / Monitor focus; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Step Backward 1 Frame** — `Left` (Timeline / Monitor focus; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Step Forward 5 Frames** — `Shift+Right` (Timeline / Monitor focus; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Step Backward 5 Frames** — `Shift+Left` (Timeline / Monitor focus; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Zoom to Sequence** — `\` (Timeline panel; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Expand All Tracks** — `Shift+=` (Timeline panel; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Minimize All Tracks** — `Shift+-` (Timeline panel; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Toggle All Video Targets** — `Ctrl+0` (Timeline panel; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Toggle All Audio Targets** — `Ctrl+9` (Timeline panel; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Toggle All Source Video** — `Ctrl+Alt+0` (Timeline panel; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Toggle All Source Audio** — `Ctrl+Alt+9` (Timeline panel; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Reveal Nested Sequence** — `Ctrl+Alt+F` (Timeline panel; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Increase Clip Volume (1 dB)** — `]` (Timeline / Audio track; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Decrease Clip Volume (1 dB)** — `[` (Timeline / Audio track; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Increase Clip Volume Many (6 dB)** — `Shift+]` (Timeline / Audio track; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Decrease Clip Volume Many (6 dB)** — `Shift+[` (Timeline / Audio track; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Toggle Audio Scrubbing** — `Shift+S` (Application / Timeline; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Set Poster Frame** — `Ctrl+P` (Project panel / Clip; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Clear Poster Frame** — `Alt+P` (Project panel / Clip; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Replace with Clip from Bin** — `Ctrl+Shift+R` (Timeline / Project panel; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Replace with Clip from Source Monitor** — `Ctrl+Alt+Shift+R` (Timeline / Source Monitor; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Maximize or Restore Active Frame** — `Shift+`` (Workspace / panel focus; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Maximize or Restore Frame Under Cursor** — ``` (Workspace / cursor location; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Toggle Full Screen** — `Ctrl+`` (Application / Monitor; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Select Next Panel** — `Ctrl+Shift+.` (Workspace focus; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Select Previous Panel** — `Ctrl+Shift+,` (Workspace focus; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Select Find Box** — `Shift+F` (Active panel / Project; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Zoom Program Monitor to 100%** — `Ctrl+Shift+1` (Program Monitor focused; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Zoom Program Monitor to Fit** — `Ctrl+Shift+0` (Program Monitor focused; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Zoom Source Monitor to 100%** — `Ctrl+Alt+Shift+1` (Source Monitor focused; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Zoom Source Monitor to Fit** — `Ctrl+Alt+Shift+0` (Source Monitor focused; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Play In to Out with Preroll** — `Shift+Space` (Source / Program Monitor; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Play from Playhead to Out Point** — `Ctrl+Space` (Source / Program Monitor; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Increase Font Size by 1 Unit** — `Ctrl+Alt+Right` (Essential Graphics / Text layer; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Decrease Font Size by 1 Unit** — `Ctrl+Alt+Left` (Essential Graphics / Text layer; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Increase Font Size by 5 Units** — `Ctrl+Alt+Shift+Right` (Essential Graphics / Text layer; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Decrease Font Size by 5 Units** — `Ctrl+Alt+Shift+Left` (Essential Graphics / Text layer; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Increase Leading by 1 Unit** — `Alt+Up` (Essential Graphics / Text layer; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Decrease Leading by 1 Unit** — `Alt+Down` (Essential Graphics / Text layer; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Increase Leading by 5 Units** — `Alt+Shift+Up` (Essential Graphics / Text layer; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Decrease Leading by 5 Units** — `Alt+Shift+Down` (Essential Graphics / Text layer; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Left Align Text** — `Ctrl+Shift+L` (Essential Graphics / Text layer; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Center Align Text** — `Ctrl+Shift+C` (Essential Graphics / Text layer; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Right Align Text** — `Ctrl+Shift+R` (Essential Graphics / Text layer; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Begin Text Editing for Graphic Layer** — `Ctrl+Alt+'` (Program Monitor / Graphics; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Export Frame** — `Shift+E` (Program Monitor / Source Monitor; Adobe 2026 Windows default table; verify installed shortcut set).
+- **New Bin from Selection** — `Shift+B` (Project panel focused; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Paste Insert** — `Ctrl+Shift+V` (Timeline panel; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Open Search** — `Ctrl+Shift+F` (Application; Adobe 2026 Windows default table; verify installed shortcut set).
+- **Preferences General** — `Ctrl+,` (Application; Adobe 2026 Windows default table; verify installed shortcut set).
 
 ## Effects reference
 
@@ -7022,9 +7120,7 @@ Inspect the actual saved/exported result and independently confirm each stated t
 - **[playback] Play active sequence in Program Monitor**: https://helpx.adobe.com/premiere/desktop/render-and-export/render-sequences-for-playback/play-active-sequence-in-program-monitor.html (26.x; verified 2026-10-28). Adobe explicitly documents Space, J, K and L playback controls.
 - **[effectremove] Removed effects and transitions**: https://helpx.adobe.com/premiere/desktop/add-video-effects/commonly-used-effects/effects-and-transitions-removed-from-adobe-premiere.html (26.x; verified 2026-10-28). Explains obsolete/replaced effects behavior in existing projects.
 
-
 # FIELD GUIDES (COMPLETE TEXT)
-
 
 ---
 
@@ -7081,7 +7177,6 @@ A J-cut starts the incoming shot's audio before its picture. An L-cut keeps the 
 
 **Mastery:** You can predict total sequence duration, clip position, and source-frame choices for all four edits, including the effect of missing handles or track locks. See L018, L021–L025 and the diagram controls in the corresponding lessons.
 
-
 ---
 
 # Field guide 02 — Audio levels, loudness, repair and delivery
@@ -7129,7 +7224,6 @@ A compressor turns down signal above a chosen threshold by a ratio, often with a
 
 **Mastery:** Explain why clip gain, track volume, compressor threshold, sample peak, true peak and LUFS are not interchangeable. See L038–L045 and the symptom-oriented audio troubleshooting entries.
 
-
 ---
 
 # Field guide 03 — A reliable color pipeline from camera signal to delivered file
@@ -7175,7 +7269,6 @@ Do a **short 10-second test export** with a neutral gray/skin reference and two 
 7. Export a short SDR review, noting codec, color settings, display conditions and any player discrepancy.
 
 **Mastery:** Explain why a wrong input transform, creative LUT, export color tag and uncalibrated viewer are four different potential causes of a mismatch. See L055–L061 and the export guide.
-
 
 ---
 
@@ -7228,7 +7321,6 @@ plus container overhead. For a **60-second** file with average 12 Mb/s video and
 
 **Mastery:** Produce a documented web review MP4 and a separately specified high-quality master, verify both in an external player, and explain the tradeoff in your own words.
 
-
 ---
 
 # Field guide 05 — Premiere in a Windows virtual machine, manual on Linux
@@ -7269,7 +7361,6 @@ The website may store completion, bookmarks, notes and quiz choices in browser-l
 
 **Mastery:** Report exactly which GPU/codec/acceleration functions are *observed* inside the guest, distinguish them from theoretical hardware support and demonstrate a successful archival export using original footage.
 
-
 ---
 
 # Field guide 06 — AI-assisted editing in the verified stable release
@@ -7306,7 +7397,6 @@ The exact naming and UI location of a fast-changing service can move between upd
 A transcript helps locate candidate cuts but is not authoritative: false words, speaker confusion, overlapping dialogue, abrupt cuts and context changes occur. Verify critical claims by listening to source recordings, viewing edit boundaries and checking whether picture continuity still works. For subtitles, correct the text and timing manually and check readability, especially where one-word caption styles create high visual density.
 
 **Mastery:** Identify which AI operation is available offline, requires services or remains beta; describe its failure modes; and provide a human-reviewed export rather than relying on the automated preview alone.
-
 
 ---
 
@@ -7355,7 +7445,6 @@ A **review copy** might be 1920×1080 progressive, same nominal frame rate as th
 
 **Passing standard:** 80/100 overall, with no failed source integrity, audio clipping, missing caption deliverables when requested or broken final export. Keep a small “known imperfections” report; professional work is also the ability to explain remaining risks.
 
-
 ---
 
 # Field guide 08 — Frame rates, drop-frame timecode and media-compatibility math
@@ -7398,7 +7487,6 @@ Given a 25 fps sequence containing 500 frames of picture, one 48 kHz stereo PCM 
 
 **Mastery:** Distinguish physical frame loss from drop-frame *numbering*, nominal rates from exact rational frame rates, and a wrapper extension from the codec and color signal inside it.
 
-
 ---
 
 # Field guide 09 — Titles, captions, transcripts and accessible review
@@ -7436,7 +7524,6 @@ Automatic transcript/caption tools are draft assistants, not final proofreaders.
 7. Reopen the SRT in a plain text editor and check first/last cues, UTF-8 characters and a random middle cue.
 
 **Mastery:** Explain the differences among graphics, transcripts, captions, SRT sidecars, and burned-in text; demonstrate a proofread accessible delivery instead of trusting automated text blindly.
-
 
 ---
 
@@ -7503,7 +7590,6 @@ Distinguish **transition length in sequence frames** from **source handles**. A 
 
 **Confidence limit:** this research verifies published Adobe names and migration notes. It does not constitute an installed 26.5.2 inventory or prove every effect parameter on a Windows seat.
 
-
 ---
 
 # Field guide 11 — Windows shortcut mastery and conflict audit
@@ -7564,7 +7650,6 @@ For each binding, record: shortcut, panel, selected object, active tool, relevan
 
 **Confidence limit:** published default rows were checked against their stated source and contexts; no live Premiere installation was used to prove the active assignment of every key. That final check depends on the installed shortcut set.
 
-
 ---
 
 # Field guide 12 — End-to-end professional edit, compliance and QC pipeline
@@ -7618,7 +7703,6 @@ Record: delivery ID; Windows Premiere patch; project file version; sequence name
 ## Using the included practice media
 
 The bundled samples are original, generated media for technical exercises. They cannot substitute for filmed conversations, emotional performance or complex production footage. For narrative capstones, record your own authorized interview/action shots; do not import copyrighted commercial videos or music without permission.
-
 
 ---
 

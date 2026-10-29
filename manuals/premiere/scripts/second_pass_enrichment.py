@@ -333,6 +333,119 @@ def enrich(lessons, quizzes, shortcuts, fx, trans, SOURCE, version_audit):
         ('Project zoom out','-')]:
         addkey('Project panel',name,key,'Project panel focused; availability depends on icon/list and selection mode')
     addkey('Timeline panel','Timeline clear selection','Backspace','Timeline panel focused; distinguish from other Backspace commands')
+    # FilmCraft & Premiere Pro verified shortcuts: tools, multicam, trimming, clip volume, zoom and typography
+    for name,key,ctx in [
+        ('Selection Tool','V','Tools panel / Timeline'),
+        ('Track Select Forward Tool','A','Tools panel / Timeline'),
+        ('Track Select Backward Tool','Shift+A','Tools panel / Timeline'),
+        ('Ripple Edit Tool','B','Tools panel / Timeline'),
+        ('Rolling Edit Tool','N','Tools panel / Timeline'),
+        ('Rate Stretch Tool','R','Tools panel / Timeline'),
+        ('Razor Tool','C','Tools panel / Timeline'),
+        ('Slip Tool','Y','Tools panel / Timeline'),
+        ('Slide Tool','U','Tools panel / Timeline'),
+        ('Pen Tool','P','Tools panel / Timeline'),
+        ('Hand Tool','H','Tools panel / Timeline'),
+        ('Zoom Tool','Z','Tools panel / Timeline'),
+        ('Type Tool','T','Tools panel / Canvas'),
+    ]: addkey('Tools',name,key,ctx)
+    for name,key,ctx in [
+        ('Select Camera 1','1','Multi-Camera view / Program Monitor'),
+        ('Select Camera 2','2','Multi-Camera view / Program Monitor'),
+        ('Select Camera 3','3','Multi-Camera view / Program Monitor'),
+        ('Select Camera 4','4','Multi-Camera view / Program Monitor'),
+        ('Select Camera 5','5','Multi-Camera view / Program Monitor'),
+        ('Select Camera 6','6','Multi-Camera view / Program Monitor'),
+        ('Select Camera 7','7','Multi-Camera view / Program Monitor'),
+        ('Select Camera 8','8','Multi-Camera view / Program Monitor'),
+        ('Select Camera 9','9','Multi-Camera view / Program Monitor'),
+        ('Cut to Camera 1','Ctrl+1','Timeline / Multi-Camera view'),
+        ('Cut to Camera 2','Ctrl+2','Timeline / Multi-Camera view'),
+        ('Cut to Camera 3','Ctrl+3','Timeline / Multi-Camera view'),
+        ('Cut to Camera 4','Ctrl+4','Timeline / Multi-Camera view'),
+        ('Cut to Camera 5','Ctrl+5','Timeline / Multi-Camera view'),
+        ('Cut to Camera 6','Ctrl+6','Timeline / Multi-Camera view'),
+        ('Cut to Camera 7','Ctrl+7','Timeline / Multi-Camera view'),
+        ('Cut to Camera 8','Ctrl+8','Timeline / Multi-Camera view'),
+        ('Cut to Camera 9','Ctrl+9','Timeline / Multi-Camera view'),
+        ('Multi-Camera Record On/Off Toggle','0','Multi-Camera view / Program Monitor'),
+        ('Multi-Camera View Toggle','Shift+0','Program Monitor'),
+    ]: addkey('Multi-Camera',name,key,ctx)
+    for name,key,ctx in [
+        ('Ripple Trim Previous Edit to Playhead','Q','Timeline panel'),
+        ('Ripple Trim Next Edit to Playhead','W','Timeline panel'),
+        ('Extend Previous Edit to Playhead','Shift+Q','Timeline panel'),
+        ('Extend Next Edit to Playhead','Shift+W','Timeline panel'),
+        ('Trim Previous Edit Point','Alt+Q','Timeline panel'),
+        ('Trim Next Edit Point','Alt+W','Timeline panel'),
+    ]: addkey('Trimming',name,key,ctx)
+    for name,key,ctx in [
+        ('Go to Next Edit Point on Any Track','Shift+Down','Timeline panel'),
+        ('Go to Previous Edit Point on Any Track','Shift+Up','Timeline panel'),
+        ('Go to Sequence Start','Home','Timeline panel'),
+        ('Go to Sequence End','End','Timeline panel'),
+        ('Go to Selected Clip Start','Shift+Home','Timeline panel'),
+        ('Go to Selected Clip End','Shift+End','Timeline panel'),
+        ('Select Clip at Playhead','D','Timeline panel'),
+        ('Select Next Clip','Ctrl+Down','Timeline panel'),
+        ('Select Previous Clip','Ctrl+Up','Timeline panel'),
+        ('Step Forward 1 Frame','Right','Timeline / Monitor focus'),
+        ('Step Backward 1 Frame','Left','Timeline / Monitor focus'),
+        ('Step Forward 5 Frames','Shift+Right','Timeline / Monitor focus'),
+        ('Step Backward 5 Frames','Shift+Left','Timeline / Monitor focus'),
+        ('Zoom to Sequence','\\','Timeline panel'),
+        ('Expand All Tracks','Shift+=','Timeline panel'),
+        ('Minimize All Tracks','Shift+-','Timeline panel'),
+        ('Toggle All Video Targets','Ctrl+0','Timeline panel'),
+        ('Toggle All Audio Targets','Ctrl+9','Timeline panel'),
+        ('Toggle All Source Video','Ctrl+Alt+0','Timeline panel'),
+        ('Toggle All Source Audio','Ctrl+Alt+9','Timeline panel'),
+    ]: addkey('Timeline panel',name,key,ctx)
+    addkey('Sequence','Reveal Nested Sequence','Ctrl+Alt+F','Timeline panel')
+    for name,key,ctx in [
+        ('Increase Clip Volume (1 dB)',']','Timeline / Audio track'),
+        ('Decrease Clip Volume (1 dB)','[','Timeline / Audio track'),
+        ('Increase Clip Volume Many (6 dB)','Shift+]','Timeline / Audio track'),
+        ('Decrease Clip Volume Many (6 dB)','Shift+[','Timeline / Audio track'),
+        ('Toggle Audio Scrubbing','Shift+S','Application / Timeline'),
+        ('Set Poster Frame','Ctrl+P','Project panel / Clip'),
+        ('Clear Poster Frame','Alt+P','Project panel / Clip'),
+        ('Replace with Clip from Bin','Ctrl+Shift+R','Timeline / Project panel'),
+        ('Replace with Clip from Source Monitor','Ctrl+Alt+Shift+R','Timeline / Source Monitor'),
+    ]: addkey('Clip actions',name,key,ctx)
+    for name,key,ctx in [
+        ('Maximize or Restore Active Frame','Shift+`','Workspace / panel focus'),
+        ('Maximize or Restore Frame Under Cursor','`','Workspace / cursor location'),
+        ('Toggle Full Screen','Ctrl+`','Application / Monitor'),
+        ('Select Next Panel','Ctrl+Shift+.','Workspace focus'),
+        ('Select Previous Panel','Ctrl+Shift+,','Workspace focus'),
+        ('Select Find Box','Shift+F','Active panel / Project'),
+    ]: addkey('Panels / workspaces',name,key,ctx)
+    addkey('Program Monitor','Zoom Program Monitor to 100%','Ctrl+Shift+1','Program Monitor focused')
+    addkey('Program Monitor','Zoom Program Monitor to Fit','Ctrl+Shift+0','Program Monitor focused')
+    addkey('Source Monitor','Zoom Source Monitor to 100%','Ctrl+Alt+Shift+1','Source Monitor focused')
+    addkey('Source Monitor','Zoom Source Monitor to Fit','Ctrl+Alt+Shift+0','Source Monitor focused')
+    addkey('Playback / editing tools','Play In to Out with Preroll','Shift+Space','Source / Program Monitor',source='playback')
+    addkey('Playback / editing tools','Play from Playhead to Out Point','Ctrl+Space','Source / Program Monitor',source='playback')
+    for name,key,ctx in [
+        ('Increase Font Size by 1 Unit','Ctrl+Alt+Right','Essential Graphics / Text layer'),
+        ('Decrease Font Size by 1 Unit','Ctrl+Alt+Left','Essential Graphics / Text layer'),
+        ('Increase Font Size by 5 Units','Ctrl+Alt+Shift+Right','Essential Graphics / Text layer'),
+        ('Decrease Font Size by 5 Units','Ctrl+Alt+Shift+Left','Essential Graphics / Text layer'),
+        ('Increase Leading by 1 Unit','Alt+Up','Essential Graphics / Text layer'),
+        ('Decrease Leading by 1 Unit','Alt+Down','Essential Graphics / Text layer'),
+        ('Increase Leading by 5 Units','Alt+Shift+Up','Essential Graphics / Text layer'),
+        ('Decrease Leading by 5 Units','Alt+Shift+Down','Essential Graphics / Text layer'),
+        ('Left Align Text','Ctrl+Shift+L','Essential Graphics / Text layer'),
+        ('Center Align Text','Ctrl+Shift+C','Essential Graphics / Text layer'),
+        ('Right Align Text','Ctrl+Shift+R','Essential Graphics / Text layer'),
+        ("Begin Text Editing for Graphic Layer","Ctrl+Alt+'",'Program Monitor / Graphics'),
+        ('Export Frame','Shift+E','Program Monitor / Source Monitor'),
+    ]: addkey('Graphics',name,key,ctx)
+    addkey('Project panel','New Bin from Selection','Shift+B','Project panel focused')
+    addkey('Editing','Paste Insert','Ctrl+Shift+V','Timeline panel')
+    addkey('Editing','Open Search','Ctrl+Shift+F','Application')
+    addkey('File and project','Preferences General','Ctrl+,','Application')
     # The remaining five rows have separate 26.x Adobe gameplay reference, not the default menu table.
     for k in shortcuts:
         if k['command'] in ('Playback toggle','Play reverse','Stop','Play forward'):

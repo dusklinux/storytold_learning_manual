@@ -181,3 +181,101 @@ Project panel,Project previous row field,Shift+Enter,Project panel focused; avai
 Project panel,Project zoom in,=,Project panel focused; availability depends on icon/list and selection mode,Adobe 2026 Windows default table; verify installed shortcut set,keys
 Project panel,Project zoom out,-,Project panel focused; availability depends on icon/list and selection mode,Adobe 2026 Windows default table; verify installed shortcut set,keys
 Timeline panel,Timeline clear selection,Backspace,Timeline panel focused; distinguish from other Backspace commands,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Tools,Selection Tool,V,Tools panel / Timeline,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Tools,Track Select Forward Tool,A,Tools panel / Timeline,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Tools,Track Select Backward Tool,Shift+A,Tools panel / Timeline,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Tools,Ripple Edit Tool,B,Tools panel / Timeline,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Tools,Rolling Edit Tool,N,Tools panel / Timeline,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Tools,Rate Stretch Tool,R,Tools panel / Timeline,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Tools,Razor Tool,C,Tools panel / Timeline,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Tools,Slip Tool,Y,Tools panel / Timeline,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Tools,Slide Tool,U,Tools panel / Timeline,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Tools,Pen Tool,P,Tools panel / Timeline,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Tools,Hand Tool,H,Tools panel / Timeline,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Tools,Zoom Tool,Z,Tools panel / Timeline,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Tools,Type Tool,T,Tools panel / Canvas,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Multi-Camera,Select Camera 1,1,Multi-Camera view / Program Monitor,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Multi-Camera,Select Camera 2,2,Multi-Camera view / Program Monitor,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Multi-Camera,Select Camera 3,3,Multi-Camera view / Program Monitor,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Multi-Camera,Select Camera 4,4,Multi-Camera view / Program Monitor,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Multi-Camera,Select Camera 5,5,Multi-Camera view / Program Monitor,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Multi-Camera,Select Camera 6,6,Multi-Camera view / Program Monitor,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Multi-Camera,Select Camera 7,7,Multi-Camera view / Program Monitor,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Multi-Camera,Select Camera 8,8,Multi-Camera view / Program Monitor,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Multi-Camera,Select Camera 9,9,Multi-Camera view / Program Monitor,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Multi-Camera,Cut to Camera 1,Ctrl+1,Timeline / Multi-Camera view,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Multi-Camera,Cut to Camera 2,Ctrl+2,Timeline / Multi-Camera view,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Multi-Camera,Cut to Camera 3,Ctrl+3,Timeline / Multi-Camera view,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Multi-Camera,Cut to Camera 4,Ctrl+4,Timeline / Multi-Camera view,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Multi-Camera,Cut to Camera 5,Ctrl+5,Timeline / Multi-Camera view,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Multi-Camera,Cut to Camera 6,Ctrl+6,Timeline / Multi-Camera view,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Multi-Camera,Cut to Camera 7,Ctrl+7,Timeline / Multi-Camera view,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Multi-Camera,Cut to Camera 8,Ctrl+8,Timeline / Multi-Camera view,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Multi-Camera,Cut to Camera 9,Ctrl+9,Timeline / Multi-Camera view,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Multi-Camera,Multi-Camera Record On/Off Toggle,0,Multi-Camera view / Program Monitor,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Multi-Camera,Multi-Camera View Toggle,Shift+0,Program Monitor,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Trimming,Ripple Trim Previous Edit to Playhead,Q,Timeline panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Trimming,Ripple Trim Next Edit to Playhead,W,Timeline panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Trimming,Extend Previous Edit to Playhead,Shift+Q,Timeline panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Trimming,Extend Next Edit to Playhead,Shift+W,Timeline panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Trimming,Trim Previous Edit Point,Alt+Q,Timeline panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Trimming,Trim Next Edit Point,Alt+W,Timeline panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Go to Next Edit Point on Any Track,Shift+Down,Timeline panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Go to Previous Edit Point on Any Track,Shift+Up,Timeline panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Go to Sequence Start,Home,Timeline panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Go to Sequence End,End,Timeline panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Go to Selected Clip Start,Shift+Home,Timeline panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Go to Selected Clip End,Shift+End,Timeline panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Select Clip at Playhead,D,Timeline panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Select Next Clip,Ctrl+Down,Timeline panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Select Previous Clip,Ctrl+Up,Timeline panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Step Forward 1 Frame,Right,Timeline / Monitor focus,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Step Backward 1 Frame,Left,Timeline / Monitor focus,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Step Forward 5 Frames,Shift+Right,Timeline / Monitor focus,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Step Backward 5 Frames,Shift+Left,Timeline / Monitor focus,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Zoom to Sequence,\,Timeline panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Expand All Tracks,Shift+=,Timeline panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Minimize All Tracks,Shift+-,Timeline panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Toggle All Video Targets,Ctrl+0,Timeline panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Toggle All Audio Targets,Ctrl+9,Timeline panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Toggle All Source Video,Ctrl+Alt+0,Timeline panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Timeline panel,Toggle All Source Audio,Ctrl+Alt+9,Timeline panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Sequence,Reveal Nested Sequence,Ctrl+Alt+F,Timeline panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Clip actions,Increase Clip Volume (1 dB),],Timeline / Audio track,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Clip actions,Decrease Clip Volume (1 dB),[,Timeline / Audio track,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Clip actions,Increase Clip Volume Many (6 dB),Shift+],Timeline / Audio track,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Clip actions,Decrease Clip Volume Many (6 dB),Shift+[,Timeline / Audio track,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Clip actions,Toggle Audio Scrubbing,Shift+S,Application / Timeline,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Clip actions,Set Poster Frame,Ctrl+P,Project panel / Clip,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Clip actions,Clear Poster Frame,Alt+P,Project panel / Clip,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Clip actions,Replace with Clip from Bin,Ctrl+Shift+R,Timeline / Project panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Clip actions,Replace with Clip from Source Monitor,Ctrl+Alt+Shift+R,Timeline / Source Monitor,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Panels / workspaces,Maximize or Restore Active Frame,Shift+`,Workspace / panel focus,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Panels / workspaces,Maximize or Restore Frame Under Cursor,`,Workspace / cursor location,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Panels / workspaces,Toggle Full Screen,Ctrl+`,Application / Monitor,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Panels / workspaces,Select Next Panel,Ctrl+Shift+.,Workspace focus,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Panels / workspaces,Select Previous Panel,"Ctrl+Shift+,",Workspace focus,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Panels / workspaces,Select Find Box,Shift+F,Active panel / Project,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Program Monitor,Zoom Program Monitor to 100%,Ctrl+Shift+1,Program Monitor focused,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Program Monitor,Zoom Program Monitor to Fit,Ctrl+Shift+0,Program Monitor focused,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Source Monitor,Zoom Source Monitor to 100%,Ctrl+Alt+Shift+1,Source Monitor focused,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Source Monitor,Zoom Source Monitor to Fit,Ctrl+Alt+Shift+0,Source Monitor focused,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Playback / editing tools,Play In to Out with Preroll,Shift+Space,Source / Program Monitor,Adobe 2026 Windows default table; verify installed shortcut set,playback
+Playback / editing tools,Play from Playhead to Out Point,Ctrl+Space,Source / Program Monitor,Adobe 2026 Windows default table; verify installed shortcut set,playback
+Graphics,Increase Font Size by 1 Unit,Ctrl+Alt+Right,Essential Graphics / Text layer,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Graphics,Decrease Font Size by 1 Unit,Ctrl+Alt+Left,Essential Graphics / Text layer,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Graphics,Increase Font Size by 5 Units,Ctrl+Alt+Shift+Right,Essential Graphics / Text layer,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Graphics,Decrease Font Size by 5 Units,Ctrl+Alt+Shift+Left,Essential Graphics / Text layer,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Graphics,Increase Leading by 1 Unit,Alt+Up,Essential Graphics / Text layer,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Graphics,Decrease Leading by 1 Unit,Alt+Down,Essential Graphics / Text layer,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Graphics,Increase Leading by 5 Units,Alt+Shift+Up,Essential Graphics / Text layer,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Graphics,Decrease Leading by 5 Units,Alt+Shift+Down,Essential Graphics / Text layer,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Graphics,Left Align Text,Ctrl+Shift+L,Essential Graphics / Text layer,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Graphics,Center Align Text,Ctrl+Shift+C,Essential Graphics / Text layer,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Graphics,Right Align Text,Ctrl+Shift+R,Essential Graphics / Text layer,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Graphics,Begin Text Editing for Graphic Layer,Ctrl+Alt+',Program Monitor / Graphics,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Graphics,Export Frame,Shift+E,Program Monitor / Source Monitor,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Project panel,New Bin from Selection,Shift+B,Project panel focused,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Editing,Paste Insert,Ctrl+Shift+V,Timeline panel,Adobe 2026 Windows default table; verify installed shortcut set,keys
+Editing,Open Search,Ctrl+Shift+F,Application,Adobe 2026 Windows default table; verify installed shortcut set,keys
+File and project,Preferences General,"Ctrl+,",Application,Adobe 2026 Windows default table; verify installed shortcut set,keys

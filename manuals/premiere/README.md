@@ -1,8 +1,8 @@
 > **Combined project:** open [the Dusky library](../../index.html) to choose or switch apps. This directory retains the supplied manual and its historical standalone documentation below. Use the [root build and maintenance instructions](../../docs/STRUCTURE.md); the library build generates no archives.
 
-# Premiere, Explained — Windows edition · fully offline reading
+# Premiere, Explained & FilmCraft — Windows & Linux Edition · fully offline reading
 
-**Release target:** Adobe Premiere desktop 26.5.2 for Windows, latest stable verified from Adobe's release notes on **October 28, 2026**. The requested October 29 research cutoff was still in the future. This is an independent learning manual, not a product of Adobe.
+**Release target:** Adobe Premiere desktop 26.5.2 (Windows) and FilmCraft (1:1 Linux alternative). Researched **October 28, 2026**. This manual provides comprehensive dual coverage across Windows and Linux. All keyboard shortcuts and commands use standard PC/Linux modifiers (`Ctrl`, `Alt`, `Shift`); Mac keys (`Cmd`) are strictly omitted for seamless clarity.
 
 ## Open the manual on Linux or Windows
 

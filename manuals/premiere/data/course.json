@@ -1,12 +1,12 @@
 {
   "meta": {
-    "title": "Premiere, Explained",
-    "subtitle": "An offline Windows-first course and reference",
+    "title": "Premiere, Explained & FilmCraft",
+    "subtitle": "An offline Windows & Linux course and reference",
     "version": "26.5.2",
     "verified_on": "2026-10-28",
     "research_cutoff": "2026-10-28 (Oct 29 requested date not yet reached)",
     "edition": "3.0 (cross-manual comparative audit)",
-    "notes": "Adobe Premiere desktop (formerly commonly called Premiere Pro), Windows 11; course website opens from file:// on Linux/Windows"
+    "notes": "Adobe Premiere desktop (Windows) and FilmCraft (Linux); course website opens from file:// on Linux/Windows"
   },
   "stages": [
     {
@@ -6757,6 +6757,790 @@
       "command": "Timeline clear selection",
       "windows": "Backspace",
       "context": "Timeline panel focused; distinguish from other Backspace commands",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Tools",
+      "command": "Selection Tool",
+      "windows": "V",
+      "context": "Tools panel / Timeline",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Tools",
+      "command": "Track Select Forward Tool",
+      "windows": "A",
+      "context": "Tools panel / Timeline",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Tools",
+      "command": "Track Select Backward Tool",
+      "windows": "Shift+A",
+      "context": "Tools panel / Timeline",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Tools",
+      "command": "Ripple Edit Tool",
+      "windows": "B",
+      "context": "Tools panel / Timeline",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Tools",
+      "command": "Rolling Edit Tool",
+      "windows": "N",
+      "context": "Tools panel / Timeline",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Tools",
+      "command": "Rate Stretch Tool",
+      "windows": "R",
+      "context": "Tools panel / Timeline",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Tools",
+      "command": "Razor Tool",
+      "windows": "C",
+      "context": "Tools panel / Timeline",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Tools",
+      "command": "Slip Tool",
+      "windows": "Y",
+      "context": "Tools panel / Timeline",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Tools",
+      "command": "Slide Tool",
+      "windows": "U",
+      "context": "Tools panel / Timeline",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Tools",
+      "command": "Pen Tool",
+      "windows": "P",
+      "context": "Tools panel / Timeline",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Tools",
+      "command": "Hand Tool",
+      "windows": "H",
+      "context": "Tools panel / Timeline",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Tools",
+      "command": "Zoom Tool",
+      "windows": "Z",
+      "context": "Tools panel / Timeline",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Tools",
+      "command": "Type Tool",
+      "windows": "T",
+      "context": "Tools panel / Canvas",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Multi-Camera",
+      "command": "Select Camera 1",
+      "windows": "1",
+      "context": "Multi-Camera view / Program Monitor",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Multi-Camera",
+      "command": "Select Camera 2",
+      "windows": "2",
+      "context": "Multi-Camera view / Program Monitor",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Multi-Camera",
+      "command": "Select Camera 3",
+      "windows": "3",
+      "context": "Multi-Camera view / Program Monitor",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Multi-Camera",
+      "command": "Select Camera 4",
+      "windows": "4",
+      "context": "Multi-Camera view / Program Monitor",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Multi-Camera",
+      "command": "Select Camera 5",
+      "windows": "5",
+      "context": "Multi-Camera view / Program Monitor",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Multi-Camera",
+      "command": "Select Camera 6",
+      "windows": "6",
+      "context": "Multi-Camera view / Program Monitor",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Multi-Camera",
+      "command": "Select Camera 7",
+      "windows": "7",
+      "context": "Multi-Camera view / Program Monitor",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Multi-Camera",
+      "command": "Select Camera 8",
+      "windows": "8",
+      "context": "Multi-Camera view / Program Monitor",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Multi-Camera",
+      "command": "Select Camera 9",
+      "windows": "9",
+      "context": "Multi-Camera view / Program Monitor",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Multi-Camera",
+      "command": "Cut to Camera 1",
+      "windows": "Ctrl+1",
+      "context": "Timeline / Multi-Camera view",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Multi-Camera",
+      "command": "Cut to Camera 2",
+      "windows": "Ctrl+2",
+      "context": "Timeline / Multi-Camera view",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Multi-Camera",
+      "command": "Cut to Camera 3",
+      "windows": "Ctrl+3",
+      "context": "Timeline / Multi-Camera view",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Multi-Camera",
+      "command": "Cut to Camera 4",
+      "windows": "Ctrl+4",
+      "context": "Timeline / Multi-Camera view",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Multi-Camera",
+      "command": "Cut to Camera 5",
+      "windows": "Ctrl+5",
+      "context": "Timeline / Multi-Camera view",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Multi-Camera",
+      "command": "Cut to Camera 6",
+      "windows": "Ctrl+6",
+      "context": "Timeline / Multi-Camera view",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Multi-Camera",
+      "command": "Cut to Camera 7",
+      "windows": "Ctrl+7",
+      "context": "Timeline / Multi-Camera view",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Multi-Camera",
+      "command": "Cut to Camera 8",
+      "windows": "Ctrl+8",
+      "context": "Timeline / Multi-Camera view",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Multi-Camera",
+      "command": "Cut to Camera 9",
+      "windows": "Ctrl+9",
+      "context": "Timeline / Multi-Camera view",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Multi-Camera",
+      "command": "Multi-Camera Record On/Off Toggle",
+      "windows": "0",
+      "context": "Multi-Camera view / Program Monitor",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Multi-Camera",
+      "command": "Multi-Camera View Toggle",
+      "windows": "Shift+0",
+      "context": "Program Monitor",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Trimming",
+      "command": "Ripple Trim Previous Edit to Playhead",
+      "windows": "Q",
+      "context": "Timeline panel",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Trimming",
+      "command": "Ripple Trim Next Edit to Playhead",
+      "windows": "W",
+      "context": "Timeline panel",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Trimming",
+      "command": "Extend Previous Edit to Playhead",
+      "windows": "Shift+Q",
+      "context": "Timeline panel",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Trimming",
+      "command": "Extend Next Edit to Playhead",
+      "windows": "Shift+W",
+      "context": "Timeline panel",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Trimming",
+      "command": "Trim Previous Edit Point",
+      "windows": "Alt+Q",
+      "context": "Timeline panel",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Trimming",
+      "command": "Trim Next Edit Point",
+      "windows": "Alt+W",
+      "context": "Timeline panel",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Timeline panel",
+      "command": "Go to Next Edit Point on Any Track",
+      "windows": "Shift+Down",
+      "context": "Timeline panel",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Timeline panel",
+      "command": "Go to Previous Edit Point on Any Track",
+      "windows": "Shift+Up",
+      "context": "Timeline panel",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Timeline panel",
+      "command": "Go to Sequence Start",
+      "windows": "Home",
+      "context": "Timeline panel",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Timeline panel",
+      "command": "Go to Sequence End",
+      "windows": "End",
+      "context": "Timeline panel",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Timeline panel",
+      "command": "Go to Selected Clip Start",
+      "windows": "Shift+Home",
+      "context": "Timeline panel",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Timeline panel",
+      "command": "Go to Selected Clip End",
+      "windows": "Shift+End",
+      "context": "Timeline panel",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Timeline panel",
+      "command": "Select Clip at Playhead",
+      "windows": "D",
+      "context": "Timeline panel",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Timeline panel",
+      "command": "Select Next Clip",
+      "windows": "Ctrl+Down",
+      "context": "Timeline panel",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Timeline panel",
+      "command": "Select Previous Clip",
+      "windows": "Ctrl+Up",
+      "context": "Timeline panel",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Timeline panel",
+      "command": "Step Forward 1 Frame",
+      "windows": "Right",
+      "context": "Timeline / Monitor focus",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Timeline panel",
+      "command": "Step Backward 1 Frame",
+      "windows": "Left",
+      "context": "Timeline / Monitor focus",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Timeline panel",
+      "command": "Step Forward 5 Frames",
+      "windows": "Shift+Right",
+      "context": "Timeline / Monitor focus",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Timeline panel",
+      "command": "Step Backward 5 Frames",
+      "windows": "Shift+Left",
+      "context": "Timeline / Monitor focus",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Timeline panel",
+      "command": "Zoom to Sequence",
+      "windows": "\\",
+      "context": "Timeline panel",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Timeline panel",
+      "command": "Expand All Tracks",
+      "windows": "Shift+=",
+      "context": "Timeline panel",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Timeline panel",
+      "command": "Minimize All Tracks",
+      "windows": "Shift+-",
+      "context": "Timeline panel",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Timeline panel",
+      "command": "Toggle All Video Targets",
+      "windows": "Ctrl+0",
+      "context": "Timeline panel",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Timeline panel",
+      "command": "Toggle All Audio Targets",
+      "windows": "Ctrl+9",
+      "context": "Timeline panel",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Timeline panel",
+      "command": "Toggle All Source Video",
+      "windows": "Ctrl+Alt+0",
+      "context": "Timeline panel",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Timeline panel",
+      "command": "Toggle All Source Audio",
+      "windows": "Ctrl+Alt+9",
+      "context": "Timeline panel",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Sequence",
+      "command": "Reveal Nested Sequence",
+      "windows": "Ctrl+Alt+F",
+      "context": "Timeline panel",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Clip actions",
+      "command": "Increase Clip Volume (1 dB)",
+      "windows": "]",
+      "context": "Timeline / Audio track",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Clip actions",
+      "command": "Decrease Clip Volume (1 dB)",
+      "windows": "[",
+      "context": "Timeline / Audio track",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Clip actions",
+      "command": "Increase Clip Volume Many (6 dB)",
+      "windows": "Shift+]",
+      "context": "Timeline / Audio track",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Clip actions",
+      "command": "Decrease Clip Volume Many (6 dB)",
+      "windows": "Shift+[",
+      "context": "Timeline / Audio track",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Clip actions",
+      "command": "Toggle Audio Scrubbing",
+      "windows": "Shift+S",
+      "context": "Application / Timeline",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Clip actions",
+      "command": "Set Poster Frame",
+      "windows": "Ctrl+P",
+      "context": "Project panel / Clip",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Clip actions",
+      "command": "Clear Poster Frame",
+      "windows": "Alt+P",
+      "context": "Project panel / Clip",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Clip actions",
+      "command": "Replace with Clip from Bin",
+      "windows": "Ctrl+Shift+R",
+      "context": "Timeline / Project panel",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Clip actions",
+      "command": "Replace with Clip from Source Monitor",
+      "windows": "Ctrl+Alt+Shift+R",
+      "context": "Timeline / Source Monitor",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Panels / workspaces",
+      "command": "Maximize or Restore Active Frame",
+      "windows": "Shift+`",
+      "context": "Workspace / panel focus",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Panels / workspaces",
+      "command": "Maximize or Restore Frame Under Cursor",
+      "windows": "`",
+      "context": "Workspace / cursor location",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Panels / workspaces",
+      "command": "Toggle Full Screen",
+      "windows": "Ctrl+`",
+      "context": "Application / Monitor",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Panels / workspaces",
+      "command": "Select Next Panel",
+      "windows": "Ctrl+Shift+.",
+      "context": "Workspace focus",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Panels / workspaces",
+      "command": "Select Previous Panel",
+      "windows": "Ctrl+Shift+,",
+      "context": "Workspace focus",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Panels / workspaces",
+      "command": "Select Find Box",
+      "windows": "Shift+F",
+      "context": "Active panel / Project",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Program Monitor",
+      "command": "Zoom Program Monitor to 100%",
+      "windows": "Ctrl+Shift+1",
+      "context": "Program Monitor focused",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Program Monitor",
+      "command": "Zoom Program Monitor to Fit",
+      "windows": "Ctrl+Shift+0",
+      "context": "Program Monitor focused",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Source Monitor",
+      "command": "Zoom Source Monitor to 100%",
+      "windows": "Ctrl+Alt+Shift+1",
+      "context": "Source Monitor focused",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Source Monitor",
+      "command": "Zoom Source Monitor to Fit",
+      "windows": "Ctrl+Alt+Shift+0",
+      "context": "Source Monitor focused",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Playback / editing tools",
+      "command": "Play In to Out with Preroll",
+      "windows": "Shift+Space",
+      "context": "Source / Program Monitor",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "playback"
+    },
+    {
+      "category": "Playback / editing tools",
+      "command": "Play from Playhead to Out Point",
+      "windows": "Ctrl+Space",
+      "context": "Source / Program Monitor",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "playback"
+    },
+    {
+      "category": "Graphics",
+      "command": "Increase Font Size by 1 Unit",
+      "windows": "Ctrl+Alt+Right",
+      "context": "Essential Graphics / Text layer",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Graphics",
+      "command": "Decrease Font Size by 1 Unit",
+      "windows": "Ctrl+Alt+Left",
+      "context": "Essential Graphics / Text layer",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Graphics",
+      "command": "Increase Font Size by 5 Units",
+      "windows": "Ctrl+Alt+Shift+Right",
+      "context": "Essential Graphics / Text layer",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Graphics",
+      "command": "Decrease Font Size by 5 Units",
+      "windows": "Ctrl+Alt+Shift+Left",
+      "context": "Essential Graphics / Text layer",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Graphics",
+      "command": "Increase Leading by 1 Unit",
+      "windows": "Alt+Up",
+      "context": "Essential Graphics / Text layer",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Graphics",
+      "command": "Decrease Leading by 1 Unit",
+      "windows": "Alt+Down",
+      "context": "Essential Graphics / Text layer",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Graphics",
+      "command": "Increase Leading by 5 Units",
+      "windows": "Alt+Shift+Up",
+      "context": "Essential Graphics / Text layer",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Graphics",
+      "command": "Decrease Leading by 5 Units",
+      "windows": "Alt+Shift+Down",
+      "context": "Essential Graphics / Text layer",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Graphics",
+      "command": "Left Align Text",
+      "windows": "Ctrl+Shift+L",
+      "context": "Essential Graphics / Text layer",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Graphics",
+      "command": "Center Align Text",
+      "windows": "Ctrl+Shift+C",
+      "context": "Essential Graphics / Text layer",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Graphics",
+      "command": "Right Align Text",
+      "windows": "Ctrl+Shift+R",
+      "context": "Essential Graphics / Text layer",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Graphics",
+      "command": "Begin Text Editing for Graphic Layer",
+      "windows": "Ctrl+Alt+'",
+      "context": "Program Monitor / Graphics",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Graphics",
+      "command": "Export Frame",
+      "windows": "Shift+E",
+      "context": "Program Monitor / Source Monitor",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Project panel",
+      "command": "New Bin from Selection",
+      "windows": "Shift+B",
+      "context": "Project panel focused",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Editing",
+      "command": "Paste Insert",
+      "windows": "Ctrl+Shift+V",
+      "context": "Timeline panel",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "Editing",
+      "command": "Open Search",
+      "windows": "Ctrl+Shift+F",
+      "context": "Application",
+      "status": "Adobe 2026 Windows default table; verify installed shortcut set",
+      "source": "keys"
+    },
+    {
+      "category": "File and project",
+      "command": "Preferences General",
+      "windows": "Ctrl+,",
+      "context": "Application",
       "status": "Adobe 2026 Windows default table; verify installed shortcut set",
       "source": "keys"
     }
