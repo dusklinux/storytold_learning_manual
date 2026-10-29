@@ -11519,7 +11519,7 @@
       "detail": "Places selected footage/asset from Project panel as a new layer in active comp at current time",
       "source": "shortcuts",
       "category": "File, project, composition and application",
-      "verification": "Verified in AE and EffectCraft (layer.addItem; Cmd+/ on macOS, Ctrl+/ on Windows/Linux).",
+      "verification": "Verified in AE and EffectCraft (layer.addItem; Ctrl+/ on Windows and Linux).",
       "id": "key-387"
     },
     {
@@ -12158,7 +12158,7 @@
       "detail": "Enqueues the active composition to the Render Queue panel (AE standard alias for Ctrl+Shift+/)",
       "source": "shortcuts",
       "category": "3D cameras, lights, effects, footage and rendering",
-      "verification": "Verified in AE and EffectCraft (renderQueue.add; Cmd+M / Ctrl+M).",
+      "verification": "Verified in AE and EffectCraft (renderQueue.add; Ctrl+M).",
       "id": "key-458"
     }
   ],
